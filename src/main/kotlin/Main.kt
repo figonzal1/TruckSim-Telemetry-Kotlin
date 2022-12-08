@@ -1,7 +1,16 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import jna.Ets2Kernel32Impl
+import mu.KotlinLogging
+import scs_sdk.ScsShareMemory
+import scs_sdk.ScsTelemetry
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+val logger = KotlinLogging.logger { }
+
+fun main(args: Array<String>) {
+
+
+    val telemetry = ScsTelemetry(ScsShareMemory(Ets2Kernel32Impl()))
+
+    logger.debug {
+        "isConnected : ${telemetry.connect()}"
+    }
 }

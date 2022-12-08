@@ -14,7 +14,13 @@ repositories {
 
 dependencies {
 
+    //JNA
     implementation("net.java.dev.jna:jna-platform:5.12.1")
+
+    //LOGGER
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
+
+    runtimeOnly(group = "ch.qos.logback", name = "logback-classic", version = "1.4.5")
 
     testImplementation(kotlin("test"))
 }
