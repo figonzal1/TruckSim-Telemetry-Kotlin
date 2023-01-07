@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/jna/Ets2Kernel32.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/jna/Ets2Kernel32Impl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/Converters.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" afterDir="false" />
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Kotlin can connect to shared memory mapping">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/GameType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/exceptions/ReadMemoryException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,15 @@
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,10 +89,43 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowRun.ShowToolbar": "false",
     "deletionFromPopupRequiresConfirmation": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\utils" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="scs_sdk" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="utils.exceptions" />
+      <recent name="scs_sdk.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="ETS2-Telemetry [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="ETS2-Telemetry.main" />
@@ -95,6 +136,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.ETS2-Telemetry [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670471402091</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Kotlin can connect to shared memory mapping">
+      <created>1670479111697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670479111698</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Kotlin can connect to shared memory mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kotlin can connect to shared memory mapping" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
