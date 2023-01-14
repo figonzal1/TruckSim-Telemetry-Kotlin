@@ -9,4 +9,6 @@ object Constants {
     const val MAP_SIZE = 32 * 1024
 
     const val ERROR_CONNECTION = "Waiting for simulator session - Failed to connect"
+
+    const val WHEEL_SIZE = 16
 }
