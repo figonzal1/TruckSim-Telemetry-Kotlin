@@ -10,6 +10,9 @@ fun ByteArray.getBool(index: Int) = this[index] > 0
 fun ByteArray.getUInt(index: Int) =
     ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).int.toUInt()
 
+fun ByteArray.getFloat(index: Int) =
+    ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).float
+
 @OptIn(ExperimentalUnsignedTypes::class)
 fun ByteArray.getUIntArray(index: Int, count: Int): UIntArray {
 

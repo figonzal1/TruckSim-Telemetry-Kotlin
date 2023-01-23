@@ -3,10 +3,8 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import utils.Constants
+import utils.*
 import utils.exceptions.ReadMemoryException
-import utils.getBool
-import utils.getUInt
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -98,11 +96,24 @@ class ScsShareMemory(
         logger.debug { "Transmission slots selector: ${rawData.getUIntArray(312, 32)}" }*/
 
         //TODO: Check if the information is correct
-        logger.debug { "Job delivered time taken: ${rawData.getUInt(440)}" }
+        /*logger.debug { "Job delivered time taken: ${rawData.getUInt(440)}" }
         logger.debug { "Job delivered started timestamp: ${rawData.getUInt(444)}" }
         logger.debug { "Job delivered finished timestamp: ${rawData.getUInt(448)}" }
+         */
 
-        //Third byte section
+        //3rd section
+        logger.debug { "Navigation, nextRestStop: ${rawData.getUInt(500)}" }
 
+        logger.debug { "Truck selected gear: ${rawData.getUInt(504)}" }
+        logger.debug { "Truck gearDashboard: ${rawData.getUInt(508)}" }
+        logger.debug { "Truck transmission slots gear: ${rawData.getUIntArray(512, 32)}" }
+
+        //logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
+
+        //4th section
+        logger.debug { "Game scale: ${rawData.getFloat(700)}" }
+        logger.debug { "Truck fuel capacity: ${rawData.getFloat(704)}" }
+        logger.debug { "Truck fuel warning factor: ${rawData.getFloat(708)}" }
+        logger.debug { "Truck adblue capacity: ${rawData.getFloat(712)}" }
     }
 }
