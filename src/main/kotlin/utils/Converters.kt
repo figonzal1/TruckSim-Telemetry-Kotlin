@@ -3,6 +3,8 @@ package utils
 import scs_sdk.model.GameType
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import kotlin.math.abs
+import kotlin.math.roundToLong
 
 
 fun ByteArray.getBool(index: Int) = this[index] > 0
@@ -34,3 +36,5 @@ fun getGameType(uInt: UInt) = when (uInt) {
     2u -> GameType.ATS
     else -> GameType.UNKNOWN
 }
+
+fun ByteArray.getSpeedFloat(index: Int) = abs(getFloat(index) * 3.6).roundToLong()

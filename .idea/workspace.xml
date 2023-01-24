@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Adding util constants, added getUIntArray function &amp; second section totally parsed from shared memory">
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" afterDir="false" />
@@ -57,28 +57,15 @@
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
         <option value="Kotlin Class" />
-        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="figonzal1 &lt;felipe.gonzalezalarcon94@gmail.com&gt;" />
-      </list>
-    </option>
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,52 +76,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Colors&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\utils" />
-    </key>
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="scs_sdk" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="utils.exceptions" />
-      <recent name="scs_sdk.model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="ETS2-Telemetry [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+}</component>
+  <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="ETS2-Telemetry.main" />
@@ -145,7 +99,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.ETS2-Telemetry [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -165,28 +118,7 @@
       <option name="project" value="LOCAL" />
       <updated>1670471402091</updated>
     </task>
-    <task id="LOCAL-00002" summary="Kotlin can connect to shared memory mapping">
-      <created>1670479111697</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1670479111698</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added utils files, improvements parsing byte data &amp; implementation with coroutine">
-      <created>1673053495948</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1673053495948</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding util constants, added getUIntArray function &amp; second section totally parsed from shared memory">
-      <created>1673725681871</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1673725681871</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,13 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <MESSAGE value="Kotlin can connect to shared memory mapping" />
-    <MESSAGE value="Added utils files, improvements parsing byte data &amp; implementation with coroutine" />
-    <MESSAGE value="Adding util constants, added getUIntArray function &amp; second section totally parsed from shared memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding util constants, added getUIntArray function &amp; second section totally parsed from shared memory" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
