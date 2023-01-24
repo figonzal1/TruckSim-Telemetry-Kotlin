@@ -172,5 +172,27 @@ class ScsShareMemory(
         logger.debug { "Truck cabin damage: ${rawData.getFloat(848)}" }
         logger.debug { "Truck chassis damage: ${rawData.getFloat(852)}" }
         logger.debug { "Truck wheel damage: ${rawData.getFloat(856)}" }
+
+        logger.debug { "Truck odometer: ${rawData.getFloat(860)}" }
+
+        logger.debug { "Navigation distance: ${rawData.getFloat(864)}" }
+        logger.debug { "Navigation time: ${rawData.getFloat(868)}" }
+        logger.debug { "Navigation speed limit: ${rawData.getSpeedFloat(872)}" }
+
+        logger.debug { "Truck wheels suspension deflection ${rawData.getFloat(876)}" }
+        logger.debug { "Truck wheels velocity: ${rawData.getFloat(880)}" }
+        logger.debug { "Truck wheels steering: ${rawData.getFloat(884)}" }
+        logger.debug { "Truck wheels rotation: ${rawData.getFloat(888)}" }
+        logger.debug { "Truck wheels lift: ${rawData.getFloat(892)}" }
+        logger.debug { "Truck wheels lift offset: ${rawData.getFloat(896)}" }
+
+        logger.debug { "Event job delivered cargo damage: ${rawData.getFloat(900)}" }
+        logger.debug { "Event job delivered distance: ${rawData.getUInt(904)}" }
+        logger.debug { "Event refuel paid amount: ${rawData.getFloat(908)}" }
+
+        logger.debug { "Job cargo damage: ${rawData.getFloat(912)}" }
+
+        //5th section
+
     }
 }
