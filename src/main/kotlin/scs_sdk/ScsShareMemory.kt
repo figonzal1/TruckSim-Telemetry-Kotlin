@@ -193,6 +193,55 @@ class ScsShareMemory(
         logger.debug { "Job cargo damage: ${rawData.getFloat(912)}" }
 
         //5th section
+        logger.debug { "Truck wheels steerable: ${rawData.getBool(1500)}" }
+        logger.debug { "Truck wheels simulated: ${rawData.getBool(1504)}" }
+        logger.debug { "Truck wheels powered: ${rawData.getBool(1508)}" }
+        logger.debug { "Truck wheels liftable: ${rawData.getBool(1512)}" }
+
+        logger.debug { "Job cargo isLoaded: ${rawData.getBool(1516)}" }
+        logger.debug { "Job is special: ${rawData.getBool(1520)}" }
+
+        logger.debug { "Truck brakes parking enable: ${rawData.getBool(1524)}" }
+        logger.debug { "Truck brakes motor enabled: ${rawData.getBool(1528)}" }
+        logger.debug { "Truck brakes airPressure warning enabled: ${rawData.getBool(1532)}" }
+        logger.debug { "Truck brakes airPressure emergency enabled: ${rawData.getBool(1536)}" }
+        logger.debug { "Truck fuel warning enabled: ${rawData.getBool(1540)}" }
+        logger.debug { "Truck adblue warning enabled: ${rawData.getBool(1544)}" }
+        logger.debug { "Truck engine oilPressure warning enabled: ${rawData.getBool(1548)}" }
+        logger.debug { "Truck engine water temp warning enabled: ${rawData.getBool(1552)}" }
+        logger.debug { "Truck engine battery warning enabled: ${rawData.getBool(1556)}" }
+        logger.debug { "Truck electric enabled: ${rawData.getBool(1560)}" }
+        logger.debug { "Truck engine enabled: ${rawData.getBool(1564)}" }
+        logger.debug { "Truck wipers enabled: ${rawData.getBool(1568)}" }
+
+        //Lights
+        logger.debug { "Truck lights blinker left enabled: ${rawData.getBool(1572)}" }
+        logger.debug { "Truck lights blinker right enabled: ${rawData.getBool(1576)}" }
+        logger.debug { "Truck lights blinker left active: ${rawData.getBool(1580)}" }
+        logger.debug { "Truck lights blinker right active: ${rawData.getBool(1584)}" }
+        logger.debug { "Truck lights parking enabled: ${rawData.getBool(1588)}" }
+        logger.debug { "Truck lights beamLow enabled: ${rawData.getBool(1592)}" }
+        logger.debug { "Truck lights beamHigh enabled: ${rawData.getBool(1596)}" }
+        logger.debug { "Truck lights beacon enabled: ${rawData.getBool(1600)}" }
+        logger.debug { "Truck lights brake enabled: ${rawData.getBool(1604)}" }
+        logger.debug { "Truck lights reverse enabled: ${rawData.getBool(1608)}" }
+        logger.debug { "Truck lights hazard enabled: ${rawData.getBool(1612)}" }
+
+        logger.debug { "Truck cruise control enabled: ${rawData.getBool(1616)}" }
+        logger.debug { "Truck wheels on ground: ${rawData.getBool(1620)}" }
+
+        logger.debug { "Truck transmission selector: ${rawData.getBool(1624)}" }
+        logger.debug { "Truck differential lock enabled: ${rawData.getBool(1628)}" }
+        logger.debug { "Truck liftAxle enabled: ${rawData.getBool(1632)}" }
+        logger.debug { "Truck liftAxle indicator enabled: ${rawData.getBool(1636)}" }
+        logger.debug { "Trailer liftAxle enabled: ${rawData.getBool(1640)}" }
+        logger.debug { "Trailer liftAxle indicator enabled: ${rawData.getBool(1644)}" }
+
+        logger.debug { "Events job delivered auto-parked: ${rawData.getBool(1648)}" }
+        logger.debug { "Events job started autoloader: ${rawData.getBool(1652)}" }
+
+        //6th section
 
     }
+
 }
