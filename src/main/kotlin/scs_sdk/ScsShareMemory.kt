@@ -3,8 +3,10 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import utils.*
+import utils.Constants
 import utils.exceptions.ReadMemoryException
+import utils.getBool
+import utils.getUInt
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -118,86 +120,101 @@ class ScsShareMemory(
         logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
 
         //4th section
-        logger.debug { "Game scale: ${rawData.getFloat(700)}" }
+        /*logger.debug { "Game scale: ${rawData.getFloat(700)}" }
         logger.debug { "Truck fuel capacity: ${rawData.getFloat(704)}lt" }
         logger.debug { "Truck fuel warning factor: ${rawData.getFloat(708)}" }
         logger.debug { "Truck ad-blue capacity: ${rawData.getFloat(712)}lt" }
         logger.debug { "Truck ad-blue warning factor: ${rawData.getFloat(716)}" }
+
         logger.debug { "Truck brakes air pressure warning factor: ${rawData.getFloat(720)}" }
         logger.debug { "Truck brakes air pressure emergency factor: ${rawData.getFloat(724)}" }
         logger.debug { "Truck engine oil pressure warning factor: ${rawData.getFloat(728)}" }
         logger.debug { "Truck engine water T° warning factor: ${rawData.getFloat(732)}" }
         logger.debug { "Truck engine battery voltage warning factor: ${rawData.getFloat(736)}" }
 
+
         logger.debug { "Truck max rpm: ${rawData.getFloat(740)}" }
         logger.debug { "Truck differential ratio: ${rawData.getFloat(744)}" }
 
         logger.debug { "Job cargo mass: ${rawData.getFloat(748)}" }
 
-        logger.debug { "Truck speed : ${rawData.getSpeedFloat(752)}km/h" }
-        logger.debug { "Truck rpm value : ${rawData.getFloat(756)}" }
+        logger.debug { "Truck wheels radius: ${rawData.getFloatArray(752, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck motor gear ratios forward: ${rawData.getFloatArray(816, 24)}" }
+        logger.debug { "Truck motor gear ratios reverse: ${rawData.getFloatArray(912, 8)}" }
+
+        logger.debug { "Job cargo unit mass: ${rawData.getFloat(944)}" }
+
+        logger.debug { "Truck dashboard speed value: ${rawData.getSpeedFloat(948)}km/h" }
+        logger.debug { "Truck dashboard rpm value : ${rawData.getFloat(952)}" }
 
         //Controls
-        logger.debug { "Controls input steering: ${rawData.getFloat(760)}" }
-        logger.debug { "Controls input throttle: ${rawData.getFloat(764)}" }
-        logger.debug { "Controls input brake: ${rawData.getFloat(768)}" }
-        logger.debug { "Controls input clutch: ${rawData.getSpeedFloat(772)}" }
+        logger.debug { "Controls input steering: ${rawData.getFloat(956)}" }
+        logger.debug { "Controls input throttle: ${rawData.getFloat(960)}" }
+        logger.debug { "Controls input brake: ${rawData.getFloat(964)}" }
+        logger.debug { "Controls input clutch: ${rawData.getSpeedFloat(968)}" }
 
-        logger.debug { "Controls game steering: ${rawData.getFloat(776)}" }
-        logger.debug { "Controls game throttle: ${rawData.getFloat(780)}" }
-        logger.debug { "Controls game brake: ${rawData.getFloat(784)}" }
-        logger.debug { "Controls game clutch: ${rawData.getFloat(788)}" }
+        logger.debug { "Controls game steering: ${rawData.getFloat(972)}" }
+        logger.debug { "Controls game throttle: ${rawData.getFloat(976)}" }
+        logger.debug { "Controls game brake: ${rawData.getFloat(980)}" }
+        logger.debug { "Controls game clutch: ${rawData.getFloat(984)}" }
 
-        logger.debug { "Cruise control: ${rawData.getSpeedFloat(792)}" }
+        logger.debug { "Cruise control: ${rawData.getSpeedFloat(988)}" }
 
-        logger.debug { "Truck brake air pressure value: ${rawData.getFloat(796)}" }
-        logger.debug { "Truck brake temperature value: ${rawData.getFloat(800)}" }
+        logger.debug { "Truck brake air pressure value: ${rawData.getFloat(992)}psi" }
+        logger.debug { "Truck brake temperature value: ${rawData.getFloat(996)}°C" }
 
-        logger.debug { "Truck fuel value: ${rawData.getFloat(804)}" }
-        logger.debug { "Truck fuel avg consumption: ${rawData.getFloat(808)}" }
-        logger.debug { "Truck fuel range: ${rawData.getFloat(812)}" }
-        logger.debug { "Truck ad-blue value: ${rawData.getFloat(816)}" }
+        logger.debug { "Truck fuel value: ${rawData.getFloat(1000)}" }
+        logger.debug { "Truck fuel avg consumption: ${rawData.getFloat(1004)}" }
+        logger.debug { "Truck fuel range: ${rawData.getFloat(1008)}" }
+        logger.debug { "Truck ad-blue value: ${rawData.getFloat(1012)}" }
 
-        logger.debug { "Truck engine oil pressure value: ${rawData.getFloat(820)}" }
-        logger.debug { "Truck engine oil temperature value: ${rawData.getFloat(824)}" }
-        logger.debug { "Truck engine water temperature value: ${rawData.getFloat(828)}" }
-        logger.debug { "Truck engine battery voltage value: ${rawData.getFloat(832)}" }
+        logger.debug { "Truck engine oil pressure value: ${rawData.getFloat(1016)}psi" }
+        logger.debug { "Truck engine oil temperature value: ${rawData.getFloat(1020)}°C" }
+        logger.debug { "Truck engine water temperature value: ${rawData.getFloat(1024)}°C" }
+        logger.debug { "Truck engine battery voltage value: ${rawData.getFloat(1028)} volts" }
 
         //Lights
-        logger.debug { "Truck light dashboard backlight: ${rawData.getFloat(836)}" }
+        logger.debug { "Truck light dashboard backlight: ${rawData.getFloat(1032)}" }
 
         //Damage
-        logger.debug { "Truck engine damage: ${rawData.getFloat(840)}" }
-        logger.debug { "Truck transmission damage: ${rawData.getFloat(844)}" }
-        logger.debug { "Truck cabin damage: ${rawData.getFloat(848)}" }
-        logger.debug { "Truck chassis damage: ${rawData.getFloat(852)}" }
-        logger.debug { "Truck wheel damage: ${rawData.getFloat(856)}" }
+        logger.debug { "Truck engine damage: ${rawData.getFloat(1036)}%" }
+        logger.debug { "Truck transmission damage: ${rawData.getFloat(1040) * 100}%" }
+        logger.debug { "Truck cabin damage: ${rawData.getFloat(1044) * 100}%" }
+        logger.debug { "Truck chassis damage: ${rawData.getFloat(1048) * 100}%" }
+        logger.debug { "Truck wheel damage: ${rawData.getFloat(1052) * 100}%" }
 
-        logger.debug { "Truck odometer: ${rawData.getFloat(860)}" }
+        logger.debug { "Truck odometer: ${rawData.getFloat(1056)}Km" }
 
-        logger.debug { "Navigation distance: ${rawData.getFloat(864)}" }
-        logger.debug { "Navigation time: ${rawData.getFloat(868)}" }
-        logger.debug { "Navigation speed limit: ${rawData.getSpeedFloat(872)}" }
+        logger.debug { "Navigation distance: ${rawData.getFloat(1060)}Km" }
+        logger.debug { "Navigation time: ${rawData.getFloat(1064)}" }
+        logger.debug { "Navigation speed limit: ${rawData.getSpeedFloat(1068)}km/h" }
 
-        logger.debug { "Truck wheels suspension deflection ${rawData.getFloat(876)}" }
-        logger.debug { "Truck wheels velocity: ${rawData.getFloat(880)}" }
-        logger.debug { "Truck wheels steering: ${rawData.getFloat(884)}" }
-        logger.debug { "Truck wheels rotation: ${rawData.getFloat(888)}" }
-        logger.debug { "Truck wheels lift: ${rawData.getFloat(892)}" }
-        logger.debug { "Truck wheels lift offset: ${rawData.getFloat(896)}" }
 
-        logger.debug { "Event job delivered cargo damage: ${rawData.getFloat(900)}" }
-        logger.debug { "Event job delivered distance: ${rawData.getUInt(904)}" }
-        logger.debug { "Event refuel paid amount: ${rawData.getFloat(908)}" }
+        logger.debug { "Truck wheels suspension deflection ${rawData.getFloatArray(1072, Constants.WHEEL_SIZE)}" }
 
-        logger.debug { "Job cargo damage: ${rawData.getFloat(912)}" }
+        logger.debug { "Truck wheels velocity: ${rawData.getFloatArray(1136, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels steering: ${rawData.getFloatArray(1200, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels rotation: ${rawData.getFloatArray(1264, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels lift: ${rawData.getFloatArray(1328, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels lift offset: ${rawData.getFloatArray(1392, Constants.WHEEL_SIZE)}" }
 
+
+        logger.debug { "Event job delivered cargo damage: ${rawData.getFloat(1456)}" }
+        logger.debug { "Event job delivered distance: ${rawData.getUInt(1460)}" }
+        logger.debug { "Event refuel paid amount: ${rawData.getFloat(1464)}" }
+
+
+        logger.debug { "Job cargo damage: ${rawData.getFloat(1468)}" }
+        */
+
+        //TODO: Test & correct sections
         //5th section
         logger.debug { "Truck wheels steerable: ${rawData.getBool(1500)}" }
         logger.debug { "Truck wheels simulated: ${rawData.getBool(1504)}" }
         logger.debug { "Truck wheels powered: ${rawData.getBool(1508)}" }
         logger.debug { "Truck wheels liftable: ${rawData.getBool(1512)}" }
 
+        /*
         logger.debug { "Job cargo isLoaded: ${rawData.getBool(1516)}" }
         logger.debug { "Job is special: ${rawData.getBool(1520)}" }
 
@@ -242,6 +259,7 @@ class ScsShareMemory(
 
         //6th section
 
+         */
     }
 
 }

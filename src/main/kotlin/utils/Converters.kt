@@ -13,10 +13,10 @@ fun ByteArray.getUInt(index: Int) =
     ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).int.toUInt()
 
 fun ByteArray.getFloat(index: Int) =
-    ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).float
+    ByteBuffer.wrap(this, index, Float.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).float
 
 @OptIn(ExperimentalUnsignedTypes::class)
-fun ByteArray.getUIntArray(index: Int, count: Int): UIntArray {
+fun ByteArray.getUIntArray(index: Int, count: Int): ArrayList<UInt> {
 
     val uIntArray = arrayListOf<UInt>()
     var innerIndex = index
@@ -25,7 +25,18 @@ fun ByteArray.getUIntArray(index: Int, count: Int): UIntArray {
         innerIndex += Int.SIZE_BYTES
     }
 
-    return uIntArray.toUIntArray()
+    return uIntArray
+}
+
+fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float> {
+    val floatArray = arrayListOf<Float>()
+    var innerIndex = index
+
+    (0 until count).forEach { _ ->
+        floatArray.add(getFloat(innerIndex))
+        innerIndex += Int.SIZE_BYTES
+    }
+    return floatArray
 }
 
 /**
