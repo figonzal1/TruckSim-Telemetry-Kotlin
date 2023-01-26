@@ -39,6 +39,18 @@ fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float> {
     return floatArray
 }
 
+fun ByteArray.getBoolArray(index: Int, count: Int): ArrayList<Boolean> {
+    val booleanArray = arrayListOf<Boolean>()
+    var innerIndex = index
+
+    (0 until count).forEach { _ ->
+        booleanArray.add(getBool(innerIndex))
+        innerIndex++
+    }
+    return booleanArray
+}
+
+
 /**
  * Get gameType depending on the uInt value
  */

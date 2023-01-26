@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="5th section parsing added">
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Some corrections in sections &amp; added support for floatArray">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" afterDir="false" />
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674606093308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Some corrections in sections &amp; added support for floatArray">
+      <created>1674710512767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674710512767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +171,8 @@
     <MESSAGE value="Added more parsed values from byteArray" />
     <MESSAGE value="4th section finished, (parsed but not tested)" />
     <MESSAGE value="5th section parsing added" />
-    <option name="LAST_COMMIT_MESSAGE" value="5th section parsing added" />
+    <MESSAGE value="Some corrections in sections &amp; added support for floatArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some corrections in sections &amp; added support for floatArray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
