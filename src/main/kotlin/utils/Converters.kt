@@ -61,3 +61,9 @@ fun getGameType(uInt: UInt) = when (uInt) {
 }
 
 fun ByteArray.getSpeedFloat(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
+
+fun ByteArray.getFloatVector(index: Int) = arrayListOf(
+    getFloat(index),
+    getFloat(index + 4),
+    getFloat(index + 8)
+)

@@ -244,14 +244,30 @@ class ScsShareMemory(
         logger.debug { "Truck differential lock enabled: ${rawData.getBool(1608)}" }
         logger.debug { "Truck liftAxle enabled: ${rawData.getBool(1609)}" }
         logger.debug { "Truck liftAxle indicator enabled: ${rawData.getBool(1610)}" }
-        logger.debug { "Trailer liftAxle enabled: ${rawData.getBool(1640)}" }
-        logger.debug { "Trailer liftAxle indicator enabled: ${rawData.getBool(1644)}" }
-        logger.debug { "Events job delivered auto-parked: ${rawData.getBool(1645)}" }
-        logger.debug { "Events job started autoloader: ${rawData.getBool(1646)}" }
+        logger.debug { "Trailer liftAxle enabled: ${rawData.getBool(1611)}" }
+        logger.debug { "Trailer liftAxle indicator enabled: ${rawData.getBool(1612)}" }
+        logger.debug { "Events job delivered auto-parked: ${rawData.getBool(1613)}" }
+        logger.debug { "Events job started autoloader: ${rawData.getBool(1614)}" }
+
+        //6th section
+        logger.debug { "Truck positioning cabin: ${rawData.getFloatVector(1640)}" }
+        logger.debug { "Truck positioning head: ${rawData.getFloatVector(1652)}" }
+        logger.debug { "Truck positioning hook: ${rawData.getFloatVector(1664)}" }
+
+        logger.debug { "Truck wheels position X: ${rawData.getFloatArray(1676, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels position Y: ${rawData.getFloatArray(1740, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck wheels position Z: ${rawData.getFloatArray(1804, Constants.WHEEL_SIZE)}" }
+
+        //Velocity values
+        logger.debug { "Linear velocity: ${rawData.getFloatVector(1868)}"}
+        logger.debug { "Angular velocity: ${rawData.getFloatVector(1880)}"}
+
+        //Acceleration
+        logger.debug { "Linear acceleration: ${rawData.getFloatVector(1892)}"}
+        logger.debug { "Angular acceleration: ${rawData.getFloatVector(1904)}"}
 
          */
 
-        //6th section
 
     }
 
