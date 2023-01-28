@@ -266,9 +266,60 @@ class ScsShareMemory(
         logger.debug { "Linear acceleration: ${rawData.getFloatVector(1892)}"}
         logger.debug { "Angular acceleration: ${rawData.getFloatVector(1904)}"}
 
+        //7th section
+        logger.debug { "Truck cabin offset position: ${rawData.getFloatVector(2000)}" }
+        logger.debug { "Truck cabin offset orientation: ${rawData.getFloatVector(2012)}" }
+        logger.debug { "Truck head offset position: ${rawData.getFloatVector(2024)}" }
+        logger.debug { "Truck head offset orientation: ${rawData.getFloatVector(2036)}" }
+
+        //8th section
+        logger.debug { "Truck position: ${rawData.getDoubleVector(2200)}" }
+        logger.debug { "Truck orientation: ${rawData.getDoubleVector(2224)}" }
+
+        //9th section
+        logger.debug { "Truck brand id: ${rawData.getString(2300)}" }
+        logger.debug { "Truck brand name: ${rawData.getString(2364)}" }
+        logger.debug { "Truck id: ${rawData.getString(2428)}" }
+        logger.debug { "Truck model name: ${rawData.getString(2492)}" }
+
+        logger.debug { "Job cargo id: ${rawData.getString(2556)}" }
+        logger.debug { "Job cargo name: ${rawData.getString(2620)}" }
+
+        logger.debug { "Job cargo destination id: ${rawData.getString(2684)}" }
+        logger.debug { "Job cargo destination name: ${rawData.getString(2748)}" }
+        logger.debug { "Job cargo company destination id: ${rawData.getString(2812)}" }
+        logger.debug { "Job cargo company destination name: ${rawData.getString(2876)}" }
+
+        logger.debug { "Job cargo city source id: ${rawData.getString(2940)}" }
+        logger.debug { "Job cargo city source name: ${rawData.getString(3004)}" }
+
+        logger.debug { "Job cargo company source id: ${rawData.getString(3068)}" }
+        logger.debug { "Job cargo company source name: ${rawData.getString(3132)}" }
+
+        logger.debug { "Type shift: ${rawData.getString(3196, 16)}" }
+
+        logger.debug { "License Plate: ${rawData.getString(3212)}" }
+        logger.debug { "License Plate Country id: ${rawData.getString(3276)}" }
+        logger.debug { "License Plate Country name: ${rawData.getString(3340)}" }
+
+        logger.debug { "Job market: ${rawData.getString(3404, 32)}" }
+        logger.debug { "Fined Event Offence: ${rawData.getString(3436, 32)}" }
+
+        //ferry
+        logger.debug { "Ferry source name: ${rawData.getString(3468)}" }
+        logger.debug { "Ferry target name: ${rawData.getString(3532)}" }
+        logger.debug { "Ferry source id: ${rawData.getString(3596)}" }
+        logger.debug { "Ferry target id: ${rawData.getString(3660)}" }
+
+        //Train
+        logger.debug { "Train source name: ${rawData.getString(3724)}" }
+        logger.debug { "Train target name: ${rawData.getString(3788)}" }
+        logger.debug { "Train source id: ${rawData.getString(3852)}" }
+        logger.debug { "Train target id: ${rawData.getString(3916)}" }+
+
          */
 
-
+        //10th section
     }
 
 }
