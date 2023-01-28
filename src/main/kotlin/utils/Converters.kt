@@ -16,6 +16,9 @@ fun ByteArray.getString(index: Int, length: Int = Constants.STRING_SIZE): String
 fun ByteArray.getUInt(index: Int) =
     ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).int.toUInt()
 
+fun ByteArray.getULong(index: Int) =
+    ByteBuffer.wrap(this, index, Long.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).long.toULong()
+
 fun ByteArray.getFloat(index: Int) =
     ByteBuffer.wrap(this, index, Float.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).float
 

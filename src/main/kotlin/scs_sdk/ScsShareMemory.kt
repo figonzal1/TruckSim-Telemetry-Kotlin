@@ -7,6 +7,7 @@ import utils.Constants
 import utils.exceptions.ReadMemoryException
 import utils.getBool
 import utils.getUInt
+import utils.getULong
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -320,6 +321,19 @@ class ScsShareMemory(
          */
 
         //10th section
+        logger.debug { "Job income: $${rawData.getULong(4000)}" }
+
+        //11th section
+        logger.debug { "Job cancelled penalty: ${rawData.getULong(4200)}" }
+        logger.debug { "Job delivered revenue: ${rawData.getULong(4208)}" }
+        logger.debug { "Job fined event amount: ${rawData.getULong(4216)}" }
+        logger.debug { "Job tollgate event pay amount: ${rawData.getULong(4224)}" }
+        logger.debug { "Job ferry event pay amount: ${rawData.getULong(4232)}" }
+        logger.debug { "Job train event pay amount: ${rawData.getULong(4240)}" }
+
+        //12th section
+
+
     }
 
 }
