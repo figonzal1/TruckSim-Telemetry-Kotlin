@@ -11,4 +11,5 @@ object Constants {
 
     const val WHEEL_SIZE = 16
     const val STRING_SIZE: Int = 64
+    const val SUBSTANCES: Int = 25
 }

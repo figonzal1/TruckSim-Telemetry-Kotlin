@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="9th section parsed &amp; new functions to parse string from byteArray">
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="10th &amp; 11th section parsed &amp; added new function for long types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +95,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Colors&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="scs_sdk" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -173,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674879578634</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="10th &amp; 11th section parsed &amp; added new function for long types">
+      <created>1674883857568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674883857568</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +209,8 @@
     <MESSAGE value="5th section with correct indexes, 5th section totally parsed" />
     <MESSAGE value="6th section parsed &amp; new floatVector function" />
     <MESSAGE value="9th section parsed &amp; new functions to parse string from byteArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="9th section parsed &amp; new functions to parse string from byteArray" />
+    <MESSAGE value="10th &amp; 11th section parsed &amp; added new function for long types" />
+    <option name="LAST_COMMIT_MESSAGE" value="10th &amp; 11th section parsed &amp; added new function for long types" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

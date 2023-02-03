@@ -7,7 +7,6 @@ import utils.Constants
 import utils.exceptions.ReadMemoryException
 import utils.getBool
 import utils.getUInt
-import utils.getULong
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -318,7 +317,7 @@ class ScsShareMemory(
         logger.debug { "Train source id: ${rawData.getString(3852)}" }
         logger.debug { "Train target id: ${rawData.getString(3916)}" }+
 
-         */
+
 
         //10th section
         logger.debug { "Job income: $${rawData.getULong(4000)}" }
@@ -332,8 +331,75 @@ class ScsShareMemory(
         logger.debug { "Job train event pay amount: ${rawData.getULong(4240)}" }
 
         //12th section
+        logger.debug { "Special event on job: ${rawData.getBool(4300)}" }
+        logger.debug { "Special event job finished: ${rawData.getBool(4301)}" }
+        logger.debug { "Special event job delivered: ${rawData.getBool(4302)}" }
+        logger.debug { "Special event fined: ${rawData.getBool(4303)}" }
+        logger.debug { "Special event tollgate: ${rawData.getBool(4304)}" }
+        logger.debug { "Special event ferry: ${rawData.getBool(4305)}" }
+        logger.debug { "Special event train: ${rawData.getBool(4306)}" }
 
+        logger.debug { "Special event refuel: ${rawData.getBool(4307)}" }
+        logger.debug { "Special event refuel payed: ${rawData.getBool(4308)}" }
 
+        //13th section
+        var innerIndex = 4400
+        for (i in 0 until Constants.SubStances) {
+            val temp = rawData.getString(innerIndex)
+            if (temp.isNotEmpty()) {
+                logger.debug { "Substances: $temp" }
+            }
+            innerIndex += Constants.STRING_SIZE
+        }
+
+        //14th section
+        logger.debug { "Trailer wheels steerable: ${rawData.getBoolArray(6000, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels simulated: ${rawData.getBoolArray(6016, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels powered: ${rawData.getBoolArray(6032, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels liftable: ${rawData.getBoolArray(6048, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels on ground: ${rawData.getBoolArray(6064, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer attached: ${rawData.getBool(6080)}" }
+
+        logger.debug { "Trailer Wheels substance: ${rawData.getUIntArray(6084, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer Wheels count: ${rawData.getUInt(6148)}" }
+
+        logger.debug { "Trailer cargo damage: ${rawData.getFloat(6152) * 100}%" }
+        logger.debug { "Trailer chassis damage: ${rawData.getFloat(6156) * 100}%" }
+        logger.debug { "Trailer wheels damage: ${rawData.getFloat(6160) * 100}%" }
+        logger.debug { "Trailer body damage: ${rawData.getFloat(6164) * 100}%" }
+
+        logger.debug { "Trailer wheel suspension deflection ${rawData.getFloatArray(6168, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel velocity ${rawData.getFloatArray(6232, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel steering ${rawData.getFloatArray(6292, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel rotation ${rawData.getFloatArray(6360, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel lift ${rawData.getFloatArray(6424, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel liftOffset ${rawData.getFloatArray(6488, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheel radius ${rawData.getFloatArray(6552, Constants.WHEEL_SIZE)}" }
+
+        logger.debug { "Trailer linear velocity: ${rawData.getFloatVector(6616)}"}
+        logger.debug { "Trailer angular velocity: ${rawData.getFloatVector(6628)}"}
+        logger.debug { "Trailer linear acceleration: ${rawData.getFloatVector(6640)}"}
+        logger.debug { "Trailer angular acceleration: ${rawData.getFloatVector(6652)}"}
+        logger.debug { "Trailer positioning hook: ${rawData.getFloatVector(6664)}" }
+
+        logger.debug { "Trailer wheels position X: ${rawData.getFloatArray(6676, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels position Y: ${rawData.getFloatArray(6740, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Trailer wheels position Z: ${rawData.getFloatArray(6804, Constants.WHEEL_SIZE)}" }
+
+        logger.debug { "Truck position: ${rawData.getDoubleVector(6872)}" }
+        logger.debug { "Truck orientation: ${rawData.getDoubleVector(6896)}" }
+        logger.debug { "Trailer model id: ${rawData.getString(6920)}" }
+        logger.debug { "Trailer accessory id: ${rawData.getString(6984)}" }
+        logger.debug { "Trailer body type: ${rawData.getString(7048)}" }
+        logger.debug { "Trailer maker id: ${rawData.getString(7112)}" }
+        logger.debug { "Trailer maker name: ${rawData.getString(7176)}" }
+        logger.debug { "Trailer model name: ${rawData.getString(7240)}" }
+        logger.debug { "Trailer chain type: ${rawData.getString(7304)}" }
+
+        logger.debug { "Trailer License Plate: ${rawData.getString(7368)}" }
+        logger.debug { "Trailer License Plate Country id: ${rawData.getString(7432)}" }
+        logger.debug { "Trailer License Plate Country name: ${rawData.getString(7496)}" }
+
+         */
     }
-
 }

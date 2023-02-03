@@ -64,7 +64,7 @@ private fun ByteArray.getSubStringArray(index: Int, length: Int): ArrayList<Byte
     val list = arrayListOf<Byte>()
     var innerIndex = index
 
-    (0 until length).forEach { i ->
+    (0 until length).forEach { _ ->
         if (this[innerIndex].toInt() != 0) {
             list.add(this[innerIndex])
         }
