@@ -1,6 +1,4 @@
-package scs_sdk.model
-
-import java.time.LocalDateTime
+package scs_sdk.model.game
 
 /**
  * Class that hold general information about the game
@@ -35,8 +33,4 @@ data class Game(
     val time: GameTime,
     val maxTrailerCount: Int,
     val scale: Int
-)
-
-data class GameTime(
-    val value: LocalDateTime
 )

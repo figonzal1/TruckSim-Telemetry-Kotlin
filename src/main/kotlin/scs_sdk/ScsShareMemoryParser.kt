@@ -3,11 +3,17 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import scs_sdk.model.Controls
-import scs_sdk.model.ControlsType.ControlsGame
-import scs_sdk.model.ControlsType.ControlsInput
-import scs_sdk.model.Game
 import scs_sdk.model.TelemetryData
+import scs_sdk.model.controls.Controls
+import scs_sdk.model.controls.ControlsType
+import scs_sdk.model.game.Game
+import scs_sdk.model.job.CityType.CityDestination
+import scs_sdk.model.job.CityType.CitySource
+import scs_sdk.model.job.CompanyType.CompanyDestination
+import scs_sdk.model.job.CompanyType.CompanySource
+import scs_sdk.model.job.Job
+import scs_sdk.model.job.JobCargo
+import scs_sdk.model.job.JobLocation
 import utils.*
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
@@ -51,33 +57,11 @@ class ScsShareMemoryParser(
 
     suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
 
-        val game = Game(
-            sdkActive = rawData.getBool(0),
-            paused = rawData.getBool(4),
-            pluginVersion = rawData.getUInt(40).toInt(),
-            version = getVersion(rawData.getUInt(44), rawData.getUInt(48)),
-            game = getGameType(rawData.getUInt(52)),
-            telemetryVersion = getVersion(rawData.getUInt(56), rawData.getUInt(60)),
-            time = getGameTime(rawData.getUInt(64).toDouble()),
-            maxTrailerCount = rawData.getUInt(92).toInt(),
-            scale = rawData.getFloat(700).toInt()
-        )
+        val game = game()
+        val controls = controls()
+        val job = job()
 
-        val controls = Controls(
-            input = ControlsInput(
-                steering = rawData.getFloat(956),
-                throttle = rawData.getFloat(960),
-                brake = rawData.getFloat(964),
-                clutch = rawData.getFloat(968),
-            ),
-            game = ControlsGame(
-                steering = rawData.getFloat(972),
-                throttle = rawData.getFloat(976),
-                brake = rawData.getFloat(980),
-                clutch = rawData.getFloat(984)
-            )
-        )
-        callBack(TelemetryData(game, controls))
+        callBack(TelemetryData(game, controls, job))
 
 
         //First byte section
@@ -433,4 +417,56 @@ class ScsShareMemoryParser(
 
          */
     }
+
+    private fun game() = Game(
+        sdkActive = rawData.getBool(0),
+        paused = rawData.getBool(4),
+        pluginVersion = rawData.getUInt(40).toInt(),
+        version = getVersion(rawData.getUInt(44), rawData.getUInt(48)),
+        game = getGameType(rawData.getUInt(52)),
+        telemetryVersion = getVersion(rawData.getUInt(56), rawData.getUInt(60)),
+        time = getGameTime(rawData.getUInt(64).toDouble()),
+        maxTrailerCount = rawData.getUInt(92).toInt(),
+        scale = rawData.getFloat(700).toInt()
+    )
+
+    private fun controls() = Controls(
+        input = ControlsType.ControlsInput(
+            steering = rawData.getFloat(956),
+            throttle = rawData.getFloat(960),
+            brake = rawData.getFloat(964),
+            clutch = rawData.getFloat(968),
+        ),
+        game = ControlsType.ControlsGame(
+            steering = rawData.getFloat(972),
+            throttle = rawData.getFloat(976),
+            brake = rawData.getFloat(980),
+            clutch = rawData.getFloat(984)
+        )
+    )
+
+    private fun job() = Job(
+        source = JobLocation(
+            jobCity = CitySource(rawData.getString(2940), rawData.getString(3004)),
+            jobCompany = CompanySource(rawData.getString(3068), rawData.getString(3132))
+        ),
+        destination = JobLocation(
+            jobCity = CityDestination(rawData.getString(2684), rawData.getString(2748)),
+            jobCompany = CompanyDestination(rawData.getString(2812), rawData.getString(2876))
+        ),
+        cargo = JobCargo(
+            id = rawData.getString(2556),
+            name = rawData.getString(2620),
+            mass = rawData.getFloat(748),
+            unitMass = rawData.getFloat(944),
+            damage = rawData.getFloat(6152),
+            isLoaded = rawData.getBool(1564)
+        ),
+        //TODO: CHECK EXPECTED DELIVERY TIMESTAMP
+        expectedDeliveryTimestamp = rawData.getUInt(88).toInt(),
+        plannedDistance = rawData.getUInt(100).toInt(),
+        income = rawData.getULong(4000).toLong(),
+        market = rawData.getString(3404, 32),
+        isSpecial = rawData.getBool(1565)
+    )
 }

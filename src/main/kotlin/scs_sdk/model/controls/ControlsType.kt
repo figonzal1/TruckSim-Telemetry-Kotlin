@@ -1,22 +1,4 @@
-package scs_sdk.model
-
-import scs_sdk.model.ControlsType.ControlsGame
-import scs_sdk.model.ControlsType.ControlsInput
-
-
-/**
- * Class that hold information about player controls
- *
- * @author Felipe Gonzalez
- *
- * @property input controls
- * @property game controls
- *
- */
-data class Controls(
-    val input: ControlsInput,
-    val game: ControlsGame
-)
+package scs_sdk.model.controls
 
 /**
  * Model that hold controls type [ControlsInput|ControlsGame]

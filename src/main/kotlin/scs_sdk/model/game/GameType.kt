@@ -1,4 +1,4 @@
-package scs_sdk.model
+package scs_sdk.model.game
 
 enum class GameType {
     UNKNOWN,

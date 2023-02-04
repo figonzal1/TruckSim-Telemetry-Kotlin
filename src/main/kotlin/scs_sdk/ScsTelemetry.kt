@@ -4,7 +4,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import mu.KotlinLogging
-import scs_sdk.model.Game
+import scs_sdk.model.game.Game
 import utils.Constants
 import utils.exceptions.ReadMemoryException
 

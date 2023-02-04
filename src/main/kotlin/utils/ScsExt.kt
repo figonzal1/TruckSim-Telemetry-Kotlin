@@ -1,7 +1,7 @@
 package utils
 
-import scs_sdk.model.GameTime
-import scs_sdk.model.GameType
+import scs_sdk.model.game.GameTime
+import scs_sdk.model.game.GameType
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.math.floor

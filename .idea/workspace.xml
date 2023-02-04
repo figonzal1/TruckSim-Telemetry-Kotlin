@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="parsing 12-13 &amp; 14th byte section">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/Controls.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/Game.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/TelemetryData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/ScsExt.kt" afterDir="false" />
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Improve parsing for game data &amp; controls data">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/controls/ControlsType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/game/GameTime.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/job/CityType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/job/CompanyType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/job/Job.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/job/JobCargo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/job/JobLocation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemoryParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemoryParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemoryParser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/BytesExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/Controls.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/controls/Controls.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/game/Game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/GameType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/game/GameType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/TelemetryData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/TelemetryData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/ScsExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/ScsExt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +68,8 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -103,6 +109,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\controls" />
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\job" />
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\game" />
       <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -202,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675400662099</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Improve parsing for game data &amp; controls data">
+      <created>1675486240348</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675486240348</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +243,9 @@
     <MESSAGE value="9th section parsed &amp; new functions to parse string from byteArray" />
     <MESSAGE value="10th &amp; 11th section parsed &amp; added new function for long types" />
     <MESSAGE value="parsing 12-13 &amp; 14th byte section" />
-    <option name="LAST_COMMIT_MESSAGE" value="parsing 12-13 &amp; 14th byte section" />
+    <MESSAGE value="Improve parsing for game &amp; controls" />
+    <MESSAGE value="Improve parsing for game data &amp; controls data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve parsing for game data &amp; controls data" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
