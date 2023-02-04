@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/jna/Ets2Kernel32.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/jna/Ets2Kernel32Impl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/Converters.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsTelemetry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Constants.kt" afterDir="false" />
+    <list default="true" id="10f3d61d-a682-4387-b31c-f45e903afa8f" name="Changes" comment="Improve parsing for job data">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/model/navigation/Navigation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemoryParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/scs_sdk/ScsShareMemoryParser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/BytesExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/BytesExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/ScsExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/ScsExt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +56,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="figonzal1 &lt;felipe.gonzalezalarcon94@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,15 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Colors&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\controls" />
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\job" />
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model\game" />
+      <recent name="D:\figon\Documentos\GithubProjects\Webs\ETS2-Telemetry\src\main\kotlin\scs_sdk\model" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="scs_sdk" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -114,7 +138,91 @@
       <option name="project" value="LOCAL" />
       <updated>1670471402091</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added more parsed values from byteArray">
+      <created>1674533838390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674533838390</updated>
+    </task>
+    <task id="LOCAL-00003" summary="4th section finished, (parsed but not tested)">
+      <created>1674592099469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674592099469</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5th section parsing added">
+      <created>1674606093308</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674606093308</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Some corrections in sections &amp; added support for floatArray">
+      <created>1674710512767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674710512767</updated>
+    </task>
+    <task id="LOCAL-00006" summary="5th section with correct indexes, 5th section totally parsed">
+      <created>1674775700837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674775700837</updated>
+    </task>
+    <task id="LOCAL-00007" summary="6th section parsed &amp; new floatVector function">
+      <created>1674780304430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674780304430</updated>
+    </task>
+    <task id="LOCAL-00008" summary="9th section parsed &amp; new functions to parse string from byteArray">
+      <created>1674879578633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674879578634</updated>
+    </task>
+    <task id="LOCAL-00009" summary="10th &amp; 11th section parsed &amp; added new function for long types">
+      <created>1674883857568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674883857568</updated>
+    </task>
+    <task id="LOCAL-00010" summary="parsing 12-13 &amp; 14th byte section">
+      <created>1675400662099</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675400662099</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Improve parsing for game data &amp; controls data">
+      <created>1675486240348</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675486240348</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Improve parsing for job data">
+      <created>1675522873477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675522873477</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Improve parsing for job data">
+      <created>1675522958884</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675522958884</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,8 +237,25 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added more parsed values from byteArray" />
+    <MESSAGE value="4th section finished, (parsed but not tested)" />
+    <MESSAGE value="5th section parsing added" />
+    <MESSAGE value="Some corrections in sections &amp; added support for floatArray" />
+    <MESSAGE value="5th section with correct indexes, 5th section totally parsed" />
+    <MESSAGE value="6th section parsed &amp; new floatVector function" />
+    <MESSAGE value="9th section parsed &amp; new functions to parse string from byteArray" />
+    <MESSAGE value="10th &amp; 11th section parsed &amp; added new function for long types" />
+    <MESSAGE value="parsing 12-13 &amp; 14th byte section" />
+    <MESSAGE value="Improve parsing for game &amp; controls" />
+    <MESSAGE value="Improve parsing for game data &amp; controls data" />
+    <MESSAGE value="Improve parsing for job data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve parsing for job data" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

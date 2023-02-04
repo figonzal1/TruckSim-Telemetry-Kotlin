@@ -14,6 +14,9 @@ repositories {
 
 dependencies {
 
+    //Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
     //JNA
     implementation("net.java.dev.jna:jna-platform:5.12.1")
 
