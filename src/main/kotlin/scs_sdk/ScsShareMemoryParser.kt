@@ -14,6 +14,7 @@ import scs_sdk.model.job.CompanyType.CompanySource
 import scs_sdk.model.job.Job
 import scs_sdk.model.job.JobCargo
 import scs_sdk.model.job.JobLocation
+import scs_sdk.model.navigation.Navigation
 import utils.*
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
@@ -60,8 +61,9 @@ class ScsShareMemoryParser(
         val game = game()
         val controls = controls()
         val job = job()
+        val navigation = navigation()
 
-        callBack(TelemetryData(game, controls, job))
+        callBack(TelemetryData(game, controls, job, navigation))
 
 
         //First byte section
@@ -418,6 +420,7 @@ class ScsShareMemoryParser(
          */
     }
 
+
     private fun game() = Game(
         sdkActive = rawData.getBool(0),
         paused = rawData.getBool(4),
@@ -468,5 +471,12 @@ class ScsShareMemoryParser(
         income = rawData.getULong(4000).toLong(),
         market = rawData.getString(3404, 32),
         isSpecial = rawData.getBool(1565)
+    )
+
+    private fun navigation() = Navigation(
+        nextRestStop = rawData.getUInt(500).toInt(),
+        distance = rawData.getFloat(1060),
+        time = rawData.getFloat(1064),
+        speedLimit = rawData.getSpeedLong(1068)
     )
 }

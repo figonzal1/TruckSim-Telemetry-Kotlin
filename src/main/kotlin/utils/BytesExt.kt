@@ -96,4 +96,4 @@ fun ByteArray.getDoubleVector(index: Int) = arrayListOf(
     getDouble(index + 16)
 )
 
-fun ByteArray.getSpeedFloat(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
+fun ByteArray.getSpeedLong(index: Int) = abs(getFloat(index) * 3.6).roundToLong()

@@ -62,3 +62,10 @@ fun GameTime.formatGameTime(): String {
     val value = this.value
     return "${value.dayOfWeek}, ${DateTimeFormatter.ofPattern("HH:MM")}"
 }
+
+/*
+fun getNextRestStop(uInt: UInt): Long {
+    val hour = uInt.toInt() / 60
+    val minutes = uInt.toInt() % 60
+    logger.debug { "Navigation, nextRestStop: ${hour}h ${minutes}min" }
+}*/
