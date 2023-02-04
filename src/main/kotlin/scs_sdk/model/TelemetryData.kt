@@ -18,5 +18,6 @@ data class TelemetryData(
     val game: Game,
     val controls: Controls,
     val job: Job,
-    val navigation: Navigation
+    val navigation: Navigation,
+    val substances: Substances
 )

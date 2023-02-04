@@ -3,6 +3,7 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
+import scs_sdk.model.Substances
 import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
@@ -62,8 +63,9 @@ class ScsShareMemoryParser(
         val controls = controls()
         val job = job()
         val navigation = navigation()
+        val substances = substances()
 
-        callBack(TelemetryData(game, controls, job, navigation))
+        callBack(TelemetryData(game, controls, job, navigation, substances))
 
 
         //First byte section
@@ -420,7 +422,6 @@ class ScsShareMemoryParser(
          */
     }
 
-
     private fun game() = Game(
         sdkActive = rawData.getBool(0),
         paused = rawData.getBool(4),
@@ -432,6 +433,7 @@ class ScsShareMemoryParser(
         maxTrailerCount = rawData.getUInt(92).toInt(),
         scale = rawData.getFloat(700).toInt()
     )
+
 
     private fun controls() = Controls(
         input = ControlsType.ControlsInput(
@@ -478,5 +480,12 @@ class ScsShareMemoryParser(
         distance = rawData.getFloat(1060),
         time = rawData.getFloat(1064),
         speedLimit = rawData.getSpeedLong(1068)
+    )
+
+    private fun substances() = Substances(
+        linearVelocity = rawData.getFloatVector(1868),
+        angularVelocity = rawData.getFloatVector(1880),
+        linearAcceleration = rawData.getFloatVector(1892),
+        angularAcceleration = rawData.getFloatVector(1904)
     )
 }
