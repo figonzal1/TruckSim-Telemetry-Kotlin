@@ -4,6 +4,7 @@ import scs_sdk.model.controls.Controls
 import scs_sdk.model.game.Game
 import scs_sdk.model.job.Job
 import scs_sdk.model.navigation.Navigation
+import scs_sdk.model.substances.Substances
 
 /**
  * Main data class for telemetry data

@@ -3,7 +3,6 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import scs_sdk.model.Substances
 import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
@@ -16,6 +15,8 @@ import scs_sdk.model.job.Job
 import scs_sdk.model.job.JobCargo
 import scs_sdk.model.job.JobLocation
 import scs_sdk.model.navigation.Navigation
+import scs_sdk.model.substances.Substances
+import scs_sdk.model.substances.Velocity
 import utils.*
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
@@ -482,10 +483,18 @@ class ScsShareMemoryParser(
         speedLimit = rawData.getSpeedLong(1068)
     )
 
-    private fun substances() = Substances(
-        linearVelocity = rawData.getFloatVector(1868),
-        angularVelocity = rawData.getFloatVector(1880),
-        linearAcceleration = rawData.getFloatVector(1892),
-        angularAcceleration = rawData.getFloatVector(1904)
-    )
+    private fun substances(): Substances {
+
+        val linearV = rawData.getFloatVector(1868)
+        val angularV = rawData.getFloatVector(1880)
+        val linearAcc = rawData.getFloatVector(1892)
+        val angularAcc = rawData.getFloatVector(1904)
+
+        return Substances(
+            linearVelocity = Velocity(linearV[0], linearV[1], linearV[2]),
+            angularVelocity = Velocity(angularV[0], angularV[1], angularV[2]),
+            linearAcceleration = Velocity(linearAcc[0], linearAcc[1], linearAcc[2]),
+            angularAcceleration = Velocity(angularAcc[0], angularAcc[1], angularAcc[2])
+        )
+    }
 }
