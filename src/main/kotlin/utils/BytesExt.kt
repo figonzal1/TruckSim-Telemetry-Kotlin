@@ -1,13 +1,18 @@
 package utils
 
-import scs_sdk.model.GameType
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.math.abs
 import kotlin.math.roundToLong
 
-
+/**
+ * Capture boolean values from bytes array
+ *
+ * @param index position of data on array
+ * @return True or False
+ */
 fun ByteArray.getBool(index: Int) = this[index] > 0
+
 fun ByteArray.getString(index: Int, length: Int = Constants.STRING_SIZE): String {
     val area = getSubStringArray(index, length).toByteArray()
     return String(area, Charsets.UTF_8).trim()
@@ -91,15 +96,4 @@ fun ByteArray.getDoubleVector(index: Int) = arrayListOf(
     getDouble(index + 16)
 )
 
-
-/**
- * Get gameType depending on the uInt value
- */
-fun getGameType(uInt: UInt) = when (uInt) {
-    1u -> GameType.ETS2
-    2u -> GameType.ATS
-    else -> GameType.UNKNOWN
-}
-
 fun ByteArray.getSpeedFloat(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
-

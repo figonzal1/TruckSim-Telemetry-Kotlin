@@ -3,17 +3,20 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import utils.Constants
+import scs_sdk.model.Controls
+import scs_sdk.model.ControlsType.ControlsGame
+import scs_sdk.model.ControlsType.ControlsInput
+import scs_sdk.model.Game
+import scs_sdk.model.TelemetryData
+import utils.*
 import utils.exceptions.ReadMemoryException
-import utils.getBool
-import utils.getUInt
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
 var offset = 0
 
-class ScsShareMemory(
+class ScsShareMemoryParser(
     private val ets2Kernel: Ets2Kernel32Impl
 ) {
     private var pointer: Pointer? = null
@@ -46,14 +49,42 @@ class ScsShareMemory(
         pointer?.read(0, rawData, 0, Constants.MAP_SIZE)
     }
 
-    suspend fun parseBytes(function: suspend (Boolean) -> Unit) {
+    suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
+
+        val game = Game(
+            sdkActive = rawData.getBool(0),
+            paused = rawData.getBool(4),
+            pluginVersion = rawData.getUInt(40).toInt(),
+            version = getVersion(rawData.getUInt(44), rawData.getUInt(48)),
+            game = getGameType(rawData.getUInt(52)),
+            telemetryVersion = getVersion(rawData.getUInt(56), rawData.getUInt(60)),
+            time = getGameTime(rawData.getUInt(64).toDouble()),
+            maxTrailerCount = rawData.getUInt(92).toInt(),
+            scale = rawData.getFloat(700).toInt()
+        )
+
+        val controls = Controls(
+            input = ControlsInput(
+                steering = rawData.getFloat(956),
+                throttle = rawData.getFloat(960),
+                brake = rawData.getFloat(964),
+                clutch = rawData.getFloat(968),
+            ),
+            game = ControlsGame(
+                steering = rawData.getFloat(972),
+                throttle = rawData.getFloat(976),
+                brake = rawData.getFloat(980),
+                clutch = rawData.getFloat(984)
+            )
+        )
+        callBack(TelemetryData(game, controls))
+
 
         //First byte section
-        val sdkActive = rawData.getBool(0)
-        function(sdkActive)
+        //val sdkActive = rawData.getBool(0)
         //logger.debug { "sdkActive: $sdkActive" }
 
-        val isPaused = rawData.getBool(4)
+        //val isPaused = rawData.getBool(4)
         //logger.debug { "isPaused: $isPaused" }
 
         //TODO: Check how to handle timestamp from shared memory
