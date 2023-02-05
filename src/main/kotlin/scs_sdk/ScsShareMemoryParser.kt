@@ -6,6 +6,8 @@ import mu.KotlinLogging
 import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
+import scs_sdk.model.events.job.EventsJob
+import scs_sdk.model.events.job.EventsJobType.*
 import scs_sdk.model.game.Game
 import scs_sdk.model.job.CityType.CityDestination
 import scs_sdk.model.job.CityType.CitySource
@@ -61,12 +63,15 @@ class ScsShareMemoryParser(
     suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
 
         val game = game()
+        val eventsJob = eventsJob()
         val controls = controls()
         val job = job()
         val navigation = navigation()
         val substances = substances()
 
-        callBack(TelemetryData(game, controls, job, navigation, substances))
+
+
+        callBack(TelemetryData(game, eventsJob, controls, job, navigation, substances))
 
 
         //First byte section
@@ -119,7 +124,9 @@ class ScsShareMemoryParser(
 
         //TODO: Check if the information is correct
         /*logger.debug { "Job delivered time taken: ${rawData.getUInt(440)}" }
+        logger.debug { "Job cancelled started timestamp: ${rawData.getUInt(444)}" }
         logger.debug { "Job delivered started timestamp: ${rawData.getUInt(444)}" }
+        logger.debug { "Job cancelled finished timestamp: ${rawData.getUInt(448)}" }
         logger.debug { "Job delivered finished timestamp: ${rawData.getUInt(448)}" }
          */
 
@@ -351,16 +358,17 @@ class ScsShareMemoryParser(
         logger.debug { "Job train event pay amount: ${rawData.getULong(4240)}" }
 
         //12th section
-        logger.debug { "Special event on job: ${rawData.getBool(4300)}" }
+        logger.debug { "Special event on job started: ${rawData.getBool(4300)}" }
         logger.debug { "Special event job finished: ${rawData.getBool(4301)}" }
-        logger.debug { "Special event job delivered: ${rawData.getBool(4302)}" }
-        logger.debug { "Special event fined: ${rawData.getBool(4303)}" }
-        logger.debug { "Special event tollgate: ${rawData.getBool(4304)}" }
-        logger.debug { "Special event ferry: ${rawData.getBool(4305)}" }
-        logger.debug { "Special event train: ${rawData.getBool(4306)}" }
+        logger.debug { "Special event job cancelled: ${rawData.getBool(4302)}" }
+        logger.debug { "Special event job delivered: ${rawData.getBool(4303)}" }
+        logger.debug { "Special event fined: ${rawData.getBool(4304)}" }
+        logger.debug { "Special event tollgate: ${rawData.getBool(4305)}" }
+        logger.debug { "Special event ferry: ${rawData.getBool(4306)}" }
+        logger.debug { "Special event train: ${rawData.getBool(4307)}" }
 
-        logger.debug { "Special event refuel: ${rawData.getBool(4307)}" }
-        logger.debug { "Special event refuel payed: ${rawData.getBool(4308)}" }
+        logger.debug { "Special event refuel: ${rawData.getBool(4308)}" }
+        logger.debug { "Special event refuel payed: ${rawData.getBool(4309)}" }
 
         //13th section
         var innerIndex = 4400
@@ -433,6 +441,32 @@ class ScsShareMemoryParser(
         time = getGameTime(rawData.getUInt(64).toDouble()),
         maxTrailerCount = rawData.getUInt(92).toInt(),
         scale = rawData.getFloat(700).toInt()
+    )
+
+    private fun eventsJob() = EventsJob(
+        delivered = EventsJobDelivered(
+            timeTaken = rawData.getUInt(440).toInt(),
+            startedTimeStamp = rawData.getUInt(444).toInt(),
+            deliveredTimeStamp = rawData.getUInt(448).toInt(),
+            earnedXP = rawData.getUInt(640).toInt(),
+            cargoDamage = rawData.getFloat(1456),
+            distance = rawData.getUInt(1460).toInt(),
+            autoParked = rawData.getBool(1613),
+            revenue = rawData.getULong(4208).toLong(),
+            active = rawData.getBool(4303)
+        ),
+        started = EventsJobStarted(
+            autoLoaded = rawData.getBool(1614),
+            active = rawData.getBool(4300)
+        ),
+        cancelled = EventsJobCancelled(
+            penalty = rawData.getULong(4200).toLong(),
+            active = rawData.getBool(4302),
+            startedTimeStamp = rawData.getUInt(444).toInt(),
+            cancelledTimestamp = rawData.getUInt(448).toInt()
+
+        ),
+        finished = EventsJobFinished(rawData.getBool(4301))
     )
 
 
