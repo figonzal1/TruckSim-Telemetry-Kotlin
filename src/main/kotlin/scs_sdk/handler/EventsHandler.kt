@@ -5,6 +5,8 @@ import scs_sdk.model.events.ferry.EventsFerry
 import scs_sdk.model.events.fine.EventsFine
 import scs_sdk.model.events.job.EventsJob
 import scs_sdk.model.events.job.EventsJobType.*
+import scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel
+import scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuelPaid
 import scs_sdk.model.events.tollgate.EventsTollgate
 import scs_sdk.model.events.train.EventsTrain
 import scs_sdk.model.utils.CityType.CityDestination
@@ -58,7 +60,11 @@ fun events(rawData: ByteArray) = with(rawData) {
         tollgate = EventsTollgate(
             amount = rawData.getULong(4224).toLong(),
             active = rawData.getBool(4305)
+        ),
+        refuel = EventsRefuel(rawData.getBool(4308)),
+        refuelPaid = EventsRefuelPaid(
+            amount = rawData.getFloat(1464),
+            active = rawData.getBool(4309)
         )
-        //TODO: Add missing objects ->tollgate, refuel. refuelPaid
     )
 }
