@@ -3,11 +3,10 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
+import scs_sdk.handler.controls
 import scs_sdk.handler.events
 import scs_sdk.handler.game
 import scs_sdk.model.TelemetryData
-import scs_sdk.model.controls.Controls
-import scs_sdk.model.controls.ControlsType
 import scs_sdk.model.job.Job
 import scs_sdk.model.job.JobCargo
 import scs_sdk.model.job.JobLocation
@@ -63,7 +62,7 @@ class ScsShareMemoryParser(
 
         val game = game(rawData)
         val events = events(rawData)
-        val controls = controls()
+        val controls = controls(rawData)
         val job = job()
         val navigation = navigation()
         val substances = substances()
@@ -430,25 +429,6 @@ class ScsShareMemoryParser(
          */
     }
 
-
-
-
-
-
-    private fun controls() = Controls(
-        input = ControlsType.ControlsInput(
-            steering = rawData.getFloat(956),
-            throttle = rawData.getFloat(960),
-            brake = rawData.getFloat(964),
-            clutch = rawData.getFloat(968),
-        ),
-        game = ControlsType.ControlsGame(
-            steering = rawData.getFloat(972),
-            throttle = rawData.getFloat(976),
-            brake = rawData.getFloat(980),
-            clutch = rawData.getFloat(984)
-        )
-    )
 
     private fun job() = Job(
         source = JobLocation(
