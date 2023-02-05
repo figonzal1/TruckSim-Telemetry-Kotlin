@@ -5,7 +5,9 @@ import scs_sdk.model.events.ferry.EventsFerry
 import scs_sdk.model.events.fine.EventsFine
 import scs_sdk.model.events.job.EventsJob
 import scs_sdk.model.events.job.EventsJobType.*
-import scs_sdk.model.utils.CityType
+import scs_sdk.model.events.train.EventsTrain
+import scs_sdk.model.utils.CityType.CityDestination
+import scs_sdk.model.utils.CityType.CitySource
 import utils.*
 
 fun events(rawData: ByteArray) = with(rawData) {
@@ -41,11 +43,17 @@ fun events(rawData: ByteArray) = with(rawData) {
             active = getBool(4304)
         ),
         ferry = EventsFerry(
-            source = CityType.CitySource(getString(3596), getString(3468)),
-            destination = CityType.CityDestination(getString(3660), getString(3532)),
+            source = CitySource(getString(3596), getString(3468)),
+            destination = CityDestination(getString(3660), getString(3532)),
             amount = getULong(4232).toLong(),
             active = getBool(4306)
         ),
-        //TODO: Add missing objects -> Train,tollgate, refuel. refuelPaid
+        train = EventsTrain(
+            source = CitySource(getString(3852), getString(3724)),
+            destination = CityDestination(getString(3916), getString(3788)),
+            amount = getULong(4240).toLong(),
+            active = getBool(4307)
+        )
+        //TODO: Add missing objects ->tollgate, refuel. refuelPaid
     )
 }
