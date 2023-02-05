@@ -3,15 +3,11 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
+import scs_sdk.handler.events
+import scs_sdk.handler.game
 import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
-import scs_sdk.model.events.Events
-import scs_sdk.model.events.ferry.EventsFerry
-import scs_sdk.model.events.fine.EventsFine
-import scs_sdk.model.events.job.EventsJob
-import scs_sdk.model.events.job.EventsJobType.*
-import scs_sdk.model.game.Game
 import scs_sdk.model.job.Job
 import scs_sdk.model.job.JobCargo
 import scs_sdk.model.job.JobLocation
@@ -65,8 +61,8 @@ class ScsShareMemoryParser(
 
     suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
 
-        val game = game()
-        val events = events()
+        val game = game(rawData)
+        val events = events(rawData)
         val controls = controls()
         val job = job()
         val navigation = navigation()
@@ -434,57 +430,9 @@ class ScsShareMemoryParser(
          */
     }
 
-    private fun game() = Game(
-        sdkActive = rawData.getBool(0),
-        paused = rawData.getBool(4),
-        pluginVersion = rawData.getUInt(40).toInt(),
-        version = getVersion(rawData.getUInt(44), rawData.getUInt(48)),
-        game = getGameType(rawData.getUInt(52)),
-        telemetryVersion = getVersion(rawData.getUInt(56), rawData.getUInt(60)),
-        time = getGameTime(rawData.getUInt(64).toDouble()),
-        maxTrailerCount = rawData.getUInt(92).toInt(),
-        scale = rawData.getFloat(700).toInt()
-    )
 
-    private fun events() = Events(
-        job = EventsJob(
-            delivered = EventsJobDelivered(
-                timeTaken = rawData.getUInt(440).toInt(),
-                startedTimeStamp = rawData.getUInt(444).toInt(),
-                deliveredTimeStamp = rawData.getUInt(448).toInt(),
-                earnedXP = rawData.getUInt(640).toInt(),
-                cargoDamage = rawData.getFloat(1456),
-                distance = rawData.getUInt(1460).toInt(),
-                autoParked = rawData.getBool(1613),
-                revenue = rawData.getULong(4208).toLong(),
-                active = rawData.getBool(4303)
-            ),
-            started = EventsJobStarted(
-                autoLoaded = rawData.getBool(1614),
-                active = rawData.getBool(4300)
-            ),
-            cancelled = EventsJobCancelled(
-                penalty = rawData.getULong(4200).toLong(),
-                active = rawData.getBool(4302),
-                startedTimeStamp = rawData.getUInt(444).toInt(),
-                cancelledTimestamp = rawData.getUInt(448).toInt()
 
-            ),
-            finished = EventsJobFinished(rawData.getBool(4301))
-        ),
-        fine = EventsFine(
-            offence = rawData.getString(3436, 32),
-            amount = rawData.getULong(4216).toLong(),
-            active = rawData.getBool(4304)
-        ),
-        ferry = EventsFerry(
-            source = CitySource(rawData.getString(3596), rawData.getString(3468)),
-            destination = CityDestination(rawData.getString(3660), rawData.getString(3532)),
-            amount = rawData.getULong(4232).toLong(),
-            active = rawData.getBool(4306)
 
-        )
-    )
 
 
     private fun controls() = Controls(
