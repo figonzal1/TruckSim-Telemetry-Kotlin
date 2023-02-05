@@ -6,17 +6,11 @@ import mu.KotlinLogging
 import scs_sdk.handler.controls
 import scs_sdk.handler.events
 import scs_sdk.handler.game
+import scs_sdk.handler.job
 import scs_sdk.model.TelemetryData
-import scs_sdk.model.job.Job
-import scs_sdk.model.job.JobCargo
-import scs_sdk.model.job.JobLocation
 import scs_sdk.model.navigation.Navigation
 import scs_sdk.model.substances.Substances
 import scs_sdk.model.substances.Velocity
-import scs_sdk.model.utils.CityType.CityDestination
-import scs_sdk.model.utils.CityType.CitySource
-import scs_sdk.model.utils.CompanyType.CompanyDestination
-import scs_sdk.model.utils.CompanyType.CompanySource
 import utils.*
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
@@ -63,7 +57,7 @@ class ScsShareMemoryParser(
         val game = game(rawData)
         val events = events(rawData)
         val controls = controls(rawData)
-        val job = job()
+        val job = job(rawData)
         val navigation = navigation()
         val substances = substances()
 
@@ -429,31 +423,6 @@ class ScsShareMemoryParser(
          */
     }
 
-
-    private fun job() = Job(
-        source = JobLocation(
-            jobCity = CitySource(rawData.getString(2940), rawData.getString(3004)),
-            jobCompany = CompanySource(rawData.getString(3068), rawData.getString(3132))
-        ),
-        destination = JobLocation(
-            jobCity = CityDestination(rawData.getString(2684), rawData.getString(2748)),
-            jobCompany = CompanyDestination(rawData.getString(2812), rawData.getString(2876))
-        ),
-        cargo = JobCargo(
-            id = rawData.getString(2556),
-            name = rawData.getString(2620),
-            mass = rawData.getFloat(748),
-            unitMass = rawData.getFloat(944),
-            damage = rawData.getFloat(6152),
-            isLoaded = rawData.getBool(1564)
-        ),
-        //TODO: CHECK EXPECTED DELIVERY TIMESTAMP
-        expectedDeliveryTimestamp = rawData.getUInt(88).toInt(),
-        plannedDistance = rawData.getUInt(100).toInt(),
-        income = rawData.getULong(4000).toLong(),
-        market = rawData.getString(3404, 32),
-        isSpecial = rawData.getBool(1565)
-    )
 
     private fun navigation() = Navigation(
         nextRestStop = rawData.getUInt(500).toInt(),
