@@ -7,20 +7,21 @@ import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
 import scs_sdk.model.events.Events
+import scs_sdk.model.events.ferry.EventsFerry
 import scs_sdk.model.events.fine.EventsFine
 import scs_sdk.model.events.job.EventsJob
 import scs_sdk.model.events.job.EventsJobType.*
 import scs_sdk.model.game.Game
-import scs_sdk.model.job.CityType.CityDestination
-import scs_sdk.model.job.CityType.CitySource
-import scs_sdk.model.job.CompanyType.CompanyDestination
-import scs_sdk.model.job.CompanyType.CompanySource
 import scs_sdk.model.job.Job
 import scs_sdk.model.job.JobCargo
 import scs_sdk.model.job.JobLocation
 import scs_sdk.model.navigation.Navigation
 import scs_sdk.model.substances.Substances
 import scs_sdk.model.substances.Velocity
+import scs_sdk.model.utils.CityType.CityDestination
+import scs_sdk.model.utils.CityType.CitySource
+import scs_sdk.model.utils.CompanyType.CompanyDestination
+import scs_sdk.model.utils.CompanyType.CompanySource
 import utils.*
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
@@ -336,9 +337,9 @@ class ScsShareMemoryParser(
 
         //ferry
         logger.debug { "Ferry source name: ${rawData.getString(3468)}" }
-        logger.debug { "Ferry target name: ${rawData.getString(3532)}" }
+        logger.debug { "Ferry destination name: ${rawData.getString(3532)}" }
         logger.debug { "Ferry source id: ${rawData.getString(3596)}" }
-        logger.debug { "Ferry target id: ${rawData.getString(3660)}" }
+        logger.debug { "Ferry destination id: ${rawData.getString(3660)}" }
 
         //Train
         logger.debug { "Train source name: ${rawData.getString(3724)}" }
@@ -475,6 +476,13 @@ class ScsShareMemoryParser(
             offence = rawData.getString(3436, 32),
             amount = rawData.getULong(4216).toLong(),
             active = rawData.getBool(4304)
+        ),
+        ferry = EventsFerry(
+            source = CitySource(rawData.getString(3596), rawData.getString(3468)),
+            destination = CityDestination(rawData.getString(3660), rawData.getString(3532)),
+            amount = rawData.getULong(4232).toLong(),
+            active = rawData.getBool(4306)
+
         )
     )
 
