@@ -55,10 +55,11 @@ class ScsShareMemoryParser(
         val job = job(rawData)
         val navigation = navigation(rawData)
         val substances = substances(rawData)
+        val truck = truck(rawData)
 
 
 
-        callBack(TelemetryData(game, events, controls, job, navigation, substances))
+        callBack(TelemetryData(game, events, controls, job, navigation, substances, truck))
 
 
         //First byte section
