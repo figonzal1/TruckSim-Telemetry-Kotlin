@@ -4,6 +4,6 @@ data class Brakes(
     val retarder: Retarder,
     val airPressure: AirPressure,
     val temperature: Float,
-    val parking: Boolean,
-    val motorBreak: Boolean
+    val isParkingBrakeActive: Boolean,
+    val isMotorBreakActive: Boolean
 )

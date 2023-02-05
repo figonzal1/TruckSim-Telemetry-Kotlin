@@ -7,6 +7,9 @@ import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency
 import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning
 import scs_sdk.model.truck.brakes.Brakes
 import scs_sdk.model.truck.brakes.Retarder
+import scs_sdk.model.truck.lights.Blinker
+import scs_sdk.model.truck.lights.BlinkerStatus
+import scs_sdk.model.truck.lights.Lights
 import utils.*
 
 fun truck(rawData: ByteArray) = with(rawData) {
@@ -42,8 +45,24 @@ fun truck(rawData: ByteArray) = with(rawData) {
                 )
             ),
             temperature = getFloat(996),
-            parking = getBool(1566),
-            motorBreak = getBool(1567)
+            isParkingBrakeActive = getBool(1566),
+            isMotorBreakActive = getBool(1567)
+        ),
+        lights = Lights(
+            auxFront = getUInt(112).toInt(),
+            auxRoof = getUInt(116).toInt(),
+            dashboardBackLight = getFloat(1032),
+            blinker = Blinker(
+                left = BlinkerStatus(getBool(1578), getBool(1580)),
+                right = BlinkerStatus(getBool(1579), getBool(1581))
+            ),
+            isParkingBrakeOn = getBool(1582),
+            isBeamLowOn = getBool(1583),
+            isBeamHighOn = getBool(1584),
+            isBeaconOn = getBool(1585),
+            isBrakeOn = getBool(1586),
+            isReverseOn = getBool(1587),
+            isHazardOn = getBool(1588)
         )
     )
 }
