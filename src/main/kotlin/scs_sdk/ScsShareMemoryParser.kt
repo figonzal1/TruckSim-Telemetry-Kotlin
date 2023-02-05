@@ -6,6 +6,8 @@ import mu.KotlinLogging
 import scs_sdk.model.TelemetryData
 import scs_sdk.model.controls.Controls
 import scs_sdk.model.controls.ControlsType
+import scs_sdk.model.events.Events
+import scs_sdk.model.events.fine.EventsFine
 import scs_sdk.model.events.job.EventsJob
 import scs_sdk.model.events.job.EventsJobType.*
 import scs_sdk.model.game.Game
@@ -63,7 +65,7 @@ class ScsShareMemoryParser(
     suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
 
         val game = game()
-        val eventsJob = eventsJob()
+        val events = events()
         val controls = controls()
         val job = job()
         val navigation = navigation()
@@ -71,7 +73,7 @@ class ScsShareMemoryParser(
 
 
 
-        callBack(TelemetryData(game, eventsJob, controls, job, navigation, substances))
+        callBack(TelemetryData(game, events, controls, job, navigation, substances))
 
 
         //First byte section
@@ -443,30 +445,37 @@ class ScsShareMemoryParser(
         scale = rawData.getFloat(700).toInt()
     )
 
-    private fun eventsJob() = EventsJob(
-        delivered = EventsJobDelivered(
-            timeTaken = rawData.getUInt(440).toInt(),
-            startedTimeStamp = rawData.getUInt(444).toInt(),
-            deliveredTimeStamp = rawData.getUInt(448).toInt(),
-            earnedXP = rawData.getUInt(640).toInt(),
-            cargoDamage = rawData.getFloat(1456),
-            distance = rawData.getUInt(1460).toInt(),
-            autoParked = rawData.getBool(1613),
-            revenue = rawData.getULong(4208).toLong(),
-            active = rawData.getBool(4303)
-        ),
-        started = EventsJobStarted(
-            autoLoaded = rawData.getBool(1614),
-            active = rawData.getBool(4300)
-        ),
-        cancelled = EventsJobCancelled(
-            penalty = rawData.getULong(4200).toLong(),
-            active = rawData.getBool(4302),
-            startedTimeStamp = rawData.getUInt(444).toInt(),
-            cancelledTimestamp = rawData.getUInt(448).toInt()
+    private fun events() = Events(
+        job = EventsJob(
+            delivered = EventsJobDelivered(
+                timeTaken = rawData.getUInt(440).toInt(),
+                startedTimeStamp = rawData.getUInt(444).toInt(),
+                deliveredTimeStamp = rawData.getUInt(448).toInt(),
+                earnedXP = rawData.getUInt(640).toInt(),
+                cargoDamage = rawData.getFloat(1456),
+                distance = rawData.getUInt(1460).toInt(),
+                autoParked = rawData.getBool(1613),
+                revenue = rawData.getULong(4208).toLong(),
+                active = rawData.getBool(4303)
+            ),
+            started = EventsJobStarted(
+                autoLoaded = rawData.getBool(1614),
+                active = rawData.getBool(4300)
+            ),
+            cancelled = EventsJobCancelled(
+                penalty = rawData.getULong(4200).toLong(),
+                active = rawData.getBool(4302),
+                startedTimeStamp = rawData.getUInt(444).toInt(),
+                cancelledTimestamp = rawData.getUInt(448).toInt()
 
+            ),
+            finished = EventsJobFinished(rawData.getBool(4301))
         ),
-        finished = EventsJobFinished(rawData.getBool(4301))
+        fine = EventsFine(
+            offence = rawData.getString(3436, 32),
+            amount = rawData.getULong(4216).toLong(),
+            active = rawData.getBool(4304)
+        )
     )
 
 
