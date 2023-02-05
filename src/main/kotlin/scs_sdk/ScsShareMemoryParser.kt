@@ -3,16 +3,11 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import scs_sdk.handler.controls
-import scs_sdk.handler.events
-import scs_sdk.handler.game
-import scs_sdk.handler.job
+import scs_sdk.handler.*
 import scs_sdk.model.TelemetryData
-import scs_sdk.model.navigation.Navigation
-import scs_sdk.model.substances.Substances
-import scs_sdk.model.substances.Velocity
-import utils.*
+import utils.Constants
 import utils.exceptions.ReadMemoryException
+import utils.getUInt
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -58,8 +53,8 @@ class ScsShareMemoryParser(
         val events = events(rawData)
         val controls = controls(rawData)
         val job = job(rawData)
-        val navigation = navigation()
-        val substances = substances()
+        val navigation = navigation(rawData)
+        val substances = substances(rawData)
 
 
 
@@ -421,28 +416,5 @@ class ScsShareMemoryParser(
         logger.debug { "Trailer License Plate Country name: ${rawData.getString(7496)}" }
 
          */
-    }
-
-
-    private fun navigation() = Navigation(
-        nextRestStop = rawData.getUInt(500).toInt(),
-        distance = rawData.getFloat(1060),
-        time = rawData.getFloat(1064),
-        speedLimit = rawData.getSpeedLong(1068)
-    )
-
-    private fun substances(): Substances {
-
-        val linearV = rawData.getFloatVector(1868)
-        val angularV = rawData.getFloatVector(1880)
-        val linearAcc = rawData.getFloatVector(1892)
-        val angularAcc = rawData.getFloatVector(1904)
-
-        return Substances(
-            linearVelocity = Velocity(linearV[0], linearV[1], linearV[2]),
-            angularVelocity = Velocity(angularV[0], angularV[1], angularV[2]),
-            linearAcceleration = Velocity(linearAcc[0], linearAcc[1], linearAcc[2]),
-            angularAcceleration = Velocity(angularAcc[0], angularAcc[1], angularAcc[2])
-        )
     }
 }
