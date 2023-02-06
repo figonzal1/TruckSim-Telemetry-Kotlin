@@ -7,13 +7,15 @@ import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency
 import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning
 import scs_sdk.model.truck.brakes.Brakes
 import scs_sdk.model.truck.brakes.Retarder
+import scs_sdk.model.truck.engine.Battery
+import scs_sdk.model.truck.engine.Engine
+import scs_sdk.model.truck.engine.Rpm
 import scs_sdk.model.truck.lights.Blinker
 import scs_sdk.model.truck.lights.BlinkerStatus
 import scs_sdk.model.truck.lights.Lights
 import scs_sdk.model.truck.liquids.Liquids
-import scs_sdk.model.truck.liquids.LiquidsType.AdBlue
-import scs_sdk.model.truck.liquids.LiquidsType.Fuel
-import scs_sdk.model.truck.liquids.LiquidsWarning
+import scs_sdk.model.truck.liquids.LiquidsType.*
+import scs_sdk.model.utils.WarningLevels
 import utils.*
 
 fun truck(rawData: ByteArray) = with(rawData) {
@@ -70,17 +72,35 @@ fun truck(rawData: ByteArray) = with(rawData) {
         ),
         liquids = Liquids(
             fuel = Fuel(
-                capacity = rawData.getFloat(704),
-                warning = LiquidsWarning(rawData.getFloat(708), rawData.getBool(1570)),
-                value = rawData.getFloat(1000),
+                capacity = getFloat(704),
+                warning = WarningLevels(getFloat(708), getBool(1570)),
+                value = getFloat(1000),
                 avgConsumption = getFloat(1004),
                 range = getFloat(1008)
             ),
             adBlue = AdBlue(
                 capacity = getFloat(712),
-                warning = LiquidsWarning(getFloat(716), getBool(1571)),
+                warning = WarningLevels(getFloat(716), getBool(1571)),
                 value = getFloat(1012)
             ),
+        ),
+        engine = Engine(
+            oil = Oil(
+                pressure = getFloat(1016),
+                warning = WarningLevels(getFloat(728), getBool(1572)),
+                temperature = getFloat(1020),
+            ),
+            water = Water(
+                temperature = rawData.getFloat(1024),
+                warning = WarningLevels(rawData.getFloat(732), rawData.getBool(1573))
+            ),
+            battery = Battery(
+                value = rawData.getFloat(1028),
+                warning = WarningLevels(rawData.getFloat(736), rawData.getBool(1574))
+            ),
+            rpm = Rpm(rawData.getFloat(740), rawData.getFloat(952)),
+            damage = rawData.getFloat(1036),
+            enabled = rawData.getBool(1576)
         )
         //TODO: Implement engine, differential, speed,cruise control, cabin, chassis, odomoeter, electric, wipers, head, hook, acceleration, position, orientation, make,brand,model, plate, damage, liftaxle
     )

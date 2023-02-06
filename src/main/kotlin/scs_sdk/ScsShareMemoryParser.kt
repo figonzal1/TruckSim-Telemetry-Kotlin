@@ -7,7 +7,6 @@ import scs_sdk.handler.*
 import scs_sdk.model.TelemetryData
 import utils.Constants
 import utils.exceptions.ReadMemoryException
-import utils.getUInt
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -132,7 +131,7 @@ class ScsShareMemoryParser(
          */
 
         //TODO: ALL BELO VALUES
-        logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
+        //logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
 
         //4th section
         /*logger.debug { "Game scale: ${rawData.getFloat(700)}" }
