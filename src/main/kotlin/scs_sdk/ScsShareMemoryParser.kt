@@ -233,7 +233,7 @@ class ScsShareMemoryParser(
         logger.debug { "Truck brakes airPressure warning enabled: ${rawData.getBool(1568)}" }
         logger.debug { "Truck brakes airPressure emergency enabled: ${rawData.getBool(1569)}" }
         logger.debug { "Truck fuel warning enabled: ${rawData.getBool(1570)}" }
-        logger.debug { "Truck adblue warning enabled: ${rawData.getBool(1571)}" }
+        logger.debug { "Truck ad-blue warning enabled: ${rawData.getBool(1571)}" }
         logger.debug { "Truck engine oilPressure warning enabled: ${rawData.getBool(1572)}" }
         logger.debug { "Truck engine water temp warning enabled: ${rawData.getBool(1573)}" }
         logger.debug { "Truck engine battery warning enabled: ${rawData.getBool(1574)}" }

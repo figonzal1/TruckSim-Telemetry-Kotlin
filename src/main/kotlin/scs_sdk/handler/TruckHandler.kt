@@ -10,6 +10,10 @@ import scs_sdk.model.truck.brakes.Retarder
 import scs_sdk.model.truck.lights.Blinker
 import scs_sdk.model.truck.lights.BlinkerStatus
 import scs_sdk.model.truck.lights.Lights
+import scs_sdk.model.truck.liquids.Liquids
+import scs_sdk.model.truck.liquids.LiquidsType.AdBlue
+import scs_sdk.model.truck.liquids.LiquidsType.Fuel
+import scs_sdk.model.truck.liquids.LiquidsWarning
 import utils.*
 
 fun truck(rawData: ByteArray) = with(rawData) {
@@ -63,6 +67,21 @@ fun truck(rawData: ByteArray) = with(rawData) {
             isBrakeOn = getBool(1586),
             isReverseOn = getBool(1587),
             isHazardOn = getBool(1588)
+        ),
+        liquids = Liquids(
+            fuel = Fuel(
+                capacity = rawData.getFloat(704),
+                warning = LiquidsWarning(rawData.getFloat(708), rawData.getBool(1570)),
+                value = rawData.getFloat(1000),
+                avgConsumption = getFloat(1004),
+                range = getFloat(1008)
+            ),
+            adBlue = AdBlue(
+                capacity = getFloat(712),
+                warning = LiquidsWarning(getFloat(716), getBool(1571)),
+                value = getFloat(1012)
+            ),
         )
+        //TODO: Implement engine, differential, speed,cruise control, cabin, chassis, odomoeter, electric, wipers, head, hook, acceleration, position, orientation, make,brand,model, plate, damage, liftaxle
     )
 }
