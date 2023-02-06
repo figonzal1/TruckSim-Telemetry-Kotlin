@@ -17,10 +17,7 @@ import scs_sdk.model.truck.liquids.LiquidsType.*
 import scs_sdk.model.truck.transmission.CruiseControl
 import scs_sdk.model.truck.transmission.Differential
 import scs_sdk.model.truck.transmission.Transmission
-import scs_sdk.model.utils.Acceleration
-import scs_sdk.model.utils.GenericResource
-import scs_sdk.model.utils.Offset
-import scs_sdk.model.utils.WarningLevels
+import scs_sdk.model.utils.*
 import utils.*
 
 fun truck(rawData: ByteArray) = with(rawData) {
@@ -45,7 +42,7 @@ fun truck(rawData: ByteArray) = with(rawData) {
         lights = lights(),
         liquids = liquids(),
         differential = Differential(getFloat(744), getBool(1608)),
-        velocity = getSpeedLong(948),
+        speed = getSpeedLong(948),
         cruiseControl = CruiseControl(getSpeedLong(988), getBool(1589)),
         odometer = getFloat(1056),
         isElectricEnabled = getBool(1575),
@@ -64,7 +61,8 @@ fun truck(rawData: ByteArray) = with(rawData) {
             Offset(getFloatVector(2024), getFloatOrientationVector(2036))
         ),
         hook = Hook(getFloatVector(1664)),
-        liftAxle = LiftAxle(getBool(1609), getBool(1610))
+        liftAxle = LiftAxle(getBool(1609), getBool(1610)),
+        wheels = retrieveWheels(this)
     )
 }
 
@@ -167,3 +165,31 @@ private fun ByteArray.cabin() = Cabin(
         orientation = getFloatOrientationVector(2012)
     )
 )
+
+private fun retrieveWheels(rawData: ByteArray): List<TruckWheel> = with(rawData) {
+
+    return (0..Constants.WHEEL_SIZE)
+        .map {
+            TruckWheel(
+                substance = getUIntArray(120, Constants.WHEEL_SIZE)[it].toInt(),
+                radius = getFloatArray(752, Constants.WHEEL_SIZE)[it],
+                suspensionDeflection = getFloatArray(1072, Constants.WHEEL_SIZE)[it],
+                velocity = getFloatArray(1136, Constants.WHEEL_SIZE)[it],
+                steering = getFloatArray(1200, Constants.WHEEL_SIZE)[it],
+                rotation = getFloatArray(1264, Constants.WHEEL_SIZE)[it],
+                lift = getFloatArray(1328, Constants.WHEEL_SIZE)[it],
+                liftOffset = getFloatArray(1392, Constants.WHEEL_SIZE)[it],
+                position = Vector(
+                    x = getFloatArray(1676, Constants.WHEEL_SIZE)[it],
+                    y = getFloatArray(1740, Constants.WHEEL_SIZE)[it],
+                    z = getFloatArray(1804, Constants.WHEEL_SIZE)[it]
+                ),
+                isSteerable = getBoolArray(1500, Constants.WHEEL_SIZE)[it],
+                isSimulated = getBoolArray(1516, Constants.WHEEL_SIZE)[it],
+                isPowered = getBoolArray(1532, Constants.WHEEL_SIZE)[it],
+                isLiftable = getBoolArray(1548, Constants.WHEEL_SIZE)[it],
+                isOnGround = getBoolArray(1590, Constants.WHEEL_SIZE)[it],
+                damage = getFloat(1052)
+            )
+        }
+}

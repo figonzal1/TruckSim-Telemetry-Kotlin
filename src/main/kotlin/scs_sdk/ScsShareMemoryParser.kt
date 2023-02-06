@@ -105,7 +105,7 @@ class ScsShareMemoryParser(
         logger.debug { "Trucks lights aux front: ${rawData.getUInt(112)}" }
         logger.debug { "Trucks lights aux roof: ${rawData.getUInt(116)}" }
 
-        logger.debug { "Wheels substance: ${rawData.getUIntArray(120, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels substance: ${rawData.getUIntArray(120, Constants.WHEEL_SIZE)}" }
         logger.debug { "Transmission slots handle position: ${rawData.getUIntArray(184, 32)}" }
         logger.debug { "Transmission slots selector: ${rawData.getUIntArray(312, 32)}" }*/
 
@@ -219,10 +219,10 @@ class ScsShareMemoryParser(
         logger.debug { "Job cargo damage: ${rawData.getFloat(1468)}" }
 
         //5th section
-        logger.debug { "Wheels steerable: ${rawData.getBoolArray(1500, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels simulated: ${rawData.getBoolArray(1516, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels powered: ${rawData.getBoolArray(1532, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels liftable: ${rawData.getBoolArray(1548, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels steerable: ${rawData.getBoolArray(1500, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels simulated: ${rawData.getBoolArray(1516, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels powered: ${rawData.getBoolArray(1532, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels liftable: ${rawData.getBoolArray(1548, Constants.WHEEL_SIZE)}" }
 
         logger.debug { "Job cargo isLoaded: ${rawData.getBool(1564)}" }
         logger.debug { "Job is special: ${rawData.getBool(1565)}" }
