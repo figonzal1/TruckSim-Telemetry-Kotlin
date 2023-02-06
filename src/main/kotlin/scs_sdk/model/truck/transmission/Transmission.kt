@@ -1,4 +1,4 @@
-package scs_sdk.model.truck
+package scs_sdk.model.truck.transmission
 
 data class Transmission(
     val forwardGears: Int,

@@ -1,6 +1,6 @@
 package scs_sdk.handler
 
-import scs_sdk.model.truck.Transmission
+import scs_sdk.model.truck.Cabin
 import scs_sdk.model.truck.Truck
 import scs_sdk.model.truck.brakes.AirPressure
 import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency
@@ -15,6 +15,11 @@ import scs_sdk.model.truck.lights.BlinkerStatus
 import scs_sdk.model.truck.lights.Lights
 import scs_sdk.model.truck.liquids.Liquids
 import scs_sdk.model.truck.liquids.LiquidsType.*
+import scs_sdk.model.truck.transmission.CruiseControl
+import scs_sdk.model.truck.transmission.Differential
+import scs_sdk.model.truck.transmission.Transmission
+import scs_sdk.model.utils.Acceleration
+import scs_sdk.model.utils.Offset
 import scs_sdk.model.utils.WarningLevels
 import utils.*
 
@@ -24,8 +29,25 @@ fun truck(rawData: ByteArray) = with(rawData) {
         brakes = brakes(),
         lights = lights(),
         liquids = liquids(),
-        engine = engine()
-        //TODO: Implement differential, speed,cruise control, cabin, chassis, odomoeter, electric, wipers, head, hook, acceleration, position, orientation, make,brand,model, plate, damage, liftaxle
+        engine = engine(),
+        differential = Differential(getFloat(744), getBool(1608)),
+        velocity = getSpeedLong(948),
+        cruiseControl = CruiseControl(getSpeedLong(988), getBool(1589)),
+        cabin = Cabin(
+            damage = getFloat(1044),
+            position = getFloatVector(1640),
+            acceleration = Acceleration(
+                linearVelocity = getFloatVector(1868),
+                angularVelocity = getFloatVector(1880),
+                linearAcceleration = getFloatVector(1892),
+                angularAcceleration = getFloatVector(1904)
+            ),
+            offset = Offset(
+                position = getFloatVector(2000),
+                orientation = getFloatOrientationVector(2012)
+            )
+        )
+        //TODO: Implement chassis, odomoeter, electric, wipers, head, hook, acceleration, position, orientation, make,brand,model, plate, damage, liftaxle
     )
 }
 

@@ -1,5 +1,7 @@
 package utils
 
+import scs_sdk.model.utils.OrientationVector
+import scs_sdk.model.utils.Vector
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.math.abs
@@ -81,7 +83,13 @@ private fun ByteArray.getSubStringArray(index: Int, length: Int): ArrayList<Byte
 /**
  * Return vector [X,Y,Z] in float type
  */
-fun ByteArray.getFloatVector(index: Int) = arrayListOf(
+fun ByteArray.getFloatVector(index: Int) = Vector(
+    getFloat(index),
+    getFloat(index + 4),
+    getFloat(index + 8)
+)
+
+fun ByteArray.getFloatOrientationVector(index: Int) = OrientationVector(
     getFloat(index),
     getFloat(index + 4),
     getFloat(index + 8)

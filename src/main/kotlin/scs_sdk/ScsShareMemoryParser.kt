@@ -273,12 +273,12 @@ class ScsShareMemoryParser(
         logger.debug { "Truck wheels position Z: ${rawData.getFloatArray(1804, Constants.WHEEL_SIZE)}" }
 
         //Velocity values
-        logger.debug { "Linear velocity: ${rawData.getFloatVector(1868)}"}
-        logger.debug { "Angular velocity: ${rawData.getFloatVector(1880)}"}
+        logger.debug { "Truck cabin Linear velocity: ${rawData.getFloatVector(1868)}"}
+        logger.debug { "Truck cabin Angular velocity: ${rawData.getFloatVector(1880)}"}
 
         //Acceleration
-        logger.debug { "Linear acceleration: ${rawData.getFloatVector(1892)}"}
-        logger.debug { "Angular acceleration: ${rawData.getFloatVector(1904)}"}
+        logger.debug { "Truck cabin Linear acceleration: ${rawData.getFloatVector(1892)}"}
+        logger.debug { "Truck cabin Angular acceleration: ${rawData.getFloatVector(1904)}"}
 
         //7th section
         logger.debug { "Truck cabin offset position: ${rawData.getFloatVector(2000)}" }

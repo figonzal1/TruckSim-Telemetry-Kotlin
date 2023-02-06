@@ -1,8 +1,6 @@
-package scs_sdk.model.substances
+package scs_sdk.model.utils
 
-import scs_sdk.model.utils.Vector
-
-data class Substances(
+data class Acceleration(
     val linearVelocity: Vector,
     val angularVelocity: Vector,
     val linearAcceleration: Vector,
