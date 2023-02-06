@@ -98,7 +98,7 @@ fun ByteArray.getFloatOrientationVector(index: Int) = OrientationVector(
 /**
  * Returns vector [X, Y,Z] in double type
  */
-fun ByteArray.getDoubleVector(index: Int) = arrayListOf(
+fun ByteArray.getDoubleVector(index: Int) = Vector(
     getDouble(index),
     getDouble(index + 8),
     getDouble(index + 16)

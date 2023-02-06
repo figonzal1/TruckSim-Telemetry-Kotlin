@@ -273,12 +273,12 @@ class ScsShareMemoryParser(
         logger.debug { "Truck wheels position Z: ${rawData.getFloatArray(1804, Constants.WHEEL_SIZE)}" }
 
         //Velocity values
-        logger.debug { "Truck cabin Linear velocity: ${rawData.getFloatVector(1868)}"}
-        logger.debug { "Truck cabin Angular velocity: ${rawData.getFloatVector(1880)}"}
-
-        //Acceleration
-        logger.debug { "Truck cabin Linear acceleration: ${rawData.getFloatVector(1892)}"}
-        logger.debug { "Truck cabin Angular acceleration: ${rawData.getFloatVector(1904)}"}
+        logger.debug { "Truck Linear velocity: ${rawData.getFloatVector(1868)}"}
+        logger.debug { "Truck Angular velocity: ${rawData.getFloatVector(1880)}"}
+        logger.debug { "Truck Linear acceleration: ${rawData.getFloatVector(1892)}"}
+        logger.debug { "Truck Angular acceleration: ${rawData.getFloatVector(1904)}"}
+        logger.debug { "Truck cabin angular velocity: ${rawData.getFloatVector(1916)}"}
+        logger.debug { "Truck cabin angular acceleration: ${rawData.getFloatVector(1928)}"}
 
         //7th section
         logger.debug { "Truck cabin offset position: ${rawData.getFloatVector(2000)}" }
@@ -401,8 +401,8 @@ class ScsShareMemoryParser(
         logger.debug { "Trailer wheels position Y: ${rawData.getFloatArray(6740, Constants.WHEEL_SIZE)}" }
         logger.debug { "Trailer wheels position Z: ${rawData.getFloatArray(6804, Constants.WHEEL_SIZE)}" }
 
-        logger.debug { "Truck position: ${rawData.getDoubleVector(6872)}" }
-        logger.debug { "Truck orientation: ${rawData.getDoubleVector(6896)}" }
+        logger.debug { "Trailer position: ${rawData.getDoubleVector(6872)}" }
+        logger.debug { "Trailer orientation: ${rawData.getDoubleVector(6896)}" }
         logger.debug { "Trailer model id: ${rawData.getString(6920)}" }
         logger.debug { "Trailer accessory id: ${rawData.getString(6984)}" }
         logger.debug { "Trailer body type: ${rawData.getString(7048)}" }

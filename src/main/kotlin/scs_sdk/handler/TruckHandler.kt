@@ -1,7 +1,6 @@
 package scs_sdk.handler
 
-import scs_sdk.model.truck.Cabin
-import scs_sdk.model.truck.Truck
+import scs_sdk.model.truck.*
 import scs_sdk.model.truck.brakes.AirPressure
 import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency
 import scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning
@@ -19,35 +18,53 @@ import scs_sdk.model.truck.transmission.CruiseControl
 import scs_sdk.model.truck.transmission.Differential
 import scs_sdk.model.truck.transmission.Transmission
 import scs_sdk.model.utils.Acceleration
+import scs_sdk.model.utils.GenericResource
 import scs_sdk.model.utils.Offset
 import scs_sdk.model.utils.WarningLevels
 import utils.*
 
 fun truck(rawData: ByteArray) = with(rawData) {
+
+    val transmission = transmission()
+    val engine = engine()
+    val cabin = cabin()
+    val chassis = Chassis(getFloat(1048))
+
     Truck(
-        transmission = transmission(),
+        brand = GenericResource(getString(2300), getString(2364)),
+        model = GenericResource(getString(2428), getString(2492)),
+        licensePlate = LicensePlate(
+            value = getString(3212),
+            country = GenericResource(getString(3276), getString(3340))
+        ),
+        transmission = transmission,
+        cabin = cabin,
+        chassis = chassis,
+        engine = engine,
         brakes = brakes(),
         lights = lights(),
         liquids = liquids(),
-        engine = engine(),
         differential = Differential(getFloat(744), getBool(1608)),
         velocity = getSpeedLong(948),
         cruiseControl = CruiseControl(getSpeedLong(988), getBool(1589)),
-        cabin = Cabin(
-            damage = getFloat(1044),
-            position = getFloatVector(1640),
-            acceleration = Acceleration(
-                linearVelocity = getFloatVector(1868),
-                angularVelocity = getFloatVector(1880),
-                linearAcceleration = getFloatVector(1892),
-                angularAcceleration = getFloatVector(1904)
-            ),
-            offset = Offset(
-                position = getFloatVector(2000),
-                orientation = getFloatOrientationVector(2012)
-            )
-        )
-        //TODO: Implement chassis, odomoeter, electric, wipers, head, hook, acceleration, position, orientation, make,brand,model, plate, damage, liftaxle
+        odometer = getFloat(1056),
+        isElectricEnabled = getBool(1575),
+        isWipersEnabled = getBool(1577),
+        totalDamage = transmission.damage + engine.damage + cabin.damage + chassis.damage, //TODO: ADD wheels
+        position = getDoubleVector(2200),
+        orientation = getDoubleVector(2224),
+        acceleration = Acceleration(
+            linearVelocity = getFloatVector(1868),
+            angularVelocity = getFloatVector(1880),
+            linearAcceleration = getFloatVector(1892),
+            angularAcceleration = getFloatVector(1904)
+        ),
+        head = Head(
+            getFloatVector(1652),
+            Offset(getFloatVector(2024), getFloatOrientationVector(2036))
+        ),
+        hook = Hook(getFloatVector(1664)),
+        liftAxle = LiftAxle(getBool(1609), getBool(1610))
     )
 }
 
@@ -136,4 +153,17 @@ private fun ByteArray.engine() = Engine(
     rpm = Rpm(getFloat(740), getFloat(952)),
     damage = getFloat(1036),
     enabled = getBool(1576)
+)
+
+private fun ByteArray.cabin() = Cabin(
+    damage = getFloat(1044),
+    position = getFloatVector(1640),
+    acceleration = Acceleration(
+        angularVelocity = getFloatVector(1916),
+        angularAcceleration = getFloatVector(1928),
+    ),
+    offset = Offset(
+        position = getFloatVector(2000),
+        orientation = getFloatOrientationVector(2012)
+    )
 )

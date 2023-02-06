@@ -1,9 +1,9 @@
 package scs_sdk.model.utils
 
-data class Vector(
-    val x: Float,
-    val y: Float,
-    val z: Float
+data class Vector<T>(
+    val x: T,
+    val y: T,
+    val z: T
 )
 
 data class OrientationVector(
