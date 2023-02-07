@@ -104,4 +104,10 @@ fun ByteArray.getDoubleVector(index: Int) = Vector(
     getDouble(index + 16)
 )
 
+fun ByteArray.getDoubleOrientedVector(index: Int) = OrientationVector(
+    getDouble(index),
+    getDouble(index + 8),
+    getDouble(index + 16)
+)
+
 fun ByteArray.getSpeedLong(index: Int) = abs(getFloat(index) * 3.6).roundToLong()

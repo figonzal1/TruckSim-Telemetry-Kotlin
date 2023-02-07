@@ -26,6 +26,7 @@ fun truck(rawData: ByteArray) = with(rawData) {
     val engine = engine()
     val cabin = cabin()
     val chassis = Chassis(getFloat(1048))
+    val wheels = retrieveWheels(this)
 
     Truck(
         brand = GenericResource(getString(2300), getString(2364)),
@@ -47,9 +48,9 @@ fun truck(rawData: ByteArray) = with(rawData) {
         odometer = getFloat(1056),
         isElectricEnabled = getBool(1575),
         isWipersEnabled = getBool(1577),
-        totalDamage = transmission.damage + engine.damage + cabin.damage + chassis.damage, //TODO: ADD wheels
+        totalDamage = transmission.damage + engine.damage + cabin.damage + chassis.damage + wheels[0].damage,
         position = getDoubleVector(2200),
-        orientation = getDoubleVector(2224),
+        orientation = getDoubleOrientedVector(2224),
         acceleration = Acceleration(
             linearVelocity = getFloatVector(1868),
             angularVelocity = getFloatVector(1880),
@@ -62,7 +63,7 @@ fun truck(rawData: ByteArray) = with(rawData) {
         ),
         hook = Hook(getFloatVector(1664)),
         liftAxle = LiftAxle(getBool(1609), getBool(1610)),
-        wheels = retrieveWheels(this)
+        wheels = wheels
     )
 }
 

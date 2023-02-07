@@ -6,8 +6,8 @@ data class Vector<T>(
     val z: T
 )
 
-data class OrientationVector(
-    val heading: Float,
-    val pitch: Float,
-    val roll: Float
+data class OrientationVector<T>(
+    val heading: T,
+    val pitch: T,
+    val roll: T
 )

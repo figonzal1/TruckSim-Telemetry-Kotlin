@@ -6,6 +6,7 @@ import scs_sdk.model.game.Game
 import scs_sdk.model.job.Job
 import scs_sdk.model.navigation.Navigation
 import scs_sdk.model.substances.Substances
+import scs_sdk.model.trailer.Trailer
 import scs_sdk.model.truck.Truck
 
 /**
@@ -23,6 +24,7 @@ data class TelemetryData(
     val controls: Controls,
     val job: Job,
     val navigation: Navigation,
-    val substances: Substances,
-    val truck: Truck
+    val substances: Substances<Float>,
+    val truck: Truck,
+    val trailer: Trailer
 )

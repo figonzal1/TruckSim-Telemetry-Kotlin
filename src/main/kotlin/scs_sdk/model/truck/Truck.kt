@@ -9,6 +9,7 @@ import scs_sdk.model.truck.transmission.Differential
 import scs_sdk.model.truck.transmission.Transmission
 import scs_sdk.model.utils.Acceleration
 import scs_sdk.model.utils.GenericResource
+import scs_sdk.model.utils.OrientationVector
 import scs_sdk.model.utils.Vector
 
 data class Truck(
@@ -30,7 +31,7 @@ data class Truck(
     val licensePlate: LicensePlate,
     val totalDamage: Float,
     val position: Vector<Double>,
-    val orientation: Vector<Double>,
+    val orientation: OrientationVector<Double>,
     val acceleration: Acceleration<Float>,
     val head: Head<Float>,
     val hook: Hook<Float>,
