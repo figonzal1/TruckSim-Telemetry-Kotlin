@@ -1,4 +1,4 @@
-package scs_sdk.model.job
+package scs_sdk.model.utils
 
 sealed class CompanyType(
     val id: String,

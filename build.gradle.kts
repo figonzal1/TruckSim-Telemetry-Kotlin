@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.20"
+    id("org.sonarqube") version "3.5.0.2730"
     application
 }
 
@@ -38,4 +39,14 @@ tasks.withType<KotlinCompile> {
 
 application {
     mainClass.set("MainKt")
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectName", "ETS2-Telemetry")
+        property("sonar.projectKey", "ETS2-Telemetry")
+        property("sonar.sourceEncoding", "UTF-8")
+        property("sonar.sources", "src/main/kotlin")
+        property("sonar.login", "sqp_3b70351f15237c561b839f18563d78ca3918cf6c")
+    }
 }

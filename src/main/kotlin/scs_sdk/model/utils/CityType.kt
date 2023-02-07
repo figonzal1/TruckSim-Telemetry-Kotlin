@@ -1,4 +1,4 @@
-package scs_sdk.model.job
+package scs_sdk.model.utils
 
 sealed class CityType(
     val id: String,

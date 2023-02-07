@@ -3,20 +3,9 @@ package scs_sdk
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
 import mu.KotlinLogging
-import scs_sdk.model.Substances
+import scs_sdk.handler.*
 import scs_sdk.model.TelemetryData
-import scs_sdk.model.controls.Controls
-import scs_sdk.model.controls.ControlsType
-import scs_sdk.model.game.Game
-import scs_sdk.model.job.CityType.CityDestination
-import scs_sdk.model.job.CityType.CitySource
-import scs_sdk.model.job.CompanyType.CompanyDestination
-import scs_sdk.model.job.CompanyType.CompanySource
-import scs_sdk.model.job.Job
-import scs_sdk.model.job.JobCargo
-import scs_sdk.model.job.JobLocation
-import scs_sdk.model.navigation.Navigation
-import utils.*
+import utils.Constants
 import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -59,13 +48,17 @@ class ScsShareMemoryParser(
 
     suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit) {
 
-        val game = game()
-        val controls = controls()
-        val job = job()
-        val navigation = navigation()
-        val substances = substances()
+        val game = game(rawData)
+        val events = events(rawData)
+        val controls = controls(rawData)
+        val job = job(rawData)
+        val navigation = navigation(rawData)
+        val substances = substances(rawData)
+        val truck = truck(rawData)
+        val trailer = trailer(rawData)
 
-        callBack(TelemetryData(game, controls, job, navigation, substances))
+
+        callBack(TelemetryData(game, events, controls, job, navigation, substances, truck, trailer))
 
 
         //First byte section
@@ -112,13 +105,15 @@ class ScsShareMemoryParser(
         logger.debug { "Trucks lights aux front: ${rawData.getUInt(112)}" }
         logger.debug { "Trucks lights aux roof: ${rawData.getUInt(116)}" }
 
-        logger.debug { "Wheels substance: ${rawData.getUIntArray(120, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels substance: ${rawData.getUIntArray(120, Constants.WHEEL_SIZE)}" }
         logger.debug { "Transmission slots handle position: ${rawData.getUIntArray(184, 32)}" }
         logger.debug { "Transmission slots selector: ${rawData.getUIntArray(312, 32)}" }*/
 
         //TODO: Check if the information is correct
         /*logger.debug { "Job delivered time taken: ${rawData.getUInt(440)}" }
+        logger.debug { "Job cancelled started timestamp: ${rawData.getUInt(444)}" }
         logger.debug { "Job delivered started timestamp: ${rawData.getUInt(444)}" }
+        logger.debug { "Job cancelled finished timestamp: ${rawData.getUInt(448)}" }
         logger.debug { "Job delivered finished timestamp: ${rawData.getUInt(448)}" }
          */
 
@@ -136,7 +131,7 @@ class ScsShareMemoryParser(
          */
 
         //TODO: ALL BELO VALUES
-        logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
+        //logger.debug { "Event delivered earned xp: ${rawData.getUInt(640)}" }
 
         //4th section
         /*logger.debug { "Game scale: ${rawData.getFloat(700)}" }
@@ -224,10 +219,10 @@ class ScsShareMemoryParser(
         logger.debug { "Job cargo damage: ${rawData.getFloat(1468)}" }
 
         //5th section
-        logger.debug { "Wheels steerable: ${rawData.getBoolArray(1500, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels simulated: ${rawData.getBoolArray(1516, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels powered: ${rawData.getBoolArray(1532, Constants.WHEEL_SIZE)}" }
-        logger.debug { "Wheels liftable: ${rawData.getBoolArray(1548, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels steerable: ${rawData.getBoolArray(1500, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels simulated: ${rawData.getBoolArray(1516, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels powered: ${rawData.getBoolArray(1532, Constants.WHEEL_SIZE)}" }
+        logger.debug { "Truck Wheels liftable: ${rawData.getBoolArray(1548, Constants.WHEEL_SIZE)}" }
 
         logger.debug { "Job cargo isLoaded: ${rawData.getBool(1564)}" }
         logger.debug { "Job is special: ${rawData.getBool(1565)}" }
@@ -237,7 +232,7 @@ class ScsShareMemoryParser(
         logger.debug { "Truck brakes airPressure warning enabled: ${rawData.getBool(1568)}" }
         logger.debug { "Truck brakes airPressure emergency enabled: ${rawData.getBool(1569)}" }
         logger.debug { "Truck fuel warning enabled: ${rawData.getBool(1570)}" }
-        logger.debug { "Truck adblue warning enabled: ${rawData.getBool(1571)}" }
+        logger.debug { "Truck ad-blue warning enabled: ${rawData.getBool(1571)}" }
         logger.debug { "Truck engine oilPressure warning enabled: ${rawData.getBool(1572)}" }
         logger.debug { "Truck engine water temp warning enabled: ${rawData.getBool(1573)}" }
         logger.debug { "Truck engine battery warning enabled: ${rawData.getBool(1574)}" }
@@ -278,12 +273,12 @@ class ScsShareMemoryParser(
         logger.debug { "Truck wheels position Z: ${rawData.getFloatArray(1804, Constants.WHEEL_SIZE)}" }
 
         //Velocity values
-        logger.debug { "Linear velocity: ${rawData.getFloatVector(1868)}"}
-        logger.debug { "Angular velocity: ${rawData.getFloatVector(1880)}"}
-
-        //Acceleration
-        logger.debug { "Linear acceleration: ${rawData.getFloatVector(1892)}"}
-        logger.debug { "Angular acceleration: ${rawData.getFloatVector(1904)}"}
+        logger.debug { "Truck Linear velocity: ${rawData.getFloatVector(1868)}"}
+        logger.debug { "Truck Angular velocity: ${rawData.getFloatVector(1880)}"}
+        logger.debug { "Truck Linear acceleration: ${rawData.getFloatVector(1892)}"}
+        logger.debug { "Truck Angular acceleration: ${rawData.getFloatVector(1904)}"}
+        logger.debug { "Truck cabin angular velocity: ${rawData.getFloatVector(1916)}"}
+        logger.debug { "Truck cabin angular acceleration: ${rawData.getFloatVector(1928)}"}
 
         //7th section
         logger.debug { "Truck cabin offset position: ${rawData.getFloatVector(2000)}" }
@@ -326,9 +321,9 @@ class ScsShareMemoryParser(
 
         //ferry
         logger.debug { "Ferry source name: ${rawData.getString(3468)}" }
-        logger.debug { "Ferry target name: ${rawData.getString(3532)}" }
+        logger.debug { "Ferry destination name: ${rawData.getString(3532)}" }
         logger.debug { "Ferry source id: ${rawData.getString(3596)}" }
-        logger.debug { "Ferry target id: ${rawData.getString(3660)}" }
+        logger.debug { "Ferry destination id: ${rawData.getString(3660)}" }
 
         //Train
         logger.debug { "Train source name: ${rawData.getString(3724)}" }
@@ -350,16 +345,17 @@ class ScsShareMemoryParser(
         logger.debug { "Job train event pay amount: ${rawData.getULong(4240)}" }
 
         //12th section
-        logger.debug { "Special event on job: ${rawData.getBool(4300)}" }
+        logger.debug { "Special event on job started: ${rawData.getBool(4300)}" }
         logger.debug { "Special event job finished: ${rawData.getBool(4301)}" }
-        logger.debug { "Special event job delivered: ${rawData.getBool(4302)}" }
-        logger.debug { "Special event fined: ${rawData.getBool(4303)}" }
-        logger.debug { "Special event tollgate: ${rawData.getBool(4304)}" }
-        logger.debug { "Special event ferry: ${rawData.getBool(4305)}" }
-        logger.debug { "Special event train: ${rawData.getBool(4306)}" }
+        logger.debug { "Special event job cancelled: ${rawData.getBool(4302)}" }
+        logger.debug { "Special event job delivered: ${rawData.getBool(4303)}" }
+        logger.debug { "Special event fined: ${rawData.getBool(4304)}" }
+        logger.debug { "Special event tollgate: ${rawData.getBool(4305)}" }
+        logger.debug { "Special event ferry: ${rawData.getBool(4306)}" }
+        logger.debug { "Special event train: ${rawData.getBool(4307)}" }
 
-        logger.debug { "Special event refuel: ${rawData.getBool(4307)}" }
-        logger.debug { "Special event refuel payed: ${rawData.getBool(4308)}" }
+        logger.debug { "Special event refuel: ${rawData.getBool(4308)}" }
+        logger.debug { "Special event refuel payed: ${rawData.getBool(4309)}" }
 
         //13th section
         var innerIndex = 4400
@@ -405,8 +401,8 @@ class ScsShareMemoryParser(
         logger.debug { "Trailer wheels position Y: ${rawData.getFloatArray(6740, Constants.WHEEL_SIZE)}" }
         logger.debug { "Trailer wheels position Z: ${rawData.getFloatArray(6804, Constants.WHEEL_SIZE)}" }
 
-        logger.debug { "Truck position: ${rawData.getDoubleVector(6872)}" }
-        logger.debug { "Truck orientation: ${rawData.getDoubleVector(6896)}" }
+        logger.debug { "Trailer position: ${rawData.getDoubleVector(6872)}" }
+        logger.debug { "Trailer orientation: ${rawData.getDoubleVector(6896)}" }
         logger.debug { "Trailer model id: ${rawData.getString(6920)}" }
         logger.debug { "Trailer accessory id: ${rawData.getString(6984)}" }
         logger.debug { "Trailer body type: ${rawData.getString(7048)}" }
@@ -421,71 +417,4 @@ class ScsShareMemoryParser(
 
          */
     }
-
-    private fun game() = Game(
-        sdkActive = rawData.getBool(0),
-        paused = rawData.getBool(4),
-        pluginVersion = rawData.getUInt(40).toInt(),
-        version = getVersion(rawData.getUInt(44), rawData.getUInt(48)),
-        game = getGameType(rawData.getUInt(52)),
-        telemetryVersion = getVersion(rawData.getUInt(56), rawData.getUInt(60)),
-        time = getGameTime(rawData.getUInt(64).toDouble()),
-        maxTrailerCount = rawData.getUInt(92).toInt(),
-        scale = rawData.getFloat(700).toInt()
-    )
-
-
-    private fun controls() = Controls(
-        input = ControlsType.ControlsInput(
-            steering = rawData.getFloat(956),
-            throttle = rawData.getFloat(960),
-            brake = rawData.getFloat(964),
-            clutch = rawData.getFloat(968),
-        ),
-        game = ControlsType.ControlsGame(
-            steering = rawData.getFloat(972),
-            throttle = rawData.getFloat(976),
-            brake = rawData.getFloat(980),
-            clutch = rawData.getFloat(984)
-        )
-    )
-
-    private fun job() = Job(
-        source = JobLocation(
-            jobCity = CitySource(rawData.getString(2940), rawData.getString(3004)),
-            jobCompany = CompanySource(rawData.getString(3068), rawData.getString(3132))
-        ),
-        destination = JobLocation(
-            jobCity = CityDestination(rawData.getString(2684), rawData.getString(2748)),
-            jobCompany = CompanyDestination(rawData.getString(2812), rawData.getString(2876))
-        ),
-        cargo = JobCargo(
-            id = rawData.getString(2556),
-            name = rawData.getString(2620),
-            mass = rawData.getFloat(748),
-            unitMass = rawData.getFloat(944),
-            damage = rawData.getFloat(6152),
-            isLoaded = rawData.getBool(1564)
-        ),
-        //TODO: CHECK EXPECTED DELIVERY TIMESTAMP
-        expectedDeliveryTimestamp = rawData.getUInt(88).toInt(),
-        plannedDistance = rawData.getUInt(100).toInt(),
-        income = rawData.getULong(4000).toLong(),
-        market = rawData.getString(3404, 32),
-        isSpecial = rawData.getBool(1565)
-    )
-
-    private fun navigation() = Navigation(
-        nextRestStop = rawData.getUInt(500).toInt(),
-        distance = rawData.getFloat(1060),
-        time = rawData.getFloat(1064),
-        speedLimit = rawData.getSpeedLong(1068)
-    )
-
-    private fun substances() = Substances(
-        linearVelocity = rawData.getFloatVector(1868),
-        angularVelocity = rawData.getFloatVector(1880),
-        linearAcceleration = rawData.getFloatVector(1892),
-        angularAcceleration = rawData.getFloatVector(1904)
-    )
 }

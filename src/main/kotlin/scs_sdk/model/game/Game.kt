@@ -13,7 +13,7 @@ package scs_sdk.model.game
  * @property multiplayerTimeOffset
  * @property pluginVersion
  * @property version
- * @property game
+ * @property gameType
  * @property telemetryVersion
  * @property time
  * @property maxTrailerCount
@@ -28,7 +28,7 @@ data class Game(
     val multiplayerTimeOffset: String? = null,
     val pluginVersion: Int,
     val version: Double,
-    val game: GameType,
+    val gameType: GameType,
     val telemetryVersion: Double,
     val time: GameTime,
     val maxTrailerCount: Int,

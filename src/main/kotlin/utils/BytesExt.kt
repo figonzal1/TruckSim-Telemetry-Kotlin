@@ -1,5 +1,7 @@
 package utils
 
+import scs_sdk.model.utils.OrientationVector
+import scs_sdk.model.utils.Vector
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.math.abs
@@ -81,7 +83,13 @@ private fun ByteArray.getSubStringArray(index: Int, length: Int): ArrayList<Byte
 /**
  * Return vector [X,Y,Z] in float type
  */
-fun ByteArray.getFloatVector(index: Int) = arrayListOf(
+fun ByteArray.getFloatVector(index: Int) = Vector(
+    getFloat(index),
+    getFloat(index + 4),
+    getFloat(index + 8)
+)
+
+fun ByteArray.getFloatOrientationVector(index: Int) = OrientationVector(
     getFloat(index),
     getFloat(index + 4),
     getFloat(index + 8)
@@ -90,10 +98,30 @@ fun ByteArray.getFloatVector(index: Int) = arrayListOf(
 /**
  * Returns vector [X, Y,Z] in double type
  */
-fun ByteArray.getDoubleVector(index: Int) = arrayListOf(
+fun ByteArray.getDoubleVector(index: Int) = Vector(
+    getDouble(index),
+    getDouble(index + 8),
+    getDouble(index + 16)
+)
+
+fun ByteArray.getDoubleOrientedVector(index: Int) = OrientationVector(
     getDouble(index),
     getDouble(index + 8),
     getDouble(index + 16)
 )
 
 fun ByteArray.getSpeedLong(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
+
+fun ByteArray.allSubstancesTypes(): ArrayList<String> {
+    val allSubstancesTypes = arrayListOf<String>()
+    var innerIndex = 4400
+    for (i in 0 until Constants.SUBSTANCES) {
+        val temp = getString(innerIndex)
+        if (temp.isNotEmpty()) {
+            allSubstancesTypes.add(temp)
+        }
+        innerIndex += Constants.STRING_SIZE
+    }
+
+    return allSubstancesTypes
+}
