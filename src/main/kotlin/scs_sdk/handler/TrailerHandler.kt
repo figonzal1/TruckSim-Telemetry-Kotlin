@@ -48,7 +48,7 @@ fun trailer(rawData: ByteArray) = with(rawData) {
 
 private fun retrieveWheels(rawData: ByteArray): List<TrailerWheel> = with(rawData) {
 
-    return (0..Constants.WHEEL_SIZE)
+    return (0 until Constants.WHEEL_SIZE)
         .map {
             TrailerWheel(
                 substance = getUIntArray(6084, Constants.WHEEL_SIZE)[it].toInt(),

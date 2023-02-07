@@ -111,3 +111,17 @@ fun ByteArray.getDoubleOrientedVector(index: Int) = OrientationVector(
 )
 
 fun ByteArray.getSpeedLong(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
+
+fun ByteArray.allSubstancesTypes(): ArrayList<String> {
+    val allSubstancesTypes = arrayListOf<String>()
+    var innerIndex = 4400
+    for (i in 0 until Constants.SUBSTANCES) {
+        val temp = getString(innerIndex)
+        if (temp.isNotEmpty()) {
+            allSubstancesTypes.add(temp)
+        }
+        innerIndex += Constants.STRING_SIZE
+    }
+
+    return allSubstancesTypes
+}

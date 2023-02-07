@@ -169,7 +169,7 @@ private fun ByteArray.cabin() = Cabin(
 
 private fun retrieveWheels(rawData: ByteArray): List<TruckWheel> = with(rawData) {
 
-    return (0..Constants.WHEEL_SIZE)
+    return (0 until Constants.WHEEL_SIZE)
         .map {
             TruckWheel(
                 substance = getUIntArray(120, Constants.WHEEL_SIZE)[it].toInt(),
