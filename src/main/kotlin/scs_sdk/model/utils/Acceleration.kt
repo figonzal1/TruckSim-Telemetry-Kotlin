@@ -9,6 +9,8 @@
  *  Last modified: 08-02-23 12:18
  */
 
+
+
 package scs_sdk.model.utils
 
 data class Acceleration<T>(

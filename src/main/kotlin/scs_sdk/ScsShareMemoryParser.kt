@@ -9,16 +9,7 @@
  *  Last modified: 08-02-23 19:14
  */
 
-/*
- * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
- *
- *  Author: Felipe González Alarcón
- *  Email: felipe.gonzalezalarcon94@gmail.com
- *
- *  Project: ETS2-Telemetry
- *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 15:56
- */
+
 
 package scs_sdk
 
@@ -31,8 +22,6 @@ import utils.exceptions.ReadMemoryException
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
-
-var offset = 0
 
 /**
  * Class that is responsible for reading shared memory from RAM

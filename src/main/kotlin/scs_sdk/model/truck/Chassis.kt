@@ -9,6 +9,7 @@
  *  Last modified: 08-02-23 12:18
  */
 
+
 package scs_sdk.model.truck
 
 data class Chassis(val damage: Float)
