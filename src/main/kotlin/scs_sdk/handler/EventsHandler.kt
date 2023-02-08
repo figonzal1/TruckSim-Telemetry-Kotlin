@@ -9,6 +9,17 @@
  *  Last modified: 08-02-23 12:18
  */
 
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 12:18
+ */
+
 package scs_sdk.handler
 
 import scs_sdk.model.events.Events
@@ -24,6 +35,14 @@ import scs_sdk.model.utils.CityType.CityDestination
 import scs_sdk.model.utils.CityType.CitySource
 import utils.*
 
+/**
+ * Parse [ByteArray] with events data and transform to [Events]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of events data
+ *
+ * @return [Events] object
+ */
 fun events(rawData: ByteArray) = with(rawData) {
     Events(
         job = EventsJob(
@@ -69,13 +88,13 @@ fun events(rawData: ByteArray) = with(rawData) {
             active = getBool(4307)
         ),
         tollgate = EventsTollgate(
-            amount = rawData.getULong(4224).toLong(),
-            active = rawData.getBool(4305)
+            amount = getULong(4224).toLong(),
+            active = getBool(4305)
         ),
-        refuel = EventsRefuel(rawData.getBool(4308)),
+        refuel = EventsRefuel(getBool(4308)),
         refuelPaid = EventsRefuelPaid(
-            amount = rawData.getFloat(1464),
-            active = rawData.getBool(4309)
+            amount = getFloat(1464),
+            active = getBool(4309)
         )
     )
 }

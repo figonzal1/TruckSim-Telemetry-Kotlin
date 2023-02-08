@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 12:19
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 12:18
  */
 
@@ -16,6 +27,14 @@ import utils.getFloat
 import utils.getSpeedLong
 import utils.getUInt
 
+/**
+ * Parse [ByteArray] with navigation data and transform to [Navigation]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of navigation data
+ *
+ * @return [Navigation] object
+ */
 fun navigation(rawData: ByteArray) = with(rawData) {
     Navigation(
         nextRestStop = getUInt(500).toInt(),

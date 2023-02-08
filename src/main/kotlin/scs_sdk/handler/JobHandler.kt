@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 12:19
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 12:18
  */
 
@@ -20,6 +31,14 @@ import scs_sdk.model.utils.CompanyType.CompanyDestination
 import scs_sdk.model.utils.CompanyType.CompanySource
 import utils.*
 
+/**
+ * Parse [ByteArray] with job data and transform to [Job]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of job data
+ *
+ * @return [Job] object
+ */
 fun job(rawData: ByteArray) = with(rawData) {
     Job(
         source = JobLocation(

@@ -9,10 +9,23 @@
  *  Last modified: 08-02-23 12:18
  */
 
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry
+ *  Last modified: 08-02-23 12:18
+ */
+
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.20"
+    `java-library`
+    `maven-publish`
     id("org.sonarqube") version "3.5.0.2730"
     application
 }
@@ -59,5 +72,13 @@ sonarqube {
         property("sonar.sourceEncoding", "UTF-8")
         property("sonar.sources", "src/main/kotlin")
         property("sonar.login", "sqp_3b70351f15237c561b839f18563d78ca3918cf6c")
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("ETS2-Telemetry") {
+            from(components["kotlin"])
+        }
     }
 }

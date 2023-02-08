@@ -9,11 +9,30 @@
  *  Last modified: 08-02-23 12:18
  */
 
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 12:18
+ */
+
 package scs_sdk.handler
 
 import scs_sdk.model.game.Game
 import utils.*
 
+/**
+ * Parse [ByteArray] with game data and transform to [Game]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of game data
+ *
+ * @return [Game] object
+ */
 fun game(rawData: ByteArray) = with(rawData) {
     Game(
         sdkActive = getBool(0),
