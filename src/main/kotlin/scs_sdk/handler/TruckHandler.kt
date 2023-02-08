@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 17:49
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 15:56
  */
 
@@ -133,11 +144,11 @@ private fun ByteArray.brakes() = Brakes(
         value = getFloat(992),
         warning = AirPressureAlertWarning(
             factor = getFloat(720),
-            enabled = getBool(1568)
+            isEnabled = getBool(1568)
         ),
         emergency = AirPressureAlertEmergency(
             factor = getFloat(724),
-            enabled = getBool(1569)
+            isEnabled = getBool(1569)
         )
     ),
     temperature = getFloat(996),
@@ -193,7 +204,7 @@ private fun ByteArray.engine() = Engine(
     ),
     rpm = Rpm(getFloat(740), getFloat(952)),
     damage = getFloat(1036),
-    enabled = getBool(1576)
+    isEnabled = getBool(1576)
 )
 
 private fun ByteArray.cabin() = Cabin(

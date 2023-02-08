@@ -6,7 +6,7 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 16:04
+ *  Last modified: 08-02-23 18:29
  */
 
 /*
@@ -17,7 +17,7 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 12:18
+ *  Last modified: 08-02-23 16:04
  */
 
 package scs_sdk.model.truck.transmission

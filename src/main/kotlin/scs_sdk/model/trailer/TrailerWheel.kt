@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 17:38
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 17:26
  */
 
@@ -32,7 +43,7 @@ import scs_sdk.model.utils.Vector
  * @property substance
  * @property radius
  * @property suspensionDeflection
- * @property velocity
+ * @property velocity km/h
  * @property steering
  * @property rotation
  * @property lift

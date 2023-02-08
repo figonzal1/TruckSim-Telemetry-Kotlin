@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 19:14
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 15:56
  */
 
@@ -13,7 +24,6 @@ package scs_sdk
 
 import com.sun.jna.Pointer
 import jna.Ets2Kernel32Impl
-import mu.KotlinLogging
 import scs_sdk.handler.*
 import scs_sdk.model.TelemetryData
 import utils.Constants
@@ -35,8 +45,6 @@ class ScsShareMemoryParser(
 ) {
     private var pointer: Pointer? = null
     private val rawData = ByteArray(Constants.MAP_SIZE)
-
-    val logger = KotlinLogging.logger { }
 
     /**
      * Retrieve pointer from kernel shared memory

@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 17:49
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 12:18
  */
 
@@ -55,15 +66,15 @@ fun events(rawData: ByteArray) = with(rawData) {
                 distance = getUInt(1460).toInt(),
                 autoParked = getBool(1613),
                 revenue = getULong(4208).toLong(),
-                active = getBool(4303)
+                isActive = getBool(4303)
             ),
             started = EventsJobStarted(
-                autoLoaded = getBool(1614),
-                active = getBool(4300)
+                isAutoLoaded = getBool(1614),
+                isActive = getBool(4300)
             ),
             cancelled = EventsJobCancelled(
                 penalty = getULong(4200).toLong(),
-                active = getBool(4302),
+                isActive = getBool(4302),
                 startedTimeStamp = getUInt(444).toInt(),
                 cancelledTimestamp = getUInt(448).toInt()
 
@@ -73,28 +84,28 @@ fun events(rawData: ByteArray) = with(rawData) {
         fine = EventsFine(
             offence = getString(3436, 32),
             amount = getULong(4216).toLong(),
-            active = getBool(4304)
+            isActive = getBool(4304)
         ),
         ferry = EventsFerry(
             source = CitySource(getString(3596), getString(3468)),
             destination = CityDestination(getString(3660), getString(3532)),
             amount = getULong(4232).toLong(),
-            active = getBool(4306)
+            isActive = getBool(4306)
         ),
         train = EventsTrain(
             source = CitySource(getString(3852), getString(3724)),
             destination = CityDestination(getString(3916), getString(3788)),
             amount = getULong(4240).toLong(),
-            active = getBool(4307)
+            isActive = getBool(4307)
         ),
         tollgate = EventsTollgate(
             amount = getULong(4224).toLong(),
-            active = getBool(4305)
+            isActive = getBool(4305)
         ),
         refuel = EventsRefuel(getBool(4308)),
         refuelPaid = EventsRefuelPaid(
             amount = getFloat(1464),
-            active = getBool(4309)
+            isActive = getBool(4309)
         )
     )
 }
