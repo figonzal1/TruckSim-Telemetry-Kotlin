@@ -6,7 +6,7 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 17:31
+ *  Last modified: 08-02-23 13:30
  */
 
 /*
@@ -17,9 +17,13 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 12:18
+ *  Last modified: 08-02-23 12:46
  */
 
-package scs_sdk.model.utils
+package scs_sdk.model.game
 
-data class GenericResource(val id: String, val name: String)
+data class Versions(
+    val plugin: Int,
+    val game: Double,
+    val telemetry: Double
+)

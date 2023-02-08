@@ -6,7 +6,7 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 17:31
+ *  Last modified: 08-02-23 13:42
  */
 
 /*
@@ -17,9 +17,13 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 12:18
+ *  Last modified: 08-02-23 13:39
  */
 
-package scs_sdk.model.utils
+package scs_sdk.model.game
 
-data class GenericResource(val id: String, val name: String)
+data class Timestamp(
+    val game: Long,
+    val simulation: Long,
+    val render: Long
+)

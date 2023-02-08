@@ -6,6 +6,17 @@
  *
  *  Project: ETS2-Telemetry
  *  Module: ETS2-Telemetry.main
+ *  Last modified: 08-02-23 16:27
+ */
+
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: ETS2-Telemetry
+ *  Module: ETS2-Telemetry.main
  *  Last modified: 08-02-23 12:19
  */
 
@@ -54,10 +65,9 @@ fun job(rawData: ByteArray) = with(rawData) {
             name = getString(2620),
             mass = getFloat(748),
             unitMass = getFloat(944),
-            damage = getFloat(6152),
+            damage = getFloat(1456),
             isLoaded = getBool(1564)
         ),
-        //TODO: CHECK EXPECTED DELIVERY TIMESTAMP
         expectedDeliveryTimestamp = getUInt(88).toInt(),
         plannedDistance = getUInt(100).toInt(),
         income = getULong(4000).toLong(),
