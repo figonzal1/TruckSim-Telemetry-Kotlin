@@ -24,7 +24,34 @@ import scs_sdk.model.utils.OrientationVector
 import scs_sdk.model.utils.Vector
 
 /**
- * TODO: Terminar documentacion
+ * Class that hold truck data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property transmission
+ * @property brakes
+ * @property lights
+ * @property liquids
+ * @property engine
+ * @property differential
+ * @property speed
+ * @property cruiseControl
+ * @property cabin
+ * @property chassis
+ * @property odometer
+ * @property isElectricEnabled
+ * @property isWipersEnabled
+ * @property brand
+ * @property model
+ * @property licensePlate
+ * @property totalDamage
+ * @property position
+ * @property orientation
+ * @property acceleration
+ * @property head
+ * @property hook
+ * @property liftAxle
+ * @property wheels
  */
 data class Truck(
     val transmission: Transmission,
