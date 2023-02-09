@@ -10,15 +10,10 @@
  */
 
 
+package scs_sdk.model.game
 
-package scs_sdk.model.truck.brakes
-
-/**
- * Class for retarder
- *
- * @author Felipe Gonzalez
- *
- * @property steps
- * @property level
- */
-data class Retarder(val steps: Int, val level: Int)
+data class Versions(
+    val plugin: Int,
+    val game: Double,
+    val telemetry: Double
+)

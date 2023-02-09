@@ -1,13 +1,22 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
+ */
 package utils
 
 import scs_sdk.model.game.GameTime
 import scs_sdk.model.game.GameType
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import kotlin.math.floor
 
 /**
- * Function to transform raw versions to a formatted version
+ * Transform raw versions to a formatted version
  *
  * @author Felipe Gonzalez
  *
@@ -19,7 +28,7 @@ import kotlin.math.floor
 fun getVersion(majorVersion: UInt, minorVersion: UInt) = "${majorVersion}.${minorVersion}".toDouble()
 
 /**
- * Convert rawGameTime to [GameTime]
+ * Convert [rawTime] to [GameTime]
  *
  * @author Felipe Gonzalez
  *
@@ -51,21 +60,3 @@ fun getGameType(uInt: UInt) = when (uInt) {
     2u -> GameType.ATS
     else -> GameType.UNKNOWN
 }
-
-/**
- * Return [GameTime] formatted in special pattern [HH:MM]
- *
- * @author Felipe Gonzalez
- * @return string formatted
- */
-fun GameTime.formatGameTime(): String {
-    val value = this.value
-    return "${value.dayOfWeek}, ${DateTimeFormatter.ofPattern("HH:MM")}"
-}
-
-/*
-fun getNextRestStop(uInt: UInt): Long {
-    val hour = uInt.toInt() / 60
-    val minutes = uInt.toInt() % 60
-    logger.debug { "Navigation, nextRestStop: ${hour}h ${minutes}min" }
-}*/

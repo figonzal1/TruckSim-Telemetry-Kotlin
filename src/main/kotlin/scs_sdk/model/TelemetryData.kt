@@ -1,3 +1,14 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
+ */
+
 package scs_sdk.model
 
 import scs_sdk.model.controls.Controls
@@ -14,13 +25,18 @@ import scs_sdk.model.truck.Truck
  *
  * @author Felipe Gonzalez
  *
- * @property game related to general game data
- * @property controls related to control data
- * @property job related to cargo data
+ * @property game related to general [Game] data
+ * @property events related to [Events] data
+ * @property controls related to [Controls] data
+ * @property job related to [Job] data
+ * @property navigation related to [Navigation] data
+ * @property substances
+ * @property truck related to [Truck] data
+ * @property trailer related to [Trailer] data
  */
 data class TelemetryData(
     val game: Game,
-    val eventsJob: Events,
+    val events: Events,
     val controls: Controls,
     val job: Job,
     val navigation: Navigation,

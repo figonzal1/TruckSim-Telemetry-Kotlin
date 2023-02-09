@@ -1,5 +1,18 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
+ */
+
+
 package scs_sdk.handler
 
+import scs_sdk.model.events.Events
 import scs_sdk.model.trailer.Trailer
 import scs_sdk.model.trailer.TrailerDamage
 import scs_sdk.model.trailer.TrailerWheel
@@ -11,7 +24,14 @@ import scs_sdk.model.utils.GenericResource
 import scs_sdk.model.utils.Vector
 import utils.*
 
-
+/**
+ * Parse [ByteArray] with trailer data and transform to [Trailer]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of trailer data
+ *
+ * @return [Trailer] object
+ */
 fun trailer(rawData: ByteArray) = with(rawData) {
 
     val cargoDamage = getFloat(6152)
@@ -42,13 +62,18 @@ fun trailer(rawData: ByteArray) = with(rawData) {
             country = GenericResource(getString(7432), getString(7496))
         ),
         liftAxle = LiftAxle(getBool(1611), getBool(1612)),
-        wheels = retrieveWheels(this)
+        wheels = retrieveWheels()
     )
 }
 
-private fun retrieveWheels(rawData: ByteArray): List<TrailerWheel> = with(rawData) {
-
-    return (0 until Constants.WHEEL_SIZE)
+/**
+ * Parse [ByteArray] with events data and transform to [Events]
+ *
+ * @author Felipe Gonzalez
+ * @return [Events] object
+ */
+private fun ByteArray.retrieveWheels() =
+    (0 until Constants.WHEEL_SIZE)
         .map {
             TrailerWheel(
                 substance = getUIntArray(6084, Constants.WHEEL_SIZE)[it].toInt(),
@@ -72,4 +97,4 @@ private fun retrieveWheels(rawData: ByteArray): List<TrailerWheel> = with(rawDat
             )
         }
 
-}
+

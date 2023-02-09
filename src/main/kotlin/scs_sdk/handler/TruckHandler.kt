@@ -1,3 +1,17 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
+ */
+
+
+
+
 package scs_sdk.handler
 
 import scs_sdk.model.truck.*
@@ -20,6 +34,14 @@ import scs_sdk.model.truck.transmission.Transmission
 import scs_sdk.model.utils.*
 import utils.*
 
+/**
+ * Parse [ByteArray] with truck data and transform to [Truck]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of truck data
+ *
+ * @return [Truck] object
+ */
 fun truck(rawData: ByteArray) = with(rawData) {
 
     val transmission = transmission()
@@ -79,7 +101,8 @@ private fun ByteArray.transmission() = Transmission(
     gearRatiosForward = getFloatArray(816, 24),
     gearRatiosReverse = getFloatArray(912, 8),
     damage = getFloat(1040),
-    shifterType = getString(3196, 16)
+    shifterType = getString(3196, 16),
+    hShifterSelector = getBoolArray(1606, 2)
 )
 
 private fun ByteArray.brakes() = Brakes(
@@ -91,11 +114,11 @@ private fun ByteArray.brakes() = Brakes(
         value = getFloat(992),
         warning = AirPressureAlertWarning(
             factor = getFloat(720),
-            enabled = getBool(1568)
+            isEnabled = getBool(1568)
         ),
         emergency = AirPressureAlertEmergency(
             factor = getFloat(724),
-            enabled = getBool(1569)
+            isEnabled = getBool(1569)
         )
     ),
     temperature = getFloat(996),
@@ -151,7 +174,7 @@ private fun ByteArray.engine() = Engine(
     ),
     rpm = Rpm(getFloat(740), getFloat(952)),
     damage = getFloat(1036),
-    enabled = getBool(1576)
+    isEnabled = getBool(1576)
 )
 
 private fun ByteArray.cabin() = Cabin(

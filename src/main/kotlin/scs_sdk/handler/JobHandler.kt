@@ -1,3 +1,16 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
+ */
+
+
+
 package scs_sdk.handler
 
 import scs_sdk.model.job.Job
@@ -9,6 +22,14 @@ import scs_sdk.model.utils.CompanyType.CompanyDestination
 import scs_sdk.model.utils.CompanyType.CompanySource
 import utils.*
 
+/**
+ * Parse [ByteArray] with job data and transform to [Job]
+ *
+ * @author Felipe Gonzalez
+ * @param rawData - byte array of job data
+ *
+ * @return [Job] object
+ */
 fun job(rawData: ByteArray) = with(rawData) {
     Job(
         source = JobLocation(
@@ -24,10 +45,9 @@ fun job(rawData: ByteArray) = with(rawData) {
             name = getString(2620),
             mass = getFloat(748),
             unitMass = getFloat(944),
-            damage = getFloat(6152),
+            damage = getFloat(1456),
             isLoaded = getBool(1564)
         ),
-        //TODO: CHECK EXPECTED DELIVERY TIMESTAMP
         expectedDeliveryTimestamp = getUInt(88).toInt(),
         plannedDistance = getUInt(100).toInt(),
         income = getULong(4000).toLong(),

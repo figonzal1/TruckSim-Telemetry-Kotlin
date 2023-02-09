@@ -1,8 +1,25 @@
+/*
+ * This file is subject to the terms and conditions defined in file 'LICENSE', which is part of this source code package
+ *
+ *  Author: Felipe González Alarcón
+ *  Email: felipe.gonzalezalarcon94@gmail.com
+ *
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin
+ *  Last modified: 09-02-23 00:57
+ */
+
+
+
+
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.20"
+    `java-library`
+    `maven-publish`
     id("org.sonarqube") version "3.5.0.2730"
+    id("org.jetbrains.dokka") version "1.7.20"
     application
 }
 
@@ -43,10 +60,18 @@ application {
 
 sonarqube {
     properties {
-        property("sonar.projectName", "ETS2-Telemetry")
-        property("sonar.projectKey", "ETS2-Telemetry")
+        property("sonar.projectName", "TruckSim-Telemetry-Kotlin")
+        property("sonar.projectKey", "TruckSim-Telemetry-Kotlin")
         property("sonar.sourceEncoding", "UTF-8")
         property("sonar.sources", "src/main/kotlin")
-        property("sonar.login", "sqp_3b70351f15237c561b839f18563d78ca3918cf6c")
+        property("sonar.login", "sqp_e5335303f0f17d1afcfdc16e39ae44e3dd720350")
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("TruckSim-Telemetry-Kotlin") {
+            from(components["kotlin"])
+        }
     }
 }
