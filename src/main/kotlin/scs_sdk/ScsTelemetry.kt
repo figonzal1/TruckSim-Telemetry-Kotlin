@@ -15,6 +15,7 @@ package scs_sdk
 import jna.Ets2Kernel32Impl
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import mu.KotlinLogging
 import scs_sdk.model.TelemetryData
@@ -22,8 +23,6 @@ import utils.Constants
 import utils.exceptions.ReadMemoryException
 
 private val logger = KotlinLogging.logger { }
-
-var DELAY_TIME: Long = 1000
 
 /**
  * Class that handle basic telemetry data functionality
@@ -35,24 +34,35 @@ class ScsTelemetry {
     private var scsShareMemoryParser: ScsShareMemoryParser = ScsShareMemoryParser(Ets2Kernel32Impl())
 
     private val _telemetryFlow = MutableSharedFlow<TelemetryData>()
-    val telemetryFlow = _telemetryFlow.asSharedFlow()
+
+    /**
+     * Flow for end user consumption
+     *
+     * @return [SharedFlow] with [TelemetryData]
+     */
+    val telemetryFlow: SharedFlow<TelemetryData> = _telemetryFlow.asSharedFlow()
 
     /**
      * Observer changes in telemetry
      *
      * @author Felipe Gonzalez
+     *
+     * @param delayTime - frequency to update telemetry. Default: 1000ms
      */
-    suspend fun watch() {
-        while (true) {
-            delay(DELAY_TIME)
+    suspend fun watch(delayTime: Long = 1000) {
 
-            DELAY_TIME = when (connect()) {
+        var delay = delayTime
+
+        while (true) {
+            delay(delay)
+
+            delay = when (connect()) {
                 true -> {
                     readData()
-                    1000
+                    delayTime
                 }
 
-                else -> 5000
+                else -> 5000L //If the game is not detected, fix delay in 5s
             }
         }
     }
