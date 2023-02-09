@@ -4,10 +4,11 @@
  *  Author: Felipe González Alarcón
  *  Email: felipe.gonzalezalarcon94@gmail.com
  *
- *  Project: ETS2-Telemetry
- *  Module: ETS2-Telemetry
- *  Last modified: 08-02-23 12:39
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin
+ *  Last modified: 09-02-23 00:57
  */
+
 
 
 
@@ -58,17 +59,17 @@ application {
 
 sonarqube {
     properties {
-        property("sonar.projectName", "ETS2-Telemetry")
-        property("sonar.projectKey", "ETS2-Telemetry")
+        property("sonar.projectName", "TruckSim-Telemetry-Kotlin")
+        property("sonar.projectKey", "TruckSim-Telemetry-Kotlin")
         property("sonar.sourceEncoding", "UTF-8")
         property("sonar.sources", "src/main/kotlin")
-        property("sonar.login", "sqp_3b70351f15237c561b839f18563d78ca3918cf6c")
+        property("sonar.login", "sqp_e5335303f0f17d1afcfdc16e39ae44e3dd720350")
     }
 }
 
 publishing {
     publications {
-        create<MavenPublication>("ETS2-Telemetry") {
+        create<MavenPublication>("TruckSim-Telemetry-Kotlin") {
             from(components["kotlin"])
         }
     }

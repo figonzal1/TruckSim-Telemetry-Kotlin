@@ -4,12 +4,10 @@
  *  Author: Felipe González Alarcón
  *  Email: felipe.gonzalezalarcon94@gmail.com
  *
- *  Project: ETS2-Telemetry
- *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 19:14
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
  */
-
-
 
 package scs_sdk.model.truck
 
@@ -26,7 +24,7 @@ import scs_sdk.model.utils.OrientationVector
 import scs_sdk.model.utils.Vector
 
 /**
- *
+ * TODO: Terminar documentacion
  */
 data class Truck(
     val transmission: Transmission,

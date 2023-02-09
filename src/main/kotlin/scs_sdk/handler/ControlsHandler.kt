@@ -4,10 +4,11 @@
  *  Author: Felipe González Alarcón
  *  Email: felipe.gonzalezalarcon94@gmail.com
  *
- *  Project: ETS2-Telemetry
- *  Module: ETS2-Telemetry.main
- *  Last modified: 08-02-23 12:39
+ *  Project: TruckSim-Telemetry-Kotlin
+ *  Module: TruckSim-Telemetry-Kotlin.main
+ *  Last modified: 09-02-23 01:02
  */
+
 
 package scs_sdk.handler
 
