@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>scs_sdk.model.utils</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+
+    </script>
+    <script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../../styles/style.css" rel="Stylesheet">
+    <link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <link href="../../styles/main.css" rel="Stylesheet">
+    <link href="../../styles/prism.css" rel="Stylesheet">
+    <link href="../../styles/logo-styles.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+    <script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+    <script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+    <script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+        <a href="../../index.html">
+            <span>TruckSim-Telemetry-Kotlin</span>
+        </a>
+    </div>
+    <div>
+        1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+        <div class="main-content" id="content"
+             pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.utils////PointingToDeclaration//769193423">
+            <div class="breadcrumbs"><a href="../../index.html">TruckSim-Telemetry-Kotlin</a><span
+                    class="delimiter">/</span><span class="current">scs_sdk.model.utils</span></div>
+            <div class="cover ">
+                <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+            </div>
+            <div class="tabbedcontent">
+                <div class="tabs-section" tabs-section="tabs-section">
+                    <button class="section-tab" data-active="" data-togglable="Types">Types</button>
+                </div>
+                <div class="tabs-section-body">
+                    <h2 class="">Types</h2>
+                    <div class="table" data-togglable="Types"><a data-name="292858782%2FClasslikes%2F769193423"
+                                                                 anchor-label="Acceleration"
+                                                                 id="292858782%2FClasslikes%2F769193423"
+                                                                 data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-acceleration/index.html"><span><span>Acceleration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="292858782%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-acceleration/index.html">Acceleration</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a href="-acceleration/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>linearVelocity<span
+                                                        class="token operator">: </span><a href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a href="-acceleration/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token operator">?</span><span
+                                                        class="token operator"> = </span>null<span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>angularVelocity<span
+                                                        class="token operator">: </span><a href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a href="-acceleration/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>linearAcceleration<span
+                                                        class="token operator">: </span><a href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a href="-acceleration/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token operator">?</span><span
+                                                        class="token operator"> = </span>null<span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>angularAcceleration<span
+                                                        class="token operator">: </span><a href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a href="-acceleration/index.html">T</a><span
+                                                        class="token operator">&gt;</span></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="1082803961%2FClasslikes%2F769193423" anchor-label="CityType"
+                           id="1082803961%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-city-type/index.html"><span>City</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1082803961%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span class="token keyword">sealed </span><span
+                                                        class="token keyword">class </span><a
+                                                        href="-city-type/index.html">CityType</a></div>
+                                                <div class="brief "><p class="paragraph">Class that represent different
+                                                    cities types</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="1446506797%2FClasslikes%2F769193423" anchor-label="CompanyType"
+                           id="1446506797%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-company-type/index.html"><span>Company</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1446506797%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span class="token keyword">sealed </span><span
+                                                        class="token keyword">class </span><a
+                                                        href="-company-type/index.html">CompanyType</a></div>
+                                                <div class="brief "><p class="paragraph">Class that hold companies
+                                                    information</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="439709119%2FClasslikes%2F769193423" anchor-label="GenericResource"
+                           id="439709119%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-generic-resource/index.html"><span>Generic</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="439709119%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-generic-resource/index.html">GenericResource</a><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>id<span class="token operator">: </span><a
+                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span
+                                                        class="token keyword">val </span>name<span
+                                                        class="token operator">: </span><a
+                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="2095250603%2FClasslikes%2F769193423" anchor-label="Offset"
+                           id="2095250603%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-offset/index.html"><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2095250603%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-offset/index.html">Offset</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a
+                                                        href="-offset/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>position<span
+                                                        class="token operator">: </span><a href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a
+                                                        href="-offset/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>orientation<span
+                                                        class="token operator">: </span><a
+                                                        href="-orientation-vector/index.html">OrientationVector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a
+                                                        href="-offset/index.html">T</a><span
+                                                        class="token operator">&gt;</span></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="-1612566383%2FClasslikes%2F769193423" anchor-label="OrientationVector"
+                           id="-1612566383%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-orientation-vector/index.html"><span>Orientation</span><wbr></wbr><span><span>Vector</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612566383%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-orientation-vector/index.html">OrientationVector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a
+                                                        href="-orientation-vector/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>heading<span
+                                                        class="token operator">: </span><a
+                                                        href="-orientation-vector/index.html">T</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span
+                                                        class="token keyword">val </span>pitch<span
+                                                        class="token operator">: </span><a
+                                                        href="-orientation-vector/index.html">T</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span
+                                                        class="token keyword">val </span>roll<span
+                                                        class="token operator">: </span><a
+                                                        href="-orientation-vector/index.html">T</a></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="-1125308933%2FClasslikes%2F769193423" anchor-label="Vector"
+                           id="-1125308933%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-vector/index.html"><span><span>Vector</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1125308933%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-vector/index.html">Vector</a><span
+                                                        class="token operator">&lt;</span><span
+                                                        class="token keyword"></span><a
+                                                        href="-vector/index.html">T</a><span
+                                                        class="token operator">&gt;</span><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>x<span
+                                                        class="token operator">: </span><a
+                                                        href="-vector/index.html">T</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>y<span
+                                                        class="token operator">: </span><a
+                                                        href="-vector/index.html">T</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>z<span
+                                                        class="token operator">: </span><a
+                                                        href="-vector/index.html">T</a></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a data-name="328672281%2FClasslikes%2F769193423" anchor-label="WarningLevels"
+                           id="328672281%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex">
+                <div><a href="-warning-levels/index.html"><span>Warning</span><wbr></wbr><span><span>Levels</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="328672281%2FClasslikes%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span
+                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+                                <div>
+                                    <div class="title">
+                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                            <div class="content sourceset-dependent-content" data-active=""
+                                                 data-togglable=":dokkaHtml/main">
+                                                <div class="symbol monospace"><span
+                                                        class="token keyword">data </span><span class="token keyword">class </span><a
+                                                        href="-warning-levels/index.html">WarningLevels</a><span
+                                                        class="token punctuation">(</span><span
+                                                        class="parameters "><span class="parameter "><span
+                                                        class="token keyword">val </span>factor<span
+                                                        class="token operator">: </span><a
+                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                                                        class="token punctuation">, </span></span><span
+                                                        class="parameter "><span class="token keyword">val </span>isEnabled<span
+                                                        class="token operator">: </span><a
+                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                                        class="token punctuation">)</span></div>
+                                                <div class="brief "><p class="paragraph">Class that hold warnings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

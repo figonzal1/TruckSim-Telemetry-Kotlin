@@ -1,0 +1,4582 @@
+[
+  {
+    "name": "ATS",
+    "description": "scs_sdk.model.game.GameType.ATS",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-a-t-s/index.html",
+    "searchKeys": [
+      "ATS",
+      "ATS",
+      "scs_sdk.model.game.GameType.ATS"
+    ]
+  },
+  {
+    "name": "ETS2",
+    "description": "scs_sdk.model.game.GameType.ETS2",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-e-t-s2/index.html",
+    "searchKeys": [
+      "ETS2",
+      "ETS2",
+      "scs_sdk.model.game.GameType.ETS2"
+    ]
+  },
+  {
+    "name": "UNKNOWN",
+    "description": "scs_sdk.model.game.GameType.UNKNOWN",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-u-n-k-n-o-w-n/index.html",
+    "searchKeys": [
+      "UNKNOWN",
+      "UNKNOWN",
+      "scs_sdk.model.game.GameType.UNKNOWN"
+    ]
+  },
+  {
+    "name": "abstract override fun OpenFileMapping(fileAccess: Int, bInherit: Boolean, filename: String): WinNT.HANDLE?",
+    "description": "jna.Ets2Kernel32.OpenFileMapping",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-open-file-mapping.html",
+    "searchKeys": [
+      "OpenFileMapping",
+      "abstract override fun OpenFileMapping(fileAccess: Int, bInherit: Boolean, filename: String): WinNT.HANDLE?",
+      "jna.Ets2Kernel32.OpenFileMapping"
+    ]
+  },
+  {
+    "name": "class AdBlue(val capacity: Float, warning: WarningLevels, val value: Float) : LiquidsType",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.AdBlue",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/index.html",
+    "searchKeys": [
+      "AdBlue",
+      "class AdBlue(val capacity: Float, warning: WarningLevels, val value: Float) : LiquidsType",
+      "scs_sdk.model.truck.liquids.LiquidsType.AdBlue"
+    ]
+  },
+  {
+    "name": "class AirPressureAlertEmergency(val factor: Float, val isEnabled: Boolean) : AirPressureAlertType",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/index.html",
+    "searchKeys": [
+      "AirPressureAlertEmergency",
+      "class AirPressureAlertEmergency(val factor: Float, val isEnabled: Boolean) : AirPressureAlertType",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency"
+    ]
+  },
+  {
+    "name": "class AirPressureAlertWarning(val factor: Float, val isEnabled: Boolean) : AirPressureAlertType",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/index.html",
+    "searchKeys": [
+      "AirPressureAlertWarning",
+      "class AirPressureAlertWarning(val factor: Float, val isEnabled: Boolean) : AirPressureAlertType",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning"
+    ]
+  },
+  {
+    "name": "class CityDestination(val id: String, val name: String) : CityType",
+    "description": "scs_sdk.model.utils.CityType.CityDestination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/index.html",
+    "searchKeys": [
+      "CityDestination",
+      "class CityDestination(val id: String, val name: String) : CityType",
+      "scs_sdk.model.utils.CityType.CityDestination"
+    ]
+  },
+  {
+    "name": "class CitySource(val id: String, val name: String) : CityType",
+    "description": "scs_sdk.model.utils.CityType.CitySource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/index.html",
+    "searchKeys": [
+      "CitySource",
+      "class CitySource(val id: String, val name: String) : CityType",
+      "scs_sdk.model.utils.CityType.CitySource"
+    ]
+  },
+  {
+    "name": "class CompanyDestination(val id: String, val name: String) : CompanyType",
+    "description": "scs_sdk.model.utils.CompanyType.CompanyDestination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/index.html",
+    "searchKeys": [
+      "CompanyDestination",
+      "class CompanyDestination(val id: String, val name: String) : CompanyType",
+      "scs_sdk.model.utils.CompanyType.CompanyDestination"
+    ]
+  },
+  {
+    "name": "class CompanySource(val id: String, val name: String) : CompanyType",
+    "description": "scs_sdk.model.utils.CompanyType.CompanySource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/index.html",
+    "searchKeys": [
+      "CompanySource",
+      "class CompanySource(val id: String, val name: String) : CompanyType",
+      "scs_sdk.model.utils.CompanyType.CompanySource"
+    ]
+  },
+  {
+    "name": "class ControlsGame(val steering: Float, val throttle: Float, val brake: Float, val clutch: Float) : ControlsType",
+    "description": "scs_sdk.model.controls.ControlsType.ControlsGame",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/index.html",
+    "searchKeys": [
+      "ControlsGame",
+      "class ControlsGame(val steering: Float, val throttle: Float, val brake: Float, val clutch: Float) : ControlsType",
+      "scs_sdk.model.controls.ControlsType.ControlsGame"
+    ]
+  },
+  {
+    "name": "class ControlsInput(val steering: Float, val throttle: Float, val brake: Float, val clutch: Float) : ControlsType",
+    "description": "scs_sdk.model.controls.ControlsType.ControlsInput",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/index.html",
+    "searchKeys": [
+      "ControlsInput",
+      "class ControlsInput(val steering: Float, val throttle: Float, val brake: Float, val clutch: Float) : ControlsType",
+      "scs_sdk.model.controls.ControlsType.ControlsInput"
+    ]
+  },
+  {
+    "name": "class Ets2Kernel32Impl",
+    "description": "jna.Ets2Kernel32Impl",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/index.html",
+    "searchKeys": [
+      "Ets2Kernel32Impl",
+      "class Ets2Kernel32Impl",
+      "jna.Ets2Kernel32Impl"
+    ]
+  },
+  {
+    "name": "class EventsRefuel(isActive: Boolean) : EventsRefuelType",
+    "description": "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/index.html",
+    "searchKeys": [
+      "EventsRefuel",
+      "class EventsRefuel(isActive: Boolean) : EventsRefuelType",
+      "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel"
+    ]
+  },
+  {
+    "name": "class EventsRefuelPaid(amount: Float, isActive: Boolean) : EventsRefuelType",
+    "description": "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuelPaid",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/index.html",
+    "searchKeys": [
+      "EventsRefuelPaid",
+      "class EventsRefuelPaid(amount: Float, isActive: Boolean) : EventsRefuelType",
+      "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuelPaid"
+    ]
+  },
+  {
+    "name": "class Fuel(val capacity: Float, warning: WarningLevels, val value: Float, val avgConsumption: Float, val range: Float) : LiquidsType",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Fuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/index.html",
+    "searchKeys": [
+      "Fuel",
+      "class Fuel(val capacity: Float, warning: WarningLevels, val value: Float, val avgConsumption: Float, val range: Float) : LiquidsType",
+      "scs_sdk.model.truck.liquids.LiquidsType.Fuel"
+    ]
+  },
+  {
+    "name": "class Oil(temperature: Float, val pressure: Float, warning: WarningLevels) : LiquidsType",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Oil",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/index.html",
+    "searchKeys": [
+      "Oil",
+      "class Oil(temperature: Float, val pressure: Float, warning: WarningLevels) : LiquidsType",
+      "scs_sdk.model.truck.liquids.LiquidsType.Oil"
+    ]
+  },
+  {
+    "name": "class ReadMemoryException(message: String) : Exception",
+    "description": "utils.exceptions.ReadMemoryException",
+    "location": "-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/index.html",
+    "searchKeys": [
+      "ReadMemoryException",
+      "class ReadMemoryException(message: String) : Exception",
+      "utils.exceptions.ReadMemoryException"
+    ]
+  },
+  {
+    "name": "class ScsShareMemoryParser(ets2Kernel: Ets2Kernel32Impl)",
+    "description": "scs_sdk.ScsShareMemoryParser",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/index.html",
+    "searchKeys": [
+      "ScsShareMemoryParser",
+      "class ScsShareMemoryParser(ets2Kernel: Ets2Kernel32Impl)",
+      "scs_sdk.ScsShareMemoryParser"
+    ]
+  },
+  {
+    "name": "class ScsTelemetry",
+    "description": "scs_sdk.ScsTelemetry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/index.html",
+    "searchKeys": [
+      "ScsTelemetry",
+      "class ScsTelemetry",
+      "scs_sdk.ScsTelemetry"
+    ]
+  },
+  {
+    "name": "class Water(temperature: Float, warning: WarningLevels) : LiquidsType",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Water",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/index.html",
+    "searchKeys": [
+      "Water",
+      "class Water(temperature: Float, warning: WarningLevels) : LiquidsType",
+      "scs_sdk.model.truck.liquids.LiquidsType.Water"
+    ]
+  },
+  {
+    "name": "const val ERROR_CONNECTION: String",
+    "description": "utils.Constants.ERROR_CONNECTION",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-e-r-r-o-r_-c-o-n-n-e-c-t-i-o-n.html",
+    "searchKeys": [
+      "ERROR_CONNECTION",
+      "const val ERROR_CONNECTION: String",
+      "utils.Constants.ERROR_CONNECTION"
+    ]
+  },
+  {
+    "name": "const val MAP_SIZE: Int",
+    "description": "utils.Constants.MAP_SIZE",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-m-a-p_-s-i-z-e.html",
+    "searchKeys": [
+      "MAP_SIZE",
+      "const val MAP_SIZE: Int",
+      "utils.Constants.MAP_SIZE"
+    ]
+  },
+  {
+    "name": "const val SHARED_MEM_FILE_ACCESS: Int",
+    "description": "utils.Constants.SHARED_MEM_FILE_ACCESS",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-a-c-c-e-s-s.html",
+    "searchKeys": [
+      "SHARED_MEM_FILE_ACCESS",
+      "const val SHARED_MEM_FILE_ACCESS: Int",
+      "utils.Constants.SHARED_MEM_FILE_ACCESS"
+    ]
+  },
+  {
+    "name": "const val SHARED_MEM_FILE_NAME: String",
+    "description": "utils.Constants.SHARED_MEM_FILE_NAME",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-n-a-m-e.html",
+    "searchKeys": [
+      "SHARED_MEM_FILE_NAME",
+      "const val SHARED_MEM_FILE_NAME: String",
+      "utils.Constants.SHARED_MEM_FILE_NAME"
+    ]
+  },
+  {
+    "name": "const val STRING_SIZE: Int = 64",
+    "description": "utils.Constants.STRING_SIZE",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-s-t-r-i-n-g_-s-i-z-e.html",
+    "searchKeys": [
+      "STRING_SIZE",
+      "const val STRING_SIZE: Int = 64",
+      "utils.Constants.STRING_SIZE"
+    ]
+  },
+  {
+    "name": "const val SUBSTANCES: Int = 25",
+    "description": "utils.Constants.SUBSTANCES",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-s-u-b-s-t-a-n-c-e-s.html",
+    "searchKeys": [
+      "SUBSTANCES",
+      "const val SUBSTANCES: Int = 25",
+      "utils.Constants.SUBSTANCES"
+    ]
+  },
+  {
+    "name": "const val WHEEL_SIZE: Int = 16",
+    "description": "utils.Constants.WHEEL_SIZE",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/-w-h-e-e-l_-s-i-z-e.html",
+    "searchKeys": [
+      "WHEEL_SIZE",
+      "const val WHEEL_SIZE: Int = 16",
+      "utils.Constants.WHEEL_SIZE"
+    ]
+  },
+  {
+    "name": "data class Acceleration<T>(val linearVelocity: Vector<T>? = null, val angularVelocity: Vector<T>, val linearAcceleration: Vector<T>? = null, val angularAcceleration: Vector<T>)",
+    "description": "scs_sdk.model.utils.Acceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/index.html",
+    "searchKeys": [
+      "Acceleration",
+      "data class Acceleration<T>(val linearVelocity: Vector<T>? = null, val angularVelocity: Vector<T>, val linearAcceleration: Vector<T>? = null, val angularAcceleration: Vector<T>)",
+      "scs_sdk.model.utils.Acceleration"
+    ]
+  },
+  {
+    "name": "data class AirPressure(val value: Float, val warning: AirPressureAlertType.AirPressureAlertWarning, val emergency: AirPressureAlertType.AirPressureAlertEmergency)",
+    "description": "scs_sdk.model.truck.brakes.AirPressure",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/index.html",
+    "searchKeys": [
+      "AirPressure",
+      "data class AirPressure(val value: Float, val warning: AirPressureAlertType.AirPressureAlertWarning, val emergency: AirPressureAlertType.AirPressureAlertEmergency)",
+      "scs_sdk.model.truck.brakes.AirPressure"
+    ]
+  },
+  {
+    "name": "data class Battery(val value: Float, val warning: WarningLevels)",
+    "description": "scs_sdk.model.truck.engine.Battery",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/index.html",
+    "searchKeys": [
+      "Battery",
+      "data class Battery(val value: Float, val warning: WarningLevels)",
+      "scs_sdk.model.truck.engine.Battery"
+    ]
+  },
+  {
+    "name": "data class Blinker(val left: BlinkerStatus, val right: BlinkerStatus)",
+    "description": "scs_sdk.model.truck.lights.Blinker",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/index.html",
+    "searchKeys": [
+      "Blinker",
+      "data class Blinker(val left: BlinkerStatus, val right: BlinkerStatus)",
+      "scs_sdk.model.truck.lights.Blinker"
+    ]
+  },
+  {
+    "name": "data class BlinkerStatus(val isEnabled: Boolean, val isActive: Boolean)",
+    "description": "scs_sdk.model.truck.lights.BlinkerStatus",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/index.html",
+    "searchKeys": [
+      "BlinkerStatus",
+      "data class BlinkerStatus(val isEnabled: Boolean, val isActive: Boolean)",
+      "scs_sdk.model.truck.lights.BlinkerStatus"
+    ]
+  },
+  {
+    "name": "data class Brakes(val retarder: Retarder, val airPressure: AirPressure, val temperature: Float, val isParkingBrakeActive: Boolean, val isMotorBreakActive: Boolean)",
+    "description": "scs_sdk.model.truck.brakes.Brakes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/index.html",
+    "searchKeys": [
+      "Brakes",
+      "data class Brakes(val retarder: Retarder, val airPressure: AirPressure, val temperature: Float, val isParkingBrakeActive: Boolean, val isMotorBreakActive: Boolean)",
+      "scs_sdk.model.truck.brakes.Brakes"
+    ]
+  },
+  {
+    "name": "data class Cabin<T>(val damage: Float, val position: Vector<T>, val acceleration: Acceleration<T>, val offset: Offset<T>)",
+    "description": "scs_sdk.model.truck.Cabin",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/index.html",
+    "searchKeys": [
+      "Cabin",
+      "data class Cabin<T>(val damage: Float, val position: Vector<T>, val acceleration: Acceleration<T>, val offset: Offset<T>)",
+      "scs_sdk.model.truck.Cabin"
+    ]
+  },
+  {
+    "name": "data class Chassis(val damage: Float)",
+    "description": "scs_sdk.model.truck.Chassis",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/index.html",
+    "searchKeys": [
+      "Chassis",
+      "data class Chassis(val damage: Float)",
+      "scs_sdk.model.truck.Chassis"
+    ]
+  },
+  {
+    "name": "data class Controls(val input: ControlsType.ControlsInput, val game: ControlsType.ControlsGame)",
+    "description": "scs_sdk.model.controls.Controls",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/index.html",
+    "searchKeys": [
+      "Controls",
+      "data class Controls(val input: ControlsType.ControlsInput, val game: ControlsType.ControlsGame)",
+      "scs_sdk.model.controls.Controls"
+    ]
+  },
+  {
+    "name": "data class CruiseControl(val value: Long, val isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.transmission.CruiseControl",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/index.html",
+    "searchKeys": [
+      "CruiseControl",
+      "data class CruiseControl(val value: Long, val isEnabled: Boolean)",
+      "scs_sdk.model.truck.transmission.CruiseControl"
+    ]
+  },
+  {
+    "name": "data class Differential(val ratio: Float, val isLockEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.transmission.Differential",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/index.html",
+    "searchKeys": [
+      "Differential",
+      "data class Differential(val ratio: Float, val isLockEnabled: Boolean)",
+      "scs_sdk.model.truck.transmission.Differential"
+    ]
+  },
+  {
+    "name": "data class Engine(val oil: LiquidsType.Oil, val water: LiquidsType.Water, val battery: Battery, val rpm: Rpm, val damage: Float, val isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.engine.Engine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/index.html",
+    "searchKeys": [
+      "Engine",
+      "data class Engine(val oil: LiquidsType.Oil, val water: LiquidsType.Water, val battery: Battery, val rpm: Rpm, val damage: Float, val isEnabled: Boolean)",
+      "scs_sdk.model.truck.engine.Engine"
+    ]
+  },
+  {
+    "name": "data class Events(val job: EventsJob, val fine: EventsFine, val ferry: EventsFerry, val train: EventsTrain, val tollgate: EventsTollgate, val refuel: EventsRefuelType.EventsRefuel, val refuelPaid: EventsRefuelType.EventsRefuelPaid)",
+    "description": "scs_sdk.model.events.Events",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/index.html",
+    "searchKeys": [
+      "Events",
+      "data class Events(val job: EventsJob, val fine: EventsFine, val ferry: EventsFerry, val train: EventsTrain, val tollgate: EventsTollgate, val refuel: EventsRefuelType.EventsRefuel, val refuelPaid: EventsRefuelType.EventsRefuelPaid)",
+      "scs_sdk.model.events.Events"
+    ]
+  },
+  {
+    "name": "data class EventsFerry(val source: CityType.CitySource, val destination: CityType.CityDestination, val amount: Long, val isActive: Boolean)",
+    "description": "scs_sdk.model.events.ferry.EventsFerry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/index.html",
+    "searchKeys": [
+      "EventsFerry",
+      "data class EventsFerry(val source: CityType.CitySource, val destination: CityType.CityDestination, val amount: Long, val isActive: Boolean)",
+      "scs_sdk.model.events.ferry.EventsFerry"
+    ]
+  },
+  {
+    "name": "data class EventsFine(val offence: String, val amount: Long, val isActive: Boolean)",
+    "description": "scs_sdk.model.events.fine.EventsFine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/index.html",
+    "searchKeys": [
+      "EventsFine",
+      "data class EventsFine(val offence: String, val amount: Long, val isActive: Boolean)",
+      "scs_sdk.model.events.fine.EventsFine"
+    ]
+  },
+  {
+    "name": "data class EventsJob(val delivered: EventsJobType.EventsJobDelivered, val started: EventsJobType.EventsJobStarted, val cancelled: EventsJobType.EventsJobCancelled, val finished: EventsJobType.EventsJobFinished)",
+    "description": "scs_sdk.model.events.job.EventsJob",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/index.html",
+    "searchKeys": [
+      "EventsJob",
+      "data class EventsJob(val delivered: EventsJobType.EventsJobDelivered, val started: EventsJobType.EventsJobStarted, val cancelled: EventsJobType.EventsJobCancelled, val finished: EventsJobType.EventsJobFinished)",
+      "scs_sdk.model.events.job.EventsJob"
+    ]
+  },
+  {
+    "name": "data class EventsJobCancelled(val penalty: Long, val startedTimeStamp: Int, val cancelledTimestamp: Int, val isActive: Boolean) : EventsJobType",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/index.html",
+    "searchKeys": [
+      "EventsJobCancelled",
+      "data class EventsJobCancelled(val penalty: Long, val startedTimeStamp: Int, val cancelledTimestamp: Int, val isActive: Boolean) : EventsJobType",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled"
+    ]
+  },
+  {
+    "name": "data class EventsJobDelivered(val timeTaken: Int, val startedTimeStamp: Int, val deliveredTimeStamp: Int, val earnedXP: Int, val cargoDamage: Float, val distance: Int, val autoParked: Boolean, val revenue: Long, val isActive: Boolean) : EventsJobType",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/index.html",
+    "searchKeys": [
+      "EventsJobDelivered",
+      "data class EventsJobDelivered(val timeTaken: Int, val startedTimeStamp: Int, val deliveredTimeStamp: Int, val earnedXP: Int, val cargoDamage: Float, val distance: Int, val autoParked: Boolean, val revenue: Long, val isActive: Boolean) : EventsJobType",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered"
+    ]
+  },
+  {
+    "name": "data class EventsJobFinished(val isActive: Boolean) : EventsJobType",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobFinished",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/index.html",
+    "searchKeys": [
+      "EventsJobFinished",
+      "data class EventsJobFinished(val isActive: Boolean) : EventsJobType",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobFinished"
+    ]
+  },
+  {
+    "name": "data class EventsJobStarted(val isAutoLoaded: Boolean, val isActive: Boolean) : EventsJobType",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobStarted",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/index.html",
+    "searchKeys": [
+      "EventsJobStarted",
+      "data class EventsJobStarted(val isAutoLoaded: Boolean, val isActive: Boolean) : EventsJobType",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobStarted"
+    ]
+  },
+  {
+    "name": "data class EventsTollgate(val amount: Long, val isActive: Boolean)",
+    "description": "scs_sdk.model.events.tollgate.EventsTollgate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/index.html",
+    "searchKeys": [
+      "EventsTollgate",
+      "data class EventsTollgate(val amount: Long, val isActive: Boolean)",
+      "scs_sdk.model.events.tollgate.EventsTollgate"
+    ]
+  },
+  {
+    "name": "data class EventsTrain(val source: CityType.CitySource, val destination: CityType.CityDestination, val amount: Long, val isActive: Boolean)",
+    "description": "scs_sdk.model.events.train.EventsTrain",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/index.html",
+    "searchKeys": [
+      "EventsTrain",
+      "data class EventsTrain(val source: CityType.CitySource, val destination: CityType.CityDestination, val amount: Long, val isActive: Boolean)",
+      "scs_sdk.model.events.train.EventsTrain"
+    ]
+  },
+  {
+    "name": "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: GameTime, val maxTrailerCount: Int, val scale: Int)",
+    "description": "scs_sdk.model.game.Game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/index.html",
+    "searchKeys": [
+      "Game",
+      "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: GameTime, val maxTrailerCount: Int, val scale: Int)",
+      "scs_sdk.model.game.Game"
+    ]
+  },
+  {
+    "name": "data class GameTime(val value: LocalDateTime)",
+    "description": "scs_sdk.model.game.GameTime",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/index.html",
+    "searchKeys": [
+      "GameTime",
+      "data class GameTime(val value: LocalDateTime)",
+      "scs_sdk.model.game.GameTime"
+    ]
+  },
+  {
+    "name": "data class GenericResource(val id: String, val name: String)",
+    "description": "scs_sdk.model.utils.GenericResource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/index.html",
+    "searchKeys": [
+      "GenericResource",
+      "data class GenericResource(val id: String, val name: String)",
+      "scs_sdk.model.utils.GenericResource"
+    ]
+  },
+  {
+    "name": "data class Head<T>(val position: Vector<T>, val offset: Offset<T>)",
+    "description": "scs_sdk.model.truck.Head",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/index.html",
+    "searchKeys": [
+      "Head",
+      "data class Head<T>(val position: Vector<T>, val offset: Offset<T>)",
+      "scs_sdk.model.truck.Head"
+    ]
+  },
+  {
+    "name": "data class Hook<T>(val position: Vector<T>)",
+    "description": "scs_sdk.model.truck.Hook",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/index.html",
+    "searchKeys": [
+      "Hook",
+      "data class Hook<T>(val position: Vector<T>)",
+      "scs_sdk.model.truck.Hook"
+    ]
+  },
+  {
+    "name": "data class Job(val source: JobLocation, val destination: JobLocation, val plannedDistance: Int, val cargo: JobCargo, val isSpecial: Boolean, val market: String, val income: Long, val expectedDeliveryTimestamp: Int)",
+    "description": "scs_sdk.model.job.Job",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/index.html",
+    "searchKeys": [
+      "Job",
+      "data class Job(val source: JobLocation, val destination: JobLocation, val plannedDistance: Int, val cargo: JobCargo, val isSpecial: Boolean, val market: String, val income: Long, val expectedDeliveryTimestamp: Int)",
+      "scs_sdk.model.job.Job"
+    ]
+  },
+  {
+    "name": "data class JobCargo(val id: String, val name: String, val mass: Float, val unitMass: Float, val damage: Float, val isLoaded: Boolean)",
+    "description": "scs_sdk.model.job.JobCargo",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/index.html",
+    "searchKeys": [
+      "JobCargo",
+      "data class JobCargo(val id: String, val name: String, val mass: Float, val unitMass: Float, val damage: Float, val isLoaded: Boolean)",
+      "scs_sdk.model.job.JobCargo"
+    ]
+  },
+  {
+    "name": "data class JobLocation(val jobCity: CityType, val jobCompany: CompanyType)",
+    "description": "scs_sdk.model.job.JobLocation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/index.html",
+    "searchKeys": [
+      "JobLocation",
+      "data class JobLocation(val jobCity: CityType, val jobCompany: CompanyType)",
+      "scs_sdk.model.job.JobLocation"
+    ]
+  },
+  {
+    "name": "data class LicensePlate(val value: String, val country: GenericResource)",
+    "description": "scs_sdk.model.truck.LicensePlate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/index.html",
+    "searchKeys": [
+      "LicensePlate",
+      "data class LicensePlate(val value: String, val country: GenericResource)",
+      "scs_sdk.model.truck.LicensePlate"
+    ]
+  },
+  {
+    "name": "data class LiftAxle(val isLiftAxleEnabled: Boolean, val isIndicatorEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.LiftAxle",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/index.html",
+    "searchKeys": [
+      "LiftAxle",
+      "data class LiftAxle(val isLiftAxleEnabled: Boolean, val isIndicatorEnabled: Boolean)",
+      "scs_sdk.model.truck.LiftAxle"
+    ]
+  },
+  {
+    "name": "data class Lights(val auxFront: Int, val auxRoof: Int, val dashboardBackLight: Float, val blinker: Blinker, val isParkingBrakeOn: Boolean, val isBeamLowOn: Boolean, val isBeamHighOn: Boolean, val isBeaconOn: Boolean, val isBrakeOn: Boolean, val isReverseOn: Boolean, val isHazardOn: Boolean)",
+    "description": "scs_sdk.model.truck.lights.Lights",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/index.html",
+    "searchKeys": [
+      "Lights",
+      "data class Lights(val auxFront: Int, val auxRoof: Int, val dashboardBackLight: Float, val blinker: Blinker, val isParkingBrakeOn: Boolean, val isBeamLowOn: Boolean, val isBeamHighOn: Boolean, val isBeaconOn: Boolean, val isBrakeOn: Boolean, val isReverseOn: Boolean, val isHazardOn: Boolean)",
+      "scs_sdk.model.truck.lights.Lights"
+    ]
+  },
+  {
+    "name": "data class Liquids(val fuel: LiquidsType.Fuel, val adBlue: LiquidsType.AdBlue)",
+    "description": "scs_sdk.model.truck.liquids.Liquids",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/index.html",
+    "searchKeys": [
+      "Liquids",
+      "data class Liquids(val fuel: LiquidsType.Fuel, val adBlue: LiquidsType.AdBlue)",
+      "scs_sdk.model.truck.liquids.Liquids"
+    ]
+  },
+  {
+    "name": "data class Navigation(val nextRestStop: Int, val distance: Float, val time: Float, val speedLimit: Long)",
+    "description": "scs_sdk.model.navigation.Navigation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/index.html",
+    "searchKeys": [
+      "Navigation",
+      "data class Navigation(val nextRestStop: Int, val distance: Float, val time: Float, val speedLimit: Long)",
+      "scs_sdk.model.navigation.Navigation"
+    ]
+  },
+  {
+    "name": "data class Offset<T>(val position: Vector<T>, val orientation: OrientationVector<T>)",
+    "description": "scs_sdk.model.utils.Offset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/index.html",
+    "searchKeys": [
+      "Offset",
+      "data class Offset<T>(val position: Vector<T>, val orientation: OrientationVector<T>)",
+      "scs_sdk.model.utils.Offset"
+    ]
+  },
+  {
+    "name": "data class OrientationVector<T>(val heading: T, val pitch: T, val roll: T)",
+    "description": "scs_sdk.model.utils.OrientationVector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/index.html",
+    "searchKeys": [
+      "OrientationVector",
+      "data class OrientationVector<T>(val heading: T, val pitch: T, val roll: T)",
+      "scs_sdk.model.utils.OrientationVector"
+    ]
+  },
+  {
+    "name": "data class Retarder(val steps: Int, val level: Int)",
+    "description": "scs_sdk.model.truck.brakes.Retarder",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/index.html",
+    "searchKeys": [
+      "Retarder",
+      "data class Retarder(val steps: Int, val level: Int)",
+      "scs_sdk.model.truck.brakes.Retarder"
+    ]
+  },
+  {
+    "name": "data class Rpm(val max: Float, val value: Float)",
+    "description": "scs_sdk.model.truck.engine.Rpm",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/index.html",
+    "searchKeys": [
+      "Rpm",
+      "data class Rpm(val max: Float, val value: Float)",
+      "scs_sdk.model.truck.engine.Rpm"
+    ]
+  },
+  {
+    "name": "data class Substances<T>(val linearVelocity: Vector<T>, val angularVelocity: Vector<T>, val linearAcceleration: Vector<T>, val angularAcceleration: Vector<T>, val allTypes: ArrayList<String>)",
+    "description": "scs_sdk.model.substances.Substances",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/index.html",
+    "searchKeys": [
+      "Substances",
+      "data class Substances<T>(val linearVelocity: Vector<T>, val angularVelocity: Vector<T>, val linearAcceleration: Vector<T>, val angularAcceleration: Vector<T>, val allTypes: ArrayList<String>)",
+      "scs_sdk.model.substances.Substances"
+    ]
+  },
+  {
+    "name": "data class TelemetryData(val game: Game, val events: Events, val controls: Controls, val job: Job, val navigation: Navigation, val substances: Substances<Float>, val truck: Truck, val trailer: Trailer)",
+    "description": "scs_sdk.model.TelemetryData",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/index.html",
+    "searchKeys": [
+      "TelemetryData",
+      "data class TelemetryData(val game: Game, val events: Events, val controls: Controls, val job: Job, val navigation: Navigation, val substances: Substances<Float>, val truck: Truck, val trailer: Trailer)",
+      "scs_sdk.model.TelemetryData"
+    ]
+  },
+  {
+    "name": "data class Timestamp(val game: Long, val simulation: Long, val render: Long)",
+    "description": "scs_sdk.model.game.Timestamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/index.html",
+    "searchKeys": [
+      "Timestamp",
+      "data class Timestamp(val game: Long, val simulation: Long, val render: Long)",
+      "scs_sdk.model.game.Timestamp"
+    ]
+  },
+  {
+    "name": "data class Trailer(val isAttached: Boolean, val totalDamage: Float, val damageParts: TrailerDamage, val acceleration: Acceleration<Float>, val hook: Hook<Float>, val position: Vector<Double>, val orientation: OrientationVector<Double>, val brand: GenericResource, val model: GenericResource, val accessoryId: String, val bodyType: String, val chainType: String, val licencePlate: LicensePlate, val liftAxle: LiftAxle, val wheels: List<TrailerWheel>)",
+    "description": "scs_sdk.model.trailer.Trailer",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/index.html",
+    "searchKeys": [
+      "Trailer",
+      "data class Trailer(val isAttached: Boolean, val totalDamage: Float, val damageParts: TrailerDamage, val acceleration: Acceleration<Float>, val hook: Hook<Float>, val position: Vector<Double>, val orientation: OrientationVector<Double>, val brand: GenericResource, val model: GenericResource, val accessoryId: String, val bodyType: String, val chainType: String, val licencePlate: LicensePlate, val liftAxle: LiftAxle, val wheels: List<TrailerWheel>)",
+      "scs_sdk.model.trailer.Trailer"
+    ]
+  },
+  {
+    "name": "data class TrailerDamage(val cargo: Float, val chassis: Float, val wheel: Float, val body: Float)",
+    "description": "scs_sdk.model.trailer.TrailerDamage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/index.html",
+    "searchKeys": [
+      "TrailerDamage",
+      "data class TrailerDamage(val cargo: Float, val chassis: Float, val wheel: Float, val body: Float)",
+      "scs_sdk.model.trailer.TrailerDamage"
+    ]
+  },
+  {
+    "name": "data class TrailerWheel(val substance: Int, val radius: Float, val suspensionDeflection: Float, val velocity: Float, val steering: Float, val rotation: Float, val lift: Float, val liftOffset: Float, val position: Vector<Float>, val isSteerable: Boolean, val isSimulated: Boolean, val isPowered: Boolean, val isLiftable: Boolean, val isOnGround: Boolean)",
+    "description": "scs_sdk.model.trailer.TrailerWheel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/index.html",
+    "searchKeys": [
+      "TrailerWheel",
+      "data class TrailerWheel(val substance: Int, val radius: Float, val suspensionDeflection: Float, val velocity: Float, val steering: Float, val rotation: Float, val lift: Float, val liftOffset: Float, val position: Vector<Float>, val isSteerable: Boolean, val isSimulated: Boolean, val isPowered: Boolean, val isLiftable: Boolean, val isOnGround: Boolean)",
+      "scs_sdk.model.trailer.TrailerWheel"
+    ]
+  },
+  {
+    "name": "data class Transmission(val forwardGears: Int, val reverseGears: Int, val selectorCount: Int, val slotsGear: ArrayList<Int>, val slotsHandlePosition: List<Int>, val slotsSelector: List<Int>, val selectedGear: Int, val dashboardGear: Int, val gearRatiosForward: ArrayList<Float>, val gearRatiosReverse: ArrayList<Float>, val damage: Float, val shifterType: String, val hShifterSelector: ArrayList<Boolean>)",
+    "description": "scs_sdk.model.truck.transmission.Transmission",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/index.html",
+    "searchKeys": [
+      "Transmission",
+      "data class Transmission(val forwardGears: Int, val reverseGears: Int, val selectorCount: Int, val slotsGear: ArrayList<Int>, val slotsHandlePosition: List<Int>, val slotsSelector: List<Int>, val selectedGear: Int, val dashboardGear: Int, val gearRatiosForward: ArrayList<Float>, val gearRatiosReverse: ArrayList<Float>, val damage: Float, val shifterType: String, val hShifterSelector: ArrayList<Boolean>)",
+      "scs_sdk.model.truck.transmission.Transmission"
+    ]
+  },
+  {
+    "name": "data class Truck(val transmission: Transmission, val brakes: Brakes, val lights: Lights, val liquids: Liquids, val engine: Engine, val differential: Differential, val speed: Long, val cruiseControl: CruiseControl, val cabin: Cabin<Float>, val chassis: Chassis, val odometer: Float, val isElectricEnabled: Boolean, val isWipersEnabled: Boolean, val brand: GenericResource, val model: GenericResource, val licensePlate: LicensePlate, val totalDamage: Float, val position: Vector<Double>, val orientation: OrientationVector<Double>, val acceleration: Acceleration<Float>, val head: Head<Float>, val hook: Hook<Float>, val liftAxle: LiftAxle, val wheels: List<TruckWheel>)",
+    "description": "scs_sdk.model.truck.Truck",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/index.html",
+    "searchKeys": [
+      "Truck",
+      "data class Truck(val transmission: Transmission, val brakes: Brakes, val lights: Lights, val liquids: Liquids, val engine: Engine, val differential: Differential, val speed: Long, val cruiseControl: CruiseControl, val cabin: Cabin<Float>, val chassis: Chassis, val odometer: Float, val isElectricEnabled: Boolean, val isWipersEnabled: Boolean, val brand: GenericResource, val model: GenericResource, val licensePlate: LicensePlate, val totalDamage: Float, val position: Vector<Double>, val orientation: OrientationVector<Double>, val acceleration: Acceleration<Float>, val head: Head<Float>, val hook: Hook<Float>, val liftAxle: LiftAxle, val wheels: List<TruckWheel>)",
+      "scs_sdk.model.truck.Truck"
+    ]
+  },
+  {
+    "name": "data class TruckWheel(val substance: Int, val radius: Float, val suspensionDeflection: Float, val velocity: Float, val steering: Float, val rotation: Float, val lift: Float, val liftOffset: Float, val position: Vector<Float>, val isSteerable: Boolean, val isSimulated: Boolean, val isPowered: Boolean, val isLiftable: Boolean, val isOnGround: Boolean, val damage: Float)",
+    "description": "scs_sdk.model.truck.TruckWheel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/index.html",
+    "searchKeys": [
+      "TruckWheel",
+      "data class TruckWheel(val substance: Int, val radius: Float, val suspensionDeflection: Float, val velocity: Float, val steering: Float, val rotation: Float, val lift: Float, val liftOffset: Float, val position: Vector<Float>, val isSteerable: Boolean, val isSimulated: Boolean, val isPowered: Boolean, val isLiftable: Boolean, val isOnGround: Boolean, val damage: Float)",
+      "scs_sdk.model.truck.TruckWheel"
+    ]
+  },
+  {
+    "name": "data class Vector<T>(val x: T, val y: T, val z: T)",
+    "description": "scs_sdk.model.utils.Vector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/index.html",
+    "searchKeys": [
+      "Vector",
+      "data class Vector<T>(val x: T, val y: T, val z: T)",
+      "scs_sdk.model.utils.Vector"
+    ]
+  },
+  {
+    "name": "data class Versions(val plugin: Int, val game: Double, val telemetry: Double)",
+    "description": "scs_sdk.model.game.Versions",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/index.html",
+    "searchKeys": [
+      "Versions",
+      "data class Versions(val plugin: Int, val game: Double, val telemetry: Double)",
+      "scs_sdk.model.game.Versions"
+    ]
+  },
+  {
+    "name": "data class WarningLevels(val factor: Float, val isEnabled: Boolean)",
+    "description": "scs_sdk.model.utils.WarningLevels",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/index.html",
+    "searchKeys": [
+      "WarningLevels",
+      "data class WarningLevels(val factor: Float, val isEnabled: Boolean)",
+      "scs_sdk.model.utils.WarningLevels"
+    ]
+  },
+  {
+    "name": "enum GameType : Enum<GameType> ",
+    "description": "scs_sdk.model.game.GameType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/index.html",
+    "searchKeys": [
+      "GameType",
+      "enum GameType : Enum<GameType> ",
+      "scs_sdk.model.game.GameType"
+    ]
+  },
+  {
+    "name": "fun <T> Acceleration(linearVelocity: Vector<T>? = null, angularVelocity: Vector<T>, linearAcceleration: Vector<T>? = null, angularAcceleration: Vector<T>)",
+    "description": "scs_sdk.model.utils.Acceleration.Acceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/-acceleration.html",
+    "searchKeys": [
+      "Acceleration",
+      "fun <T> Acceleration(linearVelocity: Vector<T>? = null, angularVelocity: Vector<T>, linearAcceleration: Vector<T>? = null, angularAcceleration: Vector<T>)",
+      "scs_sdk.model.utils.Acceleration.Acceleration"
+    ]
+  },
+  {
+    "name": "fun <T> Cabin(damage: Float, position: Vector<T>, acceleration: Acceleration<T>, offset: Offset<T>)",
+    "description": "scs_sdk.model.truck.Cabin.Cabin",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/-cabin.html",
+    "searchKeys": [
+      "Cabin",
+      "fun <T> Cabin(damage: Float, position: Vector<T>, acceleration: Acceleration<T>, offset: Offset<T>)",
+      "scs_sdk.model.truck.Cabin.Cabin"
+    ]
+  },
+  {
+    "name": "fun <T> Head(position: Vector<T>, offset: Offset<T>)",
+    "description": "scs_sdk.model.truck.Head.Head",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/-head.html",
+    "searchKeys": [
+      "Head",
+      "fun <T> Head(position: Vector<T>, offset: Offset<T>)",
+      "scs_sdk.model.truck.Head.Head"
+    ]
+  },
+  {
+    "name": "fun <T> Hook(position: Vector<T>)",
+    "description": "scs_sdk.model.truck.Hook.Hook",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/-hook.html",
+    "searchKeys": [
+      "Hook",
+      "fun <T> Hook(position: Vector<T>)",
+      "scs_sdk.model.truck.Hook.Hook"
+    ]
+  },
+  {
+    "name": "fun <T> Offset(position: Vector<T>, orientation: OrientationVector<T>)",
+    "description": "scs_sdk.model.utils.Offset.Offset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/-offset.html",
+    "searchKeys": [
+      "Offset",
+      "fun <T> Offset(position: Vector<T>, orientation: OrientationVector<T>)",
+      "scs_sdk.model.utils.Offset.Offset"
+    ]
+  },
+  {
+    "name": "fun <T> OrientationVector(heading: T, pitch: T, roll: T)",
+    "description": "scs_sdk.model.utils.OrientationVector.OrientationVector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/-orientation-vector.html",
+    "searchKeys": [
+      "OrientationVector",
+      "fun <T> OrientationVector(heading: T, pitch: T, roll: T)",
+      "scs_sdk.model.utils.OrientationVector.OrientationVector"
+    ]
+  },
+  {
+    "name": "fun <T> Substances(linearVelocity: Vector<T>, angularVelocity: Vector<T>, linearAcceleration: Vector<T>, angularAcceleration: Vector<T>, allTypes: ArrayList<String>)",
+    "description": "scs_sdk.model.substances.Substances.Substances",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/-substances.html",
+    "searchKeys": [
+      "Substances",
+      "fun <T> Substances(linearVelocity: Vector<T>, angularVelocity: Vector<T>, linearAcceleration: Vector<T>, angularAcceleration: Vector<T>, allTypes: ArrayList<String>)",
+      "scs_sdk.model.substances.Substances.Substances"
+    ]
+  },
+  {
+    "name": "fun <T> Vector(x: T, y: T, z: T)",
+    "description": "scs_sdk.model.utils.Vector.Vector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/-vector.html",
+    "searchKeys": [
+      "Vector",
+      "fun <T> Vector(x: T, y: T, z: T)",
+      "scs_sdk.model.utils.Vector.Vector"
+    ]
+  },
+  {
+    "name": "fun AdBlue(capacity: Float, warning: WarningLevels, value: Float)",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.AdBlue.AdBlue",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/-ad-blue.html",
+    "searchKeys": [
+      "AdBlue",
+      "fun AdBlue(capacity: Float, warning: WarningLevels, value: Float)",
+      "scs_sdk.model.truck.liquids.LiquidsType.AdBlue.AdBlue"
+    ]
+  },
+  {
+    "name": "fun AirPressure(value: Float, warning: AirPressureAlertType.AirPressureAlertWarning, emergency: AirPressureAlertType.AirPressureAlertEmergency)",
+    "description": "scs_sdk.model.truck.brakes.AirPressure.AirPressure",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/-air-pressure.html",
+    "searchKeys": [
+      "AirPressure",
+      "fun AirPressure(value: Float, warning: AirPressureAlertType.AirPressureAlertWarning, emergency: AirPressureAlertType.AirPressureAlertEmergency)",
+      "scs_sdk.model.truck.brakes.AirPressure.AirPressure"
+    ]
+  },
+  {
+    "name": "fun AirPressureAlertEmergency(factor: Float, isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency.AirPressureAlertEmergency",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/-air-pressure-alert-emergency.html",
+    "searchKeys": [
+      "AirPressureAlertEmergency",
+      "fun AirPressureAlertEmergency(factor: Float, isEnabled: Boolean)",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertEmergency.AirPressureAlertEmergency"
+    ]
+  },
+  {
+    "name": "fun AirPressureAlertWarning(factor: Float, isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning.AirPressureAlertWarning",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/-air-pressure-alert-warning.html",
+    "searchKeys": [
+      "AirPressureAlertWarning",
+      "fun AirPressureAlertWarning(factor: Float, isEnabled: Boolean)",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.AirPressureAlertWarning.AirPressureAlertWarning"
+    ]
+  },
+  {
+    "name": "fun Battery(value: Float, warning: WarningLevels)",
+    "description": "scs_sdk.model.truck.engine.Battery.Battery",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/-battery.html",
+    "searchKeys": [
+      "Battery",
+      "fun Battery(value: Float, warning: WarningLevels)",
+      "scs_sdk.model.truck.engine.Battery.Battery"
+    ]
+  },
+  {
+    "name": "fun Blinker(left: BlinkerStatus, right: BlinkerStatus)",
+    "description": "scs_sdk.model.truck.lights.Blinker.Blinker",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/-blinker.html",
+    "searchKeys": [
+      "Blinker",
+      "fun Blinker(left: BlinkerStatus, right: BlinkerStatus)",
+      "scs_sdk.model.truck.lights.Blinker.Blinker"
+    ]
+  },
+  {
+    "name": "fun BlinkerStatus(isEnabled: Boolean, isActive: Boolean)",
+    "description": "scs_sdk.model.truck.lights.BlinkerStatus.BlinkerStatus",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/-blinker-status.html",
+    "searchKeys": [
+      "BlinkerStatus",
+      "fun BlinkerStatus(isEnabled: Boolean, isActive: Boolean)",
+      "scs_sdk.model.truck.lights.BlinkerStatus.BlinkerStatus"
+    ]
+  },
+  {
+    "name": "fun Brakes(retarder: Retarder, airPressure: AirPressure, temperature: Float, isParkingBrakeActive: Boolean, isMotorBreakActive: Boolean)",
+    "description": "scs_sdk.model.truck.brakes.Brakes.Brakes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/-brakes.html",
+    "searchKeys": [
+      "Brakes",
+      "fun Brakes(retarder: Retarder, airPressure: AirPressure, temperature: Float, isParkingBrakeActive: Boolean, isMotorBreakActive: Boolean)",
+      "scs_sdk.model.truck.brakes.Brakes.Brakes"
+    ]
+  },
+  {
+    "name": "fun ByteArray.allSubstancesTypes(): ArrayList<String>",
+    "description": "utils.allSubstancesTypes",
+    "location": "-truck-sim--telemetry--kotlin/utils/all-substances-types.html",
+    "searchKeys": [
+      "allSubstancesTypes",
+      "fun ByteArray.allSubstancesTypes(): ArrayList<String>",
+      "utils.allSubstancesTypes"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getBool(index: Int): Boolean",
+    "description": "utils.getBool",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-bool.html",
+    "searchKeys": [
+      "getBool",
+      "fun ByteArray.getBool(index: Int): Boolean",
+      "utils.getBool"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getBoolArray(index: Int, count: Int): ArrayList<Boolean>",
+    "description": "utils.getBoolArray",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-bool-array.html",
+    "searchKeys": [
+      "getBoolArray",
+      "fun ByteArray.getBoolArray(index: Int, count: Int): ArrayList<Boolean>",
+      "utils.getBoolArray"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getDouble(index: Int): Double",
+    "description": "utils.getDouble",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-double.html",
+    "searchKeys": [
+      "getDouble",
+      "fun ByteArray.getDouble(index: Int): Double",
+      "utils.getDouble"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getDoubleOrientedVector(index: Int): OrientationVector<Double>",
+    "description": "utils.getDoubleOrientedVector",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-double-oriented-vector.html",
+    "searchKeys": [
+      "getDoubleOrientedVector",
+      "fun ByteArray.getDoubleOrientedVector(index: Int): OrientationVector<Double>",
+      "utils.getDoubleOrientedVector"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getDoubleVector(index: Int): Vector<Double>",
+    "description": "utils.getDoubleVector",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-double-vector.html",
+    "searchKeys": [
+      "getDoubleVector",
+      "fun ByteArray.getDoubleVector(index: Int): Vector<Double>",
+      "utils.getDoubleVector"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getFloat(index: Int): Float",
+    "description": "utils.getFloat",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-float.html",
+    "searchKeys": [
+      "getFloat",
+      "fun ByteArray.getFloat(index: Int): Float",
+      "utils.getFloat"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float>",
+    "description": "utils.getFloatArray",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-float-array.html",
+    "searchKeys": [
+      "getFloatArray",
+      "fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float>",
+      "utils.getFloatArray"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getFloatOrientationVector(index: Int): OrientationVector<Float>",
+    "description": "utils.getFloatOrientationVector",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-float-orientation-vector.html",
+    "searchKeys": [
+      "getFloatOrientationVector",
+      "fun ByteArray.getFloatOrientationVector(index: Int): OrientationVector<Float>",
+      "utils.getFloatOrientationVector"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getFloatVector(index: Int): Vector<Float>",
+    "description": "utils.getFloatVector",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-float-vector.html",
+    "searchKeys": [
+      "getFloatVector",
+      "fun ByteArray.getFloatVector(index: Int): Vector<Float>",
+      "utils.getFloatVector"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getSpeedLong(index: Int): Long",
+    "description": "utils.getSpeedLong",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-speed-long.html",
+    "searchKeys": [
+      "getSpeedLong",
+      "fun ByteArray.getSpeedLong(index: Int): Long",
+      "utils.getSpeedLong"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getString(index: Int, length: Int = Constants.STRING_SIZE): String",
+    "description": "utils.getString",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-string.html",
+    "searchKeys": [
+      "getString",
+      "fun ByteArray.getString(index: Int, length: Int = Constants.STRING_SIZE): String",
+      "utils.getString"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getUInt(index: Int): UInt",
+    "description": "utils.getUInt",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-u-int.html",
+    "searchKeys": [
+      "getUInt",
+      "fun ByteArray.getUInt(index: Int): UInt",
+      "utils.getUInt"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getUIntArray(index: Int, count: Int): ArrayList<UInt>",
+    "description": "utils.getUIntArray",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-u-int-array.html",
+    "searchKeys": [
+      "getUIntArray",
+      "fun ByteArray.getUIntArray(index: Int, count: Int): ArrayList<UInt>",
+      "utils.getUIntArray"
+    ]
+  },
+  {
+    "name": "fun ByteArray.getULong(index: Int): ULong",
+    "description": "utils.getULong",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-u-long.html",
+    "searchKeys": [
+      "getULong",
+      "fun ByteArray.getULong(index: Int): ULong",
+      "utils.getULong"
+    ]
+  },
+  {
+    "name": "fun Chassis(damage: Float)",
+    "description": "scs_sdk.model.truck.Chassis.Chassis",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/-chassis.html",
+    "searchKeys": [
+      "Chassis",
+      "fun Chassis(damage: Float)",
+      "scs_sdk.model.truck.Chassis.Chassis"
+    ]
+  },
+  {
+    "name": "fun CityDestination(id: String, name: String)",
+    "description": "scs_sdk.model.utils.CityType.CityDestination.CityDestination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/-city-destination.html",
+    "searchKeys": [
+      "CityDestination",
+      "fun CityDestination(id: String, name: String)",
+      "scs_sdk.model.utils.CityType.CityDestination.CityDestination"
+    ]
+  },
+  {
+    "name": "fun CitySource(id: String, name: String)",
+    "description": "scs_sdk.model.utils.CityType.CitySource.CitySource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/-city-source.html",
+    "searchKeys": [
+      "CitySource",
+      "fun CitySource(id: String, name: String)",
+      "scs_sdk.model.utils.CityType.CitySource.CitySource"
+    ]
+  },
+  {
+    "name": "fun CompanyDestination(id: String, name: String)",
+    "description": "scs_sdk.model.utils.CompanyType.CompanyDestination.CompanyDestination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/-company-destination.html",
+    "searchKeys": [
+      "CompanyDestination",
+      "fun CompanyDestination(id: String, name: String)",
+      "scs_sdk.model.utils.CompanyType.CompanyDestination.CompanyDestination"
+    ]
+  },
+  {
+    "name": "fun CompanySource(id: String, name: String)",
+    "description": "scs_sdk.model.utils.CompanyType.CompanySource.CompanySource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/-company-source.html",
+    "searchKeys": [
+      "CompanySource",
+      "fun CompanySource(id: String, name: String)",
+      "scs_sdk.model.utils.CompanyType.CompanySource.CompanySource"
+    ]
+  },
+  {
+    "name": "fun Controls(input: ControlsType.ControlsInput, game: ControlsType.ControlsGame)",
+    "description": "scs_sdk.model.controls.Controls.Controls",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/-controls.html",
+    "searchKeys": [
+      "Controls",
+      "fun Controls(input: ControlsType.ControlsInput, game: ControlsType.ControlsGame)",
+      "scs_sdk.model.controls.Controls.Controls"
+    ]
+  },
+  {
+    "name": "fun ControlsGame(steering: Float, throttle: Float, brake: Float, clutch: Float)",
+    "description": "scs_sdk.model.controls.ControlsType.ControlsGame.ControlsGame",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/-controls-game.html",
+    "searchKeys": [
+      "ControlsGame",
+      "fun ControlsGame(steering: Float, throttle: Float, brake: Float, clutch: Float)",
+      "scs_sdk.model.controls.ControlsType.ControlsGame.ControlsGame"
+    ]
+  },
+  {
+    "name": "fun ControlsInput(steering: Float, throttle: Float, brake: Float, clutch: Float)",
+    "description": "scs_sdk.model.controls.ControlsType.ControlsInput.ControlsInput",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/-controls-input.html",
+    "searchKeys": [
+      "ControlsInput",
+      "fun ControlsInput(steering: Float, throttle: Float, brake: Float, clutch: Float)",
+      "scs_sdk.model.controls.ControlsType.ControlsInput.ControlsInput"
+    ]
+  },
+  {
+    "name": "fun CruiseControl(value: Long, isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.transmission.CruiseControl.CruiseControl",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/-cruise-control.html",
+    "searchKeys": [
+      "CruiseControl",
+      "fun CruiseControl(value: Long, isEnabled: Boolean)",
+      "scs_sdk.model.truck.transmission.CruiseControl.CruiseControl"
+    ]
+  },
+  {
+    "name": "fun Differential(ratio: Float, isLockEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.transmission.Differential.Differential",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/-differential.html",
+    "searchKeys": [
+      "Differential",
+      "fun Differential(ratio: Float, isLockEnabled: Boolean)",
+      "scs_sdk.model.truck.transmission.Differential.Differential"
+    ]
+  },
+  {
+    "name": "fun Engine(oil: LiquidsType.Oil, water: LiquidsType.Water, battery: Battery, rpm: Rpm, damage: Float, isEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.engine.Engine.Engine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/-engine.html",
+    "searchKeys": [
+      "Engine",
+      "fun Engine(oil: LiquidsType.Oil, water: LiquidsType.Water, battery: Battery, rpm: Rpm, damage: Float, isEnabled: Boolean)",
+      "scs_sdk.model.truck.engine.Engine.Engine"
+    ]
+  },
+  {
+    "name": "fun Ets2Kernel32Impl()",
+    "description": "jna.Ets2Kernel32Impl.Ets2Kernel32Impl",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/-ets2-kernel32-impl.html",
+    "searchKeys": [
+      "Ets2Kernel32Impl",
+      "fun Ets2Kernel32Impl()",
+      "jna.Ets2Kernel32Impl.Ets2Kernel32Impl"
+    ]
+  },
+  {
+    "name": "fun Events(job: EventsJob, fine: EventsFine, ferry: EventsFerry, train: EventsTrain, tollgate: EventsTollgate, refuel: EventsRefuelType.EventsRefuel, refuelPaid: EventsRefuelType.EventsRefuelPaid)",
+    "description": "scs_sdk.model.events.Events.Events",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/-events.html",
+    "searchKeys": [
+      "Events",
+      "fun Events(job: EventsJob, fine: EventsFine, ferry: EventsFerry, train: EventsTrain, tollgate: EventsTollgate, refuel: EventsRefuelType.EventsRefuel, refuelPaid: EventsRefuelType.EventsRefuelPaid)",
+      "scs_sdk.model.events.Events.Events"
+    ]
+  },
+  {
+    "name": "fun EventsFerry(source: CityType.CitySource, destination: CityType.CityDestination, amount: Long, isActive: Boolean)",
+    "description": "scs_sdk.model.events.ferry.EventsFerry.EventsFerry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/-events-ferry.html",
+    "searchKeys": [
+      "EventsFerry",
+      "fun EventsFerry(source: CityType.CitySource, destination: CityType.CityDestination, amount: Long, isActive: Boolean)",
+      "scs_sdk.model.events.ferry.EventsFerry.EventsFerry"
+    ]
+  },
+  {
+    "name": "fun EventsFine(offence: String, amount: Long, isActive: Boolean)",
+    "description": "scs_sdk.model.events.fine.EventsFine.EventsFine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/-events-fine.html",
+    "searchKeys": [
+      "EventsFine",
+      "fun EventsFine(offence: String, amount: Long, isActive: Boolean)",
+      "scs_sdk.model.events.fine.EventsFine.EventsFine"
+    ]
+  },
+  {
+    "name": "fun EventsJob(delivered: EventsJobType.EventsJobDelivered, started: EventsJobType.EventsJobStarted, cancelled: EventsJobType.EventsJobCancelled, finished: EventsJobType.EventsJobFinished)",
+    "description": "scs_sdk.model.events.job.EventsJob.EventsJob",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/-events-job.html",
+    "searchKeys": [
+      "EventsJob",
+      "fun EventsJob(delivered: EventsJobType.EventsJobDelivered, started: EventsJobType.EventsJobStarted, cancelled: EventsJobType.EventsJobCancelled, finished: EventsJobType.EventsJobFinished)",
+      "scs_sdk.model.events.job.EventsJob.EventsJob"
+    ]
+  },
+  {
+    "name": "fun EventsJobCancelled(penalty: Long, startedTimeStamp: Int, cancelledTimestamp: Int, isActive: Boolean)",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.EventsJobCancelled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/-events-job-cancelled.html",
+    "searchKeys": [
+      "EventsJobCancelled",
+      "fun EventsJobCancelled(penalty: Long, startedTimeStamp: Int, cancelledTimestamp: Int, isActive: Boolean)",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.EventsJobCancelled"
+    ]
+  },
+  {
+    "name": "fun EventsJobDelivered(timeTaken: Int, startedTimeStamp: Int, deliveredTimeStamp: Int, earnedXP: Int, cargoDamage: Float, distance: Int, autoParked: Boolean, revenue: Long, isActive: Boolean)",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.EventsJobDelivered",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/-events-job-delivered.html",
+    "searchKeys": [
+      "EventsJobDelivered",
+      "fun EventsJobDelivered(timeTaken: Int, startedTimeStamp: Int, deliveredTimeStamp: Int, earnedXP: Int, cargoDamage: Float, distance: Int, autoParked: Boolean, revenue: Long, isActive: Boolean)",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.EventsJobDelivered"
+    ]
+  },
+  {
+    "name": "fun EventsJobFinished(isActive: Boolean)",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobFinished.EventsJobFinished",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/-events-job-finished.html",
+    "searchKeys": [
+      "EventsJobFinished",
+      "fun EventsJobFinished(isActive: Boolean)",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobFinished.EventsJobFinished"
+    ]
+  },
+  {
+    "name": "fun EventsJobStarted(isAutoLoaded: Boolean, isActive: Boolean)",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.EventsJobStarted",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/-events-job-started.html",
+    "searchKeys": [
+      "EventsJobStarted",
+      "fun EventsJobStarted(isAutoLoaded: Boolean, isActive: Boolean)",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.EventsJobStarted"
+    ]
+  },
+  {
+    "name": "fun EventsRefuel(isActive: Boolean)",
+    "description": "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel.EventsRefuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/-events-refuel.html",
+    "searchKeys": [
+      "EventsRefuel",
+      "fun EventsRefuel(isActive: Boolean)",
+      "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel.EventsRefuel"
+    ]
+  },
+  {
+    "name": "fun EventsRefuelPaid(amount: Float, isActive: Boolean)",
+    "description": "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuelPaid.EventsRefuelPaid",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/-events-refuel-paid.html",
+    "searchKeys": [
+      "EventsRefuelPaid",
+      "fun EventsRefuelPaid(amount: Float, isActive: Boolean)",
+      "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuelPaid.EventsRefuelPaid"
+    ]
+  },
+  {
+    "name": "fun EventsTollgate(amount: Long, isActive: Boolean)",
+    "description": "scs_sdk.model.events.tollgate.EventsTollgate.EventsTollgate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/-events-tollgate.html",
+    "searchKeys": [
+      "EventsTollgate",
+      "fun EventsTollgate(amount: Long, isActive: Boolean)",
+      "scs_sdk.model.events.tollgate.EventsTollgate.EventsTollgate"
+    ]
+  },
+  {
+    "name": "fun EventsTrain(source: CityType.CitySource, destination: CityType.CityDestination, amount: Long, isActive: Boolean)",
+    "description": "scs_sdk.model.events.train.EventsTrain.EventsTrain",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/-events-train.html",
+    "searchKeys": [
+      "EventsTrain",
+      "fun EventsTrain(source: CityType.CitySource, destination: CityType.CityDestination, amount: Long, isActive: Boolean)",
+      "scs_sdk.model.events.train.EventsTrain.EventsTrain"
+    ]
+  },
+  {
+    "name": "fun Fuel(capacity: Float, warning: WarningLevels, value: Float, avgConsumption: Float, range: Float)",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Fuel.Fuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/-fuel.html",
+    "searchKeys": [
+      "Fuel",
+      "fun Fuel(capacity: Float, warning: WarningLevels, value: Float, avgConsumption: Float, range: Float)",
+      "scs_sdk.model.truck.liquids.LiquidsType.Fuel.Fuel"
+    ]
+  },
+  {
+    "name": "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: GameTime, maxTrailerCount: Int, scale: Int)",
+    "description": "scs_sdk.model.game.Game.Game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html",
+    "searchKeys": [
+      "Game",
+      "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: GameTime, maxTrailerCount: Int, scale: Int)",
+      "scs_sdk.model.game.Game.Game"
+    ]
+  },
+  {
+    "name": "fun GameTime(value: LocalDateTime)",
+    "description": "scs_sdk.model.game.GameTime.GameTime",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/-game-time.html",
+    "searchKeys": [
+      "GameTime",
+      "fun GameTime(value: LocalDateTime)",
+      "scs_sdk.model.game.GameTime.GameTime"
+    ]
+  },
+  {
+    "name": "fun GenericResource(id: String, name: String)",
+    "description": "scs_sdk.model.utils.GenericResource.GenericResource",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/-generic-resource.html",
+    "searchKeys": [
+      "GenericResource",
+      "fun GenericResource(id: String, name: String)",
+      "scs_sdk.model.utils.GenericResource.GenericResource"
+    ]
+  },
+  {
+    "name": "fun Job(source: JobLocation, destination: JobLocation, plannedDistance: Int, cargo: JobCargo, isSpecial: Boolean, market: String, income: Long, expectedDeliveryTimestamp: Int)",
+    "description": "scs_sdk.model.job.Job.Job",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/-job.html",
+    "searchKeys": [
+      "Job",
+      "fun Job(source: JobLocation, destination: JobLocation, plannedDistance: Int, cargo: JobCargo, isSpecial: Boolean, market: String, income: Long, expectedDeliveryTimestamp: Int)",
+      "scs_sdk.model.job.Job.Job"
+    ]
+  },
+  {
+    "name": "fun JobCargo(id: String, name: String, mass: Float, unitMass: Float, damage: Float, isLoaded: Boolean)",
+    "description": "scs_sdk.model.job.JobCargo.JobCargo",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/-job-cargo.html",
+    "searchKeys": [
+      "JobCargo",
+      "fun JobCargo(id: String, name: String, mass: Float, unitMass: Float, damage: Float, isLoaded: Boolean)",
+      "scs_sdk.model.job.JobCargo.JobCargo"
+    ]
+  },
+  {
+    "name": "fun JobLocation(jobCity: CityType, jobCompany: CompanyType)",
+    "description": "scs_sdk.model.job.JobLocation.JobLocation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/-job-location.html",
+    "searchKeys": [
+      "JobLocation",
+      "fun JobLocation(jobCity: CityType, jobCompany: CompanyType)",
+      "scs_sdk.model.job.JobLocation.JobLocation"
+    ]
+  },
+  {
+    "name": "fun LicensePlate(value: String, country: GenericResource)",
+    "description": "scs_sdk.model.truck.LicensePlate.LicensePlate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/-license-plate.html",
+    "searchKeys": [
+      "LicensePlate",
+      "fun LicensePlate(value: String, country: GenericResource)",
+      "scs_sdk.model.truck.LicensePlate.LicensePlate"
+    ]
+  },
+  {
+    "name": "fun LiftAxle(isLiftAxleEnabled: Boolean, isIndicatorEnabled: Boolean)",
+    "description": "scs_sdk.model.truck.LiftAxle.LiftAxle",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/-lift-axle.html",
+    "searchKeys": [
+      "LiftAxle",
+      "fun LiftAxle(isLiftAxleEnabled: Boolean, isIndicatorEnabled: Boolean)",
+      "scs_sdk.model.truck.LiftAxle.LiftAxle"
+    ]
+  },
+  {
+    "name": "fun Lights(auxFront: Int, auxRoof: Int, dashboardBackLight: Float, blinker: Blinker, isParkingBrakeOn: Boolean, isBeamLowOn: Boolean, isBeamHighOn: Boolean, isBeaconOn: Boolean, isBrakeOn: Boolean, isReverseOn: Boolean, isHazardOn: Boolean)",
+    "description": "scs_sdk.model.truck.lights.Lights.Lights",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/-lights.html",
+    "searchKeys": [
+      "Lights",
+      "fun Lights(auxFront: Int, auxRoof: Int, dashboardBackLight: Float, blinker: Blinker, isParkingBrakeOn: Boolean, isBeamLowOn: Boolean, isBeamHighOn: Boolean, isBeaconOn: Boolean, isBrakeOn: Boolean, isReverseOn: Boolean, isHazardOn: Boolean)",
+      "scs_sdk.model.truck.lights.Lights.Lights"
+    ]
+  },
+  {
+    "name": "fun Liquids(fuel: LiquidsType.Fuel, adBlue: LiquidsType.AdBlue)",
+    "description": "scs_sdk.model.truck.liquids.Liquids.Liquids",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/-liquids.html",
+    "searchKeys": [
+      "Liquids",
+      "fun Liquids(fuel: LiquidsType.Fuel, adBlue: LiquidsType.AdBlue)",
+      "scs_sdk.model.truck.liquids.Liquids.Liquids"
+    ]
+  },
+  {
+    "name": "fun Navigation(nextRestStop: Int, distance: Float, time: Float, speedLimit: Long)",
+    "description": "scs_sdk.model.navigation.Navigation.Navigation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/-navigation.html",
+    "searchKeys": [
+      "Navigation",
+      "fun Navigation(nextRestStop: Int, distance: Float, time: Float, speedLimit: Long)",
+      "scs_sdk.model.navigation.Navigation.Navigation"
+    ]
+  },
+  {
+    "name": "fun Oil(temperature: Float, pressure: Float, warning: WarningLevels)",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Oil.Oil",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/-oil.html",
+    "searchKeys": [
+      "Oil",
+      "fun Oil(temperature: Float, pressure: Float, warning: WarningLevels)",
+      "scs_sdk.model.truck.liquids.LiquidsType.Oil.Oil"
+    ]
+  },
+  {
+    "name": "fun ReadMemoryException(message: String)",
+    "description": "utils.exceptions.ReadMemoryException.ReadMemoryException",
+    "location": "-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/-read-memory-exception.html",
+    "searchKeys": [
+      "ReadMemoryException",
+      "fun ReadMemoryException(message: String)",
+      "utils.exceptions.ReadMemoryException.ReadMemoryException"
+    ]
+  },
+  {
+    "name": "fun Retarder(steps: Int, level: Int)",
+    "description": "scs_sdk.model.truck.brakes.Retarder.Retarder",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/-retarder.html",
+    "searchKeys": [
+      "Retarder",
+      "fun Retarder(steps: Int, level: Int)",
+      "scs_sdk.model.truck.brakes.Retarder.Retarder"
+    ]
+  },
+  {
+    "name": "fun Rpm(max: Float, value: Float)",
+    "description": "scs_sdk.model.truck.engine.Rpm.Rpm",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/-rpm.html",
+    "searchKeys": [
+      "Rpm",
+      "fun Rpm(max: Float, value: Float)",
+      "scs_sdk.model.truck.engine.Rpm.Rpm"
+    ]
+  },
+  {
+    "name": "fun ScsShareMemoryParser(ets2Kernel: Ets2Kernel32Impl)",
+    "description": "scs_sdk.ScsShareMemoryParser.ScsShareMemoryParser",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/-scs-share-memory-parser.html",
+    "searchKeys": [
+      "ScsShareMemoryParser",
+      "fun ScsShareMemoryParser(ets2Kernel: Ets2Kernel32Impl)",
+      "scs_sdk.ScsShareMemoryParser.ScsShareMemoryParser"
+    ]
+  },
+  {
+    "name": "fun ScsTelemetry()",
+    "description": "scs_sdk.ScsTelemetry.ScsTelemetry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/-scs-telemetry.html",
+    "searchKeys": [
+      "ScsTelemetry",
+      "fun ScsTelemetry()",
+      "scs_sdk.ScsTelemetry.ScsTelemetry"
+    ]
+  },
+  {
+    "name": "fun TelemetryData(game: Game, events: Events, controls: Controls, job: Job, navigation: Navigation, substances: Substances<Float>, truck: Truck, trailer: Trailer)",
+    "description": "scs_sdk.model.TelemetryData.TelemetryData",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/-telemetry-data.html",
+    "searchKeys": [
+      "TelemetryData",
+      "fun TelemetryData(game: Game, events: Events, controls: Controls, job: Job, navigation: Navigation, substances: Substances<Float>, truck: Truck, trailer: Trailer)",
+      "scs_sdk.model.TelemetryData.TelemetryData"
+    ]
+  },
+  {
+    "name": "fun Timestamp(game: Long, simulation: Long, render: Long)",
+    "description": "scs_sdk.model.game.Timestamp.Timestamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/-timestamp.html",
+    "searchKeys": [
+      "Timestamp",
+      "fun Timestamp(game: Long, simulation: Long, render: Long)",
+      "scs_sdk.model.game.Timestamp.Timestamp"
+    ]
+  },
+  {
+    "name": "fun Trailer(isAttached: Boolean, totalDamage: Float, damageParts: TrailerDamage, acceleration: Acceleration<Float>, hook: Hook<Float>, position: Vector<Double>, orientation: OrientationVector<Double>, brand: GenericResource, model: GenericResource, accessoryId: String, bodyType: String, chainType: String, licencePlate: LicensePlate, liftAxle: LiftAxle, wheels: List<TrailerWheel>)",
+    "description": "scs_sdk.model.trailer.Trailer.Trailer",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/-trailer.html",
+    "searchKeys": [
+      "Trailer",
+      "fun Trailer(isAttached: Boolean, totalDamage: Float, damageParts: TrailerDamage, acceleration: Acceleration<Float>, hook: Hook<Float>, position: Vector<Double>, orientation: OrientationVector<Double>, brand: GenericResource, model: GenericResource, accessoryId: String, bodyType: String, chainType: String, licencePlate: LicensePlate, liftAxle: LiftAxle, wheels: List<TrailerWheel>)",
+      "scs_sdk.model.trailer.Trailer.Trailer"
+    ]
+  },
+  {
+    "name": "fun TrailerDamage(cargo: Float, chassis: Float, wheel: Float, body: Float)",
+    "description": "scs_sdk.model.trailer.TrailerDamage.TrailerDamage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/-trailer-damage.html",
+    "searchKeys": [
+      "TrailerDamage",
+      "fun TrailerDamage(cargo: Float, chassis: Float, wheel: Float, body: Float)",
+      "scs_sdk.model.trailer.TrailerDamage.TrailerDamage"
+    ]
+  },
+  {
+    "name": "fun TrailerWheel(substance: Int, radius: Float, suspensionDeflection: Float, velocity: Float, steering: Float, rotation: Float, lift: Float, liftOffset: Float, position: Vector<Float>, isSteerable: Boolean, isSimulated: Boolean, isPowered: Boolean, isLiftable: Boolean, isOnGround: Boolean)",
+    "description": "scs_sdk.model.trailer.TrailerWheel.TrailerWheel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/-trailer-wheel.html",
+    "searchKeys": [
+      "TrailerWheel",
+      "fun TrailerWheel(substance: Int, radius: Float, suspensionDeflection: Float, velocity: Float, steering: Float, rotation: Float, lift: Float, liftOffset: Float, position: Vector<Float>, isSteerable: Boolean, isSimulated: Boolean, isPowered: Boolean, isLiftable: Boolean, isOnGround: Boolean)",
+      "scs_sdk.model.trailer.TrailerWheel.TrailerWheel"
+    ]
+  },
+  {
+    "name": "fun Transmission(forwardGears: Int, reverseGears: Int, selectorCount: Int, slotsGear: ArrayList<Int>, slotsHandlePosition: List<Int>, slotsSelector: List<Int>, selectedGear: Int, dashboardGear: Int, gearRatiosForward: ArrayList<Float>, gearRatiosReverse: ArrayList<Float>, damage: Float, shifterType: String, hShifterSelector: ArrayList<Boolean>)",
+    "description": "scs_sdk.model.truck.transmission.Transmission.Transmission",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/-transmission.html",
+    "searchKeys": [
+      "Transmission",
+      "fun Transmission(forwardGears: Int, reverseGears: Int, selectorCount: Int, slotsGear: ArrayList<Int>, slotsHandlePosition: List<Int>, slotsSelector: List<Int>, selectedGear: Int, dashboardGear: Int, gearRatiosForward: ArrayList<Float>, gearRatiosReverse: ArrayList<Float>, damage: Float, shifterType: String, hShifterSelector: ArrayList<Boolean>)",
+      "scs_sdk.model.truck.transmission.Transmission.Transmission"
+    ]
+  },
+  {
+    "name": "fun Truck(transmission: Transmission, brakes: Brakes, lights: Lights, liquids: Liquids, engine: Engine, differential: Differential, speed: Long, cruiseControl: CruiseControl, cabin: Cabin<Float>, chassis: Chassis, odometer: Float, isElectricEnabled: Boolean, isWipersEnabled: Boolean, brand: GenericResource, model: GenericResource, licensePlate: LicensePlate, totalDamage: Float, position: Vector<Double>, orientation: OrientationVector<Double>, acceleration: Acceleration<Float>, head: Head<Float>, hook: Hook<Float>, liftAxle: LiftAxle, wheels: List<TruckWheel>)",
+    "description": "scs_sdk.model.truck.Truck.Truck",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/-truck.html",
+    "searchKeys": [
+      "Truck",
+      "fun Truck(transmission: Transmission, brakes: Brakes, lights: Lights, liquids: Liquids, engine: Engine, differential: Differential, speed: Long, cruiseControl: CruiseControl, cabin: Cabin<Float>, chassis: Chassis, odometer: Float, isElectricEnabled: Boolean, isWipersEnabled: Boolean, brand: GenericResource, model: GenericResource, licensePlate: LicensePlate, totalDamage: Float, position: Vector<Double>, orientation: OrientationVector<Double>, acceleration: Acceleration<Float>, head: Head<Float>, hook: Hook<Float>, liftAxle: LiftAxle, wheels: List<TruckWheel>)",
+      "scs_sdk.model.truck.Truck.Truck"
+    ]
+  },
+  {
+    "name": "fun TruckWheel(substance: Int, radius: Float, suspensionDeflection: Float, velocity: Float, steering: Float, rotation: Float, lift: Float, liftOffset: Float, position: Vector<Float>, isSteerable: Boolean, isSimulated: Boolean, isPowered: Boolean, isLiftable: Boolean, isOnGround: Boolean, damage: Float)",
+    "description": "scs_sdk.model.truck.TruckWheel.TruckWheel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/-truck-wheel.html",
+    "searchKeys": [
+      "TruckWheel",
+      "fun TruckWheel(substance: Int, radius: Float, suspensionDeflection: Float, velocity: Float, steering: Float, rotation: Float, lift: Float, liftOffset: Float, position: Vector<Float>, isSteerable: Boolean, isSimulated: Boolean, isPowered: Boolean, isLiftable: Boolean, isOnGround: Boolean, damage: Float)",
+      "scs_sdk.model.truck.TruckWheel.TruckWheel"
+    ]
+  },
+  {
+    "name": "fun Versions(plugin: Int, game: Double, telemetry: Double)",
+    "description": "scs_sdk.model.game.Versions.Versions",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/-versions.html",
+    "searchKeys": [
+      "Versions",
+      "fun Versions(plugin: Int, game: Double, telemetry: Double)",
+      "scs_sdk.model.game.Versions.Versions"
+    ]
+  },
+  {
+    "name": "fun WarningLevels(factor: Float, isEnabled: Boolean)",
+    "description": "scs_sdk.model.utils.WarningLevels.WarningLevels",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/-warning-levels.html",
+    "searchKeys": [
+      "WarningLevels",
+      "fun WarningLevels(factor: Float, isEnabled: Boolean)",
+      "scs_sdk.model.utils.WarningLevels.WarningLevels"
+    ]
+  },
+  {
+    "name": "fun Water(temperature: Float, warning: WarningLevels)",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.Water.Water",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/-water.html",
+    "searchKeys": [
+      "Water",
+      "fun Water(temperature: Float, warning: WarningLevels)",
+      "scs_sdk.model.truck.liquids.LiquidsType.Water.Water"
+    ]
+  },
+  {
+    "name": "fun controls(rawData: ByteArray): Controls",
+    "description": "scs_sdk.handler.controls",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/controls.html",
+    "searchKeys": [
+      "controls",
+      "fun controls(rawData: ByteArray): Controls",
+      "scs_sdk.handler.controls"
+    ]
+  },
+  {
+    "name": "fun events(rawData: ByteArray): Events",
+    "description": "scs_sdk.handler.events",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/events.html",
+    "searchKeys": [
+      "events",
+      "fun events(rawData: ByteArray): Events",
+      "scs_sdk.handler.events"
+    ]
+  },
+  {
+    "name": "fun game(rawData: ByteArray): Game",
+    "description": "scs_sdk.handler.game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/game.html",
+    "searchKeys": [
+      "game",
+      "fun game(rawData: ByteArray): Game",
+      "scs_sdk.handler.game"
+    ]
+  },
+  {
+    "name": "fun getGameTime(rawTime: Double): GameTime",
+    "description": "utils.getGameTime",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-game-time.html",
+    "searchKeys": [
+      "getGameTime",
+      "fun getGameTime(rawTime: Double): GameTime",
+      "utils.getGameTime"
+    ]
+  },
+  {
+    "name": "fun getGameType(uInt: UInt): GameType",
+    "description": "utils.getGameType",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-game-type.html",
+    "searchKeys": [
+      "getGameType",
+      "fun getGameType(uInt: UInt): GameType",
+      "utils.getGameType"
+    ]
+  },
+  {
+    "name": "fun getMapView(memMapFile: WinNT.HANDLE): Pointer?",
+    "description": "jna.Ets2Kernel32Impl.getMapView",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/get-map-view.html",
+    "searchKeys": [
+      "getMapView",
+      "fun getMapView(memMapFile: WinNT.HANDLE): Pointer?",
+      "jna.Ets2Kernel32Impl.getMapView"
+    ]
+  },
+  {
+    "name": "fun getVersion(majorVersion: UInt, minorVersion: UInt): Double",
+    "description": "utils.getVersion",
+    "location": "-truck-sim--telemetry--kotlin/utils/get-version.html",
+    "searchKeys": [
+      "getVersion",
+      "fun getVersion(majorVersion: UInt, minorVersion: UInt): Double",
+      "utils.getVersion"
+    ]
+  },
+  {
+    "name": "fun job(rawData: ByteArray): Job",
+    "description": "scs_sdk.handler.job",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/job.html",
+    "searchKeys": [
+      "job",
+      "fun job(rawData: ByteArray): Job",
+      "scs_sdk.handler.job"
+    ]
+  },
+  {
+    "name": "fun navigation(rawData: ByteArray): Navigation",
+    "description": "scs_sdk.handler.navigation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/navigation.html",
+    "searchKeys": [
+      "navigation",
+      "fun navigation(rawData: ByteArray): Navigation",
+      "scs_sdk.handler.navigation"
+    ]
+  },
+  {
+    "name": "fun openFileMapping(): WinNT.HANDLE?",
+    "description": "jna.Ets2Kernel32Impl.openFileMapping",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/open-file-mapping.html",
+    "searchKeys": [
+      "openFileMapping",
+      "fun openFileMapping(): WinNT.HANDLE?",
+      "jna.Ets2Kernel32Impl.openFileMapping"
+    ]
+  },
+  {
+    "name": "fun readBytes()",
+    "description": "scs_sdk.ScsShareMemoryParser.readBytes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/read-bytes.html",
+    "searchKeys": [
+      "readBytes",
+      "fun readBytes()",
+      "scs_sdk.ScsShareMemoryParser.readBytes"
+    ]
+  },
+  {
+    "name": "fun substances(rawData: ByteArray): Substances<Float>",
+    "description": "scs_sdk.handler.substances",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/substances.html",
+    "searchKeys": [
+      "substances",
+      "fun substances(rawData: ByteArray): Substances<Float>",
+      "scs_sdk.handler.substances"
+    ]
+  },
+  {
+    "name": "fun trailer(rawData: ByteArray): Trailer",
+    "description": "scs_sdk.handler.trailer",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/trailer.html",
+    "searchKeys": [
+      "trailer",
+      "fun trailer(rawData: ByteArray): Trailer",
+      "scs_sdk.handler.trailer"
+    ]
+  },
+  {
+    "name": "fun truck(rawData: ByteArray): Truck",
+    "description": "scs_sdk.handler.truck",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.handler/truck.html",
+    "searchKeys": [
+      "truck",
+      "fun truck(rawData: ByteArray): Truck",
+      "scs_sdk.handler.truck"
+    ]
+  },
+  {
+    "name": "fun valueOf(value: String): GameType",
+    "description": "scs_sdk.model.game.GameType.valueOf",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/value-of.html",
+    "searchKeys": [
+      "valueOf",
+      "fun valueOf(value: String): GameType",
+      "scs_sdk.model.game.GameType.valueOf"
+    ]
+  },
+  {
+    "name": "fun values(): Array<GameType>",
+    "description": "scs_sdk.model.game.GameType.values",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/values.html",
+    "searchKeys": [
+      "values",
+      "fun values(): Array<GameType>",
+      "scs_sdk.model.game.GameType.values"
+    ]
+  },
+  {
+    "name": "interface Ets2Kernel32 : Kernel32",
+    "description": "jna.Ets2Kernel32",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/index.html",
+    "searchKeys": [
+      "Ets2Kernel32",
+      "interface Ets2Kernel32 : Kernel32",
+      "jna.Ets2Kernel32"
+    ]
+  },
+  {
+    "name": "object Companion",
+    "description": "jna.Ets2Kernel32.Companion",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/index.html",
+    "searchKeys": [
+      "Companion",
+      "object Companion",
+      "jna.Ets2Kernel32.Companion"
+    ]
+  },
+  {
+    "name": "object Constants",
+    "description": "utils.Constants",
+    "location": "-truck-sim--telemetry--kotlin/utils/-constants/index.html",
+    "searchKeys": [
+      "Constants",
+      "object Constants",
+      "utils.Constants"
+    ]
+  },
+  {
+    "name": "sealed class AirPressureAlertType",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/index.html",
+    "searchKeys": [
+      "AirPressureAlertType",
+      "sealed class AirPressureAlertType",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType"
+    ]
+  },
+  {
+    "name": "sealed class CityType",
+    "description": "scs_sdk.model.utils.CityType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/index.html",
+    "searchKeys": [
+      "CityType",
+      "sealed class CityType",
+      "scs_sdk.model.utils.CityType"
+    ]
+  },
+  {
+    "name": "sealed class CompanyType",
+    "description": "scs_sdk.model.utils.CompanyType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/index.html",
+    "searchKeys": [
+      "CompanyType",
+      "sealed class CompanyType",
+      "scs_sdk.model.utils.CompanyType"
+    ]
+  },
+  {
+    "name": "sealed class ControlsType",
+    "description": "scs_sdk.model.controls.ControlsType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/index.html",
+    "searchKeys": [
+      "ControlsType",
+      "sealed class ControlsType",
+      "scs_sdk.model.controls.ControlsType"
+    ]
+  },
+  {
+    "name": "sealed class EventsJobType",
+    "description": "scs_sdk.model.events.job.EventsJobType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/index.html",
+    "searchKeys": [
+      "EventsJobType",
+      "sealed class EventsJobType",
+      "scs_sdk.model.events.job.EventsJobType"
+    ]
+  },
+  {
+    "name": "sealed class EventsRefuelType",
+    "description": "scs_sdk.model.events.refuel.EventsRefuelType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/index.html",
+    "searchKeys": [
+      "EventsRefuelType",
+      "sealed class EventsRefuelType",
+      "scs_sdk.model.events.refuel.EventsRefuelType"
+    ]
+  },
+  {
+    "name": "sealed class LiquidsType",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/index.html",
+    "searchKeys": [
+      "LiquidsType",
+      "sealed class LiquidsType",
+      "scs_sdk.model.truck.liquids.LiquidsType"
+    ]
+  },
+  {
+    "name": "suspend fun getSharedMemory(): Pointer?",
+    "description": "scs_sdk.ScsShareMemoryParser.getSharedMemory",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/get-shared-memory.html",
+    "searchKeys": [
+      "getSharedMemory",
+      "suspend fun getSharedMemory(): Pointer?",
+      "scs_sdk.ScsShareMemoryParser.getSharedMemory"
+    ]
+  },
+  {
+    "name": "suspend fun main(args: Array<String>)",
+    "description": ".main",
+    "location": "-truck-sim--telemetry--kotlin/[root]/main.html",
+    "searchKeys": [
+      "main",
+      "suspend fun main(args: Array<String>)",
+      ".main"
+    ]
+  },
+  {
+    "name": "suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit)",
+    "description": "scs_sdk.ScsShareMemoryParser.parseBytes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/parse-bytes.html",
+    "searchKeys": [
+      "parseBytes",
+      "suspend fun parseBytes(callBack: suspend (TelemetryData) -> Unit)",
+      "scs_sdk.ScsShareMemoryParser.parseBytes"
+    ]
+  },
+  {
+    "name": "suspend fun watch(delayTime: Long = 1000)",
+    "description": "scs_sdk.ScsTelemetry.watch",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/watch.html",
+    "searchKeys": [
+      "watch",
+      "suspend fun watch(delayTime: Long = 1000)",
+      "scs_sdk.ScsTelemetry.watch"
+    ]
+  },
+  {
+    "name": "val acceleration: Acceleration<Float>",
+    "description": "scs_sdk.model.trailer.Trailer.acceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/acceleration.html",
+    "searchKeys": [
+      "acceleration",
+      "val acceleration: Acceleration<Float>",
+      "scs_sdk.model.trailer.Trailer.acceleration"
+    ]
+  },
+  {
+    "name": "val acceleration: Acceleration<Float>",
+    "description": "scs_sdk.model.truck.Truck.acceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/acceleration.html",
+    "searchKeys": [
+      "acceleration",
+      "val acceleration: Acceleration<Float>",
+      "scs_sdk.model.truck.Truck.acceleration"
+    ]
+  },
+  {
+    "name": "val acceleration: Acceleration<T>",
+    "description": "scs_sdk.model.truck.Cabin.acceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/acceleration.html",
+    "searchKeys": [
+      "acceleration",
+      "val acceleration: Acceleration<T>",
+      "scs_sdk.model.truck.Cabin.acceleration"
+    ]
+  },
+  {
+    "name": "val accessoryId: String",
+    "description": "scs_sdk.model.trailer.Trailer.accessoryId",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/accessory-id.html",
+    "searchKeys": [
+      "accessoryId",
+      "val accessoryId: String",
+      "scs_sdk.model.trailer.Trailer.accessoryId"
+    ]
+  },
+  {
+    "name": "val adBlue: LiquidsType.AdBlue",
+    "description": "scs_sdk.model.truck.liquids.Liquids.adBlue",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/ad-blue.html",
+    "searchKeys": [
+      "adBlue",
+      "val adBlue: LiquidsType.AdBlue",
+      "scs_sdk.model.truck.liquids.Liquids.adBlue"
+    ]
+  },
+  {
+    "name": "val airPressure: AirPressure",
+    "description": "scs_sdk.model.truck.brakes.Brakes.airPressure",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/air-pressure.html",
+    "searchKeys": [
+      "airPressure",
+      "val airPressure: AirPressure",
+      "scs_sdk.model.truck.brakes.Brakes.airPressure"
+    ]
+  },
+  {
+    "name": "val allTypes: ArrayList<String>",
+    "description": "scs_sdk.model.substances.Substances.allTypes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/all-types.html",
+    "searchKeys": [
+      "allTypes",
+      "val allTypes: ArrayList<String>",
+      "scs_sdk.model.substances.Substances.allTypes"
+    ]
+  },
+  {
+    "name": "val amount: Long",
+    "description": "scs_sdk.model.events.ferry.EventsFerry.amount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/amount.html",
+    "searchKeys": [
+      "amount",
+      "val amount: Long",
+      "scs_sdk.model.events.ferry.EventsFerry.amount"
+    ]
+  },
+  {
+    "name": "val amount: Long",
+    "description": "scs_sdk.model.events.fine.EventsFine.amount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/amount.html",
+    "searchKeys": [
+      "amount",
+      "val amount: Long",
+      "scs_sdk.model.events.fine.EventsFine.amount"
+    ]
+  },
+  {
+    "name": "val amount: Long",
+    "description": "scs_sdk.model.events.tollgate.EventsTollgate.amount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/amount.html",
+    "searchKeys": [
+      "amount",
+      "val amount: Long",
+      "scs_sdk.model.events.tollgate.EventsTollgate.amount"
+    ]
+  },
+  {
+    "name": "val amount: Long",
+    "description": "scs_sdk.model.events.train.EventsTrain.amount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/amount.html",
+    "searchKeys": [
+      "amount",
+      "val amount: Long",
+      "scs_sdk.model.events.train.EventsTrain.amount"
+    ]
+  },
+  {
+    "name": "val angularAcceleration: Vector<T>",
+    "description": "scs_sdk.model.substances.Substances.angularAcceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-acceleration.html",
+    "searchKeys": [
+      "angularAcceleration",
+      "val angularAcceleration: Vector<T>",
+      "scs_sdk.model.substances.Substances.angularAcceleration"
+    ]
+  },
+  {
+    "name": "val angularAcceleration: Vector<T>",
+    "description": "scs_sdk.model.utils.Acceleration.angularAcceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-acceleration.html",
+    "searchKeys": [
+      "angularAcceleration",
+      "val angularAcceleration: Vector<T>",
+      "scs_sdk.model.utils.Acceleration.angularAcceleration"
+    ]
+  },
+  {
+    "name": "val angularVelocity: Vector<T>",
+    "description": "scs_sdk.model.substances.Substances.angularVelocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-velocity.html",
+    "searchKeys": [
+      "angularVelocity",
+      "val angularVelocity: Vector<T>",
+      "scs_sdk.model.substances.Substances.angularVelocity"
+    ]
+  },
+  {
+    "name": "val angularVelocity: Vector<T>",
+    "description": "scs_sdk.model.utils.Acceleration.angularVelocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-velocity.html",
+    "searchKeys": [
+      "angularVelocity",
+      "val angularVelocity: Vector<T>",
+      "scs_sdk.model.utils.Acceleration.angularVelocity"
+    ]
+  },
+  {
+    "name": "val autoParked: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.autoParked",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/auto-parked.html",
+    "searchKeys": [
+      "autoParked",
+      "val autoParked: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.autoParked"
+    ]
+  },
+  {
+    "name": "val auxFront: Int",
+    "description": "scs_sdk.model.truck.lights.Lights.auxFront",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-front.html",
+    "searchKeys": [
+      "auxFront",
+      "val auxFront: Int",
+      "scs_sdk.model.truck.lights.Lights.auxFront"
+    ]
+  },
+  {
+    "name": "val auxRoof: Int",
+    "description": "scs_sdk.model.truck.lights.Lights.auxRoof",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-roof.html",
+    "searchKeys": [
+      "auxRoof",
+      "val auxRoof: Int",
+      "scs_sdk.model.truck.lights.Lights.auxRoof"
+    ]
+  },
+  {
+    "name": "val avgConsumption: Float? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.avgConsumption",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/avg-consumption.html",
+    "searchKeys": [
+      "avgConsumption",
+      "val avgConsumption: Float? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.avgConsumption"
+    ]
+  },
+  {
+    "name": "val battery: Battery",
+    "description": "scs_sdk.model.truck.engine.Engine.battery",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/battery.html",
+    "searchKeys": [
+      "battery",
+      "val battery: Battery",
+      "scs_sdk.model.truck.engine.Engine.battery"
+    ]
+  },
+  {
+    "name": "val blinker: Blinker",
+    "description": "scs_sdk.model.truck.lights.Lights.blinker",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/blinker.html",
+    "searchKeys": [
+      "blinker",
+      "val blinker: Blinker",
+      "scs_sdk.model.truck.lights.Lights.blinker"
+    ]
+  },
+  {
+    "name": "val body: Float",
+    "description": "scs_sdk.model.trailer.TrailerDamage.body",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/body.html",
+    "searchKeys": [
+      "body",
+      "val body: Float",
+      "scs_sdk.model.trailer.TrailerDamage.body"
+    ]
+  },
+  {
+    "name": "val bodyType: String",
+    "description": "scs_sdk.model.trailer.Trailer.bodyType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/body-type.html",
+    "searchKeys": [
+      "bodyType",
+      "val bodyType: String",
+      "scs_sdk.model.trailer.Trailer.bodyType"
+    ]
+  },
+  {
+    "name": "val brake: Float",
+    "description": "scs_sdk.model.controls.ControlsType.brake",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/brake.html",
+    "searchKeys": [
+      "brake",
+      "val brake: Float",
+      "scs_sdk.model.controls.ControlsType.brake"
+    ]
+  },
+  {
+    "name": "val brakes: Brakes",
+    "description": "scs_sdk.model.truck.Truck.brakes",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brakes.html",
+    "searchKeys": [
+      "brakes",
+      "val brakes: Brakes",
+      "scs_sdk.model.truck.Truck.brakes"
+    ]
+  },
+  {
+    "name": "val brand: GenericResource",
+    "description": "scs_sdk.model.trailer.Trailer.brand",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/brand.html",
+    "searchKeys": [
+      "brand",
+      "val brand: GenericResource",
+      "scs_sdk.model.trailer.Trailer.brand"
+    ]
+  },
+  {
+    "name": "val brand: GenericResource",
+    "description": "scs_sdk.model.truck.Truck.brand",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brand.html",
+    "searchKeys": [
+      "brand",
+      "val brand: GenericResource",
+      "scs_sdk.model.truck.Truck.brand"
+    ]
+  },
+  {
+    "name": "val cabin: Cabin<Float>",
+    "description": "scs_sdk.model.truck.Truck.cabin",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cabin.html",
+    "searchKeys": [
+      "cabin",
+      "val cabin: Cabin<Float>",
+      "scs_sdk.model.truck.Truck.cabin"
+    ]
+  },
+  {
+    "name": "val cancelled: EventsJobType.EventsJobCancelled",
+    "description": "scs_sdk.model.events.job.EventsJob.cancelled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/cancelled.html",
+    "searchKeys": [
+      "cancelled",
+      "val cancelled: EventsJobType.EventsJobCancelled",
+      "scs_sdk.model.events.job.EventsJob.cancelled"
+    ]
+  },
+  {
+    "name": "val cancelledTimestamp: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.cancelledTimestamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/cancelled-timestamp.html",
+    "searchKeys": [
+      "cancelledTimestamp",
+      "val cancelledTimestamp: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.cancelledTimestamp"
+    ]
+  },
+  {
+    "name": "val capacity: Float? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.capacity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/capacity.html",
+    "searchKeys": [
+      "capacity",
+      "val capacity: Float? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.capacity"
+    ]
+  },
+  {
+    "name": "val cargo: Float",
+    "description": "scs_sdk.model.trailer.TrailerDamage.cargo",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/cargo.html",
+    "searchKeys": [
+      "cargo",
+      "val cargo: Float",
+      "scs_sdk.model.trailer.TrailerDamage.cargo"
+    ]
+  },
+  {
+    "name": "val cargo: JobCargo",
+    "description": "scs_sdk.model.job.Job.cargo",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/cargo.html",
+    "searchKeys": [
+      "cargo",
+      "val cargo: JobCargo",
+      "scs_sdk.model.job.Job.cargo"
+    ]
+  },
+  {
+    "name": "val cargoDamage: Float",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.cargoDamage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/cargo-damage.html",
+    "searchKeys": [
+      "cargoDamage",
+      "val cargoDamage: Float",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.cargoDamage"
+    ]
+  },
+  {
+    "name": "val chainType: String",
+    "description": "scs_sdk.model.trailer.Trailer.chainType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/chain-type.html",
+    "searchKeys": [
+      "chainType",
+      "val chainType: String",
+      "scs_sdk.model.trailer.Trailer.chainType"
+    ]
+  },
+  {
+    "name": "val chassis: Chassis",
+    "description": "scs_sdk.model.truck.Truck.chassis",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/chassis.html",
+    "searchKeys": [
+      "chassis",
+      "val chassis: Chassis",
+      "scs_sdk.model.truck.Truck.chassis"
+    ]
+  },
+  {
+    "name": "val chassis: Float",
+    "description": "scs_sdk.model.trailer.TrailerDamage.chassis",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/chassis.html",
+    "searchKeys": [
+      "chassis",
+      "val chassis: Float",
+      "scs_sdk.model.trailer.TrailerDamage.chassis"
+    ]
+  },
+  {
+    "name": "val clutch: Float",
+    "description": "scs_sdk.model.controls.ControlsType.clutch",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/clutch.html",
+    "searchKeys": [
+      "clutch",
+      "val clutch: Float",
+      "scs_sdk.model.controls.ControlsType.clutch"
+    ]
+  },
+  {
+    "name": "val controls: Controls",
+    "description": "scs_sdk.model.TelemetryData.controls",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/controls.html",
+    "searchKeys": [
+      "controls",
+      "val controls: Controls",
+      "scs_sdk.model.TelemetryData.controls"
+    ]
+  },
+  {
+    "name": "val country: GenericResource",
+    "description": "scs_sdk.model.truck.LicensePlate.country",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/country.html",
+    "searchKeys": [
+      "country",
+      "val country: GenericResource",
+      "scs_sdk.model.truck.LicensePlate.country"
+    ]
+  },
+  {
+    "name": "val cruiseControl: CruiseControl",
+    "description": "scs_sdk.model.truck.Truck.cruiseControl",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cruise-control.html",
+    "searchKeys": [
+      "cruiseControl",
+      "val cruiseControl: CruiseControl",
+      "scs_sdk.model.truck.Truck.cruiseControl"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.job.JobCargo.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.job.JobCargo.damage"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.truck.Cabin.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.truck.Cabin.damage"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.truck.Chassis.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.truck.Chassis.damage"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.truck.TruckWheel.damage"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.truck.engine.Engine.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.truck.engine.Engine.damage"
+    ]
+  },
+  {
+    "name": "val damage: Float",
+    "description": "scs_sdk.model.truck.transmission.Transmission.damage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/damage.html",
+    "searchKeys": [
+      "damage",
+      "val damage: Float",
+      "scs_sdk.model.truck.transmission.Transmission.damage"
+    ]
+  },
+  {
+    "name": "val damageParts: TrailerDamage",
+    "description": "scs_sdk.model.trailer.Trailer.damageParts",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/damage-parts.html",
+    "searchKeys": [
+      "damageParts",
+      "val damageParts: TrailerDamage",
+      "scs_sdk.model.trailer.Trailer.damageParts"
+    ]
+  },
+  {
+    "name": "val dashboardBackLight: Float",
+    "description": "scs_sdk.model.truck.lights.Lights.dashboardBackLight",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/dashboard-back-light.html",
+    "searchKeys": [
+      "dashboardBackLight",
+      "val dashboardBackLight: Float",
+      "scs_sdk.model.truck.lights.Lights.dashboardBackLight"
+    ]
+  },
+  {
+    "name": "val dashboardGear: Int",
+    "description": "scs_sdk.model.truck.transmission.Transmission.dashboardGear",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/dashboard-gear.html",
+    "searchKeys": [
+      "dashboardGear",
+      "val dashboardGear: Int",
+      "scs_sdk.model.truck.transmission.Transmission.dashboardGear"
+    ]
+  },
+  {
+    "name": "val delivered: EventsJobType.EventsJobDelivered",
+    "description": "scs_sdk.model.events.job.EventsJob.delivered",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/delivered.html",
+    "searchKeys": [
+      "delivered",
+      "val delivered: EventsJobType.EventsJobDelivered",
+      "scs_sdk.model.events.job.EventsJob.delivered"
+    ]
+  },
+  {
+    "name": "val deliveredTimeStamp: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.deliveredTimeStamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/delivered-time-stamp.html",
+    "searchKeys": [
+      "deliveredTimeStamp",
+      "val deliveredTimeStamp: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.deliveredTimeStamp"
+    ]
+  },
+  {
+    "name": "val destination: CityType.CityDestination",
+    "description": "scs_sdk.model.events.ferry.EventsFerry.destination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/destination.html",
+    "searchKeys": [
+      "destination",
+      "val destination: CityType.CityDestination",
+      "scs_sdk.model.events.ferry.EventsFerry.destination"
+    ]
+  },
+  {
+    "name": "val destination: CityType.CityDestination",
+    "description": "scs_sdk.model.events.train.EventsTrain.destination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/destination.html",
+    "searchKeys": [
+      "destination",
+      "val destination: CityType.CityDestination",
+      "scs_sdk.model.events.train.EventsTrain.destination"
+    ]
+  },
+  {
+    "name": "val destination: JobLocation",
+    "description": "scs_sdk.model.job.Job.destination",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/destination.html",
+    "searchKeys": [
+      "destination",
+      "val destination: JobLocation",
+      "scs_sdk.model.job.Job.destination"
+    ]
+  },
+  {
+    "name": "val differential: Differential",
+    "description": "scs_sdk.model.truck.Truck.differential",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/differential.html",
+    "searchKeys": [
+      "differential",
+      "val differential: Differential",
+      "scs_sdk.model.truck.Truck.differential"
+    ]
+  },
+  {
+    "name": "val distance: Float",
+    "description": "scs_sdk.model.navigation.Navigation.distance",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/distance.html",
+    "searchKeys": [
+      "distance",
+      "val distance: Float",
+      "scs_sdk.model.navigation.Navigation.distance"
+    ]
+  },
+  {
+    "name": "val distance: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.distance",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/distance.html",
+    "searchKeys": [
+      "distance",
+      "val distance: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.distance"
+    ]
+  },
+  {
+    "name": "val earnedXP: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.earnedXP",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/earned-x-p.html",
+    "searchKeys": [
+      "earnedXP",
+      "val earnedXP: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.earnedXP"
+    ]
+  },
+  {
+    "name": "val emergency: AirPressureAlertType.AirPressureAlertEmergency",
+    "description": "scs_sdk.model.truck.brakes.AirPressure.emergency",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/emergency.html",
+    "searchKeys": [
+      "emergency",
+      "val emergency: AirPressureAlertType.AirPressureAlertEmergency",
+      "scs_sdk.model.truck.brakes.AirPressure.emergency"
+    ]
+  },
+  {
+    "name": "val engine: Engine",
+    "description": "scs_sdk.model.truck.Truck.engine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/engine.html",
+    "searchKeys": [
+      "engine",
+      "val engine: Engine",
+      "scs_sdk.model.truck.Truck.engine"
+    ]
+  },
+  {
+    "name": "val events: Events",
+    "description": "scs_sdk.model.TelemetryData.events",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/events.html",
+    "searchKeys": [
+      "events",
+      "val events: Events",
+      "scs_sdk.model.TelemetryData.events"
+    ]
+  },
+  {
+    "name": "val expectedDeliveryTimestamp: Int",
+    "description": "scs_sdk.model.job.Job.expectedDeliveryTimestamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/expected-delivery-timestamp.html",
+    "searchKeys": [
+      "expectedDeliveryTimestamp",
+      "val expectedDeliveryTimestamp: Int",
+      "scs_sdk.model.job.Job.expectedDeliveryTimestamp"
+    ]
+  },
+  {
+    "name": "val factor: Float",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.factor",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/factor.html",
+    "searchKeys": [
+      "factor",
+      "val factor: Float",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.factor"
+    ]
+  },
+  {
+    "name": "val factor: Float",
+    "description": "scs_sdk.model.utils.WarningLevels.factor",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/factor.html",
+    "searchKeys": [
+      "factor",
+      "val factor: Float",
+      "scs_sdk.model.utils.WarningLevels.factor"
+    ]
+  },
+  {
+    "name": "val ferry: EventsFerry",
+    "description": "scs_sdk.model.events.Events.ferry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/ferry.html",
+    "searchKeys": [
+      "ferry",
+      "val ferry: EventsFerry",
+      "scs_sdk.model.events.Events.ferry"
+    ]
+  },
+  {
+    "name": "val fine: EventsFine",
+    "description": "scs_sdk.model.events.Events.fine",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/fine.html",
+    "searchKeys": [
+      "fine",
+      "val fine: EventsFine",
+      "scs_sdk.model.events.Events.fine"
+    ]
+  },
+  {
+    "name": "val finished: EventsJobType.EventsJobFinished",
+    "description": "scs_sdk.model.events.job.EventsJob.finished",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/finished.html",
+    "searchKeys": [
+      "finished",
+      "val finished: EventsJobType.EventsJobFinished",
+      "scs_sdk.model.events.job.EventsJob.finished"
+    ]
+  },
+  {
+    "name": "val forwardGears: Int",
+    "description": "scs_sdk.model.truck.transmission.Transmission.forwardGears",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/forward-gears.html",
+    "searchKeys": [
+      "forwardGears",
+      "val forwardGears: Int",
+      "scs_sdk.model.truck.transmission.Transmission.forwardGears"
+    ]
+  },
+  {
+    "name": "val fuel: LiquidsType.Fuel",
+    "description": "scs_sdk.model.truck.liquids.Liquids.fuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/fuel.html",
+    "searchKeys": [
+      "fuel",
+      "val fuel: LiquidsType.Fuel",
+      "scs_sdk.model.truck.liquids.Liquids.fuel"
+    ]
+  },
+  {
+    "name": "val game: ControlsType.ControlsGame",
+    "description": "scs_sdk.model.controls.Controls.game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/game.html",
+    "searchKeys": [
+      "game",
+      "val game: ControlsType.ControlsGame",
+      "scs_sdk.model.controls.Controls.game"
+    ]
+  },
+  {
+    "name": "val game: Double",
+    "description": "scs_sdk.model.game.Versions.game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/game.html",
+    "searchKeys": [
+      "game",
+      "val game: Double",
+      "scs_sdk.model.game.Versions.game"
+    ]
+  },
+  {
+    "name": "val game: Game",
+    "description": "scs_sdk.model.TelemetryData.game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/game.html",
+    "searchKeys": [
+      "game",
+      "val game: Game",
+      "scs_sdk.model.TelemetryData.game"
+    ]
+  },
+  {
+    "name": "val game: Long",
+    "description": "scs_sdk.model.game.Timestamp.game",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/game.html",
+    "searchKeys": [
+      "game",
+      "val game: Long",
+      "scs_sdk.model.game.Timestamp.game"
+    ]
+  },
+  {
+    "name": "val gameTime: GameTime",
+    "description": "scs_sdk.model.game.Game.gameTime",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-time.html",
+    "searchKeys": [
+      "gameTime",
+      "val gameTime: GameTime",
+      "scs_sdk.model.game.Game.gameTime"
+    ]
+  },
+  {
+    "name": "val gameType: GameType",
+    "description": "scs_sdk.model.game.Game.gameType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-type.html",
+    "searchKeys": [
+      "gameType",
+      "val gameType: GameType",
+      "scs_sdk.model.game.Game.gameType"
+    ]
+  },
+  {
+    "name": "val gearRatiosForward: ArrayList<Float>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.gearRatiosForward",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-forward.html",
+    "searchKeys": [
+      "gearRatiosForward",
+      "val gearRatiosForward: ArrayList<Float>",
+      "scs_sdk.model.truck.transmission.Transmission.gearRatiosForward"
+    ]
+  },
+  {
+    "name": "val gearRatiosReverse: ArrayList<Float>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.gearRatiosReverse",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-reverse.html",
+    "searchKeys": [
+      "gearRatiosReverse",
+      "val gearRatiosReverse: ArrayList<Float>",
+      "scs_sdk.model.truck.transmission.Transmission.gearRatiosReverse"
+    ]
+  },
+  {
+    "name": "val hShifterSelector: ArrayList<Boolean>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.hShifterSelector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/h-shifter-selector.html",
+    "searchKeys": [
+      "hShifterSelector",
+      "val hShifterSelector: ArrayList<Boolean>",
+      "scs_sdk.model.truck.transmission.Transmission.hShifterSelector"
+    ]
+  },
+  {
+    "name": "val head: Head<Float>",
+    "description": "scs_sdk.model.truck.Truck.head",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/head.html",
+    "searchKeys": [
+      "head",
+      "val head: Head<Float>",
+      "scs_sdk.model.truck.Truck.head"
+    ]
+  },
+  {
+    "name": "val heading: T",
+    "description": "scs_sdk.model.utils.OrientationVector.heading",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/heading.html",
+    "searchKeys": [
+      "heading",
+      "val heading: T",
+      "scs_sdk.model.utils.OrientationVector.heading"
+    ]
+  },
+  {
+    "name": "val hook: Hook<Float>",
+    "description": "scs_sdk.model.trailer.Trailer.hook",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/hook.html",
+    "searchKeys": [
+      "hook",
+      "val hook: Hook<Float>",
+      "scs_sdk.model.trailer.Trailer.hook"
+    ]
+  },
+  {
+    "name": "val hook: Hook<Float>",
+    "description": "scs_sdk.model.truck.Truck.hook",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/hook.html",
+    "searchKeys": [
+      "hook",
+      "val hook: Hook<Float>",
+      "scs_sdk.model.truck.Truck.hook"
+    ]
+  },
+  {
+    "name": "val id: String",
+    "description": "scs_sdk.model.job.JobCargo.id",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/id.html",
+    "searchKeys": [
+      "id",
+      "val id: String",
+      "scs_sdk.model.job.JobCargo.id"
+    ]
+  },
+  {
+    "name": "val id: String",
+    "description": "scs_sdk.model.utils.CityType.id",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/id.html",
+    "searchKeys": [
+      "id",
+      "val id: String",
+      "scs_sdk.model.utils.CityType.id"
+    ]
+  },
+  {
+    "name": "val id: String",
+    "description": "scs_sdk.model.utils.CompanyType.id",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/id.html",
+    "searchKeys": [
+      "id",
+      "val id: String",
+      "scs_sdk.model.utils.CompanyType.id"
+    ]
+  },
+  {
+    "name": "val id: String",
+    "description": "scs_sdk.model.utils.GenericResource.id",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/id.html",
+    "searchKeys": [
+      "id",
+      "val id: String",
+      "scs_sdk.model.utils.GenericResource.id"
+    ]
+  },
+  {
+    "name": "val income: Long",
+    "description": "scs_sdk.model.job.Job.income",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/income.html",
+    "searchKeys": [
+      "income",
+      "val income: Long",
+      "scs_sdk.model.job.Job.income"
+    ]
+  },
+  {
+    "name": "val input: ControlsType.ControlsInput",
+    "description": "scs_sdk.model.controls.Controls.input",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/input.html",
+    "searchKeys": [
+      "input",
+      "val input: ControlsType.ControlsInput",
+      "scs_sdk.model.controls.Controls.input"
+    ]
+  },
+  {
+    "name": "val instance: Ets2Kernel32",
+    "description": "jna.Ets2Kernel32.Companion.instance",
+    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/instance.html",
+    "searchKeys": [
+      "instance",
+      "val instance: Ets2Kernel32",
+      "jna.Ets2Kernel32.Companion.instance"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.ferry.EventsFerry.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.ferry.EventsFerry.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.fine.EventsFine.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.fine.EventsFine.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobFinished.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobFinished.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.tollgate.EventsTollgate.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.tollgate.EventsTollgate.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.events.train.EventsTrain.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.events.train.EventsTrain.isActive"
+    ]
+  },
+  {
+    "name": "val isActive: Boolean",
+    "description": "scs_sdk.model.truck.lights.BlinkerStatus.isActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-active.html",
+    "searchKeys": [
+      "isActive",
+      "val isActive: Boolean",
+      "scs_sdk.model.truck.lights.BlinkerStatus.isActive"
+    ]
+  },
+  {
+    "name": "val isAttached: Boolean",
+    "description": "scs_sdk.model.trailer.Trailer.isAttached",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/is-attached.html",
+    "searchKeys": [
+      "isAttached",
+      "val isAttached: Boolean",
+      "scs_sdk.model.trailer.Trailer.isAttached"
+    ]
+  },
+  {
+    "name": "val isAutoLoaded: Boolean",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.isAutoLoaded",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-auto-loaded.html",
+    "searchKeys": [
+      "isAutoLoaded",
+      "val isAutoLoaded: Boolean",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobStarted.isAutoLoaded"
+    ]
+  },
+  {
+    "name": "val isBeaconOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isBeaconOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beacon-on.html",
+    "searchKeys": [
+      "isBeaconOn",
+      "val isBeaconOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isBeaconOn"
+    ]
+  },
+  {
+    "name": "val isBeamHighOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isBeamHighOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-high-on.html",
+    "searchKeys": [
+      "isBeamHighOn",
+      "val isBeamHighOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isBeamHighOn"
+    ]
+  },
+  {
+    "name": "val isBeamLowOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isBeamLowOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-low-on.html",
+    "searchKeys": [
+      "isBeamLowOn",
+      "val isBeamLowOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isBeamLowOn"
+    ]
+  },
+  {
+    "name": "val isBrakeOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isBrakeOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-brake-on.html",
+    "searchKeys": [
+      "isBrakeOn",
+      "val isBrakeOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isBrakeOn"
+    ]
+  },
+  {
+    "name": "val isElectricEnabled: Boolean",
+    "description": "scs_sdk.model.truck.Truck.isElectricEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-electric-enabled.html",
+    "searchKeys": [
+      "isElectricEnabled",
+      "val isElectricEnabled: Boolean",
+      "scs_sdk.model.truck.Truck.isElectricEnabled"
+    ]
+  },
+  {
+    "name": "val isEnabled: Boolean",
+    "description": "scs_sdk.model.truck.brakes.AirPressureAlertType.isEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/is-enabled.html",
+    "searchKeys": [
+      "isEnabled",
+      "val isEnabled: Boolean",
+      "scs_sdk.model.truck.brakes.AirPressureAlertType.isEnabled"
+    ]
+  },
+  {
+    "name": "val isEnabled: Boolean",
+    "description": "scs_sdk.model.truck.engine.Engine.isEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/is-enabled.html",
+    "searchKeys": [
+      "isEnabled",
+      "val isEnabled: Boolean",
+      "scs_sdk.model.truck.engine.Engine.isEnabled"
+    ]
+  },
+  {
+    "name": "val isEnabled: Boolean",
+    "description": "scs_sdk.model.truck.lights.BlinkerStatus.isEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-enabled.html",
+    "searchKeys": [
+      "isEnabled",
+      "val isEnabled: Boolean",
+      "scs_sdk.model.truck.lights.BlinkerStatus.isEnabled"
+    ]
+  },
+  {
+    "name": "val isEnabled: Boolean",
+    "description": "scs_sdk.model.truck.transmission.CruiseControl.isEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/is-enabled.html",
+    "searchKeys": [
+      "isEnabled",
+      "val isEnabled: Boolean",
+      "scs_sdk.model.truck.transmission.CruiseControl.isEnabled"
+    ]
+  },
+  {
+    "name": "val isEnabled: Boolean",
+    "description": "scs_sdk.model.utils.WarningLevels.isEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/is-enabled.html",
+    "searchKeys": [
+      "isEnabled",
+      "val isEnabled: Boolean",
+      "scs_sdk.model.utils.WarningLevels.isEnabled"
+    ]
+  },
+  {
+    "name": "val isHazardOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isHazardOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-hazard-on.html",
+    "searchKeys": [
+      "isHazardOn",
+      "val isHazardOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isHazardOn"
+    ]
+  },
+  {
+    "name": "val isIndicatorEnabled: Boolean",
+    "description": "scs_sdk.model.truck.LiftAxle.isIndicatorEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-indicator-enabled.html",
+    "searchKeys": [
+      "isIndicatorEnabled",
+      "val isIndicatorEnabled: Boolean",
+      "scs_sdk.model.truck.LiftAxle.isIndicatorEnabled"
+    ]
+  },
+  {
+    "name": "val isLiftAxleEnabled: Boolean",
+    "description": "scs_sdk.model.truck.LiftAxle.isLiftAxleEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-lift-axle-enabled.html",
+    "searchKeys": [
+      "isLiftAxleEnabled",
+      "val isLiftAxleEnabled: Boolean",
+      "scs_sdk.model.truck.LiftAxle.isLiftAxleEnabled"
+    ]
+  },
+  {
+    "name": "val isLiftable: Boolean",
+    "description": "scs_sdk.model.trailer.TrailerWheel.isLiftable",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-liftable.html",
+    "searchKeys": [
+      "isLiftable",
+      "val isLiftable: Boolean",
+      "scs_sdk.model.trailer.TrailerWheel.isLiftable"
+    ]
+  },
+  {
+    "name": "val isLiftable: Boolean",
+    "description": "scs_sdk.model.truck.TruckWheel.isLiftable",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-liftable.html",
+    "searchKeys": [
+      "isLiftable",
+      "val isLiftable: Boolean",
+      "scs_sdk.model.truck.TruckWheel.isLiftable"
+    ]
+  },
+  {
+    "name": "val isLoaded: Boolean",
+    "description": "scs_sdk.model.job.JobCargo.isLoaded",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/is-loaded.html",
+    "searchKeys": [
+      "isLoaded",
+      "val isLoaded: Boolean",
+      "scs_sdk.model.job.JobCargo.isLoaded"
+    ]
+  },
+  {
+    "name": "val isLockEnabled: Boolean",
+    "description": "scs_sdk.model.truck.transmission.Differential.isLockEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/is-lock-enabled.html",
+    "searchKeys": [
+      "isLockEnabled",
+      "val isLockEnabled: Boolean",
+      "scs_sdk.model.truck.transmission.Differential.isLockEnabled"
+    ]
+  },
+  {
+    "name": "val isMotorBreakActive: Boolean",
+    "description": "scs_sdk.model.truck.brakes.Brakes.isMotorBreakActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-motor-break-active.html",
+    "searchKeys": [
+      "isMotorBreakActive",
+      "val isMotorBreakActive: Boolean",
+      "scs_sdk.model.truck.brakes.Brakes.isMotorBreakActive"
+    ]
+  },
+  {
+    "name": "val isOnGround: Boolean",
+    "description": "scs_sdk.model.trailer.TrailerWheel.isOnGround",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-on-ground.html",
+    "searchKeys": [
+      "isOnGround",
+      "val isOnGround: Boolean",
+      "scs_sdk.model.trailer.TrailerWheel.isOnGround"
+    ]
+  },
+  {
+    "name": "val isOnGround: Boolean",
+    "description": "scs_sdk.model.truck.TruckWheel.isOnGround",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-on-ground.html",
+    "searchKeys": [
+      "isOnGround",
+      "val isOnGround: Boolean",
+      "scs_sdk.model.truck.TruckWheel.isOnGround"
+    ]
+  },
+  {
+    "name": "val isParkingBrakeActive: Boolean",
+    "description": "scs_sdk.model.truck.brakes.Brakes.isParkingBrakeActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-parking-brake-active.html",
+    "searchKeys": [
+      "isParkingBrakeActive",
+      "val isParkingBrakeActive: Boolean",
+      "scs_sdk.model.truck.brakes.Brakes.isParkingBrakeActive"
+    ]
+  },
+  {
+    "name": "val isParkingBrakeOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isParkingBrakeOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-parking-brake-on.html",
+    "searchKeys": [
+      "isParkingBrakeOn",
+      "val isParkingBrakeOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isParkingBrakeOn"
+    ]
+  },
+  {
+    "name": "val isPowered: Boolean",
+    "description": "scs_sdk.model.trailer.TrailerWheel.isPowered",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-powered.html",
+    "searchKeys": [
+      "isPowered",
+      "val isPowered: Boolean",
+      "scs_sdk.model.trailer.TrailerWheel.isPowered"
+    ]
+  },
+  {
+    "name": "val isPowered: Boolean",
+    "description": "scs_sdk.model.truck.TruckWheel.isPowered",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-powered.html",
+    "searchKeys": [
+      "isPowered",
+      "val isPowered: Boolean",
+      "scs_sdk.model.truck.TruckWheel.isPowered"
+    ]
+  },
+  {
+    "name": "val isReverseOn: Boolean",
+    "description": "scs_sdk.model.truck.lights.Lights.isReverseOn",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-reverse-on.html",
+    "searchKeys": [
+      "isReverseOn",
+      "val isReverseOn: Boolean",
+      "scs_sdk.model.truck.lights.Lights.isReverseOn"
+    ]
+  },
+  {
+    "name": "val isSimulated: Boolean",
+    "description": "scs_sdk.model.trailer.TrailerWheel.isSimulated",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-simulated.html",
+    "searchKeys": [
+      "isSimulated",
+      "val isSimulated: Boolean",
+      "scs_sdk.model.trailer.TrailerWheel.isSimulated"
+    ]
+  },
+  {
+    "name": "val isSimulated: Boolean",
+    "description": "scs_sdk.model.truck.TruckWheel.isSimulated",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-simulated.html",
+    "searchKeys": [
+      "isSimulated",
+      "val isSimulated: Boolean",
+      "scs_sdk.model.truck.TruckWheel.isSimulated"
+    ]
+  },
+  {
+    "name": "val isSpecial: Boolean",
+    "description": "scs_sdk.model.job.Job.isSpecial",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/is-special.html",
+    "searchKeys": [
+      "isSpecial",
+      "val isSpecial: Boolean",
+      "scs_sdk.model.job.Job.isSpecial"
+    ]
+  },
+  {
+    "name": "val isSteerable: Boolean",
+    "description": "scs_sdk.model.trailer.TrailerWheel.isSteerable",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-steerable.html",
+    "searchKeys": [
+      "isSteerable",
+      "val isSteerable: Boolean",
+      "scs_sdk.model.trailer.TrailerWheel.isSteerable"
+    ]
+  },
+  {
+    "name": "val isSteerable: Boolean",
+    "description": "scs_sdk.model.truck.TruckWheel.isSteerable",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-steerable.html",
+    "searchKeys": [
+      "isSteerable",
+      "val isSteerable: Boolean",
+      "scs_sdk.model.truck.TruckWheel.isSteerable"
+    ]
+  },
+  {
+    "name": "val isWipersEnabled: Boolean",
+    "description": "scs_sdk.model.truck.Truck.isWipersEnabled",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-wipers-enabled.html",
+    "searchKeys": [
+      "isWipersEnabled",
+      "val isWipersEnabled: Boolean",
+      "scs_sdk.model.truck.Truck.isWipersEnabled"
+    ]
+  },
+  {
+    "name": "val job: EventsJob",
+    "description": "scs_sdk.model.events.Events.job",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/job.html",
+    "searchKeys": [
+      "job",
+      "val job: EventsJob",
+      "scs_sdk.model.events.Events.job"
+    ]
+  },
+  {
+    "name": "val job: Job",
+    "description": "scs_sdk.model.TelemetryData.job",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/job.html",
+    "searchKeys": [
+      "job",
+      "val job: Job",
+      "scs_sdk.model.TelemetryData.job"
+    ]
+  },
+  {
+    "name": "val jobCity: CityType",
+    "description": "scs_sdk.model.job.JobLocation.jobCity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-city.html",
+    "searchKeys": [
+      "jobCity",
+      "val jobCity: CityType",
+      "scs_sdk.model.job.JobLocation.jobCity"
+    ]
+  },
+  {
+    "name": "val jobCompany: CompanyType",
+    "description": "scs_sdk.model.job.JobLocation.jobCompany",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-company.html",
+    "searchKeys": [
+      "jobCompany",
+      "val jobCompany: CompanyType",
+      "scs_sdk.model.job.JobLocation.jobCompany"
+    ]
+  },
+  {
+    "name": "val left: BlinkerStatus",
+    "description": "scs_sdk.model.truck.lights.Blinker.left",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/left.html",
+    "searchKeys": [
+      "left",
+      "val left: BlinkerStatus",
+      "scs_sdk.model.truck.lights.Blinker.left"
+    ]
+  },
+  {
+    "name": "val level: Int",
+    "description": "scs_sdk.model.truck.brakes.Retarder.level",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/level.html",
+    "searchKeys": [
+      "level",
+      "val level: Int",
+      "scs_sdk.model.truck.brakes.Retarder.level"
+    ]
+  },
+  {
+    "name": "val licencePlate: LicensePlate",
+    "description": "scs_sdk.model.trailer.Trailer.licencePlate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/licence-plate.html",
+    "searchKeys": [
+      "licencePlate",
+      "val licencePlate: LicensePlate",
+      "scs_sdk.model.trailer.Trailer.licencePlate"
+    ]
+  },
+  {
+    "name": "val licensePlate: LicensePlate",
+    "description": "scs_sdk.model.truck.Truck.licensePlate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/license-plate.html",
+    "searchKeys": [
+      "licensePlate",
+      "val licensePlate: LicensePlate",
+      "scs_sdk.model.truck.Truck.licensePlate"
+    ]
+  },
+  {
+    "name": "val lift: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.lift",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift.html",
+    "searchKeys": [
+      "lift",
+      "val lift: Float",
+      "scs_sdk.model.trailer.TrailerWheel.lift"
+    ]
+  },
+  {
+    "name": "val lift: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.lift",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift.html",
+    "searchKeys": [
+      "lift",
+      "val lift: Float",
+      "scs_sdk.model.truck.TruckWheel.lift"
+    ]
+  },
+  {
+    "name": "val liftAxle: LiftAxle",
+    "description": "scs_sdk.model.trailer.Trailer.liftAxle",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/lift-axle.html",
+    "searchKeys": [
+      "liftAxle",
+      "val liftAxle: LiftAxle",
+      "scs_sdk.model.trailer.Trailer.liftAxle"
+    ]
+  },
+  {
+    "name": "val liftAxle: LiftAxle",
+    "description": "scs_sdk.model.truck.Truck.liftAxle",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lift-axle.html",
+    "searchKeys": [
+      "liftAxle",
+      "val liftAxle: LiftAxle",
+      "scs_sdk.model.truck.Truck.liftAxle"
+    ]
+  },
+  {
+    "name": "val liftOffset: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.liftOffset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift-offset.html",
+    "searchKeys": [
+      "liftOffset",
+      "val liftOffset: Float",
+      "scs_sdk.model.trailer.TrailerWheel.liftOffset"
+    ]
+  },
+  {
+    "name": "val liftOffset: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.liftOffset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift-offset.html",
+    "searchKeys": [
+      "liftOffset",
+      "val liftOffset: Float",
+      "scs_sdk.model.truck.TruckWheel.liftOffset"
+    ]
+  },
+  {
+    "name": "val lights: Lights",
+    "description": "scs_sdk.model.truck.Truck.lights",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lights.html",
+    "searchKeys": [
+      "lights",
+      "val lights: Lights",
+      "scs_sdk.model.truck.Truck.lights"
+    ]
+  },
+  {
+    "name": "val linearAcceleration: Vector<T>",
+    "description": "scs_sdk.model.substances.Substances.linearAcceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-acceleration.html",
+    "searchKeys": [
+      "linearAcceleration",
+      "val linearAcceleration: Vector<T>",
+      "scs_sdk.model.substances.Substances.linearAcceleration"
+    ]
+  },
+  {
+    "name": "val linearAcceleration: Vector<T>? = null",
+    "description": "scs_sdk.model.utils.Acceleration.linearAcceleration",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-acceleration.html",
+    "searchKeys": [
+      "linearAcceleration",
+      "val linearAcceleration: Vector<T>? = null",
+      "scs_sdk.model.utils.Acceleration.linearAcceleration"
+    ]
+  },
+  {
+    "name": "val linearVelocity: Vector<T>",
+    "description": "scs_sdk.model.substances.Substances.linearVelocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-velocity.html",
+    "searchKeys": [
+      "linearVelocity",
+      "val linearVelocity: Vector<T>",
+      "scs_sdk.model.substances.Substances.linearVelocity"
+    ]
+  },
+  {
+    "name": "val linearVelocity: Vector<T>? = null",
+    "description": "scs_sdk.model.utils.Acceleration.linearVelocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-velocity.html",
+    "searchKeys": [
+      "linearVelocity",
+      "val linearVelocity: Vector<T>? = null",
+      "scs_sdk.model.utils.Acceleration.linearVelocity"
+    ]
+  },
+  {
+    "name": "val liquids: Liquids",
+    "description": "scs_sdk.model.truck.Truck.liquids",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/liquids.html",
+    "searchKeys": [
+      "liquids",
+      "val liquids: Liquids",
+      "scs_sdk.model.truck.Truck.liquids"
+    ]
+  },
+  {
+    "name": "val market: String",
+    "description": "scs_sdk.model.job.Job.market",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/market.html",
+    "searchKeys": [
+      "market",
+      "val market: String",
+      "scs_sdk.model.job.Job.market"
+    ]
+  },
+  {
+    "name": "val mass: Float",
+    "description": "scs_sdk.model.job.JobCargo.mass",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/mass.html",
+    "searchKeys": [
+      "mass",
+      "val mass: Float",
+      "scs_sdk.model.job.JobCargo.mass"
+    ]
+  },
+  {
+    "name": "val max: Float",
+    "description": "scs_sdk.model.truck.engine.Rpm.max",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/max.html",
+    "searchKeys": [
+      "max",
+      "val max: Float",
+      "scs_sdk.model.truck.engine.Rpm.max"
+    ]
+  },
+  {
+    "name": "val maxTrailerCount: Int",
+    "description": "scs_sdk.model.game.Game.maxTrailerCount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/max-trailer-count.html",
+    "searchKeys": [
+      "maxTrailerCount",
+      "val maxTrailerCount: Int",
+      "scs_sdk.model.game.Game.maxTrailerCount"
+    ]
+  },
+  {
+    "name": "val model: GenericResource",
+    "description": "scs_sdk.model.trailer.Trailer.model",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/model.html",
+    "searchKeys": [
+      "model",
+      "val model: GenericResource",
+      "scs_sdk.model.trailer.Trailer.model"
+    ]
+  },
+  {
+    "name": "val model: GenericResource",
+    "description": "scs_sdk.model.truck.Truck.model",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/model.html",
+    "searchKeys": [
+      "model",
+      "val model: GenericResource",
+      "scs_sdk.model.truck.Truck.model"
+    ]
+  },
+  {
+    "name": "val multiplayerTimeOffset: Long",
+    "description": "scs_sdk.model.game.Game.multiplayerTimeOffset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/multiplayer-time-offset.html",
+    "searchKeys": [
+      "multiplayerTimeOffset",
+      "val multiplayerTimeOffset: Long",
+      "scs_sdk.model.game.Game.multiplayerTimeOffset"
+    ]
+  },
+  {
+    "name": "val name: String",
+    "description": "scs_sdk.model.job.JobCargo.name",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/name.html",
+    "searchKeys": [
+      "name",
+      "val name: String",
+      "scs_sdk.model.job.JobCargo.name"
+    ]
+  },
+  {
+    "name": "val name: String",
+    "description": "scs_sdk.model.utils.CityType.name",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/name.html",
+    "searchKeys": [
+      "name",
+      "val name: String",
+      "scs_sdk.model.utils.CityType.name"
+    ]
+  },
+  {
+    "name": "val name: String",
+    "description": "scs_sdk.model.utils.CompanyType.name",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/name.html",
+    "searchKeys": [
+      "name",
+      "val name: String",
+      "scs_sdk.model.utils.CompanyType.name"
+    ]
+  },
+  {
+    "name": "val name: String",
+    "description": "scs_sdk.model.utils.GenericResource.name",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/name.html",
+    "searchKeys": [
+      "name",
+      "val name: String",
+      "scs_sdk.model.utils.GenericResource.name"
+    ]
+  },
+  {
+    "name": "val navigation: Navigation",
+    "description": "scs_sdk.model.TelemetryData.navigation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/navigation.html",
+    "searchKeys": [
+      "navigation",
+      "val navigation: Navigation",
+      "scs_sdk.model.TelemetryData.navigation"
+    ]
+  },
+  {
+    "name": "val nextRestStop: Int",
+    "description": "scs_sdk.model.navigation.Navigation.nextRestStop",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/next-rest-stop.html",
+    "searchKeys": [
+      "nextRestStop",
+      "val nextRestStop: Int",
+      "scs_sdk.model.navigation.Navigation.nextRestStop"
+    ]
+  },
+  {
+    "name": "val odometer: Float",
+    "description": "scs_sdk.model.truck.Truck.odometer",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/odometer.html",
+    "searchKeys": [
+      "odometer",
+      "val odometer: Float",
+      "scs_sdk.model.truck.Truck.odometer"
+    ]
+  },
+  {
+    "name": "val offence: String",
+    "description": "scs_sdk.model.events.fine.EventsFine.offence",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/offence.html",
+    "searchKeys": [
+      "offence",
+      "val offence: String",
+      "scs_sdk.model.events.fine.EventsFine.offence"
+    ]
+  },
+  {
+    "name": "val offset: Offset<T>",
+    "description": "scs_sdk.model.truck.Cabin.offset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/offset.html",
+    "searchKeys": [
+      "offset",
+      "val offset: Offset<T>",
+      "scs_sdk.model.truck.Cabin.offset"
+    ]
+  },
+  {
+    "name": "val offset: Offset<T>",
+    "description": "scs_sdk.model.truck.Head.offset",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/offset.html",
+    "searchKeys": [
+      "offset",
+      "val offset: Offset<T>",
+      "scs_sdk.model.truck.Head.offset"
+    ]
+  },
+  {
+    "name": "val oil: LiquidsType.Oil",
+    "description": "scs_sdk.model.truck.engine.Engine.oil",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/oil.html",
+    "searchKeys": [
+      "oil",
+      "val oil: LiquidsType.Oil",
+      "scs_sdk.model.truck.engine.Engine.oil"
+    ]
+  },
+  {
+    "name": "val orientation: OrientationVector<Double>",
+    "description": "scs_sdk.model.trailer.Trailer.orientation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/orientation.html",
+    "searchKeys": [
+      "orientation",
+      "val orientation: OrientationVector<Double>",
+      "scs_sdk.model.trailer.Trailer.orientation"
+    ]
+  },
+  {
+    "name": "val orientation: OrientationVector<Double>",
+    "description": "scs_sdk.model.truck.Truck.orientation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/orientation.html",
+    "searchKeys": [
+      "orientation",
+      "val orientation: OrientationVector<Double>",
+      "scs_sdk.model.truck.Truck.orientation"
+    ]
+  },
+  {
+    "name": "val orientation: OrientationVector<T>",
+    "description": "scs_sdk.model.utils.Offset.orientation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/orientation.html",
+    "searchKeys": [
+      "orientation",
+      "val orientation: OrientationVector<T>",
+      "scs_sdk.model.utils.Offset.orientation"
+    ]
+  },
+  {
+    "name": "val paused: Boolean",
+    "description": "scs_sdk.model.game.Game.paused",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/paused.html",
+    "searchKeys": [
+      "paused",
+      "val paused: Boolean",
+      "scs_sdk.model.game.Game.paused"
+    ]
+  },
+  {
+    "name": "val penalty: Long",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.penalty",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/penalty.html",
+    "searchKeys": [
+      "penalty",
+      "val penalty: Long",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.penalty"
+    ]
+  },
+  {
+    "name": "val pitch: T",
+    "description": "scs_sdk.model.utils.OrientationVector.pitch",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/pitch.html",
+    "searchKeys": [
+      "pitch",
+      "val pitch: T",
+      "scs_sdk.model.utils.OrientationVector.pitch"
+    ]
+  },
+  {
+    "name": "val plannedDistance: Int",
+    "description": "scs_sdk.model.job.Job.plannedDistance",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/planned-distance.html",
+    "searchKeys": [
+      "plannedDistance",
+      "val plannedDistance: Int",
+      "scs_sdk.model.job.Job.plannedDistance"
+    ]
+  },
+  {
+    "name": "val plugin: Int",
+    "description": "scs_sdk.model.game.Versions.plugin",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/plugin.html",
+    "searchKeys": [
+      "plugin",
+      "val plugin: Int",
+      "scs_sdk.model.game.Versions.plugin"
+    ]
+  },
+  {
+    "name": "val position: Vector<Double>",
+    "description": "scs_sdk.model.trailer.Trailer.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<Double>",
+      "scs_sdk.model.trailer.Trailer.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<Double>",
+    "description": "scs_sdk.model.truck.Truck.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<Double>",
+      "scs_sdk.model.truck.Truck.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<Float>",
+    "description": "scs_sdk.model.trailer.TrailerWheel.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<Float>",
+      "scs_sdk.model.trailer.TrailerWheel.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<Float>",
+    "description": "scs_sdk.model.truck.TruckWheel.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<Float>",
+      "scs_sdk.model.truck.TruckWheel.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<T>",
+    "description": "scs_sdk.model.truck.Cabin.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<T>",
+      "scs_sdk.model.truck.Cabin.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<T>",
+    "description": "scs_sdk.model.truck.Head.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<T>",
+      "scs_sdk.model.truck.Head.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<T>",
+    "description": "scs_sdk.model.truck.Hook.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<T>",
+      "scs_sdk.model.truck.Hook.position"
+    ]
+  },
+  {
+    "name": "val position: Vector<T>",
+    "description": "scs_sdk.model.utils.Offset.position",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/position.html",
+    "searchKeys": [
+      "position",
+      "val position: Vector<T>",
+      "scs_sdk.model.utils.Offset.position"
+    ]
+  },
+  {
+    "name": "val pressure: Float? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.pressure",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/pressure.html",
+    "searchKeys": [
+      "pressure",
+      "val pressure: Float? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.pressure"
+    ]
+  },
+  {
+    "name": "val radius: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.radius",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/radius.html",
+    "searchKeys": [
+      "radius",
+      "val radius: Float",
+      "scs_sdk.model.trailer.TrailerWheel.radius"
+    ]
+  },
+  {
+    "name": "val radius: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.radius",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/radius.html",
+    "searchKeys": [
+      "radius",
+      "val radius: Float",
+      "scs_sdk.model.truck.TruckWheel.radius"
+    ]
+  },
+  {
+    "name": "val range: Float? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.range",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/range.html",
+    "searchKeys": [
+      "range",
+      "val range: Float? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.range"
+    ]
+  },
+  {
+    "name": "val ratio: Float",
+    "description": "scs_sdk.model.truck.transmission.Differential.ratio",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/ratio.html",
+    "searchKeys": [
+      "ratio",
+      "val ratio: Float",
+      "scs_sdk.model.truck.transmission.Differential.ratio"
+    ]
+  },
+  {
+    "name": "val refuel: EventsRefuelType.EventsRefuel",
+    "description": "scs_sdk.model.events.Events.refuel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel.html",
+    "searchKeys": [
+      "refuel",
+      "val refuel: EventsRefuelType.EventsRefuel",
+      "scs_sdk.model.events.Events.refuel"
+    ]
+  },
+  {
+    "name": "val refuelPaid: EventsRefuelType.EventsRefuelPaid",
+    "description": "scs_sdk.model.events.Events.refuelPaid",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel-paid.html",
+    "searchKeys": [
+      "refuelPaid",
+      "val refuelPaid: EventsRefuelType.EventsRefuelPaid",
+      "scs_sdk.model.events.Events.refuelPaid"
+    ]
+  },
+  {
+    "name": "val render: Long",
+    "description": "scs_sdk.model.game.Timestamp.render",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/render.html",
+    "searchKeys": [
+      "render",
+      "val render: Long",
+      "scs_sdk.model.game.Timestamp.render"
+    ]
+  },
+  {
+    "name": "val retarder: Retarder",
+    "description": "scs_sdk.model.truck.brakes.Brakes.retarder",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/retarder.html",
+    "searchKeys": [
+      "retarder",
+      "val retarder: Retarder",
+      "scs_sdk.model.truck.brakes.Brakes.retarder"
+    ]
+  },
+  {
+    "name": "val revenue: Long",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.revenue",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/revenue.html",
+    "searchKeys": [
+      "revenue",
+      "val revenue: Long",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.revenue"
+    ]
+  },
+  {
+    "name": "val reverseGears: Int",
+    "description": "scs_sdk.model.truck.transmission.Transmission.reverseGears",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/reverse-gears.html",
+    "searchKeys": [
+      "reverseGears",
+      "val reverseGears: Int",
+      "scs_sdk.model.truck.transmission.Transmission.reverseGears"
+    ]
+  },
+  {
+    "name": "val right: BlinkerStatus",
+    "description": "scs_sdk.model.truck.lights.Blinker.right",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/right.html",
+    "searchKeys": [
+      "right",
+      "val right: BlinkerStatus",
+      "scs_sdk.model.truck.lights.Blinker.right"
+    ]
+  },
+  {
+    "name": "val roll: T",
+    "description": "scs_sdk.model.utils.OrientationVector.roll",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/roll.html",
+    "searchKeys": [
+      "roll",
+      "val roll: T",
+      "scs_sdk.model.utils.OrientationVector.roll"
+    ]
+  },
+  {
+    "name": "val rotation: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.rotation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/rotation.html",
+    "searchKeys": [
+      "rotation",
+      "val rotation: Float",
+      "scs_sdk.model.trailer.TrailerWheel.rotation"
+    ]
+  },
+  {
+    "name": "val rotation: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.rotation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/rotation.html",
+    "searchKeys": [
+      "rotation",
+      "val rotation: Float",
+      "scs_sdk.model.truck.TruckWheel.rotation"
+    ]
+  },
+  {
+    "name": "val rpm: Rpm",
+    "description": "scs_sdk.model.truck.engine.Engine.rpm",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/rpm.html",
+    "searchKeys": [
+      "rpm",
+      "val rpm: Rpm",
+      "scs_sdk.model.truck.engine.Engine.rpm"
+    ]
+  },
+  {
+    "name": "val scale: Int",
+    "description": "scs_sdk.model.game.Game.scale",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/scale.html",
+    "searchKeys": [
+      "scale",
+      "val scale: Int",
+      "scs_sdk.model.game.Game.scale"
+    ]
+  },
+  {
+    "name": "val sdkActive: Boolean",
+    "description": "scs_sdk.model.game.Game.sdkActive",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/sdk-active.html",
+    "searchKeys": [
+      "sdkActive",
+      "val sdkActive: Boolean",
+      "scs_sdk.model.game.Game.sdkActive"
+    ]
+  },
+  {
+    "name": "val selectedGear: Int",
+    "description": "scs_sdk.model.truck.transmission.Transmission.selectedGear",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selected-gear.html",
+    "searchKeys": [
+      "selectedGear",
+      "val selectedGear: Int",
+      "scs_sdk.model.truck.transmission.Transmission.selectedGear"
+    ]
+  },
+  {
+    "name": "val selectorCount: Int",
+    "description": "scs_sdk.model.truck.transmission.Transmission.selectorCount",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selector-count.html",
+    "searchKeys": [
+      "selectorCount",
+      "val selectorCount: Int",
+      "scs_sdk.model.truck.transmission.Transmission.selectorCount"
+    ]
+  },
+  {
+    "name": "val shifterType: String",
+    "description": "scs_sdk.model.truck.transmission.Transmission.shifterType",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/shifter-type.html",
+    "searchKeys": [
+      "shifterType",
+      "val shifterType: String",
+      "scs_sdk.model.truck.transmission.Transmission.shifterType"
+    ]
+  },
+  {
+    "name": "val simulation: Long",
+    "description": "scs_sdk.model.game.Timestamp.simulation",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/simulation.html",
+    "searchKeys": [
+      "simulation",
+      "val simulation: Long",
+      "scs_sdk.model.game.Timestamp.simulation"
+    ]
+  },
+  {
+    "name": "val slotsGear: ArrayList<Int>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.slotsGear",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-gear.html",
+    "searchKeys": [
+      "slotsGear",
+      "val slotsGear: ArrayList<Int>",
+      "scs_sdk.model.truck.transmission.Transmission.slotsGear"
+    ]
+  },
+  {
+    "name": "val slotsHandlePosition: List<Int>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.slotsHandlePosition",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-handle-position.html",
+    "searchKeys": [
+      "slotsHandlePosition",
+      "val slotsHandlePosition: List<Int>",
+      "scs_sdk.model.truck.transmission.Transmission.slotsHandlePosition"
+    ]
+  },
+  {
+    "name": "val slotsSelector: List<Int>",
+    "description": "scs_sdk.model.truck.transmission.Transmission.slotsSelector",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-selector.html",
+    "searchKeys": [
+      "slotsSelector",
+      "val slotsSelector: List<Int>",
+      "scs_sdk.model.truck.transmission.Transmission.slotsSelector"
+    ]
+  },
+  {
+    "name": "val source: CityType.CitySource",
+    "description": "scs_sdk.model.events.ferry.EventsFerry.source",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/source.html",
+    "searchKeys": [
+      "source",
+      "val source: CityType.CitySource",
+      "scs_sdk.model.events.ferry.EventsFerry.source"
+    ]
+  },
+  {
+    "name": "val source: CityType.CitySource",
+    "description": "scs_sdk.model.events.train.EventsTrain.source",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/source.html",
+    "searchKeys": [
+      "source",
+      "val source: CityType.CitySource",
+      "scs_sdk.model.events.train.EventsTrain.source"
+    ]
+  },
+  {
+    "name": "val source: JobLocation",
+    "description": "scs_sdk.model.job.Job.source",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/source.html",
+    "searchKeys": [
+      "source",
+      "val source: JobLocation",
+      "scs_sdk.model.job.Job.source"
+    ]
+  },
+  {
+    "name": "val speed: Long",
+    "description": "scs_sdk.model.truck.Truck.speed",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/speed.html",
+    "searchKeys": [
+      "speed",
+      "val speed: Long",
+      "scs_sdk.model.truck.Truck.speed"
+    ]
+  },
+  {
+    "name": "val speedLimit: Long",
+    "description": "scs_sdk.model.navigation.Navigation.speedLimit",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/speed-limit.html",
+    "searchKeys": [
+      "speedLimit",
+      "val speedLimit: Long",
+      "scs_sdk.model.navigation.Navigation.speedLimit"
+    ]
+  },
+  {
+    "name": "val started: EventsJobType.EventsJobStarted",
+    "description": "scs_sdk.model.events.job.EventsJob.started",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/started.html",
+    "searchKeys": [
+      "started",
+      "val started: EventsJobType.EventsJobStarted",
+      "scs_sdk.model.events.job.EventsJob.started"
+    ]
+  },
+  {
+    "name": "val startedTimeStamp: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.startedTimeStamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/started-time-stamp.html",
+    "searchKeys": [
+      "startedTimeStamp",
+      "val startedTimeStamp: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobCancelled.startedTimeStamp"
+    ]
+  },
+  {
+    "name": "val startedTimeStamp: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.startedTimeStamp",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/started-time-stamp.html",
+    "searchKeys": [
+      "startedTimeStamp",
+      "val startedTimeStamp: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.startedTimeStamp"
+    ]
+  },
+  {
+    "name": "val steering: Float",
+    "description": "scs_sdk.model.controls.ControlsType.steering",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/steering.html",
+    "searchKeys": [
+      "steering",
+      "val steering: Float",
+      "scs_sdk.model.controls.ControlsType.steering"
+    ]
+  },
+  {
+    "name": "val steering: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.steering",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/steering.html",
+    "searchKeys": [
+      "steering",
+      "val steering: Float",
+      "scs_sdk.model.trailer.TrailerWheel.steering"
+    ]
+  },
+  {
+    "name": "val steering: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.steering",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/steering.html",
+    "searchKeys": [
+      "steering",
+      "val steering: Float",
+      "scs_sdk.model.truck.TruckWheel.steering"
+    ]
+  },
+  {
+    "name": "val steps: Int",
+    "description": "scs_sdk.model.truck.brakes.Retarder.steps",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/steps.html",
+    "searchKeys": [
+      "steps",
+      "val steps: Int",
+      "scs_sdk.model.truck.brakes.Retarder.steps"
+    ]
+  },
+  {
+    "name": "val substance: Int",
+    "description": "scs_sdk.model.trailer.TrailerWheel.substance",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/substance.html",
+    "searchKeys": [
+      "substance",
+      "val substance: Int",
+      "scs_sdk.model.trailer.TrailerWheel.substance"
+    ]
+  },
+  {
+    "name": "val substance: Int",
+    "description": "scs_sdk.model.truck.TruckWheel.substance",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/substance.html",
+    "searchKeys": [
+      "substance",
+      "val substance: Int",
+      "scs_sdk.model.truck.TruckWheel.substance"
+    ]
+  },
+  {
+    "name": "val substances: Substances<Float>",
+    "description": "scs_sdk.model.TelemetryData.substances",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/substances.html",
+    "searchKeys": [
+      "substances",
+      "val substances: Substances<Float>",
+      "scs_sdk.model.TelemetryData.substances"
+    ]
+  },
+  {
+    "name": "val suspensionDeflection: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.suspensionDeflection",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/suspension-deflection.html",
+    "searchKeys": [
+      "suspensionDeflection",
+      "val suspensionDeflection: Float",
+      "scs_sdk.model.trailer.TrailerWheel.suspensionDeflection"
+    ]
+  },
+  {
+    "name": "val suspensionDeflection: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.suspensionDeflection",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/suspension-deflection.html",
+    "searchKeys": [
+      "suspensionDeflection",
+      "val suspensionDeflection: Float",
+      "scs_sdk.model.truck.TruckWheel.suspensionDeflection"
+    ]
+  },
+  {
+    "name": "val telemetry: Double",
+    "description": "scs_sdk.model.game.Versions.telemetry",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/telemetry.html",
+    "searchKeys": [
+      "telemetry",
+      "val telemetry: Double",
+      "scs_sdk.model.game.Versions.telemetry"
+    ]
+  },
+  {
+    "name": "val telemetryFlow: SharedFlow<TelemetryData>",
+    "description": "scs_sdk.ScsTelemetry.telemetryFlow",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/telemetry-flow.html",
+    "searchKeys": [
+      "telemetryFlow",
+      "val telemetryFlow: SharedFlow<TelemetryData>",
+      "scs_sdk.ScsTelemetry.telemetryFlow"
+    ]
+  },
+  {
+    "name": "val temperature: Float",
+    "description": "scs_sdk.model.truck.brakes.Brakes.temperature",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/temperature.html",
+    "searchKeys": [
+      "temperature",
+      "val temperature: Float",
+      "scs_sdk.model.truck.brakes.Brakes.temperature"
+    ]
+  },
+  {
+    "name": "val throttle: Float",
+    "description": "scs_sdk.model.controls.ControlsType.throttle",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/throttle.html",
+    "searchKeys": [
+      "throttle",
+      "val throttle: Float",
+      "scs_sdk.model.controls.ControlsType.throttle"
+    ]
+  },
+  {
+    "name": "val time: Float",
+    "description": "scs_sdk.model.navigation.Navigation.time",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/time.html",
+    "searchKeys": [
+      "time",
+      "val time: Float",
+      "scs_sdk.model.navigation.Navigation.time"
+    ]
+  },
+  {
+    "name": "val timeTaken: Int",
+    "description": "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.timeTaken",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/time-taken.html",
+    "searchKeys": [
+      "timeTaken",
+      "val timeTaken: Int",
+      "scs_sdk.model.events.job.EventsJobType.EventsJobDelivered.timeTaken"
+    ]
+  },
+  {
+    "name": "val timestamps: Timestamp",
+    "description": "scs_sdk.model.game.Game.timestamps",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/timestamps.html",
+    "searchKeys": [
+      "timestamps",
+      "val timestamps: Timestamp",
+      "scs_sdk.model.game.Game.timestamps"
+    ]
+  },
+  {
+    "name": "val tollgate: EventsTollgate",
+    "description": "scs_sdk.model.events.Events.tollgate",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/tollgate.html",
+    "searchKeys": [
+      "tollgate",
+      "val tollgate: EventsTollgate",
+      "scs_sdk.model.events.Events.tollgate"
+    ]
+  },
+  {
+    "name": "val totalDamage: Float",
+    "description": "scs_sdk.model.trailer.Trailer.totalDamage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/total-damage.html",
+    "searchKeys": [
+      "totalDamage",
+      "val totalDamage: Float",
+      "scs_sdk.model.trailer.Trailer.totalDamage"
+    ]
+  },
+  {
+    "name": "val totalDamage: Float",
+    "description": "scs_sdk.model.truck.Truck.totalDamage",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/total-damage.html",
+    "searchKeys": [
+      "totalDamage",
+      "val totalDamage: Float",
+      "scs_sdk.model.truck.Truck.totalDamage"
+    ]
+  },
+  {
+    "name": "val trailer: Trailer",
+    "description": "scs_sdk.model.TelemetryData.trailer",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/trailer.html",
+    "searchKeys": [
+      "trailer",
+      "val trailer: Trailer",
+      "scs_sdk.model.TelemetryData.trailer"
+    ]
+  },
+  {
+    "name": "val train: EventsTrain",
+    "description": "scs_sdk.model.events.Events.train",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/train.html",
+    "searchKeys": [
+      "train",
+      "val train: EventsTrain",
+      "scs_sdk.model.events.Events.train"
+    ]
+  },
+  {
+    "name": "val transmission: Transmission",
+    "description": "scs_sdk.model.truck.Truck.transmission",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/transmission.html",
+    "searchKeys": [
+      "transmission",
+      "val transmission: Transmission",
+      "scs_sdk.model.truck.Truck.transmission"
+    ]
+  },
+  {
+    "name": "val truck: Truck",
+    "description": "scs_sdk.model.TelemetryData.truck",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/truck.html",
+    "searchKeys": [
+      "truck",
+      "val truck: Truck",
+      "scs_sdk.model.TelemetryData.truck"
+    ]
+  },
+  {
+    "name": "val unitMass: Float",
+    "description": "scs_sdk.model.job.JobCargo.unitMass",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/unit-mass.html",
+    "searchKeys": [
+      "unitMass",
+      "val unitMass: Float",
+      "scs_sdk.model.job.JobCargo.unitMass"
+    ]
+  },
+  {
+    "name": "val value: Float",
+    "description": "scs_sdk.model.truck.brakes.AirPressure.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/value.html",
+    "searchKeys": [
+      "value",
+      "val value: Float",
+      "scs_sdk.model.truck.brakes.AirPressure.value"
+    ]
+  },
+  {
+    "name": "val value: Float",
+    "description": "scs_sdk.model.truck.engine.Battery.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/value.html",
+    "searchKeys": [
+      "value",
+      "val value: Float",
+      "scs_sdk.model.truck.engine.Battery.value"
+    ]
+  },
+  {
+    "name": "val value: Float",
+    "description": "scs_sdk.model.truck.engine.Rpm.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/value.html",
+    "searchKeys": [
+      "value",
+      "val value: Float",
+      "scs_sdk.model.truck.engine.Rpm.value"
+    ]
+  },
+  {
+    "name": "val value: Float? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/value.html",
+    "searchKeys": [
+      "value",
+      "val value: Float? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.value"
+    ]
+  },
+  {
+    "name": "val value: LocalDateTime",
+    "description": "scs_sdk.model.game.GameTime.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/value.html",
+    "searchKeys": [
+      "value",
+      "val value: LocalDateTime",
+      "scs_sdk.model.game.GameTime.value"
+    ]
+  },
+  {
+    "name": "val value: Long",
+    "description": "scs_sdk.model.truck.transmission.CruiseControl.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/value.html",
+    "searchKeys": [
+      "value",
+      "val value: Long",
+      "scs_sdk.model.truck.transmission.CruiseControl.value"
+    ]
+  },
+  {
+    "name": "val value: String",
+    "description": "scs_sdk.model.truck.LicensePlate.value",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/value.html",
+    "searchKeys": [
+      "value",
+      "val value: String",
+      "scs_sdk.model.truck.LicensePlate.value"
+    ]
+  },
+  {
+    "name": "val velocity: Float",
+    "description": "scs_sdk.model.trailer.TrailerWheel.velocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/velocity.html",
+    "searchKeys": [
+      "velocity",
+      "val velocity: Float",
+      "scs_sdk.model.trailer.TrailerWheel.velocity"
+    ]
+  },
+  {
+    "name": "val velocity: Float",
+    "description": "scs_sdk.model.truck.TruckWheel.velocity",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/velocity.html",
+    "searchKeys": [
+      "velocity",
+      "val velocity: Float",
+      "scs_sdk.model.truck.TruckWheel.velocity"
+    ]
+  },
+  {
+    "name": "val version: Versions",
+    "description": "scs_sdk.model.game.Game.version",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/version.html",
+    "searchKeys": [
+      "version",
+      "val version: Versions",
+      "scs_sdk.model.game.Game.version"
+    ]
+  },
+  {
+    "name": "val warning: AirPressureAlertType.AirPressureAlertWarning",
+    "description": "scs_sdk.model.truck.brakes.AirPressure.warning",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/warning.html",
+    "searchKeys": [
+      "warning",
+      "val warning: AirPressureAlertType.AirPressureAlertWarning",
+      "scs_sdk.model.truck.brakes.AirPressure.warning"
+    ]
+  },
+  {
+    "name": "val warning: WarningLevels",
+    "description": "scs_sdk.model.truck.engine.Battery.warning",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/warning.html",
+    "searchKeys": [
+      "warning",
+      "val warning: WarningLevels",
+      "scs_sdk.model.truck.engine.Battery.warning"
+    ]
+  },
+  {
+    "name": "val warningLevels: WarningLevels? = null",
+    "description": "scs_sdk.model.truck.liquids.LiquidsType.warningLevels",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/warning-levels.html",
+    "searchKeys": [
+      "warningLevels",
+      "val warningLevels: WarningLevels? = null",
+      "scs_sdk.model.truck.liquids.LiquidsType.warningLevels"
+    ]
+  },
+  {
+    "name": "val water: LiquidsType.Water",
+    "description": "scs_sdk.model.truck.engine.Engine.water",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/water.html",
+    "searchKeys": [
+      "water",
+      "val water: LiquidsType.Water",
+      "scs_sdk.model.truck.engine.Engine.water"
+    ]
+  },
+  {
+    "name": "val wheel: Float",
+    "description": "scs_sdk.model.trailer.TrailerDamage.wheel",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/wheel.html",
+    "searchKeys": [
+      "wheel",
+      "val wheel: Float",
+      "scs_sdk.model.trailer.TrailerDamage.wheel"
+    ]
+  },
+  {
+    "name": "val wheels: List<TrailerWheel>",
+    "description": "scs_sdk.model.trailer.Trailer.wheels",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/wheels.html",
+    "searchKeys": [
+      "wheels",
+      "val wheels: List<TrailerWheel>",
+      "scs_sdk.model.trailer.Trailer.wheels"
+    ]
+  },
+  {
+    "name": "val wheels: List<TruckWheel>",
+    "description": "scs_sdk.model.truck.Truck.wheels",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/wheels.html",
+    "searchKeys": [
+      "wheels",
+      "val wheels: List<TruckWheel>",
+      "scs_sdk.model.truck.Truck.wheels"
+    ]
+  },
+  {
+    "name": "val x: T",
+    "description": "scs_sdk.model.utils.Vector.x",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/x.html",
+    "searchKeys": [
+      "x",
+      "val x: T",
+      "scs_sdk.model.utils.Vector.x"
+    ]
+  },
+  {
+    "name": "val y: T",
+    "description": "scs_sdk.model.utils.Vector.y",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/y.html",
+    "searchKeys": [
+      "y",
+      "val y: T",
+      "scs_sdk.model.utils.Vector.y"
+    ]
+  },
+  {
+    "name": "val z: T",
+    "description": "scs_sdk.model.utils.Vector.z",
+    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/z.html",
+    "searchKeys": [
+      "z",
+      "val z: T",
+      "scs_sdk.model.utils.Vector.z"
+    ]
+  }
+]

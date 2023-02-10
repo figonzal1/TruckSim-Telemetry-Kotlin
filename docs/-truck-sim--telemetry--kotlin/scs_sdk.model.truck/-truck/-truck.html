@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Truck</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+
+    </script>
+    <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <link href="../../../styles/prism.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+    <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+        <a href="../../../index.html">
+            <span>TruckSim-Telemetry-Kotlin</span>
+        </a>
+    </div>
+    <div>
+        1.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+        <div class="main-content" id="content"
+             pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.truck/Truck/Truck/#scs_sdk.model.truck.transmission.Transmission#scs_sdk.model.truck.brakes.Brakes#scs_sdk.model.truck.lights.Lights#scs_sdk.model.truck.liquids.Liquids#scs_sdk.model.truck.engine.Engine#scs_sdk.model.truck.transmission.Differential#kotlin.Long#scs_sdk.model.truck.transmission.CruiseControl#scs_sdk.model.truck.Cabin[kotlin.Float]#scs_sdk.model.truck.Chassis#kotlin.Float#kotlin.Boolean#kotlin.Boolean#scs_sdk.model.utils.GenericResource#scs_sdk.model.utils.GenericResource#scs_sdk.model.truck.LicensePlate#kotlin.Float#scs_sdk.model.utils.Vector[kotlin.Double]#scs_sdk.model.utils.OrientationVector[kotlin.Double]#scs_sdk.model.utils.Acceleration[kotlin.Float]#scs_sdk.model.truck.Head[kotlin.Float]#scs_sdk.model.truck.Hook[kotlin.Float]#scs_sdk.model.truck.LiftAxle#kotlin.collections.List[scs_sdk.model.truck.TruckWheel]/PointingToDeclaration//769193423">
+            <div class="breadcrumbs"><a href="../../../index.html">TruckSim-Telemetry-Kotlin</a><span class="delimiter">/</span><a
+                    href="../index.html">scs_sdk.model.truck</a><span class="delimiter">/</span><a href="index.html">Truck</a><span
+                    class="delimiter">/</span><span class="current">Truck</span></div>
+            <div class="cover ">
+                <h1 class="cover"><span><span>Truck</span></span></h1>
+            </div>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                <div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main">
+                    <div class="symbol monospace"><span class="token keyword"></span><span
+                            class="token keyword">fun </span><a href="-truck.html"><span
+                            class="token function">Truck</span></a><span class="token punctuation">(</span><span
+                            class="parameters "><span class="parameter ">transmission<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.transmission/-transmission/index.html">Transmission</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">brakes<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.brakes/-brakes/index.html">Brakes</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">lights<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.lights/-lights/index.html">Lights</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">liquids<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.liquids/-liquids/index.html">Liquids</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">engine<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.engine/-engine/index.html">Engine</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">differential<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.transmission/-differential/index.html">Differential</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">speed<span
+                            class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">cruiseControl<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.truck.transmission/-cruise-control/index.html">CruiseControl</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">cabin<span
+                            class="token operator">: </span><a href="../-cabin/index.html">Cabin</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">chassis<span class="token operator">: </span><a
+                            href="../-chassis/index.html">Chassis</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">odometer<span
+                            class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">isElectricEnabled<span
+                            class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">isWipersEnabled<span
+                            class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">brand<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.utils/-generic-resource/index.html">GenericResource</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">model<span
+                            class="token operator">: </span><a
+                            href="../../scs_sdk.model.utils/-generic-resource/index.html">GenericResource</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">licensePlate<span
+                            class="token operator">: </span><a href="../-license-plate/index.html">LicensePlate</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">totalDamage<span
+                            class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token punctuation">, </span></span><span class="parameter ">position<span
+                            class="token operator">: </span><a href="../../scs_sdk.model.utils/-vector/index.html">Vector</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">orientation<span class="token operator">: </span><a
+                            href="../../scs_sdk.model.utils/-orientation-vector/index.html">OrientationVector</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">acceleration<span class="token operator">: </span><a
+                            href="../../scs_sdk.model.utils/-acceleration/index.html">Acceleration</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">head<span class="token operator">: </span><a href="../-head/index.html">Head</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">hook<span class="token operator">: </span><a href="../-hook/index.html">Hook</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                            class="token operator">&gt;</span><span class="token punctuation">, </span></span><span
+                            class="parameter ">liftAxle<span class="token operator">: </span><a
+                            href="../-lift-axle/index.html">LiftAxle</a><span class="token punctuation">, </span></span><span
+                            class="parameter ">wheels<span class="token operator">: </span><a
+                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span
+                            class="token operator">&lt;</span><span class="token keyword"></span><a
+                            href="../-truck-wheel/index.html">TruckWheel</a><span
+                            class="token operator">&gt;</span></span></span><span class="token punctuation">)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
