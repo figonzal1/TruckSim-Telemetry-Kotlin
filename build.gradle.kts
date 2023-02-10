@@ -9,9 +9,6 @@
  *  Last modified: 09-02-23 00:57
  */
 
-
-
-
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -24,7 +21,7 @@ plugins {
 }
 
 group = "cl.figonzal"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
