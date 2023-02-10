@@ -37,11 +37,15 @@ data class AirPressure(
  * @property factor
  * @property isEnabled
  */
-sealed class AirPressureAlertType(
-    val factor: Float,
-    val isEnabled: Boolean
-) {
+sealed class AirPressureAlertType(val factor: Float, val isEnabled: Boolean) {
+
+    /**
+     * Class related to emergency alert
+     */
     class AirPressureAlertEmergency(factor: Float, isEnabled: Boolean) : AirPressureAlertType(factor, isEnabled)
 
+    /**
+     * Class relate to warning alert
+     */
     class AirPressureAlertWarning(factor: Float, isEnabled: Boolean) : AirPressureAlertType(factor, isEnabled)
 }

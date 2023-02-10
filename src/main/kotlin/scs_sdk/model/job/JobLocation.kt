@@ -15,7 +15,12 @@ package scs_sdk.model.job
 import scs_sdk.model.utils.CityType
 import scs_sdk.model.utils.CompanyType
 
-data class JobLocation(
-    val jobCity: CityType,
-    val jobCompany: CompanyType
-)
+/**
+ * Class related to location of jobs
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property jobCity
+ * @property jobCompany
+ */
+data class JobLocation(val jobCity: CityType, val jobCompany: CompanyType)

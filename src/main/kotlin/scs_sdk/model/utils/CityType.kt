@@ -20,6 +20,14 @@ package scs_sdk.model.utils
  * @property name - city name
  */
 sealed class CityType(val id: String, val name: String) {
+
+    /**
+     * Class for source city during job execution
+     */
     class CitySource(id: String, name: String) : CityType(id, name)
+
+    /**
+     * Class for destination city during job execution
+     */
     class CityDestination(id: String, name: String) : CityType(id, name)
 }

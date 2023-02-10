@@ -35,6 +35,9 @@ sealed class LiquidsType(
     val pressure: Float? = null
 ) {
 
+    /**
+     * Sub class for fuel representation
+     */
     class Fuel(
         capacity: Float,
         warning: WarningLevels,
@@ -43,18 +46,27 @@ sealed class LiquidsType(
         range: Float
     ) : LiquidsType(capacity, warning, value, avgConsumption, range)
 
+    /**
+     * Subclass for Adblue representation
+     */
     class AdBlue(
         capacity: Float,
         warning: WarningLevels,
         value: Float
     ) : LiquidsType(capacity, warning, value)
 
+    /**
+     * Subclass for Oil representation
+     */
     class Oil(
         temperature: Float,
         pressure: Float,
         warning: WarningLevels
     ) : LiquidsType(temperature, warning, pressure)
 
+    /**
+     * Subclass for water representation
+     */
     class Water(
         temperature: Float,
         warning: WarningLevels

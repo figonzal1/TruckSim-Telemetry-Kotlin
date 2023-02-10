@@ -13,14 +13,45 @@ package utils
 
 import com.sun.jna.platform.win32.WinNT
 
+/**
+ * Constants used in the library
+ *
+ * @author Felipe Gonzalez
+ */
 object Constants {
 
+    /**
+     * Memory section constant for shared memory access
+     */
     const val SHARED_MEM_FILE_ACCESS = WinNT.SECTION_MAP_READ
+
+    /**
+     * Shared memory file name
+     */
     const val SHARED_MEM_FILE_NAME = "Local\\SCSTelemetry"
+
+    /**
+     * Shared memory mapping size
+     */
     const val MAP_SIZE = 32 * 1024
+
+    /**
+     * Error message for failed shared memory access
+     */
     const val ERROR_CONNECTION = "Waiting for simulator session - Failed to connect"
 
+    /**
+     * Data size for wheels data
+     */
     const val WHEEL_SIZE = 16
-    const val STRING_SIZE: Int = 64
-    const val SUBSTANCES: Int = 25
+
+    /**
+     * Byte size for string values in shared memory
+     */
+    const val STRING_SIZE = 64
+
+    /**
+     * Data size for substances data
+     */
+    const val SUBSTANCES = 25
 }

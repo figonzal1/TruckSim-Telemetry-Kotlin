@@ -12,8 +12,28 @@
 
 package scs_sdk.model.game
 
+/**
+ * Enum class for game types
+ *
+ * @property UNKNOWN
+ * @property ETS2
+ * @property ATS
+ */
 enum class GameType {
+
+    /**
+     * If case unknown game
+     */
     UNKNOWN,
+
+    /**
+     * For euro truck sim 2 game
+     */
     ETS2,
+
+    /**
+     * For american truck sim game
+     */
     ATS
 }
+

@@ -17,4 +17,12 @@ package scs_sdk.model.truck
 import scs_sdk.model.utils.Offset
 import scs_sdk.model.utils.Vector
 
+/**
+ * Class related to head truck data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property position
+ * @property offset
+ */
 data class Head<T>(val position: Vector<T>, val offset: Offset<T>)

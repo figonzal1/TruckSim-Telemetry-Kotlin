@@ -12,4 +12,12 @@
 
 package scs_sdk.model.truck
 
+/**
+ * Class related to truck lift axle
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property isLiftAxleEnabled
+ * @property isIndicatorEnabled
+ */
 data class LiftAxle(val isLiftAxleEnabled: Boolean, val isIndicatorEnabled: Boolean)

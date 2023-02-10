@@ -12,4 +12,11 @@
 
 package scs_sdk.model.utils
 
+/**
+ * Generic class to hold [id] and [name] properties
+ *
+ * @author Felipe Gonzalez
+ * @property id
+ * @property name
+ */
 data class GenericResource(val id: String, val name: String)

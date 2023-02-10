@@ -29,9 +29,15 @@ sealed class ControlsType(
     val brake: Float,
     val clutch: Float
 ) {
+    /**
+     * Controls related to input
+     */
     class ControlsInput(steering: Float, throttle: Float, brake: Float, clutch: Float) :
         ControlsType(steering, throttle, brake, clutch)
 
+    /**
+     * Controls related to game input
+     */
     class ControlsGame(steering: Float, throttle: Float, brake: Float, clutch: Float) :
         ControlsType(steering, throttle, brake, clutch)
 }

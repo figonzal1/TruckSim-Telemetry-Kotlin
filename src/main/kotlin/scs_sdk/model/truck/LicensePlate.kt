@@ -14,4 +14,12 @@ package scs_sdk.model.truck
 
 import scs_sdk.model.utils.GenericResource
 
+/**
+ * Class related to Truck License Plate
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property value
+ * @property country
+ */
 data class LicensePlate(val value: String, val country: GenericResource)

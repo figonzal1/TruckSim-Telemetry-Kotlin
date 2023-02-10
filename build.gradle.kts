@@ -75,15 +75,22 @@ publishing {
 
 tasks.dokkaHtml {
     outputDirectory.set(rootDir.resolve("docs"))
-    failOnWarning.set(false)
+    failOnWarning.set(true)
 
-    dokkaSourceSets {
+    dokkaSourceSets.configureEach {
+        suppressObviousFunctions.set(true)
+        suppressGeneratedFiles.set(true)
+        reportUndocumented.set(false)
+        skipEmptyPackages.set(true)
 
-        configureEach {
-            suppressObviousFunctions.set(true)
-            suppressGeneratedFiles.set(true)
-            reportUndocumented.set(false)
-            skipEmptyPackages.set(true)
+        perPackageOption {
+            matchingRegex.set(".*jna.*")
+            suppress.set(true)
+        }
+
+        perPackageOption {
+            matchingRegex.set(".*exceptions.*")
+            suppress.set(true)
         }
     }
 }

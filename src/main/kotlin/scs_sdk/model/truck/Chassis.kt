@@ -13,4 +13,10 @@
 
 package scs_sdk.model.truck
 
+/**
+ * Class related for chassis damage
+ *
+ * @author Felipe Gonzalez
+ * @property damage
+ */
 data class Chassis(val damage: Float)

@@ -13,4 +13,12 @@
 
 package scs_sdk.model.truck.transmission
 
+/**
+ * Class to hold differential data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property ratio
+ * @property isLockEnabled
+ */
 data class Differential(val ratio: Float, val isLockEnabled: Boolean)

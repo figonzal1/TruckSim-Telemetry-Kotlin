@@ -13,6 +13,17 @@ package scs_sdk.model.substances
 
 import scs_sdk.model.utils.Vector
 
+/**
+ * Class related to substances data & physic data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property linearVelocity
+ * @property angularVelocity
+ * @property linearAcceleration
+ * @property angularAcceleration
+ * @property allTypes
+ */
 data class Substances<T>(
     val linearVelocity: Vector<T>,
     val angularVelocity: Vector<T>,

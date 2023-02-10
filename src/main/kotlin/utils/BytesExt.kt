@@ -24,28 +24,77 @@ import kotlin.math.roundToLong
  * @author Felipe Gonzalez
  *
  * @param index position of data
- * @return True | False
+ * @return [Boolean] True | False value
  */
 fun ByteArray.getBool(index: Int) = this[index] > 0
 
+/**
+ * Capture [String] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [String] value
+ */
 fun ByteArray.getString(index: Int, length: Int = Constants.STRING_SIZE): String {
     val area = getSubStringArray(index, length).toByteArray()
     return String(area, Charsets.UTF_8).trim()
 }
 
+/**
+ * Capture [UInt] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [UInt] value
+ */
 fun ByteArray.getUInt(index: Int) =
     ByteBuffer.wrap(this, index, Int.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).int.toUInt()
 
+/**
+ * Capture [ULong] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [ULong] value
+ */
 fun ByteArray.getULong(index: Int) =
     ByteBuffer.wrap(this, index, Long.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).long.toULong()
 
+/**
+ * Capture [Float] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [Float] value
+ */
 fun ByteArray.getFloat(index: Int) =
     ByteBuffer.wrap(this, index, Float.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).float
 
+/**
+ * Capture [Double] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [Double] value
+ */
 fun ByteArray.getDouble(index: Int) =
     ByteBuffer.wrap(this, index, Double.SIZE_BYTES).order(ByteOrder.LITTLE_ENDIAN).double
 
-@OptIn(ExperimentalUnsignedTypes::class)
+/**
+ * Capture [UIntArray] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @param count size of data
+ *
+ * @return [ArrayList] of [UInt]
+ */
 fun ByteArray.getUIntArray(index: Int, count: Int): ArrayList<UInt> {
 
     val uIntArray = arrayListOf<UInt>()
@@ -58,6 +107,16 @@ fun ByteArray.getUIntArray(index: Int, count: Int): ArrayList<UInt> {
     return uIntArray
 }
 
+/**
+ * Capture [FloatArray] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @param count size of data
+ *
+ * @return [ArrayList] of [Float]
+ */
 fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float> {
     val floatArray = arrayListOf<Float>()
     var innerIndex = index
@@ -69,6 +128,16 @@ fun ByteArray.getFloatArray(index: Int, count: Int): ArrayList<Float> {
     return floatArray
 }
 
+/**
+ * Capture [BooleanArray] values from [ByteArray]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @param count size of data
+ *
+ * @return [ArrayList] of [Boolean]
+ */
 fun ByteArray.getBoolArray(index: Int, count: Int): ArrayList<Boolean> {
     val booleanArray = arrayListOf<Boolean>()
     var innerIndex = index
@@ -80,6 +149,16 @@ fun ByteArray.getBoolArray(index: Int, count: Int): ArrayList<Boolean> {
     return booleanArray
 }
 
+/**
+ * Capture substring from [String]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @param length size of data
+ *
+ * @return [ArrayList] of [Byte]
+ */
 private fun ByteArray.getSubStringArray(index: Int, length: Int): ArrayList<Byte> {
     val list = arrayListOf<Byte>()
     var innerIndex = index
@@ -94,7 +173,12 @@ private fun ByteArray.getSubStringArray(index: Int, length: Int): ArrayList<Byte
 }
 
 /**
- * Return vector [X,Y,Z] in float type
+ * Capture [Float] array from [ByteArray] and convert it to [Vector]
+ *
+ * @author Felipe Gonzalez
+ * @param index position of data
+ *
+ * @return [Vector] object
  */
 fun ByteArray.getFloatVector(index: Int) = Vector(
     getFloat(index),
@@ -102,6 +186,14 @@ fun ByteArray.getFloatVector(index: Int) = Vector(
     getFloat(index + 8)
 )
 
+/**
+ * Capture [Float] array with orientation data from [ByteArray] and convert it to [OrientationVector]
+ *
+ * @author Felipe Gonzalez
+ * @param index position of data
+ *
+ * @return [OrientationVector] object
+ */
 fun ByteArray.getFloatOrientationVector(index: Int) = OrientationVector(
     getFloat(index),
     getFloat(index + 4),
@@ -109,7 +201,12 @@ fun ByteArray.getFloatOrientationVector(index: Int) = OrientationVector(
 )
 
 /**
- * Returns vector [X, Y,Z] in double type
+ * Capture [Double] array from [ByteArray] and convert it to [Vector]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @param index position of data
+ * @return [Vector] object
  */
 fun ByteArray.getDoubleVector(index: Int) = Vector(
     getDouble(index),
@@ -117,14 +214,35 @@ fun ByteArray.getDoubleVector(index: Int) = Vector(
     getDouble(index + 16)
 )
 
+/**
+ * Capture [Double] array with orientation data from [ByteArray] and convert it to [OrientationVector]
+ *
+ * @author Felipe Gonzalez
+ * @param index position of data
+ *
+ * @return [OrientationVector] object
+ */
 fun ByteArray.getDoubleOrientedVector(index: Int) = OrientationVector(
     getDouble(index),
     getDouble(index + 8),
     getDouble(index + 16)
 )
 
+/**
+ * Transform [Long] from [ByteArray] and format to [Long] speed in km/h
+ *
+ * @param index position of data
+ * @return [Long]
+ */
 fun ByteArray.getSpeedLong(index: Int) = abs(getFloat(index) * 3.6).roundToLong()
 
+/**
+ * Capture substances from [ByteArray] and convert it to [ArrayList]
+ *
+ * @author Felipe Gonzalez
+ *
+ * @return [ArrayList] of substances
+ */
 fun ByteArray.allSubstancesTypes(): ArrayList<String> {
     val allSubstancesTypes = arrayListOf<String>()
     var innerIndex = 4400

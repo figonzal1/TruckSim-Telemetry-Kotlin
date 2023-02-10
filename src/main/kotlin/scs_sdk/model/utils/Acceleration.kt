@@ -12,6 +12,16 @@
 
 package scs_sdk.model.utils
 
+/**
+ * Class for hold physics data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property linearVelocity
+ * @property linearAcceleration
+ * @property angularVelocity
+ * @property angularAcceleration
+ */
 data class Acceleration<T>(
     val linearVelocity: Vector<T>? = null,
     val angularVelocity: Vector<T>,

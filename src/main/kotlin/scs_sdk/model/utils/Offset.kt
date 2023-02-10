@@ -12,6 +12,13 @@
 
 package scs_sdk.model.utils
 
+/**
+ * Class for hold offsets of [Vector] & [OrientationVector]
+ *
+ * @author Felipe Gonzalez
+ * @property position
+ * @property orientation
+ */
 data class Offset<T>(
     val position: Vector<T>,
     val orientation: OrientationVector<T>

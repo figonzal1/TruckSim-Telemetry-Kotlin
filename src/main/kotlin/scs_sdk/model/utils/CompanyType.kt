@@ -21,6 +21,14 @@ package scs_sdk.model.utils
  * @property name - company
  */
 sealed class CompanyType(val id: String, val name: String) {
+
+    /**
+     * Class for source company source during job execution
+     */
     class CompanySource(id: String, name: String) : CompanyType(id, name)
+
+    /**
+     * Class for destination company during job execution
+     */
     class CompanyDestination(id: String, name: String) : CompanyType(id, name)
 }

@@ -2,15 +2,6 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:////PointingToDeclaration/-truck-sim--telemetry--kotlin/[root]/index.html
 $dokka.location://main/#kotlin.Array[kotlin.String]/PointingToDeclaration/-truck-sim--telemetry--kotlin/[root]/main.html
-$dokka.location:jna////PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/index.html
-$dokka.location:jna/Ets2Kernel32.Companion///PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/index.html
-$dokka.location:jna/Ets2Kernel32.Companion/instance/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/instance.html
-$dokka.location:jna/Ets2Kernel32///PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/index.html
-$dokka.location:jna/Ets2Kernel32/OpenFileMapping/#kotlin.Int#kotlin.Boolean#kotlin.String/PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-open-file-mapping.html
-$dokka.location:jna/Ets2Kernel32Impl///PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/index.html
-$dokka.location:jna/Ets2Kernel32Impl/Ets2Kernel32Impl/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/-ets2-kernel32-impl.html
-$dokka.location:jna/Ets2Kernel32Impl/getMapView/#com.sun.jna.platform.win32.WinNT.HANDLE/PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/get-map-view.html
-$dokka.location:jna/Ets2Kernel32Impl/openFileMapping/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/open-file-mapping.html
 $dokka.location:scs_sdk.handler////PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.handler/index.html
 $dokka.location:scs_sdk.handler//controls/#kotlin.ByteArray/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.handler/controls.html
 $dokka.location:scs_sdk.handler//events/#kotlin.ByteArray/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.handler/events.html
@@ -109,7 +100,7 @@ $dokka.location:scs_sdk.model.events/Events/tollgate/#/PointingToDeclaration/-t
 $dokka.location:scs_sdk.model.events/Events/train/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/train.html
 $dokka.location:scs_sdk.model.game////PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/index.html
 $dokka.location:scs_sdk.model.game/Game///PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/index.html
-$dokka.location:scs_sdk.model.game/Game/Game/#kotlin.Boolean#kotlin.Boolean#scs_sdk.model.game.Timestamp#kotlin.Long#scs_sdk.model.game.Versions#scs_sdk.model.game.GameType#scs_sdk.model.game.GameTime#kotlin.Int#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html
+$dokka.location:scs_sdk.model.game/Game/Game/#kotlin.Boolean#kotlin.Boolean#scs_sdk.model.game.Timestamp#kotlin.Long#scs_sdk.model.game.Versions#scs_sdk.model.game.GameType#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html
 $dokka.location:scs_sdk.model.game/Game/gameTime/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-time.html
 $dokka.location:scs_sdk.model.game/Game/gameType/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-type.html
 $dokka.location:scs_sdk.model.game/Game/maxTrailerCount/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/max-trailer-count.html
@@ -119,9 +110,6 @@ $dokka.location:scs_sdk.model.game/Game/scale/#/PointingToDeclaration/-truck-si
 $dokka.location:scs_sdk.model.game/Game/sdkActive/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/sdk-active.html
 $dokka.location:scs_sdk.model.game/Game/timestamps/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/timestamps.html
 $dokka.location:scs_sdk.model.game/Game/version/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/version.html
-$dokka.location:scs_sdk.model.game/GameTime///PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/index.html
-$dokka.location:scs_sdk.model.game/GameTime/GameTime/#java.time.LocalDateTime/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/-game-time.html
-$dokka.location:scs_sdk.model.game/GameTime/value/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/value.html
 $dokka.location:scs_sdk.model.game/GameType.ATS///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-a-t-s/index.html
 $dokka.location:scs_sdk.model.game/GameType.ETS2///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-e-t-s2/index.html
 $dokka.location:scs_sdk.model.game/GameType.UNKNOWN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-u-n-k-n-o-w-n/index.html
@@ -455,9 +443,6 @@ $dokka.location:scs_sdk/ScsTelemetry///PointingToDeclaration/-truck-sim--teleme
 $dokka.location:scs_sdk/ScsTelemetry/ScsTelemetry/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/-scs-telemetry.html
 $dokka.location:scs_sdk/ScsTelemetry/telemetryFlow/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/telemetry-flow.html
 $dokka.location:scs_sdk/ScsTelemetry/watch/#kotlin.Long/PointingToDeclaration/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/watch.html
-$dokka.location:utils.exceptions////PointingToDeclaration/-truck-sim--telemetry--kotlin/utils.exceptions/index.html
-$dokka.location:utils.exceptions/ReadMemoryException///PointingToDeclaration/-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/index.html
-$dokka.location:utils.exceptions/ReadMemoryException/ReadMemoryException/#kotlin.String/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/-read-memory-exception.html
 $dokka.location:utils////PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/index.html
 $dokka.location:utils//allSubstancesTypes/kotlin.ByteArray#/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/all-substances-types.html
 $dokka.location:utils//getBool/kotlin.ByteArray#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-bool.html
@@ -469,7 +454,6 @@ $dokka.location:utils//getFloat/kotlin.ByteArray#kotlin.Int/PointingToDeclaratio
 $dokka.location:utils//getFloatArray/kotlin.ByteArray#kotlin.Int#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-float-array.html
 $dokka.location:utils//getFloatOrientationVector/kotlin.ByteArray#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-float-orientation-vector.html
 $dokka.location:utils//getFloatVector/kotlin.ByteArray#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-float-vector.html
-$dokka.location:utils//getGameTime/#kotlin.Double/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-game-time.html
 $dokka.location:utils//getGameType/#kotlin.UInt/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-game-type.html
 $dokka.location:utils//getSpeedLong/kotlin.ByteArray#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-speed-long.html
 $dokka.location:utils//getString/kotlin.ByteArray#kotlin.Int#kotlin.Int/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/get-string.html
@@ -485,7 +469,6 @@ $dokka.location:utils/Constants/SHARED_MEM_FILE_NAME/#/PointingToDeclaration/-t
 $dokka.location:utils/Constants/STRING_SIZE/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/-constants/-s-t-r-i-n-g_-s-i-z-e.html
 $dokka.location:utils/Constants/SUBSTANCES/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/-constants/-s-u-b-s-t-a-n-c-e-s.html
 $dokka.location:utils/Constants/WHEEL_SIZE/#/PointingToDeclaration/-truck-sim--telemetry--kotlin/utils/-constants/-w-h-e-e-l_-s-i-z-e.html
-jna
 scs_sdk
 scs_sdk.handler
 scs_sdk.model
@@ -510,5 +493,4 @@ scs_sdk.model.truck.liquids
 scs_sdk.model.truck.transmission
 scs_sdk.model.utils
 utils
-utils.exceptions
 

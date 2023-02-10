@@ -11,12 +11,29 @@
 
 package scs_sdk.model.utils
 
+/**
+ * Three-dimensional vector
+ *
+ * @author Felipe Gonzalez
+ * @property x
+ * @property y
+ * @property z
+ */
 data class Vector<T>(
     val x: T,
     val y: T,
     val z: T
 )
 
+/**
+ * Three-dimensional orientation vector
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property heading
+ * @property pitch
+ * @property roll
+ */
 data class OrientationVector<T>(
     val heading: T,
     val pitch: T,

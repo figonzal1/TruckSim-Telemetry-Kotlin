@@ -12,8 +12,13 @@
 
 package scs_sdk.model.game
 
-data class Versions(
-    val plugin: Int,
-    val game: Double,
-    val telemetry: Double
-)
+/**
+ * Class related to versioning data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property plugin version
+ * @property game version
+ * @property telemetry version
+ */
+data class Versions(val plugin: Int, val game: Double, val telemetry: Double)

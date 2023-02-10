@@ -30,16 +30,6 @@
     ]
   },
   {
-    "name": "abstract override fun OpenFileMapping(fileAccess: Int, bInherit: Boolean, filename: String): WinNT.HANDLE?",
-    "description": "jna.Ets2Kernel32.OpenFileMapping",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-open-file-mapping.html",
-    "searchKeys": [
-      "OpenFileMapping",
-      "abstract override fun OpenFileMapping(fileAccess: Int, bInherit: Boolean, filename: String): WinNT.HANDLE?",
-      "jna.Ets2Kernel32.OpenFileMapping"
-    ]
-  },
-  {
     "name": "class AdBlue(val capacity: Float, warning: WarningLevels, val value: Float) : LiquidsType",
     "description": "scs_sdk.model.truck.liquids.LiquidsType.AdBlue",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/index.html",
@@ -130,16 +120,6 @@
     ]
   },
   {
-    "name": "class Ets2Kernel32Impl",
-    "description": "jna.Ets2Kernel32Impl",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/index.html",
-    "searchKeys": [
-      "Ets2Kernel32Impl",
-      "class Ets2Kernel32Impl",
-      "jna.Ets2Kernel32Impl"
-    ]
-  },
-  {
     "name": "class EventsRefuel(isActive: Boolean) : EventsRefuelType",
     "description": "scs_sdk.model.events.refuel.EventsRefuelType.EventsRefuel",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/index.html",
@@ -177,16 +157,6 @@
       "Oil",
       "class Oil(temperature: Float, val pressure: Float, warning: WarningLevels) : LiquidsType",
       "scs_sdk.model.truck.liquids.LiquidsType.Oil"
-    ]
-  },
-  {
-    "name": "class ReadMemoryException(message: String) : Exception",
-    "description": "utils.exceptions.ReadMemoryException",
-    "location": "-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/index.html",
-    "searchKeys": [
-      "ReadMemoryException",
-      "class ReadMemoryException(message: String) : Exception",
-      "utils.exceptions.ReadMemoryException"
     ]
   },
   {
@@ -510,23 +480,13 @@
     ]
   },
   {
-    "name": "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: GameTime, val maxTrailerCount: Int, val scale: Int)",
+    "name": "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: Int, val maxTrailerCount: Int, val scale: Int)",
     "description": "scs_sdk.model.game.Game",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/index.html",
     "searchKeys": [
       "Game",
-      "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: GameTime, val maxTrailerCount: Int, val scale: Int)",
+      "data class Game(val sdkActive: Boolean, val paused: Boolean, val timestamps: Timestamp, val multiplayerTimeOffset: Long, val version: Versions, val gameType: GameType, val gameTime: Int, val maxTrailerCount: Int, val scale: Int)",
       "scs_sdk.model.game.Game"
-    ]
-  },
-  {
-    "name": "data class GameTime(val value: LocalDateTime)",
-    "description": "scs_sdk.model.game.GameTime",
-    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/index.html",
-    "searchKeys": [
-      "GameTime",
-      "data class GameTime(val value: LocalDateTime)",
-      "scs_sdk.model.game.GameTime"
     ]
   },
   {
@@ -1230,16 +1190,6 @@
     ]
   },
   {
-    "name": "fun Ets2Kernel32Impl()",
-    "description": "jna.Ets2Kernel32Impl.Ets2Kernel32Impl",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/-ets2-kernel32-impl.html",
-    "searchKeys": [
-      "Ets2Kernel32Impl",
-      "fun Ets2Kernel32Impl()",
-      "jna.Ets2Kernel32Impl.Ets2Kernel32Impl"
-    ]
-  },
-  {
     "name": "fun Events(job: EventsJob, fine: EventsFine, ferry: EventsFerry, train: EventsTrain, tollgate: EventsTollgate, refuel: EventsRefuelType.EventsRefuel, refuelPaid: EventsRefuelType.EventsRefuelPaid)",
     "description": "scs_sdk.model.events.Events.Events",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/-events.html",
@@ -1370,23 +1320,13 @@
     ]
   },
   {
-    "name": "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: GameTime, maxTrailerCount: Int, scale: Int)",
+    "name": "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: Int, maxTrailerCount: Int, scale: Int)",
     "description": "scs_sdk.model.game.Game.Game",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html",
     "searchKeys": [
       "Game",
-      "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: GameTime, maxTrailerCount: Int, scale: Int)",
+      "fun Game(sdkActive: Boolean, paused: Boolean, timestamps: Timestamp, multiplayerTimeOffset: Long, version: Versions, gameType: GameType, gameTime: Int, maxTrailerCount: Int, scale: Int)",
       "scs_sdk.model.game.Game.Game"
-    ]
-  },
-  {
-    "name": "fun GameTime(value: LocalDateTime)",
-    "description": "scs_sdk.model.game.GameTime.GameTime",
-    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/-game-time.html",
-    "searchKeys": [
-      "GameTime",
-      "fun GameTime(value: LocalDateTime)",
-      "scs_sdk.model.game.GameTime.GameTime"
     ]
   },
   {
@@ -1487,16 +1427,6 @@
       "Oil",
       "fun Oil(temperature: Float, pressure: Float, warning: WarningLevels)",
       "scs_sdk.model.truck.liquids.LiquidsType.Oil.Oil"
-    ]
-  },
-  {
-    "name": "fun ReadMemoryException(message: String)",
-    "description": "utils.exceptions.ReadMemoryException.ReadMemoryException",
-    "location": "-truck-sim--telemetry--kotlin/utils.exceptions/-read-memory-exception/-read-memory-exception.html",
-    "searchKeys": [
-      "ReadMemoryException",
-      "fun ReadMemoryException(message: String)",
-      "utils.exceptions.ReadMemoryException.ReadMemoryException"
     ]
   },
   {
@@ -1680,16 +1610,6 @@
     ]
   },
   {
-    "name": "fun getGameTime(rawTime: Double): GameTime",
-    "description": "utils.getGameTime",
-    "location": "-truck-sim--telemetry--kotlin/utils/get-game-time.html",
-    "searchKeys": [
-      "getGameTime",
-      "fun getGameTime(rawTime: Double): GameTime",
-      "utils.getGameTime"
-    ]
-  },
-  {
     "name": "fun getGameType(uInt: UInt): GameType",
     "description": "utils.getGameType",
     "location": "-truck-sim--telemetry--kotlin/utils/get-game-type.html",
@@ -1697,16 +1617,6 @@
       "getGameType",
       "fun getGameType(uInt: UInt): GameType",
       "utils.getGameType"
-    ]
-  },
-  {
-    "name": "fun getMapView(memMapFile: WinNT.HANDLE): Pointer?",
-    "description": "jna.Ets2Kernel32Impl.getMapView",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/get-map-view.html",
-    "searchKeys": [
-      "getMapView",
-      "fun getMapView(memMapFile: WinNT.HANDLE): Pointer?",
-      "jna.Ets2Kernel32Impl.getMapView"
     ]
   },
   {
@@ -1737,16 +1647,6 @@
       "navigation",
       "fun navigation(rawData: ByteArray): Navigation",
       "scs_sdk.handler.navigation"
-    ]
-  },
-  {
-    "name": "fun openFileMapping(): WinNT.HANDLE?",
-    "description": "jna.Ets2Kernel32Impl.openFileMapping",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32-impl/open-file-mapping.html",
-    "searchKeys": [
-      "openFileMapping",
-      "fun openFileMapping(): WinNT.HANDLE?",
-      "jna.Ets2Kernel32Impl.openFileMapping"
     ]
   },
   {
@@ -1807,26 +1707,6 @@
       "values",
       "fun values(): Array<GameType>",
       "scs_sdk.model.game.GameType.values"
-    ]
-  },
-  {
-    "name": "interface Ets2Kernel32 : Kernel32",
-    "description": "jna.Ets2Kernel32",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/index.html",
-    "searchKeys": [
-      "Ets2Kernel32",
-      "interface Ets2Kernel32 : Kernel32",
-      "jna.Ets2Kernel32"
-    ]
-  },
-  {
-    "name": "object Companion",
-    "description": "jna.Ets2Kernel32.Companion",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/index.html",
-    "searchKeys": [
-      "Companion",
-      "object Companion",
-      "jna.Ets2Kernel32.Companion"
     ]
   },
   {
@@ -2690,12 +2570,12 @@
     ]
   },
   {
-    "name": "val gameTime: GameTime",
+    "name": "val gameTime: Int",
     "description": "scs_sdk.model.game.Game.gameTime",
     "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-time.html",
     "searchKeys": [
       "gameTime",
-      "val gameTime: GameTime",
+      "val gameTime: Int",
       "scs_sdk.model.game.Game.gameTime"
     ]
   },
@@ -2837,16 +2717,6 @@
       "input",
       "val input: ControlsType.ControlsInput",
       "scs_sdk.model.controls.Controls.input"
-    ]
-  },
-  {
-    "name": "val instance: Ets2Kernel32",
-    "description": "jna.Ets2Kernel32.Companion.instance",
-    "location": "-truck-sim--telemetry--kotlin/jna/-ets2-kernel32/-companion/instance.html",
-    "searchKeys": [
-      "instance",
-      "val instance: Ets2Kernel32",
-      "jna.Ets2Kernel32.Companion.instance"
     ]
   },
   {
@@ -4417,16 +4287,6 @@
       "value",
       "val value: Float? = null",
       "scs_sdk.model.truck.liquids.LiquidsType.value"
-    ]
-  },
-  {
-    "name": "val value: LocalDateTime",
-    "description": "scs_sdk.model.game.GameTime.value",
-    "location": "-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-time/value.html",
-    "searchKeys": [
-      "value",
-      "val value: LocalDateTime",
-      "scs_sdk.model.game.GameTime.value"
     ]
   },
   {

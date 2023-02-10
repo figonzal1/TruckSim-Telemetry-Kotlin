@@ -13,8 +13,13 @@
 
 package scs_sdk.model.game
 
-data class Timestamp(
-    val game: Long,
-    val simulation: Long,
-    val render: Long
-)
+/**
+ * Class related to timestamp data
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property game
+ * @property simulation
+ * @property render
+ */
+data class Timestamp(val game: Long, val simulation: Long, val render: Long)

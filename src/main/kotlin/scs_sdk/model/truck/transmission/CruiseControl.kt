@@ -13,4 +13,12 @@
 
 package scs_sdk.model.truck.transmission
 
+/**
+ * Class to hold data from cruise control
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property value
+ * @property isEnabled
+ */
 data class CruiseControl(val value: Long, val isEnabled: Boolean)

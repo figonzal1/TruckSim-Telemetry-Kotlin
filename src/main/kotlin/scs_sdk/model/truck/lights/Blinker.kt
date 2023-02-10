@@ -13,6 +13,22 @@
 
 package scs_sdk.model.truck.lights
 
+/**
+ * Class relate to truck blinker lights
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property left
+ * @property right
+ */
 data class Blinker(val left: BlinkerStatus, val right: BlinkerStatus)
 
+/**
+ * Class related to truck blinker lights status
+ *
+ * @author Felipe Gonzalez
+ *
+ * @property isEnabled
+ * @property isActive
+ */
 data class BlinkerStatus(val isEnabled: Boolean, val isActive: Boolean)
