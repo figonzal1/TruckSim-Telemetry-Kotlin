@@ -3,6 +3,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/figonzal1/trucksim-telemetry-kotlin/badge)](https://www.codefactor.io/repository/github/figonzal1/trucksim-telemetry-kotlin)
 ![GitHub repo size](https://img.shields.io/github/repo-size/figonzal1/TruckSim-Telemetry-Kotlin)
 ![GitHub](https://img.shields.io/github/license/figonzal1/TruckSim-Telemetry-Kotlin)
+[![](https://jitpack.io/v/figonzal1/TruckSim-Telemetry-Kotlin.svg)](https://jitpack.io/#figonzal1/TruckSim-Telemetry-Kotlin)
 
 TruckSim-Telemetry-Kotlin is a library built in kotlin using flows and coroutines that takes telemetry data for Euro
 Truck Simulator 2 and American Truck Simulator provided by
@@ -13,7 +14,7 @@ library [TruckSim-Telemetry](https://github.com/kniffen/TruckSim-Telemetry) by [
 
 ## Documentation
 
-TODO
+See in https://figonzal1.github.io/TruckSim-Telemetry-Kotlin/
 
 ## Getting started
 
@@ -29,7 +30,23 @@ Supported plugin versions
 
 ### Installing
 
-TODO
+- Add it in your root build.gradle at the end of repositories:
+
+````groovy
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+````
+
+- Add the dependency
+
+````groovy
+dependencies {
+    implementation 'com.github.figonzal1:TruckSim-Telemetry-Kotlin:1.0'
+}
+````
 
 ## How to use it
 
@@ -74,7 +91,7 @@ launch {
 ```
 
 Telemetry flow
-return [TelemetryData](https://github.com/figonzal1/TruckSim-Telemetry-Kotlin/blob/master/src/main/kotlin/scs_sdk/model/TelemetryData.kt)
+return [TelemetryData](https://figonzal1.github.io/TruckSim-Telemetry-Kotlin/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/index.html)
 data class
 
 ## License
