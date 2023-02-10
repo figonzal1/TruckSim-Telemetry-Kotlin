@@ -43,7 +43,7 @@ class ScsTelemetry {
     val telemetryFlow: SharedFlow<TelemetryData> = _telemetryFlow.asSharedFlow()
 
     /**
-     * Observer changes in telemetry
+     * Observer changes in [TelemetryData]
      *
      * @author Felipe Gonzalez
      *
@@ -88,7 +88,7 @@ class ScsTelemetry {
     }
 
     /**
-     * Read and parse data from byte array and then emit values to sharedFlow
+     * Read and parse data from byte array and then emit values to [SharedFlow]
      *
      * @author Felipe Gonzalez
      */

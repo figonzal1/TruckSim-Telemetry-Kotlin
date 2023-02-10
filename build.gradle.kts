@@ -72,3 +72,18 @@ publishing {
         }
     }
 }
+
+tasks.dokkaHtml {
+    outputDirectory.set(rootDir.resolve("docs"))
+    failOnWarning.set(false)
+
+    dokkaSourceSets {
+
+        configureEach {
+            suppressObviousFunctions.set(true)
+            suppressGeneratedFiles.set(true)
+            reportUndocumented.set(false)
+            skipEmptyPackages.set(true)
+        }
+    }
+}
