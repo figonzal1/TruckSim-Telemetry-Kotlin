@@ -10,10 +10,7 @@
  */
 package utils
 
-import scs_sdk.model.game.GameTime
 import scs_sdk.model.game.GameType
-import java.time.LocalDateTime
-import kotlin.math.floor
 
 /**
  * Transform raw versions to a formatted version
@@ -26,26 +23,6 @@ import kotlin.math.floor
  * @return Formatted version double
  */
 fun getVersion(majorVersion: UInt, minorVersion: UInt) = "${majorVersion}.${minorVersion}".toDouble()
-
-/**
- * Convert [rawTime] to [GameTime]
- *
- * @author Felipe Gonzalez
- *
- * @param rawTime rawGameTime to convert
- * @return [GameTime] parsed
- */
-fun getGameTime(rawTime: Double): GameTime {
-
-    with(rawTime) {
-        val day = floor(this / 1440 % 7 + 5).toInt()
-        val hour = floor(this % 1440 / 60).toInt()
-        val minutes = floor(this % 1440 % 60).toInt()
-
-        val dateTime = LocalDateTime.of(0, 1, day, hour, minutes)
-        return GameTime(dateTime)
-    }
-}
 
 /**
  * Convert [uInt] to a [GameType]

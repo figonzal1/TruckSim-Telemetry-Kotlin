@@ -42,7 +42,7 @@ fun game(rawData: ByteArray) = with(rawData) {
             telemetry = getVersion(getUInt(56), getUInt(60))
         ),
         gameType = getGameType(getUInt(52)),
-        gameTime = getGameTime(getUInt(64).toDouble()),
+        gameTime = getUInt(64).toInt(),
         maxTrailerCount = getUInt(92).toInt(),
         scale = getFloat(700).toInt()
     )

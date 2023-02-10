@@ -33,7 +33,7 @@ data class Game(
     val multiplayerTimeOffset: Long,
     val version: Versions,
     val gameType: GameType,
-    val gameTime: GameTime,
+    val gameTime: Int,
     val maxTrailerCount: Int,
     val scale: Int
 )
