@@ -12,7 +12,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.20"
+    kotlin("jvm") version "1.7.21"
     `java-library`
     `maven-publish`
     id("org.sonarqube") version "3.5.0.2730"
@@ -33,10 +33,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
     //JNA
-    implementation("net.java.dev.jna:jna-platform:5.12.1")
+    implementation("net.java.dev.jna:jna-platform:5.13.0")
 
     //LOGGER
-    implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
 
     runtimeOnly(group = "ch.qos.logback", name = "logback-classic", version = "1.4.5")
 
