@@ -12,11 +12,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.8.10"
     `java-library`
     `maven-publish`
-    id("org.sonarqube") version "3.5.0.2730"
-    id("org.jetbrains.dokka") version "1.7.20"
+    id("org.sonarqube") version "4.0.0.2929"
+    id("org.jetbrains.dokka") version "1.8.10"
     application
 }
 
