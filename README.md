@@ -44,7 +44,7 @@ allprojects {
 
 ````groovy
 dependencies {
-    implementation 'com.github.figonzal1:TruckSim-Telemetry-Kotlin:1.0'
+    implementation 'com.github.figonzal1:TruckSim-Telemetry-Kotlin:tag'
 }
 ````
 
