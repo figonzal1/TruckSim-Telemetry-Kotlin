@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="classlike" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk/ScsShareMemoryParser///PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../../index.html">TruckSim-Telemetry-Kotlin</a><span class="delimiter">/</span><a
                     href="../index.html">scs_sdk</a><span class="delimiter">/</span><span class="current">ScsShareMemoryParser</span>
@@ -80,37 +84,38 @@
             </div>
             <div class="tabbedcontent">
                 <div class="tabs-section" tabs-section="tabs-section">
-                    <button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button>
-                    <button class="section-tab" data-togglable="Functions">Functions</button>
+                    <button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">
+                        Members
+                    </button>
                 </div>
                 <div class="tabs-section-body">
-                    <h2 class="tabbedcontent">Constructors</h2>
-                    <div class="table" data-togglable="Constructors"><a
-                            data-name="1779998340%2FConstructors%2F769193423" anchor-label="ScsShareMemoryParser"
-                            id="1779998340%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue TabbedContent">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-scs-share-memory-parser.html"><span>Scs</span><wbr></wbr><span>Share</span><wbr></wbr><span>Memory</span><wbr></wbr><span><span>Parser</span></span></a></div>
+                    <div data-togglable="CONSTRUCTOR">
+                        <h2 class="">Constructors</h2>
+                        <div class="table"><a data-name="1779998340%2FConstructors%2F769193423"
+                                              anchor-label="ScsShareMemoryParser"
+                                              id="1779998340%2FConstructors%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-togglable="CONSTRUCTOR"
+                                 data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-scs-share-memory-parser.html"><span>Scs</span><wbr></wbr><span>Share</span><wbr></wbr><span>Memory</span><wbr></wbr><span><span>Parser</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1779998340%2FConstructors%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">fun </span><a
-                                                        href="-scs-share-memory-parser.html"><span
-                                                        class="token function">ScsShareMemoryParser</span></a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter ">ets2Kernel<span
-                                                        class="token operator">: </span><span
-                                                        data-unresolved-link="jna/Ets2Kernel32Impl///PointingToDeclaration/">Ets2Kernel32Impl</span></span></span><span
-                                                        class="token punctuation">)</span></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span class="token keyword">constructor</span><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter ">ets2Kernel<span
+                                                            class="token operator">: </span><span
+                                                            data-unresolved-link="jna/Ets2Kernel32Impl///PointingToDeclaration/">Ets2Kernel32Impl</span></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -118,104 +123,106 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="">Functions</h2>
-                    <div class="table" data-togglable="Functions"><a data-name="1518287683%2FFunctions%2F769193423"
-                                                                     anchor-label="getSharedMemory"
-                                                                     id="1518287683%2FFunctions%2F769193423"
-                                                                     data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="get-shared-memory.html"><span>get</span><wbr></wbr><span>Shared</span><wbr></wbr><span><span>Memory</span></span></a></div>
+                    <div data-togglable="FUNCTION">
+                        <h2 class="">Functions</h2>
+                        <div class="table"><a data-name="1518287683%2FFunctions%2F769193423"
+                                              anchor-label="getSharedMemory" id="1518287683%2FFunctions%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="get-shared-memory.html"><span>get</span><wbr></wbr><span>Shared</span><wbr></wbr><span><span>Memory</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1518287683%2FFunctions%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">suspend </span><span
-                                                        class="token keyword">fun </span><a
-                                                        href="get-shared-memory.html"><span class="token function">getSharedMemory</span></a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="token punctuation">)</span><span
-                                                        class="token operator">: </span><span
-                                                        data-unresolved-link="com.sun.jna/Pointer///PointingToDeclaration/">Pointer</span><span
-                                                        class="token operator">?</span></div>
-                                                <div class="brief "><p class="paragraph">Retrieve pointer from kernel
-                                                    shared memory</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">suspend </span><span
+                                                            class="token keyword">fun </span><a
+                                                            href="get-shared-memory.html"><span class="token function">getSharedMemory</span></a><span
+                                                            class="token punctuation">(</span><span
+                                                            class="token punctuation">)</span><span
+                                                            class="token operator">: </span><span
+                                                            data-unresolved-link="com.sun.jna/Pointer///PointingToDeclaration/">Pointer</span><span
+                                                            class="token operator">?</span></div>
+                                                    <div class="brief "><p class="paragraph">Retrieve pointer from
+                                                        kernel shared memory</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="161141341%2FFunctions%2F769193423" anchor-label="parseBytes"
-                           id="161141341%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="parse-bytes.html"><span>parse</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+                            <a data-name="161141341%2FFunctions%2F769193423" anchor-label="parseBytes"
+                               id="161141341%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="parse-bytes.html"><span>parse</span><wbr></wbr><span><span>Bytes</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="161141341%2FFunctions%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">suspend </span><span
-                                                        class="token keyword">fun </span><a
-                                                        href="parse-bytes.html"><span
-                                                        class="token function">parseBytes</span></a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter ">callBack<span
-                                                        class="token operator">: </span><span class="token keyword">suspend </span><span
-                                                        class="token punctuation">(</span><span
-                                                        class="token keyword"></span><a
-                                                        href="../../scs_sdk.model/-telemetry-data/index.html">TelemetryData</a><span
-                                                        class="token punctuation">)</span><span class="token operator"> -&gt; </span><span
-                                                        class="token keyword"></span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Parse data from byte array and
-                                                    transform into objects</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">suspend </span><span
+                                                            class="token keyword">fun </span><a href="parse-bytes.html"><span
+                                                            class="token function">parseBytes</span></a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter ">callBack<span
+                                                            class="token operator">: </span><span class="token keyword">suspend </span><span
+                                                            class="token punctuation">(</span><span
+                                                            class="token keyword"></span><a
+                                                            href="../../scs_sdk.model/-telemetry-data/index.html">TelemetryData</a><span
+                                                            class="token punctuation">)</span><span
+                                                            class="token operator"> -&gt; </span><span
+                                                            class="token keyword"></span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Parse data from byte array
+                                                        and transform into objects</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-244426070%2FFunctions%2F769193423" anchor-label="readBytes"
-                           id="-244426070%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="read-bytes.html"><span>read</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+                            <a data-name="-244426070%2FFunctions%2F769193423" anchor-label="readBytes"
+                               id="-244426070%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="read-bytes.html"><span>read</span><wbr></wbr><span><span>Bytes</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-244426070%2FFunctions%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">fun </span><a href="read-bytes.html"><span
-                                                        class="token function">readBytes</span></a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Read data from pointer buffer
-                                                    and load into byte Array</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">fun </span><a
+                                                            href="read-bytes.html"><span class="token function">readBytes</span></a><span
+                                                            class="token punctuation">(</span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Read data from pointer
+                                                        buffer and load into byte Array</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

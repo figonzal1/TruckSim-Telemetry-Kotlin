@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="classlike" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.job/Job///PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../../index.html">TruckSim-Telemetry-Kotlin</a><span class="delimiter">/</span><a
                     href="../index.html">scs_sdk.model.job</a><span class="delimiter">/</span><span
@@ -97,64 +101,65 @@
             </div>
             <div class="tabbedcontent">
                 <div class="tabs-section" tabs-section="tabs-section">
-                    <button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button>
-                    <button class="section-tab" data-togglable="Properties">Properties</button>
+                    <button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">
+                        Members
+                    </button>
                 </div>
                 <div class="tabs-section-body">
-                    <h2 class="tabbedcontent">Constructors</h2>
-                    <div class="table" data-togglable="Constructors"><a data-name="869808363%2FConstructors%2F769193423"
-                                                                        anchor-label="Job"
-                                                                        id="869808363%2FConstructors%2F769193423"
-                                                                        data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue TabbedContent">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-job.html"><span><span>Job</span></span></a></div>
+                    <div data-togglable="CONSTRUCTOR">
+                        <h2 class="">Constructors</h2>
+                        <div class="table"><a data-name="869808363%2FConstructors%2F769193423" anchor-label="Job"
+                                              id="869808363%2FConstructors%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-togglable="CONSTRUCTOR"
+                                 data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-job.html"><span><span>Job</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="869808363%2FConstructors%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">fun </span><a href="-job.html"><span
-                                                        class="token function">Job</span></a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter ">source<span
-                                                        class="token operator">: </span><a
-                                                        href="../-job-location/index.html">JobLocation</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">destination<span
-                                                        class="token operator">: </span><a
-                                                        href="../-job-location/index.html">JobLocation</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">plannedDistance<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">cargo<span class="token operator">: </span><a
-                                                        href="../-job-cargo/index.html">JobCargo</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">isSpecial<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">market<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">income<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter ">expectedDeliveryTimestamp<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span
-                                                        class="token punctuation">)</span></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span class="token keyword">constructor</span><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter ">source<span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-location/index.html">JobLocation</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">destination<span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-location/index.html">JobLocation</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">plannedDistance<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">cargo<span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-cargo/index.html">JobCargo</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">isSpecial<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">market<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">income<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter ">expectedDeliveryTimestamp<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -162,276 +167,231 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="">Properties</h2>
-                    <div class="table" data-togglable="Properties"><a data-name="-1270841350%2FProperties%2F769193423"
-                                                                      anchor-label="cargo"
-                                                                      id="-1270841350%2FProperties%2F769193423"
-                                                                      data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="cargo.html"><span><span>cargo</span></span></a></div>
+                    <div data-togglable="PROPERTY">
+                        <h2 class="">Properties</h2>
+                        <div class="table"><a data-name="-1270841350%2FProperties%2F769193423" anchor-label="cargo"
+                                              id="-1270841350%2FProperties%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="cargo.html"><span><span>cargo</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1270841350%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-1270841350%2FProperties%2F769193423"
-                                                    anchor-label="cargo" id="-1270841350%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="cargo.html">cargo</a><span
-                                                        class="token operator">: </span><a
-                                                        href="../-job-cargo/index.html">JobCargo</a></div>
-                                                <div class="brief "><a data-name="-1270841350%2FProperties%2F769193423"
-                                                                       anchor-label="cargo"
-                                                                       id="-1270841350%2FProperties%2F769193423"
-                                                                       data-filterable-set=":dokkaHtml/main"></a>
-                                                    <p class="paragraph">data</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a
+                                                            href="cargo.html">cargo</a><span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-cargo/index.html">JobCargo</a></div>
+                                                    <div class="brief "><p class="paragraph">data</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-1668856536%2FProperties%2F769193423" anchor-label="destination"
-                           id="-1668856536%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="destination.html"><span><span>destination</span></span></a></div>
+                            <a data-name="-1668856536%2FProperties%2F769193423" anchor-label="destination"
+                               id="-1668856536%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="destination.html"><span><span>destination</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668856536%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-1668856536%2FProperties%2F769193423"
-                                                    anchor-label="destination" id="-1668856536%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a href="destination.html">destination</a><span
-                                                        class="token operator">: </span><a
-                                                        href="../-job-location/index.html">JobLocation</a></div>
-                                                <div class="brief "><a data-name="-1668856536%2FProperties%2F769193423"
-                                                                       anchor-label="destination"
-                                                                       id="-1668856536%2FProperties%2F769193423"
-                                                                       data-filterable-set=":dokkaHtml/main"></a>
-                                                    <p class="paragraph">city</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="destination.html">destination</a><span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-location/index.html">JobLocation</a></div>
+                                                    <div class="brief "><p class="paragraph">city</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="935328076%2FProperties%2F769193423" anchor-label="expectedDeliveryTimestamp"
-                           id="935328076%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="expected-delivery-timestamp.html"><span>expected</span><wbr></wbr><span>Delivery</span><wbr></wbr><span><span>Timestamp</span></span></a></div>
+                            <a data-name="935328076%2FProperties%2F769193423" anchor-label="expectedDeliveryTimestamp"
+                               id="935328076%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="expected-delivery-timestamp.html"><span>expected</span><wbr></wbr><span>Delivery</span><wbr></wbr><span><span>Timestamp</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="935328076%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="935328076%2FProperties%2F769193423"
-                                                    anchor-label="expectedDeliveryTimestamp"
-                                                    id="935328076%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="expected-delivery-timestamp.html">expectedDeliveryTimestamp</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a
+                                                            href="expected-delivery-timestamp.html">expectedDeliveryTimestamp</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="1169766619%2FProperties%2F769193423" anchor-label="income"
-                           id="1169766619%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="income.html"><span><span>income</span></span></a></div>
+                            <a data-name="1169766619%2FProperties%2F769193423" anchor-label="income"
+                               id="1169766619%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="income.html"><span><span>income</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169766619%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="1169766619%2FProperties%2F769193423"
-                                                    anchor-label="income" id="1169766619%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="income.html">income</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="income.html">income</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="509104743%2FProperties%2F769193423" anchor-label="isSpecial"
-                           id="509104743%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="is-special.html"><span>is</span><wbr></wbr><span><span>Special</span></span></a></div>
+                            <a data-name="509104743%2FProperties%2F769193423" anchor-label="isSpecial"
+                               id="509104743%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="is-special.html"><span>is</span><wbr></wbr><span><span>Special</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="509104743%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="509104743%2FProperties%2F769193423"
-                                                    anchor-label="isSpecial" id="509104743%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a href="is-special.html">isSpecial</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="is-special.html">isSpecial</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-1976221272%2FProperties%2F769193423" anchor-label="market"
-                           id="-1976221272%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="market.html"><span><span>market</span></span></a></div>
+                            <a data-name="-1976221272%2FProperties%2F769193423" anchor-label="market"
+                               id="-1976221272%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="market.html"><span><span>market</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976221272%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-1976221272%2FProperties%2F769193423"
-                                                    anchor-label="market" id="-1976221272%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="market.html">market</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="market.html">market</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-87473859%2FProperties%2F769193423" anchor-label="plannedDistance"
-                           id="-87473859%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="planned-distance.html"><span>planned</span><wbr></wbr><span><span>Distance</span></span></a></div>
+                            <a data-name="-87473859%2FProperties%2F769193423" anchor-label="plannedDistance"
+                               id="-87473859%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="planned-distance.html"><span>planned</span><wbr></wbr><span><span>Distance</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-87473859%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-87473859%2FProperties%2F769193423"
-                                                    anchor-label="plannedDistance"
-                                                    id="-87473859%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="planned-distance.html">plannedDistance</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a
+                                                            href="planned-distance.html">plannedDistance</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-1805371735%2FProperties%2F769193423" anchor-label="source"
-                           id="-1805371735%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="source.html"><span><span>source</span></span></a></div>
+                            <a data-name="-1805371735%2FProperties%2F769193423" anchor-label="source"
+                               id="-1805371735%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="source.html"><span><span>source</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1805371735%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-1805371735%2FProperties%2F769193423"
-                                                    anchor-label="source" id="-1805371735%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="source.html">source</a><span
-                                                        class="token operator">: </span><a
-                                                        href="../-job-location/index.html">JobLocation</a></div>
-                                                <div class="brief "><a data-name="-1805371735%2FProperties%2F769193423"
-                                                                       anchor-label="source"
-                                                                       id="-1805371735%2FProperties%2F769193423"
-                                                                       data-filterable-set=":dokkaHtml/main"></a>
-                                                    <p class="paragraph">city</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="source.html">source</a><span
+                                                            class="token operator">: </span><a
+                                                            href="../-job-location/index.html">JobLocation</a></div>
+                                                    <div class="brief "><p class="paragraph">city</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

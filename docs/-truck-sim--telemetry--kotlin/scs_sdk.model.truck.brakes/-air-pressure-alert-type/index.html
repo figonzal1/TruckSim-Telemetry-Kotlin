@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="classlike" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.truck.brakes/AirPressureAlertType///PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../../index.html">TruckSim-Telemetry-Kotlin</a><span class="delimiter">/</span><a
                     href="../index.html">scs_sdk.model.truck.brakes</a><span class="delimiter">/</span><span
@@ -71,90 +75,111 @@
                         <div class="symbol monospace"><span class="token keyword">sealed </span><span
                                 class="token keyword">class </span><a href="index.html">AirPressureAlertType</a></div>
                         <p class="paragraph">Class that represent different types of air pressure alerts</p><span
-                            class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Felipe Gonzalez</p></span>
+                            class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Felipe Gonzalez</p></span><h4
+                            class="">Inheritors</h4>
+                        <div class="table">
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex"><div><a
+                                            href="-air-pressure-alert-emergency/index.html">AirPressureAlertEmergency</a></div></span>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex"><div><a
+                                            href="-air-pressure-alert-warning/index.html">AirPressureAlertWarning</a></div></span>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tabbedcontent">
                 <div class="tabs-section" tabs-section="tabs-section">
-                    <button class="section-tab" data-active="" data-togglable="Types">Types</button>
-                    <button class="section-tab" data-togglable="Properties">Properties</button>
-                    <button class="section-tab" data-togglable="Inheritors">Inheritors</button>
+                    <button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">
+                        Members
+                    </button>
                 </div>
                 <div class="tabs-section-body">
-                    <h2 class="">Types</h2>
-                    <div class="table" data-togglable="Types"><a data-name="-482365551%2FClasslikes%2F769193423"
-                                                                 anchor-label="AirPressureAlertEmergency"
-                                                                 id="-482365551%2FClasslikes%2F769193423"
-                                                                 data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-air-pressure-alert-emergency/index.html"><span>Air</span><wbr></wbr><span>Pressure</span><wbr></wbr><span>Alert</span><wbr></wbr><span><span>Emergency</span></span></a></div>
+                    <div data-togglable="TYPE">
+                        <h2 class="">Types</h2>
+                        <div class="table"><a data-name="-482365551%2FClasslikes%2F769193423"
+                                              anchor-label="AirPressureAlertEmergency"
+                                              id="-482365551%2FClasslikes%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-air-pressure-alert-emergency/index.html"><span>Air</span><wbr></wbr><span>Pressure</span><wbr></wbr><span>Alert</span><wbr></wbr><span><span>Emergency</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-482365551%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">class </span><a
-                                                        href="-air-pressure-alert-emergency/index.html">AirPressureAlertEmergency</a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>factor<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>isEnabled<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
-                                                        class="token punctuation">)</span> : <a href="index.html">AirPressureAlertType</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">class </span><a
+                                                            href="-air-pressure-alert-emergency/index.html">AirPressureAlertEmergency</a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>factor<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>isEnabled<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                                            class="token punctuation">)</span> : <a href="index.html">AirPressureAlertType</a>
+                                                    </div>
+                                                    <div class="brief "><p class="paragraph">Class related to emergency
+                                                        alert</p></div>
                                                 </div>
-                                                <div class="brief "><p class="paragraph">Class related to emergency
-                                                    alert</p></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-223946714%2FClasslikes%2F769193423" anchor-label="AirPressureAlertWarning"
-                           id="-223946714%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-air-pressure-alert-warning/index.html"><span>Air</span><wbr></wbr><span>Pressure</span><wbr></wbr><span>Alert</span><wbr></wbr><span><span>Warning</span></span></a></div>
+                            <a data-name="-223946714%2FClasslikes%2F769193423" anchor-label="AirPressureAlertWarning"
+                               id="-223946714%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-air-pressure-alert-warning/index.html"><span>Air</span><wbr></wbr><span>Pressure</span><wbr></wbr><span>Alert</span><wbr></wbr><span><span>Warning</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-223946714%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">class </span><a
-                                                        href="-air-pressure-alert-warning/index.html">AirPressureAlertWarning</a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>factor<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>isEnabled<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
-                                                        class="token punctuation">)</span> : <a href="index.html">AirPressureAlertType</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">class </span><a
+                                                            href="-air-pressure-alert-warning/index.html">AirPressureAlertWarning</a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>factor<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>isEnabled<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                                            class="token punctuation">)</span> : <a href="index.html">AirPressureAlertType</a>
+                                                    </div>
+                                                    <div class="brief "><p class="paragraph">Class relate to warning
+                                                        alert</p></div>
                                                 </div>
-                                                <div class="brief "><p class="paragraph">Class relate to warning
-                                                    alert</p></div>
                                             </div>
                                         </div>
                                     </div>
@@ -162,104 +187,64 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="">Properties</h2>
-                    <div class="table" data-togglable="Properties"><a data-name="-965792823%2FProperties%2F769193423"
-                                                                      anchor-label="factor"
-                                                                      id="-965792823%2FProperties%2F769193423"
-                                                                      data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="factor.html"><span><span>factor</span></span></a></div>
+                    <div data-togglable="PROPERTY">
+                        <h2 class="">Properties</h2>
+                        <div class="table"><a data-name="-965792823%2FProperties%2F769193423" anchor-label="factor"
+                                              id="-965792823%2FProperties%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="factor.html"><span><span>factor</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-965792823%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-965792823%2FProperties%2F769193423"
-                                                    anchor-label="factor" id="-965792823%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a
-                                                        href="factor.html">factor</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="factor.html">factor</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="-859411317%2FProperties%2F769193423" anchor-label="isEnabled"
-                           id="-859411317%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="is-enabled.html"><span>is</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+                            <a data-name="-859411317%2FProperties%2F769193423" anchor-label="isEnabled"
+                               id="-859411317%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="is-enabled.html"><span>is</span><wbr></wbr><span><span>Enabled</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-859411317%2FProperties%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"
-                                             data-togglable="Properties">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main"><a
-                                                    data-name="-859411317%2FProperties%2F769193423"
-                                                    anchor-label="isEnabled" id="-859411317%2FProperties%2F769193423"
-                                                    data-filterable-set=":dokkaHtml/main"></a>
-                                                <div class="symbol monospace"><span class="token keyword"></span><span
-                                                        class="token keyword">val </span><a href="is-enabled.html">isEnabled</a><span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword"></span><span
+                                                            class="token keyword">val </span><a href="is-enabled.html">isEnabled</a><span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>
+                                                    </div>
                                                 </div>
-                                                <div class="brief "></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="">Inheritors</h2>
-                    <div class="table" data-togglable="Inheritors"><a data-name="-482365551%2FInheritors%2F769193423"
-                                                                      anchor-label="AirPressureAlertEmergency"
-                                                                      id="-482365551%2FInheritors%2F769193423"
-                                                                      data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-air-pressure-alert-emergency/index.html">AirPressureAlertEmergency</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-482365551%2FInheritors%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <a data-name="-223946714%2FInheritors%2F769193423" anchor-label="AirPressureAlertWarning"
-                           id="-223946714%2FInheritors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-air-pressure-alert-warning/index.html">AirPressureAlertWarning</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-223946714%2FInheritors%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div></div>
                             </div>
                         </div>
                     </div>

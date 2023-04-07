@@ -4,8 +4,492 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac624d04-7eab-4725-9a94-c3ccdac2a4cc" name="Changes" comment="update dependencies &amp; gradle">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    <list default="true" id="ac624d04-7eab-4725-9a94-c3ccdac2a4cc" name="Changes" comment="update dokka">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/[root]/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/[root]/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/[root]/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/[root]/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/controls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/job.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/substances.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/substances.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/trailer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/trailer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/truck.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.handler/truck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/-controls-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/-controls-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/-controls-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/-controls-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/-controls-input/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/brake.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/brake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/clutch.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/clutch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/steering.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/steering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/throttle.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls-type/throttle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/-controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/-controls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/-controls/input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.controls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/-events-ferry.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/-events-ferry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/amount.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/amount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/-events-ferry/source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.ferry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/-events-fine.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/-events-fine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/amount.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/amount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/offence.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/-events-fine/offence.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.fine/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/-events-job-cancelled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/-events-job-cancelled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/cancelled-timestamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/cancelled-timestamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/penalty.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/penalty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/started-time-stamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-cancelled/started-time-stamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/-events-job-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/-events-job-delivered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/auto-parked.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/auto-parked.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/cargo-damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/cargo-damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/delivered-time-stamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/delivered-time-stamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/distance.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/distance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/earned-x-p.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/earned-x-p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/revenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/revenue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/started-time-stamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/started-time-stamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/time-taken.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-delivered/time-taken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/-events-job-finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/-events-job-finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-finished/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/-events-job-started.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/-events-job-started.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-auto-loaded.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/-events-job-started/is-auto-loaded.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/-events-job.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/-events-job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/cancelled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/cancelled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/delivered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/started.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/-events-job/started.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/-events-refuel-paid.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/-events-refuel-paid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel-paid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/-events-refuel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/-events-refuel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/-events-refuel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/-events-refuel-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.refuel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/-events-tollgate.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/-events-tollgate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/amount.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/amount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/-events-tollgate/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.tollgate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/-events-train.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/-events-train.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/amount.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/amount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/-events-train/source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events.train/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/-events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/ferry.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/ferry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/fine.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/fine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/job.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel-paid.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel-paid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/refuel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/tollgate.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/tollgate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/train.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/-events/train.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.events/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-a-t-s/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-a-t-s/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-e-t-s2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-e-t-s2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-u-n-k-n-o-w-n/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/-u-n-k-n-o-w-n/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/value-of.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/value-of.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game-type/values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-time.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/game-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/max-trailer-count.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/max-trailer-count.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/multiplayer-time-offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/multiplayer-time-offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/paused.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/paused.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/scale.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/scale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/sdk-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/sdk-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/timestamps.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/timestamps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/version.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-game/version.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/-timestamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/-timestamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/render.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/render.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/simulation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-timestamp/simulation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/-versions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/-versions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/plugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/plugin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/telemetry.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/-versions/telemetry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/-job-cargo.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/-job-cargo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/id.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/is-loaded.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/is-loaded.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/mass.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/mass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/name.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/unit-mass.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-cargo/unit-mass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/-job-location.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/-job-location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-city.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-city.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-company.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job-location/job-company.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/-job.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/-job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/cargo.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/cargo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/expected-delivery-timestamp.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/expected-delivery-timestamp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/income.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/income.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/is-special.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/is-special.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/market.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/market.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/planned-distance.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/planned-distance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/-job/source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/-navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/-navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/distance.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/distance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/next-rest-stop.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/next-rest-stop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/speed-limit.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/speed-limit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/-navigation/time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.navigation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/-substances.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/-substances.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/all-types.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/all-types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/angular-velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/-substances/linear-velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.substances/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/-trailer-damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/-trailer-damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/cargo.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/cargo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/chassis.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/chassis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/wheel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-damage/wheel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/-trailer-wheel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/-trailer-wheel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-liftable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-liftable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-on-ground.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-on-ground.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-powered.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-powered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-simulated.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-simulated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-steerable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/is-steerable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift-offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift-offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/lift.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/radius.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/radius.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/rotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/rotation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/steering.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/steering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/substance.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/substance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/suspension-deflection.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/suspension-deflection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer-wheel/velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/-trailer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/-trailer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/accessory-id.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/accessory-id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/body-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/body-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/brand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/brand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/chain-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/chain-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/damage-parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/damage-parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/is-attached.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/is-attached.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/licence-plate.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/licence-plate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/lift-axle.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/lift-axle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/orientation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/orientation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/total-damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/total-damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/wheels.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/-trailer/wheels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.trailer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/-air-pressure-alert-emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/-air-pressure-alert-emergency.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-emergency/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/-air-pressure-alert-warning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/-air-pressure-alert-warning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/-air-pressure-alert-warning/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/factor.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/factor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/is-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure-alert-type/is-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/-air-pressure.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/-air-pressure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/emergency.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/warning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-air-pressure/warning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/-brakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/-brakes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/air-pressure.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/air-pressure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-motor-break-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-motor-break-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-parking-brake-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/is-parking-brake-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/retarder.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/retarder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/temperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-brakes/temperature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/-retarder.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/-retarder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/level.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/level.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/-retarder/steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.brakes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/-battery.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/-battery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/warning.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-battery/warning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/-engine.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/-engine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/battery.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/battery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/is-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/is-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/oil.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/oil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/rpm.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/rpm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/water.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-engine/water.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/-rpm.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/-rpm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/max.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/max.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/-rpm/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.engine/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/-blinker-status.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/-blinker-status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-active.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker-status/is-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/-blinker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/-blinker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/right.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-blinker/right.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/-lights.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/-lights.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-front.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-front.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-roof.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/aux-roof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/blinker.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/blinker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/dashboard-back-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/dashboard-back-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beacon-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beacon-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-high-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-high-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-low-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-beam-low-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-brake-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-brake-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-hazard-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-hazard-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-parking-brake-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-parking-brake-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-reverse-on.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/-lights/is-reverse-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.lights/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/-ad-blue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/-ad-blue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-ad-blue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/-fuel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/-fuel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-fuel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/-oil.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/-oil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-oil/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/-water.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/-water.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/-water/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/avg-consumption.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/avg-consumption.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/capacity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/capacity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/pressure.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/pressure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/range.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/range.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/warning-levels.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids-type/warning-levels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/-liquids.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/-liquids.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/ad-blue.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/ad-blue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/fuel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/fuel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/-liquids/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.liquids/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/-cruise-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/-cruise-control.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/is-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/is-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-cruise-control/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/-differential.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/-differential.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/is-lock-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/is-lock-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/ratio.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-differential/ratio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/-transmission.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/-transmission.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/dashboard-gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/dashboard-gear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/forward-gears.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/forward-gears.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-forward.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-forward.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-reverse.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/gear-ratios-reverse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/h-shifter-selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/h-shifter-selector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/reverse-gears.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/reverse-gears.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selected-gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selected-gear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selector-count.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/selector-count.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/shifter-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/shifter-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-gear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-handle-position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-handle-position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/-transmission/slots-selector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck.transmission/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/-cabin.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/-cabin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-cabin/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/-chassis.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/-chassis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-chassis/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-head/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/-hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/-hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-hook/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/-license-plate.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/-license-plate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/country.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/country.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/value.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-license-plate/value.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/-lift-axle.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/-lift-axle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-indicator-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-indicator-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-lift-axle-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-lift-axle/is-lift-axle-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/-truck-wheel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/-truck-wheel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-liftable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-liftable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-on-ground.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-on-ground.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-powered.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-powered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-simulated.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-simulated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-steerable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/is-steerable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift-offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift-offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/lift.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/radius.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/radius.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/rotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/rotation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/steering.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/steering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/substance.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/substance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/suspension-deflection.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/suspension-deflection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck-wheel/velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/-truck.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/-truck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brakes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brand.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/brand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cabin.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cabin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/chassis.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/chassis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cruise-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/cruise-control.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/differential.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/differential.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/engine.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/engine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-electric-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-electric-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-wipers-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/is-wipers-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/license-plate.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/license-plate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lift-axle.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lift-axle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lights.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/lights.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/liquids.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/liquids.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/odometer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/odometer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/orientation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/orientation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/speed.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/speed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/total-damage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/total-damage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/transmission.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/transmission.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/wheels.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/-truck/wheels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.truck/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/-acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/-acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/angular-velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-acceleration.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-acceleration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-velocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-acceleration/linear-velocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/-city-destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/-city-destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-destination/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/-city-source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/-city-source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/-city-source/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/id.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/name.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-city-type/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/-company-destination.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/-company-destination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-destination/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/-company-source.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/-company-source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/-company-source/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/id.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/name.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-company-type/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/-generic-resource.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/-generic-resource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/id.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/name.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-generic-resource/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/-offset.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/-offset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/orientation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/orientation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-offset/position.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/-orientation-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/-orientation-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/heading.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/heading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/pitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/pitch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-orientation-vector/roll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/x.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/x.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/y.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/y.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/z.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-vector/z.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/-warning-levels.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/-warning-levels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/factor.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/factor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/is-enabled.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/-warning-levels/is-enabled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model.utils/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/-telemetry-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/-telemetry-data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/controls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/job.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/substances.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/substances.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/trailer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/trailer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/truck.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/-telemetry-data/truck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk.model/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/-scs-share-memory-parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/-scs-share-memory-parser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/get-shared-memory.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/get-shared-memory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/parse-bytes.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/parse-bytes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/read-bytes.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-share-memory-parser/read-bytes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/-scs-telemetry.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/-scs-telemetry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/telemetry-flow.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/telemetry-flow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/watch.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/-scs-telemetry/watch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/scs_sdk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-e-r-r-o-r_-c-o-n-n-e-c-t-i-o-n.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-e-r-r-o-r_-c-o-n-n-e-c-t-i-o-n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-m-a-p_-s-i-z-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-m-a-p_-s-i-z-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-a-c-c-e-s-s.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-a-c-c-e-s-s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-n-a-m-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-h-a-r-e-d_-m-e-m_-f-i-l-e_-n-a-m-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-t-r-i-n-g_-s-i-z-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-t-r-i-n-g_-s-i-z-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-u-b-s-t-a-n-c-e-s.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-s-u-b-s-t-a-n-c-e-s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-w-h-e-e-l_-s-i-z-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/-w-h-e-e-l_-s-i-z-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/-constants/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/all-substances-types.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/all-substances-types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-bool-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-bool-array.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-bool.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-bool.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double-oriented-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double-oriented-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-double.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-array.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-orientation-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-orientation-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-vector.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float-vector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-float.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-game-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-game-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-speed-long.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-speed-long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-string.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-string.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-int-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-int-array.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-int.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-int.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-long.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-u-long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-version.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/get-version.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/-truck-sim--telemetry--kotlin/utils/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/logo-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/logo-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/enum-kotlin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/enum-kotlin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/enum.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/enum.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/exception-class.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/exception-class.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/field-value.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/field-value.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/field-variable.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/field-variable.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/function.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/function.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/interface-kotlin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/interface-kotlin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/interface.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/interface.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/nav-icons/object.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/nav-icons/object.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scripts/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/platform-content-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scripts/platform-content-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +514,35 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TruckSim-Telemetry-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -43,6 +556,12 @@
         <option value="figonzal1 &lt;felipe.gonzalezalarcon94@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -54,20 +573,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.50229883&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.50229883",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="TruckSim-Telemetry-Kotlin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}]]></component>
+  <component name="RunManager" selected="Gradle.TruckSim-Telemetry-Kotlin [dokkaHtml]">
+    <configuration name="TruckSim-Telemetry-Kotlin [dokkaHtml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -78,7 +597,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="dokkaHtml" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -89,7 +608,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="TruckSim-Telemetry-Kotlin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TruckSim-Telemetry-Kotlin [generateMetadataFileForTruckSim-Telemetry-KotlinPublication]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -100,7 +619,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="generateMetadataFileForTruckSim-Telemetry-KotlinPublication" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -111,7 +630,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="TruckSim-Telemetry-Kotlin [sonar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TruckSim-Telemetry-Kotlin [generatePomFileForTruckSim-Telemetry-KotlinPublication]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,7 +641,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="sonar" />
+            <option value="generatePomFileForTruckSim-Telemetry-KotlinPublication" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,19 +652,57 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="TruckSim-Telemetry-Kotlin.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="TruckSim-Telemetry-Kotlin [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="TruckSim-Telemetry-Kotlin [kotlinSourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="kotlinSourcesJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [sonar]" />
-        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [clean]" />
-        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [build]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [dokkaHtml]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [kotlinSourcesJar]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [generateMetadataFileForTruckSim-Telemetry-KotlinPublication]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [javadoc]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [generatePomFileForTruckSim-Telemetry-KotlinPublication]" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680884044634</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 1.1">
+      <created>1680885583467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680885583467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +753,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update kotlin version dependencies" />
     <MESSAGE value="update dependencies &amp; gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dependencies &amp; gradle" />
+    <MESSAGE value="version 1.1" />
+    <MESSAGE value="update dokka" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dokka" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

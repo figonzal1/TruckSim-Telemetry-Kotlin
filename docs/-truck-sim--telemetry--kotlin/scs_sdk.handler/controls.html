@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="member" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.handler//controls/#kotlin.ByteArray/PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../index.html">TruckSim-Telemetry-Kotlin</a><span
                     class="delimiter">/</span><a href="index.html">scs_sdk.handler</a><span
@@ -78,21 +82,17 @@
                         class="paragraph"><a
                         href="../scs_sdk.model.controls/-controls/index.html">Controls</a> object</p></span><h4
                         class="">Parameters</h4>
-                    <div data-togglable="Parameters">
-                        <div class="table" data-togglable="Parameters">
-                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                                 data-filterable-set=":dokkaHtml/main">
-                                <div class="main-subrow keyValue WithExtraAttributes">
-                                    <div class=""><span class="inline-flex"><div><u><span>raw</span><wbr></wbr><span><span>Data</span></span></u></div></span>
-                                    </div>
-                                    <div>
-                                        <div class="title">
-                                            <div data-togglable="Parameters">
-                                                <ul>
-                                                    <li><p class="paragraph">byte array of control data</p></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                    <div class="table">
+                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                             data-filterable-set=":dokkaHtml/main">
+                            <div class="main-subrow keyValue ">
+                                <div class=""><span class="inline-flex"><div><u><span>raw</span><wbr></wbr><span><span>Data</span></span></u></div></span>
+                                </div>
+                                <div>
+                                    <div class="title">
+                                        <ul>
+                                            <li><p class="paragraph">byte array of control data</p></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

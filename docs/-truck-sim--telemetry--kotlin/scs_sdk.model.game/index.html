@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="package" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.game////PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../index.html">TruckSim-Telemetry-Kotlin</a><span
                     class="delimiter">/</span><span class="current">scs_sdk.model.game</span></div>
@@ -62,181 +66,186 @@
             </div>
             <div class="tabbedcontent">
                 <div class="tabs-section" tabs-section="tabs-section">
-                    <button class="section-tab" data-active="" data-togglable="Types">Types</button>
+                    <button class="section-tab" data-active="" data-togglable="TYPE">Types</button>
                 </div>
                 <div class="tabs-section-body">
-                    <h2 class="">Types</h2>
-                    <div class="table" data-togglable="Types"><a data-name="-975126601%2FClasslikes%2F769193423"
-                                                                 anchor-label="Game"
-                                                                 id="-975126601%2FClasslikes%2F769193423"
-                                                                 data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-game/index.html"><span><span>Game</span></span></a></div>
+                    <div data-togglable="TYPE">
+                        <h2 class="">Types</h2>
+                        <div class="table"><a data-name="-975126601%2FClasslikes%2F769193423" anchor-label="Game"
+                                              id="-975126601%2FClasslikes%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-game/index.html"><span><span>Game</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-975126601%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">data </span><span class="token keyword">class </span><a
-                                                        href="-game/index.html">Game</a><span class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>sdkActive<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>paused<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>timestamps<span
-                                                        class="token operator">: </span><a href="-timestamp/index.html">Timestamp</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>multiplayerTimeOffset<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>version<span
-                                                        class="token operator">: </span><a href="-versions/index.html">Versions</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>gameType<span
-                                                        class="token operator">: </span><a href="-game-type/index.html">GameType</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>gameTime<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>maxTrailerCount<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span
-                                                        class="token keyword">val </span>scale<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Class that hold general
-                                                    information about the game</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a data-name="-652402019%2FClasslikes%2F769193423" anchor-label="GameType"
-                           id="-652402019%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-game-type/index.html"><span>Game</span><wbr></wbr><span><span>Type</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-652402019%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span class="token keyword">enum </span><a
-                                                        href="-game-type/index.html">GameType</a> : <a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a href="-game-type/index.html">GameType</a><span
-                                                        class="token operator">&gt; </span></div>
-                                                <div class="brief "><p class="paragraph">Enum class for game types</p>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">data </span><span
+                                                            class="token keyword">class </span><a
+                                                            href="-game/index.html">Game</a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>sdkActive<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>paused<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>timestamps<span
+                                                            class="token operator">: </span><a
+                                                            href="-timestamp/index.html">Timestamp</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>multiplayerTimeOffset<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>version<span
+                                                            class="token operator">: </span><a
+                                                            href="-versions/index.html">Versions</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>gameType<span
+                                                            class="token operator">: </span><a
+                                                            href="-game-type/index.html">GameType</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>gameTime<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>maxTrailerCount<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>scale<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Class that hold general
+                                                        information about the game</p></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="1042461603%2FClasslikes%2F769193423" anchor-label="Timestamp"
-                           id="1042461603%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-timestamp/index.html"><span><span>Timestamp</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1042461603%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">data </span><span class="token keyword">class </span><a
-                                                        href="-timestamp/index.html">Timestamp</a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>game<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>simulation<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>render<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Class related to timestamp
-                                                    data</p></div>
+                            <a data-name="-652402019%2FClasslikes%2F769193423" anchor-label="GameType"
+                               id="-652402019%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-game-type/index.html"><span>Game</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-652402019%2FClasslikes%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">enum </span><a
+                                                            href="-game-type/index.html">GameType</a> : <a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-game-type/index.html">GameType</a><span
+                                                            class="token operator">&gt; </span></div>
+                                                    <div class="brief "><p class="paragraph">Enum class for game
+                                                        types</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a data-name="1847808302%2FClasslikes%2F769193423" anchor-label="Versions"
-                           id="1847808302%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-versions/index.html"><span><span>Versions</span></span></a></div>
+                            <a data-name="1042461603%2FClasslikes%2F769193423" anchor-label="Timestamp"
+                               id="1042461603%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-timestamp/index.html"><span><span>Timestamp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1042461603%2FClasslikes%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">data </span><span
+                                                            class="token keyword">class </span><a
+                                                            href="-timestamp/index.html">Timestamp</a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>game<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>simulation<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>render<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Class related to timestamp
+                                                        data</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a data-name="1847808302%2FClasslikes%2F769193423" anchor-label="Versions"
+                               id="1847808302%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-versions/index.html"><span><span>Versions</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1847808302%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">data </span><span class="token keyword">class </span><a
-                                                        href="-versions/index.html">Versions</a><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>plugin<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span
-                                                        class="token keyword">val </span>game<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>telemetry<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Class related to versioning
-                                                    data</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">data </span><span
+                                                            class="token keyword">class </span><a
+                                                            href="-versions/index.html">Versions</a><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>plugin<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>game<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>telemetry<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Class related to versioning
+                                                        data</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -41,9 +41,13 @@
         </a>
     </div>
     <div>
-        1.0
+        1.1
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+            <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm
+            </button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -53,7 +57,7 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-        <div class="main-content" id="content"
+        <div class="main-content" data-page-type="package" id="content"
              pageIds="TruckSim-Telemetry-Kotlin::scs_sdk.model.substances////PointingToDeclaration//769193423">
             <div class="breadcrumbs"><a href="../../index.html">TruckSim-Telemetry-Kotlin</a><span
                     class="delimiter">/</span><span class="current">scs_sdk.model.substances</span></div>
@@ -62,74 +66,80 @@
             </div>
             <div class="tabbedcontent">
                 <div class="tabs-section" tabs-section="tabs-section">
-                    <button class="section-tab" data-active="" data-togglable="Types">Types</button>
+                    <button class="section-tab" data-active="" data-togglable="TYPE">Types</button>
                 </div>
                 <div class="tabs-section-body">
-                    <h2 class="">Types</h2>
-                    <div class="table" data-togglable="Types"><a data-name="-1082664297%2FClasslikes%2F769193423"
-                                                                 anchor-label="Substances"
-                                                                 id="-1082664297%2FClasslikes%2F769193423"
-                                                                 data-filterable-set=":dokkaHtml/main"></a>
-                        <div class="table-row" data-filterable-current=":dokkaHtml/main"
-                             data-filterable-set=":dokkaHtml/main">
-                            <div class="main-subrow keyValue ">
-                                <div class=""><span class="inline-flex">
-                <div><a href="-substances/index.html"><span><span>Substances</span></span></a></div>
+                    <div data-togglable="TYPE">
+                        <h2 class="">Types</h2>
+                        <div class="table"><a data-name="-1082664297%2FClasslikes%2F769193423" anchor-label="Substances"
+                                              id="-1082664297%2FClasslikes%2F769193423"
+                                              data-filterable-set=":dokkaHtml/main"></a>
+                            <div class="table-row" data-filterable-current=":dokkaHtml/main"
+                                 data-filterable-set=":dokkaHtml/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex">
+                  <div><a href="-substances/index.html"><span><span>Substances</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1082664297%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span
-                          class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-                                <div>
-                                    <div class="title">
-                                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
-                                            <div class="content sourceset-dependent-content" data-active=""
-                                                 data-togglable=":dokkaHtml/main">
-                                                <div class="symbol monospace"><span
-                                                        class="token keyword">data </span><span class="token keyword">class </span><a
-                                                        href="-substances/index.html">Substances</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="-substances/index.html">T</a><span class="token operator">&gt;</span><span
-                                                        class="token punctuation">(</span><span
-                                                        class="parameters "><span class="parameter "><span
-                                                        class="token keyword">val </span>linearVelocity<span
-                                                        class="token operator">: </span><a
-                                                        href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="-substances/index.html">T</a><span class="token operator">&gt;</span><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>angularVelocity<span
-                                                        class="token operator">: </span><a
-                                                        href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="-substances/index.html">T</a><span class="token operator">&gt;</span><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>linearAcceleration<span
-                                                        class="token operator">: </span><a
-                                                        href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="-substances/index.html">T</a><span class="token operator">&gt;</span><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>angularAcceleration<span
-                                                        class="token operator">: </span><a
-                                                        href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="-substances/index.html">T</a><span class="token operator">&gt;</span><span
-                                                        class="token punctuation">, </span></span><span
-                                                        class="parameter "><span class="token keyword">val </span>allTypes<span
-                                                        class="token operator">: </span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span
-                                                        class="token operator">&lt;</span><span
-                                                        class="token keyword"></span><a
-                                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
-                                                        class="token operator">&gt;</span></span></span><span
-                                                        class="token punctuation">)</span></div>
-                                                <div class="brief "><p class="paragraph">Class related to substances
-                                                    data & physic data</p></div>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                    <div>
+                                        <div class="title">
+                                            <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                                                <div class="content sourceset-dependent-content" data-active=""
+                                                     data-togglable=":dokkaHtml/main">
+                                                    <div class="symbol monospace"><span
+                                                            class="token keyword">data </span><span
+                                                            class="token keyword">class </span><a
+                                                            href="-substances/index.html">Substances</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-substances/index.html">T</a><span
+                                                            class="token operator">&gt;</span><span
+                                                            class="token punctuation">(</span><span class="parameters "><span
+                                                            class="parameter "><span class="token keyword">val </span>linearVelocity<span
+                                                            class="token operator">: </span><a
+                                                            href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-substances/index.html">T</a><span
+                                                            class="token operator">&gt;</span><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>angularVelocity<span
+                                                            class="token operator">: </span><a
+                                                            href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-substances/index.html">T</a><span
+                                                            class="token operator">&gt;</span><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>linearAcceleration<span
+                                                            class="token operator">: </span><a
+                                                            href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-substances/index.html">T</a><span
+                                                            class="token operator">&gt;</span><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>angularAcceleration<span
+                                                            class="token operator">: </span><a
+                                                            href="../scs_sdk.model.utils/-vector/index.html">Vector</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="-substances/index.html">T</a><span
+                                                            class="token operator">&gt;</span><span
+                                                            class="token punctuation">, </span></span><span
+                                                            class="parameter "><span class="token keyword">val </span>allTypes<span
+                                                            class="token operator">: </span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span
+                                                            class="token operator">&lt;</span><span
+                                                            class="token keyword"></span><a
+                                                            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                            class="token operator">&gt;</span></span></span><span
+                                                            class="token punctuation">)</span></div>
+                                                    <div class="brief "><p class="paragraph">Class related to substances
+                                                        data & physic data</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
