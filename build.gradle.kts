@@ -61,7 +61,6 @@ sonarqube {
         property("sonar.projectKey", "TruckSim-Telemetry-Kotlin")
         property("sonar.sourceEncoding", "UTF-8")
         property("sonar.sources", "src/main/kotlin")
-        property("sonar.login", "sqp_e5335303f0f17d1afcfdc16e39ae44e3dd720350")
     }
 }
 
