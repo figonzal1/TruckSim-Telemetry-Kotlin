@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac624d04-7eab-4725-9a94-c3ccdac2a4cc" name="Changes" comment="update dokka">
+    <list default="true" id="ac624d04-7eab-4725-9a94-c3ccdac2a4cc" name="Changes" comment="java version 17">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,29 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.TruckSim-Telemetry-Kotlin [generateMetadataFileForTruckSim-Telemetry-KotlinPublication]">
+    <configuration name="TruckSim-Telemetry-Kotlin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="TruckSim-Telemetry-Kotlin [generateMetadataFileForTruckSim-Telemetry-KotlinPublication]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,7 +168,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="TruckSim-Telemetry-Kotlin [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TruckSim-Telemetry-Kotlin [kotlinSourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,29 +179,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="publishToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="TruckSim-Telemetry-Kotlin [publishTruckSim-Telemetry-KotlinPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishTruckSim-Telemetry-KotlinPublicationToMavenLocal" />
+            <option value="kotlinSourcesJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [publishTruckSim-Telemetry-KotlinPublicationToMavenLocal]" />
-        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [publishToMavenLocal]" />
         <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [generateMetadataFileForTruckSim-Telemetry-KotlinPublication]" />
         <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [generatePomFileForTruckSim-Telemetry-KotlinPublication]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [kotlinSourcesJar]" />
+        <item itemvalue="Gradle.TruckSim-Telemetry-Kotlin [clean]" />
+        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680885869084</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="java version 17">
+      <created>1680887616235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680887616235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +270,8 @@
     <MESSAGE value="update dependencies &amp; gradle" />
     <MESSAGE value="version 1.1" />
     <MESSAGE value="update dokka" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dokka" />
+    <MESSAGE value="java version 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="java version 17" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

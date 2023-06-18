@@ -30,7 +30,7 @@ repositories {
 dependencies {
 
     //Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
 
     //JNA
     implementation("net.java.dev.jna:jna-platform:5.13.0")
